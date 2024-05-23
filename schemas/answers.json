@@ -1,0 +1,49 @@
+{
+    "title": "Schema for validating answers to IAMA tasks",
+    "type": "object",
+    "properties": {
+        "answers": {
+            "type": "object",
+            "properties": {
+                "answer": {
+                "description": "Answer given to question",
+                "type": "string"
+                },
+                "remarks": {
+                    "description": "Optional remarks added to answer",
+                    "type": "string"
+                },
+                "validation": {
+                    "description": "Validation of answer pattern",
+                    "type": "string"
+                },
+                "timestamp": {
+                    "description": "Timestamp of answer",
+                    "type": "string"
+                },
+                "authors": {
+                    "description": "Authors of answer",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "description": "Name of author",
+                                "type": "string"
+                                },
+                                "email": {
+                                "description": "Email of author",
+                                "type": "string"
+                                },
+                                "role": {
+                                "description": "Role of author",
+                                "type": "string"
+                                }
+                                }
+                            }
+                            }
+                        }
+                    }
+            }
+}
+        
