@@ -1,9 +1,11 @@
 systemcard_path: .assessments[]             # append iama.yaml to 'assessments' list in system card 
+schema_version: v_1.0.0
 
 instrument:
   name: "Impact Assessment Mensenrechten en Algoritmes (IAMA)"
   description: "Het IAMA helpt om de risico's voor mensenrechten bij het gebruik van algoritmen in kaart te brengen en maatregelen te nemen om deze aan te pakken."
   version: 1.0 
+  language: "Dutch"
   owners:                                 
     - organization: "" 
       name: ""
@@ -22,107 +24,92 @@ answers: &default_answers                   # anchor for all fields belonging to
       email: ""
       role: ""
 
-roles_part_1: &roles_part_1                 # the IAMA is divided into 4 different parts. For every part, different roles are required
-  ["belangengroep", "bestuur", "burgerpanel", "CISO of CIO", "domeinexpert", "jurist", "opdrachtgever", "overige leden projectteam", "projectleider"]
-
-roles_part_2: &roles_part_2
-  ["CIO of CISO", "communicatieadviseur", "data scientist", "databeheerder of bronhouder", "domeinexpert", "functionaris gegevensbescherming", "jurist", "ontwikkelaar algoritme", "opdrachtgever", "projectleider", "strategisch adviseur ethiek"]
-
-roles_part_3: &roles_part_3
-  ["communicatieadviseur", "data scientist", "domeinexpert", "HR-medewerker", "jurist", "opdrachtgever", "projectleider", "strategisch adviseur ethiek"]
-
-roles_part_4: &roles_part_4
-  ["domeinexpert", "jurist", "projectleider"]
-
-
-
-
-tasks:                                      # each question is specified as a separate task 
-  - task: "Licht uw voorstel voor het gebruik/de inzet van een algoritme toe. Wat is de aanleiding hiervoor geweest? Voor welk probleem moet het algoritme een oplossing bieden?"
+questions:                                      # each question can be seen as a separate task 
+  - question: "Licht uw voorstel voor het gebruik/de inzet van een algoritme toe. Wat is de aanleiding hiervoor geweest? Voor welk probleem moet het algoritme een oplossing bieden?"
     id: 1.1.1
     labels:
       - key: topic 
         value: "aanleiding en probleemdefinitie"
     type: "open question"                                    
-    required_roles: *roles_part_1
-    lifecycle: "probleemanalyse"            # 1 out of 8 options from AK lifecycle: https://minbzk.github.io/Algoritmekader/levenscyclus/
+    suggested_roles: ["Proceseigenaar", "Gebruiker", "Security officer", "Domeinspecialist", "Jurist", "Aanbieder", "Projectleider"]
+    lifecycle: "Probleemanalyse"            # 1 out of 8 options from AK lifecycle: https://minbzk.github.io/Algoritmekader/levenscyclus/
     links: []                               # optional: list with links to other measures (for example: is this question also asked in the DPIA?) / fields of system card
     requirements: []                        # optional: what are the requirements for this task? (for example: upload dataset)
     <<: *default_answers                  
-  - task: "Wat is het doel dat bereikt dient te worden met de inzet van het algoritme? Wat is hierbij het hoofddoel en wat zijn subdoelen?"
+  - question: "Wat is het doel dat bereikt dient te worden met de inzet van het algoritme? Wat is hierbij het hoofddoel en wat zijn subdoelen?"
     id: 1.2.1
     labels:
       - key: topic
         value: "doelstelling"
     type: "open question"
-    required_roles: *roles_part_1
-    lifecycle: "probleemanalyse"
+    suggested_roles: 
+    lifecycle: "Probleemanalyse"
     links: []
     requirements: []
     <<: *default_answers
-  - task: "Wat zijn de publieke waarden die de inzet van het algoritme ingeven? Indien meerdere publieke waarden de inzet van het algoritme ingeven, kan daar een rangschikking in aangebracht worden?"
+  - question: "Wat zijn de publieke waarden die de inzet van het algoritme ingeven? Indien meerdere publieke waarden de inzet van het algoritme ingeven, kan daar een rangschikking in aangebracht worden?"
     id: 1.3.1
     labels:
       - key: topic
         value: "publieke waarden"
     type: "open question"
-    required_roles: *roles_part_1
-    lifecycle: "probleemanalyse"
+    suggested_roles: ["Proceseigenaar", "Gebruiker", "Security officer", "Domeinspecialist", "Jurist", "Aanbieder", "Projectleider"]
+    lifecycle: "Probleemanalyse"
     links: []
     requirements: []
     <<: *default_answers
-  - task: "Wat zijn de publieke waarden die mogelijk in het gedrang komen door de inzet van het algoritme?"
+  - question: "Wat zijn de publieke waarden die mogelijk in het gedrang komen door de inzet van het algoritme?"
     id: 1.3.2
     labels:
       - key: topic
         value: "publieke waarden" 
     type: "open question"
-    required_roles: *roles_part_1
-    lifecycle: "probleemanalyse"
+    suggested_roles: ["Proceseigenaar", "Gebruiker", "Security officer", "Domeinspecialist", "Jurist", "Aanbieder", "Projectleider"]
+    lifecycle: "Probleemanalyse"
     links: []
     requirements: []
     <<: *default_answers
-  - task: "Wat is de wettelijke grondslag van de inzet van dit algoritme en van de beoogde besluiten die genomen zullen worden op basis van dit algoritme?"
+  - question: "Wat is de wettelijke grondslag van de inzet van dit algoritme en van de beoogde besluiten die genomen zullen worden op basis van dit algoritme?"
     id: 1.4.1
     labels:
       - key: topic
         value: "wettelijke grondslag"   
     type: "open question"
-    required_roles: *roles_part_1
-    lifecycle: "probleemanalyse"
+    suggested_roles: ["Proceseigenaar", "Gebruiker", "Security officer", "Domeinspecialist", "Jurist", "Aanbieder", "Projectleider"]
+    lifecycle: "Probleemanalyse"
     links: []
     requirements: []
     <<: *default_answers
-  - task: "Welke partijen en personen zijn er bij de ontwikkeling/het gebruik/het onderhoud van het algoritme betrokken?"
+  - question: "Welke partijen en personen zijn er bij de ontwikkeling/het gebruik/het onderhoud van het algoritme betrokken?"
     id: 1.5.1
     labels:
     - key: topic
       value: "betrokkenen en verantwoordelijkheden"
     type: "open question"
-    required_roles: *roles_part_1
-    lifecycle: "probleemanalyse"
+    suggested_roles: ["Proceseigenaar", "Gebruiker", "Security officer", "Domeinspecialist", "Jurist", "Aanbieder", "Projectleider"]
+    lifecycle: "Probleemanalyse"
     links: []
     requirements: []
     <<: *default_answers
-  - task: "Hoe zijn de verantwoordelijkheden belegd ten aanzien van de ontwikkeling en de inzet van het algoritme, ook nadat het algoritme eenmaal is afgerond?"
+  - question: "Hoe zijn de verantwoordelijkheden belegd ten aanzien van de ontwikkeling en de inzet van het algoritme, ook nadat het algoritme eenmaal is afgerond?"
     id: 1.5.2
     labels:
     - key: topic
       value: "betrokkenen en verantwoordelijkheden"  
     type: "open question"
-    required_roles: *roles_part_1
-    lifecycle: "probleemanalyse"
+    suggested_roles: ["Proceseigenaar", "Gebruiker", "Security officer", "Domeinspecialist", "Jurist", "Aanbieder", "Projectleider"]
+    lifecycle: "Probleemanalyse"
     links: []
     requirements: []
     <<: *default_answers
-  - task: "Wie is eindverantwoordelijk voor het algoritme?"
+  - question: "Wie is eindverantwoordelijk voor het algoritme?"
     id: 1.5.3
     labels:
     - key: topic
       value: "betrokkenen en verantwoordelijkheden" 
     type: "open question"
-    required_roles: *roles_part_1
-    lifecycle: "probleemanalyse"
+    suggested_roles: ["Proceseigenaar", "Gebruiker", "Security officer", "Domeinspecialist", "Jurist", "Aanbieder", "Projectleider"]
+    lifecycle: "Probleemanalyse"
     links: []
     requirements: []
     <<: *default_answers
