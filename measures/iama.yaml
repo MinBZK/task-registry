@@ -10,6 +10,7 @@ instrument:
       email: ""
       role: ""
   date: ""
+  url: "https://www.rijksoverheid.nl/documenten/rapporten/2021/02/25/impact-assessment-mensenrechten-en-algoritmes"
 
 answers: &default_answers                   # anchor for all fields belonging to answer
   answer: ""                       
