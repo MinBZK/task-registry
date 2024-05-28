@@ -84,50 +84,57 @@
         "items": {
           "type": "string", 
           "enum": [               
-          "Aanbestedingsjurist", 
-          "Aanbieder", 
-          "Archiefdeskundige", 
-          "Behoeftesteller", 
-          "Communicatieadviseur", 
-          "Contractbeheerder", 
-          "Data engineer", 
-          "Data scientist", 
-          "Domeinspecialist", 
-          "Ethicus", 
-          "Gebruiker", 
-          "Gemandateerd verantwoordelijke(n)", 
-          "Informatiebeheerder", 
-          "Inkoopadviseur", 
-          "Jurist", 
-          "Privacy-officer", 
-          "Proceseigenaar", 
-          "Security officer"
+            "Aanbestedingsjurist", 
+            "Aanbieder", 
+            "Archiefdeskundige", 
+            "Behoeftesteller", 
+            "Communicatieadviseur", 
+            "Contractbeheerder", 
+            "Data engineer", 
+            "Data scientist", 
+            "Domeinspecialist", 
+            "Ethicus", 
+            "Gebruiker", 
+            "Gemandateerd verantwoordelijke(n)", 
+            "Informatiebeheerder", 
+            "Inkoopadviseur", 
+            "Jurist", 
+            "Privacy-officer", 
+            "Proceseigenaar", 
+            "Security officer"
           ]
         }
       }, 
       "lifecycle":{
         "description": "Part of the algorithm lifecycle to which this question refers",
-        "type": "string",
-        "enum": [
-          "Probleemanalyse", 
-          "Ontwerp", 
-          "Dataverkenning en -preparatie",
-          "Ontwikkelen", 
-          "Validatie", 
-          "Implementatie", 
-          "Monitoren", 
-          "Archiveren"
-        ]
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "Probleemanalyse", 
+            "Ontwerp", 
+            "Dataverkenning en -preparatie",
+            "Ontwikkelen", 
+            "Validatie", 
+            "Implementatie", 
+            "Monitoren", 
+            "Archiveren"
+          ]
+        }
       },
       "links": {
         "description": "Links to other relevant measures / tasks",
         "type": "array",
-        "items": {}
+        "items": {
+          "type": "string"
+        }
       },
       "requirements": {
         "description": "Specific requirements for this question", 
         "type": "array", 
-        "items": {}
+        "items": {
+          "type": "string"
+        }
       }
   }
 }
