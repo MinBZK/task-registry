@@ -1,11 +1,11 @@
 systemcard_path: .assessments[]               # append iama.yaml to 'assessments' list in system card 
-schema_version: iama_v_1.0.0
+schema_version: v_1.0.0
 
 instrument:
   name: "Impact Assessment Mensenrechten en Algoritmes (IAMA)"
   description: "Het IAMA helpt om de risico's voor mensenrechten bij het gebruik van algoritmen in kaart te brengen en maatregelen te nemen om deze aan te pakken."
-  version: 1.0.0
-  language: "Dutch"
+  version: 1.0
+  language: "Nederlands"
   owners:                                 
     - organization: "" 
       name: ""
@@ -24,7 +24,7 @@ answers: &default_answers                     # anchor for all fields belonging 
       email: ""
       role: ""
 
-questions:                                    # each question can be seen as a separate task 
+tasks:                                    # each question can be seen as a separate task 
   - question: "Licht uw voorstel voor het gebruik/de inzet van een algoritme toe. Wat is de aanleiding hiervoor geweest? Voor welk probleem moet het algoritme een oplossing bieden?"
     id: 1.1.1
     labels:
