@@ -18,7 +18,6 @@ template: &systemcard_template                  # anchor for all fields belongin
   question: "$QUESTION"
   answer: "$ANSWER"
   remarks: "$REMARKS"
-  validation: "^[a-zA-Z\\s]+$"
   timestamp: "$TIMESTAMP"
   authors:
     - name: "$AUTHOR.NAME"

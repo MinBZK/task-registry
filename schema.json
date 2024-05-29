@@ -189,7 +189,37 @@
           },
           "template": {
             "type": "object",
-            "additionalProperties": true
+            "additionalProperties": {
+              "type": "string",
+              "pattern": "^\\$.*$"
+            },
+            "properties": {
+              "authors": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "const": "$AUTHOR.NAME"
+                    },
+                    "email": {
+                      "type": "string",
+                      "const": "$AUTHOR.EMAIL"
+                    },
+                    "role": {
+                      "type": "string",
+                      "const": "$AUTHOR.ROLE"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "email",
+                    "role"
+                  ]
+                }
+              }
+            }
           }
         },
         "required": [
