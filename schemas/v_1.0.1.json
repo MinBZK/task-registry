@@ -74,8 +74,8 @@
         "description": "Question type",
         "type": "string",
         "enum": [                   
-          "open question",
-          "closed question"
+          "open_question",
+          "closed_question"
         ]                     
       }, 
       "suggested_roles":{

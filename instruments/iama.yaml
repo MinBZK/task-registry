@@ -1,5 +1,5 @@
 systemcard_path: .assessments[]               # append iama.yaml to 'assessments' list in system card 
-schema_version: v_1.0.0
+schema_version: v_1.0.1
 
 instrument:
   name: "Impact Assessment Mensenrechten en Algoritmes (IAMA)"
@@ -31,7 +31,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Aanleiding en probleemdefinitie"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Domeinspecialist", "Gebruiker" ] #suggested roles in IAMA are coupled to roles that are described in the Algoritmekader
     lifecycle: [ "Probleemanalyse" ]            # one or more out of 8 options from AK lifecycle: https://minbzk.github.io/Algoritmekader/levenscyclus/
     links: [ { "text": "DPIA vraag 1" } ]       # optional: list with links to other tasks / instruments (for example: is this question also asked in the DPIA?)
@@ -42,7 +42,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Doelstelling"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ { "text": "DPIA vraag 4" } ]
@@ -53,7 +53,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Publieke waarden"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Jurist", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ ]
@@ -64,7 +64,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Publieke waarden"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Jurist", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ ]
@@ -75,10 +75,10 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Wettelijke grondslag"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ { "text": "DPIA vraag 11"}, {"text": "DPIA vraag 12" } ]
+    links: [ { "text": "DPIA vraag 11" }, { "text": "DPIA vraag 12" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Welke partijen en personen zijn er bij de ontwikkeling/het gebruik/het onderhoud van het algoritme betrokken?"
@@ -86,7 +86,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Betrokkenen en verantwoordelijkheden"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Security officer" ]
     lifecycle: [ "Probleemanalyse", "Ontwerp" ]
     links: [ { "text": "DPIA vraag 5" } ]
@@ -97,7 +97,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Betrokkenen en verantwoordelijkheden"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Security officer" ]
     lifecycle: [ "Probleemanalyse", "Ontwerp", "Monitoring en beheer" ]
     links: [ { "text": "DPIA vraag 5" } ]
@@ -108,7 +108,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Betrokkenen en verantwoordelijkheden"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Security officer" ]
     lifecycle: [ "Probleemanalyse", "Monitoring en beheer" ]
     links: [ { "text": "DPIA vraag 5" } ]
@@ -119,7 +119,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Inschatting: type algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer", "Projectleider" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 8" } ]
@@ -130,7 +130,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Databronnen en kwaliteit"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Ontwerp", "Dataverkenning en datapreparatie" ]
     links: [ { "text": "DPIA vraag 2" } ]
@@ -141,7 +141,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Databronnen en kwaliteit"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -152,7 +152,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Bias/aannames in de data"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -163,7 +163,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Bias/aannames in de data"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -174,7 +174,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Beveiliging en archivering"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 17" } ]
@@ -185,7 +185,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Beveiliging en archivering"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 17" } ]
@@ -196,7 +196,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Beveiliging en archivering"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie" ]
     links: [ { "text": "DPIA vraag 10" } ]
@@ -207,7 +207,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Type algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 8" } ]
@@ -218,7 +218,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Type algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 8" } ]
@@ -229,7 +229,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Type algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 8" } ]
@@ -240,7 +240,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Type algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
     lifecycle: [ "Ontwerp" ]
     links: [ { "text": "DPIA vraag 8" } ]
@@ -251,7 +251,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Eigenaarschap en controle"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Aanbieder", "Projectleider", "Jurist" ]
     lifecycle: [ "Ontwerp", "Monitoring en beheer" ]
     links: [ { "text": "DPIA vraag 5" } ]
@@ -262,7 +262,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Accuraatheid algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Verificatie en validatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -273,7 +273,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Accuraatheid algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Verificatie en validatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -284,7 +284,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Accuraatheid algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Verificatie en validatie", "Implementatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -295,7 +295,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Accuraatheid algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Ontwikkelen", "Verificatie en validatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -306,7 +306,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Accuraatheid algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -317,7 +317,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Accuraatheid algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Verificatie en validatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -328,7 +328,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Transparantie en uitlegbaarheid"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
     lifecycle: [ "Ontwikkelen", "Verificatie en validatie" ]
     links: [ { "text": "DPIA vraag 15" } ]
@@ -339,7 +339,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Transparantie en uitlegbaarheid"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen", "Verificatie en validatie", "Monitoring en beheer" ]
     links: [ { "text": "DPIA vraag 15" } ]
@@ -350,7 +350,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Transparantie en uitlegbaarheid"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 15" } ]
@@ -361,7 +361,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Transparantie en uitlegbaarheid"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
     lifecycle: [ "Ontwikkelen", "Verificatie en validatie" ]
     links: [ { "text": "DPIA vraag 15" } ]
@@ -372,7 +372,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Beslissingen op basis van output algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Security officer", "Ethicus", "Jurist", "Aanbieder" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -383,7 +383,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "De rol van de mens in de beslissing"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider, Data scientist, Ethicus" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -394,7 +394,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "De rol van de mens in de beslissing"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider, Data scientist, Ethicus" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -405,7 +405,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Effecten van het algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Aanbieder", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse", "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -416,10 +416,10 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Effecten van het algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Aanbieder", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse", "Ontwerp", "Ontwikkelen", "Implementatie" ]
-    links: [ { "text": "DPIA vraag 16"}, {"text": "DPIA vraag 17" } ]
+    links: [ { "text": "DPIA vraag 16" }, { "text": "DPIA vraag 17" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: Hoe zullen de verwachte effecten bijdragen aan de oplossing van het probleem dat de aanleiding is voor de ontwikkeling/inzet van het algoritme (zie vraag 1.1) en het bereiken van de daarbij gestelde doelen (zie vraag 1.2)?
@@ -427,7 +427,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Effecten van het algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Aanbieder", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ ]
@@ -438,7 +438,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Effecten van het algoritme"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Aanbieder", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ ]
@@ -449,7 +449,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Procedures"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Jurist" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -460,7 +460,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Procedures"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Jurist" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -471,7 +471,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Procedures"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Jurist" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -482,7 +482,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Context"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -493,7 +493,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Context"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -504,7 +504,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Context"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -515,7 +515,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Communicatie"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ { "text": "DPIA vraag 15" } ]
@@ -526,7 +526,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Communicatie"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ { "text": "DPIA vraag 15" } ]
@@ -537,7 +537,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Communicatie"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
     lifecycle: [ "Verificatie en validatie", "Implementatie", "Monitoring en beheer" ]
     links: [ { "text": "DPIA vraag 15" } ]
@@ -548,7 +548,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Evaluatie, auditing en borging"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Data scientist" ]
     lifecycle: [ "Verificatie en validatie", "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -559,7 +559,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Evaluatie, auditing en borging"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Data scientist" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -570,7 +570,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Evaluatie, auditing en borging"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Data scientist" ]
     lifecycle: [ "Implementatie", "Monitoring en beheer" ]
     links: [ ]
@@ -581,7 +581,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Grondrecht"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -592,7 +592,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Specifieke wetgeving en richtsnoeren"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ { "text": "DPIA vraag 9" } ]
@@ -603,7 +603,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Zwaartebepaling"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ { "text": "DPIA vraag 16" } ]
@@ -614,7 +614,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Doelstellingen"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ ]
@@ -625,7 +625,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Doeltreffendheid/effectiviteit/geschiktheid"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ { "text": "DPIA vraag 14" } ]
@@ -636,7 +636,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Noodzakelijkheid/subsidiariteit"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ { "text": "DPIA vraag 14" } ]
@@ -647,7 +647,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Belangenafweging/proportionaliteit"
-    type: "open question"
+    type: "open_question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ { "text": "DPIA vraag 14" } ]
