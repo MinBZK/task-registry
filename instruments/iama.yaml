@@ -34,7 +34,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Domeinspecialist", "Gebruiker" ] #suggested roles in IAMA are coupled to roles that are described in the Algoritmekader
     lifecycle: [ "Probleemanalyse" ]            # one or more out of 8 options from AK lifecycle: https://minbzk.github.io/Algoritmekader/levenscyclus/
-    links: [ "DPIA vraag 1" ]                   # optional: list with links to other tasks / instruments (for example: is this question also asked in the DPIA?)
+    links: [ { "text": "DPIA vraag 1" } ]       # optional: list with links to other tasks / instruments (for example: is this question also asked in the DPIA?)
     requirements: [ ]                           # optional: what are the requirements for this task? (for example: upload dataset)
     template: *systemcard_template
   - question: "Wat is het doel dat bereikt dient te worden met de inzet van het algoritme? Wat is hierbij het hoofddoel en wat zijn subdoelen?"
@@ -45,7 +45,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ "DPIA vraag 4" ]
+    links: [ { "text": "DPIA vraag 4" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Wat zijn de publieke waarden die de inzet van het algoritme ingeven? Indien meerdere publieke waarden de inzet van het algoritme ingeven, kan daar een rangschikking in aangebracht worden?"
@@ -78,7 +78,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ "DPIA vraag 11", "DPIA vraag 12" ]
+    links: [ { "text": "DPIA vraag 11"}, {"text": "DPIA vraag 12" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Welke partijen en personen zijn er bij de ontwikkeling/het gebruik/het onderhoud van het algoritme betrokken?"
@@ -89,7 +89,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Security officer" ]
     lifecycle: [ "Probleemanalyse", "Ontwerp" ]
-    links: [ "DPIA vraag 5" ]
+    links: [ { "text": "DPIA vraag 5" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Hoe zijn de verantwoordelijkheden belegd ten aanzien van de ontwikkeling en de inzet van het algoritme, ook nadat het algoritme eenmaal is afgerond?"
@@ -100,7 +100,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Security officer" ]
     lifecycle: [ "Probleemanalyse", "Ontwerp", "Monitoring en beheer" ]
-    links: [ "DPIA vraag 5" ]
+    links: [ { "text": "DPIA vraag 5" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Wie is eindverantwoordelijk voor het algoritme?"
@@ -111,7 +111,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Security officer" ]
     lifecycle: [ "Probleemanalyse", "Monitoring en beheer" ]
-    links: [ "DPIA vraag 5" ]
+    links: [ { "text": "DPIA vraag 5" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Wat voor type algoritme wordt gebruikt, of wat voor type algoritme gaat ontwikkeld worden?"
@@ -122,7 +122,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer", "Projectleider" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
-    links: [ "DPIA vraag 8" ]
+    links: [ { "text": "DPIA vraag 8" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Wat voor type data gaat gebruikt worden als input voor het algoritme en uit welke bronnen is de data afkomstig?"
@@ -133,7 +133,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Ontwerp", "Dataverkenning en datapreparatie" ]
-    links: [ "DPIA vraag 2" ]
+    links: [ { "text": "DPIA vraag 2" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Is de kwaliteit en betrouwbaarheid van de data voldoende voor de beoogde datatoepassing? Leg uit."
@@ -144,7 +144,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Welke aannames en bias liggen in de data besloten en hoe wordt de invloed daarvan op de output van het algoritme gecorrigeerd of anderszins ondervangen of gemitigeerd?"
@@ -155,7 +155,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Indien gebruik wordt gemaakt van trainingsdata: is de data representatief voor de context waarin het algoritme ingezet gaat worden?"
@@ -166,7 +166,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Is de data voldoende beveiligd? Maak hierin onderscheid tussen de inputdata en de outputdata."
@@ -177,7 +177,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
-    links: [ "DPIA vraag 17" ]
+    links: [ { "text": "DPIA vraag 17" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Is er controle op de toegang tot de data? Maak hierin onderscheid tussen de inputdata en de outputdata."
@@ -188,7 +188,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
-    links: [ "DPIA vraag 17" ]
+    links: [ { "text": "DPIA vraag 17" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Hoe worden relevante regels over archivering in acht genomen, zoals die in de Archiefwet zijn vastgelegd?"
@@ -199,7 +199,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
     lifecycle: [ "Dataverkenning en datapreparatie" ]
-    links: [ "DPIA vraag 10" ]
+    links: [ { "text": "DPIA vraag 10" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Type algoritme: wat voor soort algoritme wordt gebruikt of gaat worden gebruikt? Hoe werkt het? Onderscheid tussen: A) Een niet-zelflerend algoritme, waarin de mens de regels specificeert die de computer moet volgen, B) Een zelflerend algoritme, waarin de machine zelf leert over de patronen in de data (machine learning)"
@@ -210,7 +210,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
-    links: [ "DPIA vraag 8" ]
+    links: [ { "text": "DPIA vraag 8" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Waarom wordt voor dit type algoritme gekozen?"
@@ -221,7 +221,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
-    links: [ "DPIA vraag 8" ]
+    links: [ { "text": "DPIA vraag 8" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Waarom is dit type algoritme het meest geschikt om de bij vraag 1.2 geformuleerde doelstellingen te bereiken?"
@@ -232,7 +232,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
-    links: [ "DPIA vraag 8" ]
+    links: [ { "text": "DPIA vraag 8" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Welke alternatieven zijn er en waarom zijn die minder passend of bruikbaar?"
@@ -243,7 +243,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
     lifecycle: [ "Ontwerp" ]
-    links: [ "DPIA vraag 8" ]
+    links: [ { "text": "DPIA vraag 8" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Indien het algoritme is ontwikkeld door een externe partij: zijn er heldere afspraken gemaakt over eigenaarschap en beheer van het algoritme? Wat zijn die afspraken?"
@@ -254,7 +254,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Aanbieder", "Projectleider", "Jurist" ]
     lifecycle: [ "Ontwerp", "Monitoring en beheer" ]
-    links: [ "DPIA vraag 5" ]
+    links: [ { "text": "DPIA vraag 5" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Wat is de accuraatheid van het algoritme, en op basis van welke evaluatiecriteria is deze accuraatheid bepaald?"
@@ -265,7 +265,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Verificatie en validatie" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Is de mate van accuraatheid (vraag 2B.3.1) acceptabel voor de manier waarop het algoritme ingezet zal worden?"
@@ -276,7 +276,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Verificatie en validatie" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Hoe wordt het algoritme getest?"
@@ -287,7 +287,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Verificatie en validatie", "Implementatie" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Welke maatregelen kunnen worden getroffen om de risicos van reproductie of zelfs versterking van biases tegen te gaan (bijv. andere sampling- strategie, feature modification, ...)?"
@@ -298,7 +298,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Ontwikkelen", "Verificatie en validatie" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Welke aannames liggen ten grondslag aan de selectie en weging van de indicatoren? Zijn die aannames terecht? Waarom wel/niet?"
@@ -309,7 +309,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Ontwikkelen" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Hoe vaak/erg zit het algoritme ernaast? (bijv. in termen van aantal false positives, false negatives, R-squared, ...)"
@@ -320,7 +320,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
     lifecycle: [ "Verificatie en validatie" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Is het duidelijk wat het algoritme doet, hoe het dit doet, en op basis waarvan (welke data) het dit doet? Leg uit."
@@ -331,7 +331,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
     lifecycle: [ "Ontwikkelen", "Verificatie en validatie" ]
-    links: [ "DPIA vraag 15" ]
+    links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Voor welke personen en groepen binnen en buiten de eigen organisatie wordt de werking van het algoritme transparant gemaakt en hoe gebeurt dit?"
@@ -342,7 +342,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen", "Verificatie en validatie", "Monitoring en beheer" ]
-    links: [ "DPIA vraag 15" ]
+    links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Voor welke doelgroepen moet het algoritme uitlegbaar zijn?"
@@ -353,7 +353,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
-    links: [ "DPIA vraag 15" ]
+    links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Kan de werking van het algoritme voor de bij vraag 2B.4.3 geïdentificeerde doelgroepen op een voldoende begrijpelijke manier worden uitgelegd?"
@@ -364,7 +364,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
     lifecycle: [ "Ontwikkelen", "Verificatie en validatie" ]
-    links: [ "DPIA vraag 15" ]
+    links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Wat gebeurt er met de uitkomsten van het algoritme? Welke beslissingen worden daarop gebaseerd?"
@@ -408,7 +408,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Aanbieder", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse", "Ontwerp", "Implementatie", "Monitoring en beheer" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Welke risico's voor stigmatiserende, discriminerende of anderszins schadelijke of nadelige effecten zijn er voor de burger en hoe zullen die worden bestreden of gemitigeerd?"
@@ -419,7 +419,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Aanbieder", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse", "Ontwerp", "Ontwikkelen", "Implementatie" ]
-    links: [ "DPIA vraag 16", "DPIA vraag 17" ]
+    links: [ { "text": "DPIA vraag 16"}, {"text": "DPIA vraag 17" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: Hoe zullen de verwachte effecten bijdragen aan de oplossing van het probleem dat de aanleiding is voor de ontwikkeling/inzet van het algoritme (zie vraag 1.1) en het bereiken van de daarbij gestelde doelen (zie vraag 1.2)?
@@ -518,7 +518,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
-    links: [ "DPIA vraag 15" ]
+    links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Op welke manier beoogt u te communiceren over de inzet van het algoritme?"
@@ -529,7 +529,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
-    links: [ "DPIA vraag 15" ]
+    links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Wordt de output van het algoritme gevisualiseerd, bijvoorbeeld in een tabel, grafiek of dashboard? Zo ja: is de vorm van visualisatie of weergave een correcte representatie van de output van het algoritme? Is de visualisatie makkelijk te lezen voor verschillende gebruikersgroepen?"
@@ -540,7 +540,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
     lifecycle: [ "Verificatie en validatie", "Implementatie", "Monitoring en beheer" ]
-    links: [ "DPIA vraag 15" ]
+    links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Is voorzien in goede instrumenten voor evaluatie, auditing en borging van het algoritme?"
@@ -584,7 +584,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Zijn er specifieke wettelijke bepalingen of richtsnoeren van toepassing op de grondrechteninbreuk?"
@@ -595,7 +595,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ "DPIA vraag 9" ]
+    links: [ { "text": "DPIA vraag 9" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Hoe zwaar wordt een grondrecht geraakt door het algoritme?"
@@ -606,7 +606,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ "DPIA vraag 16" ]
+    links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Welke doelen worden met inzet van het algoritme nagestreefd? Kijk hierbij naar uw antwoord op vraag 1.2"
@@ -628,7 +628,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ "DPIA vraag 14" ]
+    links: [ { "text": "DPIA vraag 14" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Is inzet van dit specifieke algoritme noodzakelijk om dit doel te bereiken en zijn er geen andere of mitigerende maatregelen beschikbaar om dit te doen? Leg uit."
@@ -639,7 +639,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ "DPIA vraag 14" ]
+    links: [ { "text": "DPIA vraag 14" } ]
     requirements: [ ]
     template: *systemcard_template
   - question: "Levert inzet van het algoritme een redelijk evenwicht op tussen de te realiseren doelen en de grondrechten die worden geraakt, en waarom is dat zo?"
@@ -650,7 +650,7 @@ tasks: # each question can be seen as a separate task
     type: "open question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Jurist" ]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ "DPIA vraag 14" ]
+    links: [ { "text": "DPIA vraag 14" } ]
     requirements: [ ]
     template: *systemcard_template
 
