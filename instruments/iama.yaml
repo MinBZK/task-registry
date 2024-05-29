@@ -652,6 +652,3 @@ tasks: # each question can be seen as a separate task
     links: [ { "text": "DPIA vraag 14" } ]
     requirements: [ ]
     template: *systemcard_template
-
-
-
