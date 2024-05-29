@@ -1,5 +1,5 @@
 systemcard_path: .assessments[]               # append iama.yaml to 'assessments' list in system card 
-schema_version: v_1.0.1
+schema_version: 1.1.0
 
 instrument:
   name: "Impact Assessment Mensenrechten en Algoritmes (IAMA)"
@@ -99,7 +99,7 @@ tasks: # each question can be seen as a separate task
         value: "Betrokkenen en verantwoordelijkheden"
     type: "open_question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Security officer" ]
-    lifecycle: [ "Probleemanalyse", "Ontwerp", "Monitoring en beheer" ]
+    lifecycle: [ "Probleemanalyse", "Ontwerp", "Monitoren", "Beheer" ]
     links: [ { "text": "DPIA vraag 5" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -110,7 +110,7 @@ tasks: # each question can be seen as a separate task
         value: "Betrokkenen en verantwoordelijkheden"
     type: "open_question"
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Security officer" ]
-    lifecycle: [ "Probleemanalyse", "Monitoring en beheer" ]
+    lifecycle: [ "Probleemanalyse", "Monitoren", "Beheer" ]
     links: [ { "text": "DPIA vraag 5" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -132,7 +132,7 @@ tasks: # each question can be seen as a separate task
         value: "Databronnen en kwaliteit"
     type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Ontwerp", "Dataverkenning en datapreparatie" ]
+    lifecycle: [ "Ontwerp", "Dataverkenning en -preparatie" ]
     links: [ { "text": "DPIA vraag 2" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -143,7 +143,7 @@ tasks: # each question can be seen as a separate task
         value: "Databronnen en kwaliteit"
     type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en datapreparatie" ]
+    lifecycle: [ "Dataverkenning en -preparatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -154,7 +154,7 @@ tasks: # each question can be seen as a separate task
         value: "Bias/aannames in de data"
     type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
+    lifecycle: [ "Dataverkenning en -preparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -165,7 +165,7 @@ tasks: # each question can be seen as a separate task
         value: "Bias/aannames in de data"
     type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
+    lifecycle: [ "Dataverkenning en -preparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -176,7 +176,7 @@ tasks: # each question can be seen as a separate task
         value: "Beveiliging en archivering"
     type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
+    lifecycle: [ "Dataverkenning en -preparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 17" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -187,7 +187,7 @@ tasks: # each question can be seen as a separate task
         value: "Beveiliging en archivering"
     type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
+    lifecycle: [ "Dataverkenning en -preparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 17" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -198,7 +198,7 @@ tasks: # each question can be seen as a separate task
         value: "Beveiliging en archivering"
     type: "open_question"
     suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en datapreparatie" ]
+    lifecycle: [ "Dataverkenning en -preparatie" ]
     links: [ { "text": "DPIA vraag 10" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -253,7 +253,7 @@ tasks: # each question can be seen as a separate task
         value: "Eigenaarschap en controle"
     type: "open_question"
     suggested_roles: [ "Aanbieder", "Projectleider", "Jurist" ]
-    lifecycle: [ "Ontwerp", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Monitoren", "Beheer" ]
     links: [ { "text": "DPIA vraag 5" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -264,7 +264,7 @@ tasks: # each question can be seen as a separate task
         value: "Accuraatheid algoritme"
     type: "open_question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
-    lifecycle: [ "Verificatie en validatie" ]
+    lifecycle: [ "Verificatie", "Validatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -275,7 +275,7 @@ tasks: # each question can be seen as a separate task
         value: "Accuraatheid algoritme"
     type: "open_question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
-    lifecycle: [ "Verificatie en validatie" ]
+    lifecycle: [ "Verificatie", "Validatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -286,7 +286,7 @@ tasks: # each question can be seen as a separate task
         value: "Accuraatheid algoritme"
     type: "open_question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
-    lifecycle: [ "Verificatie en validatie", "Implementatie" ]
+    lifecycle: [ "Verificatie", "Validatie", "Implementatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -297,7 +297,7 @@ tasks: # each question can be seen as a separate task
         value: "Accuraatheid algoritme"
     type: "open_question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
-    lifecycle: [ "Ontwikkelen", "Verificatie en validatie" ]
+    lifecycle: [ "Ontwikkelen", "Verificatie", "Validatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -319,7 +319,7 @@ tasks: # each question can be seen as a separate task
         value: "Accuraatheid algoritme"
     type: "open_question"
     suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
-    lifecycle: [ "Verificatie en validatie" ]
+    lifecycle: [ "Verificatie", "Validatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -330,7 +330,7 @@ tasks: # each question can be seen as a separate task
         value: "Transparantie en uitlegbaarheid"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
-    lifecycle: [ "Ontwikkelen", "Verificatie en validatie" ]
+    lifecycle: [ "Ontwikkelen", "Verificatie", "Validatie" ]
     links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -341,7 +341,7 @@ tasks: # each question can be seen as a separate task
         value: "Transparantie en uitlegbaarheid"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Ontwikkelen", "Verificatie en validatie", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Ontwikkelen", "Verificatie", "Validatie", "Monitoren", "Beheer" ]
     links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -363,7 +363,7 @@ tasks: # each question can be seen as a separate task
         value: "Transparantie en uitlegbaarheid"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
-    lifecycle: [ "Ontwikkelen", "Verificatie en validatie" ]
+    lifecycle: [ "Ontwikkelen", "Verificatie", "Validatie" ]
     links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -374,7 +374,7 @@ tasks: # each question can be seen as a separate task
         value: "Beslissingen op basis van output algoritme"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Domeinspecialist", "Security officer", "Ethicus", "Jurist", "Aanbieder" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
@@ -384,8 +384,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "De rol van de mens in de beslissing"
     type: "open_question"
-    suggested_roles: [ "Projectleider, Data scientist, Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
@@ -395,8 +395,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "De rol van de mens in de beslissing"
     type: "open_question"
-    suggested_roles: [ "Projectleider, Data scientist, Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
@@ -407,7 +407,7 @@ tasks: # each question can be seen as a separate task
         value: "Effecten van het algoritme"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Aanbieder", "Gebruiker" ]
-    lifecycle: [ "Probleemanalyse", "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Probleemanalyse", "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ { "text": "DPIA vraag 16" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -451,7 +451,7 @@ tasks: # each question can be seen as a separate task
         value: "Procedures"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Jurist" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
@@ -462,7 +462,7 @@ tasks: # each question can be seen as a separate task
         value: "Procedures"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Jurist" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
@@ -473,7 +473,7 @@ tasks: # each question can be seen as a separate task
         value: "Procedures"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Jurist" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
@@ -484,7 +484,7 @@ tasks: # each question can be seen as a separate task
         value: "Context"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
@@ -495,7 +495,7 @@ tasks: # each question can be seen as a separate task
         value: "Context"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
@@ -506,7 +506,7 @@ tasks: # each question can be seen as a separate task
         value: "Context"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
@@ -517,7 +517,7 @@ tasks: # each question can be seen as a separate task
         value: "Communicatie"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -528,7 +528,7 @@ tasks: # each question can be seen as a separate task
         value: "Communicatie"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -539,7 +539,7 @@ tasks: # each question can be seen as a separate task
         value: "Communicatie"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
-    lifecycle: [ "Verificatie en validatie", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Verificatie", "Validatie", "Implementatie", "Monitoren", "Beheer" ]
     links: [ { "text": "DPIA vraag 15" } ]
     requirements: [ ]
     template: *systemcard_template
@@ -550,7 +550,7 @@ tasks: # each question can be seen as a separate task
         value: "Evaluatie, auditing en borging"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Data scientist" ]
-    lifecycle: [ "Verificatie en validatie", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Verificatie", "Validatie", "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
@@ -561,7 +561,7 @@ tasks: # each question can be seen as a separate task
         value: "Evaluatie, auditing en borging"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Data scientist" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
@@ -572,7 +572,7 @@ tasks: # each question can be seen as a separate task
         value: "Evaluatie, auditing en borging"
     type: "open_question"
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Data scientist" ]
-    lifecycle: [ "Implementatie", "Monitoring en beheer" ]
+    lifecycle: [ "Implementatie", "Monitoren", "Beheer" ]
     links: [ ]
     requirements: [ ]
     template: *systemcard_template
