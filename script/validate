@@ -8,11 +8,11 @@ import yaml
 from jsonschema import validate
 
 # Load the YAML file
-with open(sys.argv[2], 'r') as yaml_file:
+with open(sys.argv[2], "r") as yaml_file:
     data = yaml.safe_load(yaml_file)
 
 # Load the JSON schema
-with open(sys.argv[1], 'r') as schema_file:
+with open(sys.argv[1], "r") as schema_file:
     schema = json.load(schema_file)
 
 # Validate the data
