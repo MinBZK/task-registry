@@ -1,11 +1,11 @@
-systemcard_path: .assessments[]               # append iama.yaml to 'assessments' list in system card 
+systemcard_path: .assessments[]               # append iama.yaml to 'assessments' list in system card
 schema_version: 1.1.0
 
 instrument:
   name: "Impact Assessment Mensenrechten en Algoritmes (IAMA)"
   description: "Het IAMA helpt om de risico's voor mensenrechten bij het gebruik van algoritmen in kaart te brengen en maatregelen te nemen om deze aan te pakken."
   urn: "urn:nl:aivt:ir:1.0"
-  language: "Nederlands"
+  language: "nl"
   owners:
     - organization: ""
       name: ""
