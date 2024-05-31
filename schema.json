@@ -59,6 +59,12 @@
         },
         "url": {
           "type": "string"
+        },
+        "model_required": {
+          "type": "boolean"
+        },
+        "dataset_required": {
+          "type": "boolean"
         }
       },
       "required": [
