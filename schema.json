@@ -108,7 +108,9 @@
             "type": "string",
             "enum": [
               "open_question",
-              "closed_question"
+              "closed_question",
+              "form_filling",
+              "upload_document"
             ]
           },
           "suggested_roles": {
