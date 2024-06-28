@@ -22,7 +22,7 @@
         },
         "urn": {
           "type": "string",
-          "pattern": "^urn:nl:aivt:ir:[0-9]+\\.[0-9]+"
+          "pattern": "^urn:nl:aivt:ir:[a-z]+:[0-9]+\\.[0-9]+"
         },
         "language": {
           "type": "string",
@@ -82,7 +82,7 @@
           "urn": {
             "description": "A unique identifier for the question",
             "type": "string",
-            "pattern": "^urn:nl:aivt:ir:[0-9]+\\.[0-9]+:[0-9A-Z\\.]+$"
+            "pattern": "^urn:nl:aivt:ir:[a-z]+:[0-9]+\\.[0-9]+:[0-9A-Za-z\\.]+$"
           },
           "labels": {
             "description": "Labels to specify the question",
@@ -105,11 +105,16 @@
           },
           "type": {
             "description": "Question type",
-            "type": "string",
-            "enum": [
-              "open_question",
-              "closed_question"
-            ]
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "open_question",
+                "closed_question",
+                "sign_task",
+                "upload_document"
+              ]
+            }
           },
           "suggested_roles": {
             "description": "Roles suggested to answer question",
@@ -169,12 +174,22 @@
                 },
                 "urn": {
                   "type": "string"
+                },
+                "systemcard_path": {
+                  "type": "string"
+                },
+                "version": {
+                  "type": "string"
                 }
               }
             }
           },
-          "requirements": {
-            "description": "Specific requirements for this question",
+          "required": {
+            "description": "Whether the task is required to be done",
+            "type": "boolean"
+          },
+          "depends_on": {
+            "description": "Specific tasks that are required to be completed before this current task",
             "type": "array",
             "items": {
               "type": "object",
@@ -230,7 +245,6 @@
           "suggested_roles",
           "lifecycle",
           "links",
-          "requirements",
           "template"
         ]
       }
