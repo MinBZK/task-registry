@@ -7,17 +7,19 @@ import jsonschema
 import yaml
 from jsonschema import validate
 
-# Load the YAML file
-with open(sys.argv[2], "r") as yaml_file:
-    data = yaml.safe_load(yaml_file)
-
 # Load the JSON schema
 with open(sys.argv[1], "r") as schema_file:
     schema = json.load(schema_file)
 
-# Validate the data
-try:
-    validate(instance=data, schema=schema)
-    print("Validation successful.")
-except jsonschema.exceptions.ValidationError as err:
-    print("Validation error:", err.message)
+for f in sys.argv[2:]:
+    # Load the YAML file
+    with open(f, "r") as yaml_file:
+        data = yaml.safe_load(yaml_file)
+
+    # Validate the data
+    try:
+        validate(instance=data, schema=schema)
+        print(f"Validation of '{f}' successful.")
+    except jsonschema.exceptions.ValidationError as err:
+        print(f"Validation error in '{f}': {err.message}")
+        sys.exit(1)

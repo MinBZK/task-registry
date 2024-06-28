@@ -18,6 +18,15 @@ repos:
     hooks:
       - id: ruff
       - id: ruff-format
+  - repo: local
+    hooks:
+    -   id: validate-schema
+        name: validate schema
+        entry: ./script/validate schema.json
+        language: python
+        additional_dependencies: [jsonschema, pyyaml]
+        files: ^instruments/
+
 
 ci:
   autofix_prs: false
