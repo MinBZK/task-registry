@@ -22,11 +22,11 @@ repos:
     hooks:
     -   id: validate-schema
         name: validate schema
-        entry: ./script/validate schema.json
+        entry: sh -c './script/validate schema.json ./instruments/*.yaml'
         language: python
         additional_dependencies: [jsonschema, pyyaml]
-        files: ^instruments/
-
+        pass_filenames: false
+        always_run: true
 
 ci:
   autofix_prs: false
