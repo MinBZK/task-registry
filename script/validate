@@ -2,19 +2,40 @@
 
 import json
 import sys
+from collections import Counter
 
 import jsonschema
 import yaml
 from jsonschema import validate
 
+
+def extract_urns(data, urns=None):
+    if urns is None:
+        urns = []
+
+    if isinstance(data, dict):
+        for key, value in data.items():
+            if key == "urn":
+                urns.append(value)
+            else:
+                extract_urns(value, urns)
+    elif isinstance(data, list):
+        for item in data:
+            extract_urns(item, urns)
+
+    return urns
+
+
 # Load the JSON schema
 with open(sys.argv[1], "r") as schema_file:
     schema = json.load(schema_file)
 
+urns = []
 for f in sys.argv[2:]:
     # Load the YAML file
     with open(f, "r") as yaml_file:
         data = yaml.safe_load(yaml_file)
+    urns.extend(extract_urns(data))
 
     # Validate the data
     try:
@@ -23,3 +44,8 @@ for f in sys.argv[2:]:
     except jsonschema.exceptions.ValidationError as err:
         print(f"Validation error in '{f}': {err.message}")
         sys.exit(1)
+
+duplicates = [u for (u, c) in Counter(urns).most_common() if c > 1]
+if duplicates:
+    print(f"URNs are not unique: {duplicates}")
+    sys.exit(1)
