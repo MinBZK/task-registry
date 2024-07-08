@@ -1,0 +1,32 @@
+{
+    "type": "dir",
+    "size": 0,
+    "name": "instruments",
+    "path": "instruments",
+    "download_url": "https://minbzk.github.io/instrument-registry/index.json",
+    "_links": {
+        "self": "https://minbzk.github.io/instrument-registry/index.json"
+    },
+    "entries": [
+        {
+            "type": "file",
+            "size": 14127,
+            "name": "technical_docs_for_high_risk_ai.yaml",
+            "path": "instruments/technical_docs_for_high_risk_ai.yaml",
+            "download_url": "https://minbzk.github.io/instrument-registry/instruments/technical_docs_for_high_risk_ai.yaml",
+            "_links": {
+                "self": "https://minbzk.github.io/instrument-registry/instruments/technical_docs_for_high_risk_ai.yaml"
+            }
+        },
+        {
+            "type": "file",
+            "size": 30319,
+            "name": "iama.yaml",
+            "path": "instruments/iama.yaml",
+            "download_url": "https://minbzk.github.io/instrument-registry/instruments/iama.yaml",
+            "_links": {
+                "self": "https://minbzk.github.io/instrument-registry/instruments/iama.yaml"
+            }
+        }
+    ]
+}
