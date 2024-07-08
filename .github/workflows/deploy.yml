@@ -25,6 +25,8 @@ jobs:
 
     - name: Commit to deployment branch
       run: |
+        git fetch
+        git checkout --orphan deployment
         git add index.json
         git commit -m 'Auto-generate index.json'
         git push --force origin deployment
