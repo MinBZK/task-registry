@@ -1,0 +1,35 @@
+name: Generate and Deploy Index
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'
+
+    - name: Generate index.json
+      run: ./script/deploy
+
+    - name: Checkout deployment branch
+      run: |
+        git fetch
+        git checkout --orphan deployment
+        git reset --hard
+        git clean -fdx
+        git checkout main -- index.json
+        git add index.json
+        git commit -m 'Auto-generate index.json'
+        git push --force origin deployment
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
