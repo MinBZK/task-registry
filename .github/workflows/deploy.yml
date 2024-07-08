@@ -15,6 +15,11 @@ jobs:
       with:
         python-version: '3.12'
 
+    - name: Configure Git Identity
+      run: |
+        git config user.email "actions@github.com"
+        git config user.name "GitHub Actions"
+
     - name: Generate index.json
       run: ./script/deploy
 
