@@ -24,7 +24,6 @@ jobs:
         git checkout --orphan deployment
         git reset --hard
         git clean -fdx
-        git checkout main -- index.json
         git add index.json
         git commit -m 'Auto-generate index.json'
         git push --force origin deployment
