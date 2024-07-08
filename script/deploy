@@ -47,3 +47,4 @@ DIRECTORY = "instruments"
 OUTPUT_FILE = "index.json"
 
 generate_index(DIRECTORY, OUTPUT_FILE, BASE_URL)
+print(f"Generated {OUTPUT_FILE}")
