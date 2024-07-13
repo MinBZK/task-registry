@@ -60,178 +60,380 @@
     "tasks": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "question": {
-            "type": "string"
-          },
-          "urn": {
-            "description": "A unique identifier for the question",
-            "type": "string",
-            "pattern": "^urn:nl:aivt:ir:[a-z]+:[0-9]+\\.[0-9]+:[0-9A-Za-z\\.]+$"
-          },
-          "labels": {
-            "description": "Labels to specify the question",
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "key": {
-                  "type": "string"
-                },
-                "value": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "key",
-                "value"
-              ]
-            }
-          },
-          "type": {
-            "description": "Question type",
-            "type": "array",
-            "items": {
-              "type": "string",
-              "enum": [
-                "open_question",
-                "closed_question",
-                "sign_task",
-                "upload_document"
-              ]
-            }
-          },
-          "suggested_roles": {
-            "description": "Roles suggested to answer question",
-            "type": "array",
-            "items": {
-              "type": "string",
-              "enum": [
-                "Aanbestedingsjurist",
-                "Aanbieder",
-                "Archiefdeskundige",
-                "Behoeftesteller",
-                "Communicatieadviseur",
-                "Contractbeheerder",
-                "Data engineer",
-                "Data scientist",
-                "Domeinspecialist",
-                "Ethicus",
-                "Gebruiker",
-                "Gemandateerd verantwoordelijke(n)",
-                "Informatiebeheerder",
-                "Inkoopadviseur",
-                "Jurist",
-                "Privacy-officer",
-                "Proceseigenaar",
-                "Projectleider",
-                "Security officer"
-              ]
-            }
-          },
-          "lifecycle": {
-            "description": "Part of the algorithm lifecycle to which this question refers",
-            "type": "array",
-            "items": {
-              "type": "string",
-              "enum": [
-                "Probleemanalyse",
-                "Ontwerp",
-                "Dataverkenning en -preparatie",
-                "Ontwikkelen",
-                "Validatie",
-                "Implementatie",
-                "Monitoren",
-                "Beheer",
-                "Archiveren",
-                "Verificatie"
-              ]
-            }
-          },
-          "links": {
-            "description": "Links to other relevant measures / tasks",
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "text": {
-                  "type": "string"
-                },
-                "urn": {
-                  "type": "string"
-                },
-                "systemcard_path": {
-                  "type": "string"
-                },
-                "version": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "required": {
-            "description": "Whether the task is required to be done",
-            "type": "boolean"
-          },
-          "depends_on": {
-            "description": "Specific tasks that are required to be completed before this current task",
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "text": {
-                  "type": "string"
-                },
-                "urn": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "template": {
+        "oneOf": [
+          {
             "type": "object",
-            "additionalProperties": {
-              "type": "string",
-              "pattern": "^\\$.*$"
-            },
             "properties": {
-              "authors": {
+              "question": {
+                "description": "Task type question",
+                "type": "string"
+              },
+              "urn": {
+                "description": "A unique identifier for thequestion",
+                "type": "string",
+                "pattern": "^urn:nl:aivt:ir:[a-z]+:[a-z]+:[0-9]+\\.[0-9]+:[0-9A-Za-z\\.]+$"
+              },
+              "labels": {
+                "description": "Labels to specify the question",
                 "type": "array",
                 "items": {
                   "type": "object",
                   "properties": {
-                    "name": {
-                      "type": "string",
-                      "const": "$AUTHOR.NAME"
+                    "key": {
+                      "type": "string"
                     },
-                    "email": {
-                      "type": "string",
-                      "const": "$AUTHOR.EMAIL"
-                    },
-                    "role": {
-                      "type": "string",
-                      "const": "$AUTHOR.ROLE"
+                    "value": {
+                      "type": "string"
                     }
                   },
                   "required": [
-                    "name",
-                    "email",
-                    "role"
+                    "key",
+                    "value"
                   ]
                 }
+              },
+              "type": {
+                "description": "Question type",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "open_question",
+                    "closed_question",
+                    "upload_document",
+                    "statement"
+                  ]
+                }
+              },
+              "suggested_roles": {
+                "description": "Roles suggested to answer question",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "Aanbestedingsjurist",
+                    "Aanbieder",
+                    "Archiefdeskundige",
+                    "Behoeftesteller",
+                    "Communicatieadviseur",
+                    "Contractbeheerder",
+                    "Data engineer",
+                    "Data scientist",
+                    "Domeinspecialist",
+                    "Ethicus",
+                    "Gebruiker",
+                    "Gemandateerd verantwoordelijke(n)",
+                    "Informatiebeheerder",
+                    "Inkoopadviseur",
+                    "Jurist",
+                    "Privacy-officer",
+                    "Proceseigenaar",
+                    "Projectleider",
+                    "Security officer"
+                  ]
+                }
+              },
+              "lifecycle": {
+                "description": "Part of the algorithm lifecycle to which this question refers",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "Probleemanalyse",
+                    "Ontwerp",
+                    "Dataverkenning en -preparatie",
+                    "Ontwikkelen",
+                    "Validatie",
+                    "Implementatie",
+                    "Monitoren",
+                    "Beheer",
+                    "Archiveren",
+                    "Verificatie"
+                  ]
+                }
+              },
+              "links": {
+                "description": "Links to other relevant measures / tasks",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "urn": {
+                      "type": "string"
+                    },
+                    "systemcard_path": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "required": {
+                "description": "Whether the task is required to be done",
+                "type": "boolean"
+              },
+              "depends_on": {
+                "description": "Specific tasks that are required to be completed before this current task",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "urn": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "template": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string",
+                  "pattern": "^\\$.*$"
+                },
+                "properties": {
+                  "authors": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "const": "$AUTHOR.NAME"
+                        },
+                        "email": {
+                          "type": "string",
+                          "const": "$AUTHOR.EMAIL"
+                        },
+                        "role": {
+                          "type": "string",
+                          "const": "$AUTHOR.ROLE"
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "email",
+                        "role"
+                      ]
+                    }
+                  }
+                }
               }
-            }
+            },
+            "required": [
+              "urn",
+              "labels",
+              "type",
+              "suggested_roles",
+              "lifecycle",
+              "links",
+              "template"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "signing_task": {
+                "description": "What does the user need to sign",
+                "type": "string"
+              },
+              "urn": {
+                "description": "A unique identifier for the task",
+                "type": "string",
+                "pattern": "^urn:nl:aivt:ir:[a-z]+:[a-z]+:[0-9]+\\.[0-9]+:[0-9A-Za-z.]+$"
+              },
+              "labels": {
+                "description": "Labels to specify the task",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "value"
+                  ]
+                }
+              },
+              "required_roles": {
+                "description": "Roles required to sign the task",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "Aanbestedingsjurist",
+                    "Aanbieder",
+                    "Archiefdeskundige",
+                    "Behoeftesteller",
+                    "Communicatieadviseur",
+                    "Contractbeheerder",
+                    "Data engineer",
+                    "Data scientist",
+                    "Domeinspecialist",
+                    "Ethicus",
+                    "Gebruiker",
+                    "Gemandateerd verantwoordelijke(n)",
+                    "Informatiebeheerder",
+                    "Inkoopadviseur",
+                    "Jurist",
+                    "Privacy-officer",
+                    "Proceseigenaar",
+                    "Projectleider",
+                    "Security officer"
+                  ]
+                }
+              },
+              "lifecycle": {
+                "description": "Part of the algorithm lifecycle to which this task refers",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "Probleemanalyse",
+                    "Ontwerp",
+                    "Dataverkenning en -preparatie",
+                    "Ontwikkelen",
+                    "Validatie",
+                    "Implementatie",
+                    "Monitoren",
+                    "Beheer",
+                    "Archiveren",
+                    "Verificatie"
+                  ]
+                }
+              },
+              "links": {
+                "description": "Links to other relevant measures/tasks",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "urn": {
+                      "type": "string"
+                    },
+                    "systemcard_path": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "depends_on": {
+                "description": "Specific tasks that are required to be completed before this current task",
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "urn": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "encryption": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "algorithm": {
+                      "description": "Encryption algorithm",
+                      "type": "string"
+                    },
+                    "public_key": {
+                      "description": "Public Key of the user",
+                      "type": "string"
+                    },
+                    "passphrase_required": {
+                      "description": "Whether a passphrase is required",
+                      "type": "boolean"
+                    },
+                    "signature_path": {
+                      "description": "Where the signature is stored",
+                      "type": "string"
+                    },
+                    "expiration_date": {
+                      "description": "Untill when is the signature valid",
+                      "type": "string",
+                      "format": "date"
+                    }
+                  },
+                  "required": [
+                    "algorithm",
+                    "public_key",
+                    "passphrase_required",
+                    "signature_path",
+                    "expiration_date"
+                  ]
+                }
+              },
+              "template": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string",
+                  "pattern": "^\\$.*$"
+                },
+                "properties": {
+                  "authors": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "const": "$AUTHOR.NAME"
+                        },
+                        "email": {
+                          "type": "string",
+                          "const": "$AUTHOR.EMAIL"
+                        },
+                        "role": {
+                          "type": "string",
+                          "const": "$AUTHOR.ROLE"
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "email",
+                        "role"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "required": [
+              "signing_task",
+              "urn",
+              "labels",
+              "required_roles",
+              "lifecycle",
+              "links",
+              "depends_on",
+              "encryption",
+              "template"
+            ]
           }
-        },
-        "required": [
-          "urn",
-          "labels",
-          "type",
-          "suggested_roles",
-          "lifecycle",
-          "links",
-          "template"
         ]
       }
     }
