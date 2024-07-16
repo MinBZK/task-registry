@@ -11,65 +11,51 @@
       "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
       "const": "1.1.0"
     },
-    "instrument": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "urn": {
-          "type": "string",
-          "pattern": "^urn:nl:aivt:ir:[a-z]+:[0-9]+\\.[0-9]+"
-        },
-        "language": {
-          "type": "string",
-          "pattern": "^[a-z]{2}(-[A-Z]{2})?$"
-        },
-        "owners": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "organization": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "email": {
-                "type": "string"
-              },
-              "role": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "organization",
-              "name",
-              "email",
-              "role"
-            ]
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "urn": {
+      "type": "string",
+      "pattern": "^urn:nl:aivt:ir:[a-z]+:[0-9]+\\.[0-9]+"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2}(-[A-Z]{2})?$"
+    },
+    "owners": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "organization": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
           }
         },
-        "date": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "name",
-        "description",
-        "urn",
-        "language",
-        "owners",
-        "date",
-        "url"
-      ]
+        "required": [
+          "organization",
+          "name",
+          "email",
+          "role"
+        ]
+      }
+    },
+    "date": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
     },
     "tasks": {
       "type": "array",
@@ -253,7 +239,13 @@
   "required": [
     "systemcard_path",
     "schema_version",
-    "instrument",
+    "name",
+    "description",
+    "urn",
+    "language",
+    "owners",
+    "date",
+    "url",
     "tasks"
   ]
 }
