@@ -33,7 +33,7 @@ tasks:
     type: [ "open_question" ]
     suggested_roles: [ ]
     lifecycle: [ ]
-    links: [ { "text": "DPIA vraag 4" }, { "urn": "urn:nl:aivt:ir:1.0:1.2.1" }, { "systemcard_path": ".goal_and_impact", "version": ">0.1a1" } ]     #TO DO: find a way to link to specific system card fields
+    links: [ { "text": "DPIA vraag 4" }, { "urn": "urn:nl:aivt:ir:1.0:1.2.1" }, { "systemcard_path": ".goal_and_impact", "version": ">0.1a1" } ]
     template: *assessmentcard_template
   - question: "Wat is de naam van de aanbieder van het AI-systeem?"
     urn: "urn:nl:aivt:ir:td:1.0:1.a.2"
@@ -115,6 +115,8 @@ tasks:
     lifecycle: [ ]
     links: [ ]
     template: *assessmentcard_template
+
+
 
   # Gedetailleerde beschrijving
   - question: "Beschrijf de uitgevoerde methoden en stappen voor de ontwikkeling van het AI-systeem (inclusief door derden geleverde vooraf getrainde systemen of hulpmiddelen)."
@@ -303,10 +305,10 @@ tasks:
     labels:
       - key: topic
         value: "EU-conformiteitsverklaring"
-    type: [ "statement" ]
-    suggested_roles: [ "Projectleider", "Aanbieder" ]
-    lifecycle: [ 'Validatie' ]
-    links: [ { "text": "EU-conformiteitsverklaring" }, { "urn": "urn:nl:aivt:ir:ca:1.0:1.0" }]
+    type: [ "sign_task", "upload_document" ]
+    suggested_roles: [ ]
+    lifecycle: [ ]
+    links: [ ]
     template: *assessmentcard_template
 
   - question: "Beschrijf het plan voor evaluatie en monitoring nadat het AI systeem in gebruik is genomen (raadpleeg hiervoor artikel 72, lid 3 van de AI Verordening)."
