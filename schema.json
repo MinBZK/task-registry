@@ -175,8 +175,8 @@
               }
             }
           },
-          "required": {
-            "description": "Whether the task is required to be done",
+          "required_status": {
+            "description": "Whether the task is required (Yes) or optional (No)",
             "type": "boolean"
           },
           "depends_on": {
