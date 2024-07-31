@@ -1,0 +1,293 @@
+systemcard_path: .assessments[]
+schema_version: 1.1.0
+name: "AI Impact Assessment (AIIA)"
+description: "Het AI Impact Assessment (AIIA) is een hulpmiddel voor het maken van afwegingen bij het inzetten van kunstmatige intelligentie (artificial intelligence, AI) in een project. Het AIIA dient als instrument voor het gesprek en het vastleggen van het denkproces zodat onder andere de verantwoording, kwaliteit en reproduceerbaarheid worden vergroot."
+urn: "urn:nl:aivt:ir:aiia:1.0"
+language: "nl"
+owners:
+  - organization: "Ministerie van Infrastructuur en Waterstaat"
+    name: ""
+    email: ""
+    role: ""
+date: ""
+url: "https://www.rijksoverheid.nl/documenten/rapporten/2022/11/30/ai-impact-assessment-ministerie-van-infrastructuur-en-waterstaat"
+
+
+template: &assessmentcard_template                  # anchor for all fields belonging to answer
+  question: "$QUESTION"
+  answer: "$ANSWER"
+  remarks: "$REMARKS"
+  timestamp: "$TIMESTAMP"
+  authors:
+    - name: "$AUTHOR.NAME"
+      email: "$AUTHOR.EMAIL"
+      role: "$AUTHOR.ROLE"
+
+tasks: # each question can be seen as a separate task
+#Chapter 1: Inleidende vragen
+  - question: "Geef een korte beschrijving van het beoogde AI-systeem (titel, algemene omschrijving, probleemstelling, en het domein)"
+    urn: "urn:nl:aivt:ir:aiia:1.0:1.1"
+    labels:
+      - key: topic
+        value: "Doel van het systeem"
+    type: [ "open_question" ]
+    suggested_roles: ["Opdrachtgever", "Projectleider"] #suggested roles 'Annex: Wie doet Wat' in AIIA are coupled to roles that are described in the Algoritmekader
+    lifecycle: ["Probleemanalyse"]            # one or more lifecycle stages as described in Algoritmekader: https://minbzk.github.io/Algoritmekader/levenscyclus/
+    links: [ { } ]       # optional: list with links to other tasks / instruments (for example: is this question also asked in the DPIA?)
+    template: *assessmentcard_template
+  - question: "Waarom is er voor de huidige techniek gekozen? (hierbij is het van belang dat alle afwegingen van robuustheid tot mensenrechten, impact op gebruiker en eindgebruiker, verantwoordingsplicht etc. zijn meegenomen in het antwoord)"
+    urn: "urn:nl:aivt:ir:aiia:1.0:1.2"
+    labels:
+      - key: topic
+        value: "Doel van het systeem"
+    type: [ "open_question" ]
+    suggested_roles: ["Opdrachtgever", "Projectleider"]
+    lifecycle: ["Probleemanalyse" , "Ontwerp"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Wat is het doel en beoogde resultaat van het AI-systeem?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:1.3"
+    labels:
+      - key: topic
+        value: "Doel van het systeem"
+    type: [ "open_question" ]
+    suggested_roles: ["Opdrachtgever", "Projectleider"]
+    lifecycle: [ "Probleemanalyse" ]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Welk doel wordt er aan het AI-systeem gekoppeld volgens het rapport Aandacht voor Algoritmes van de Algemene Rekenkamer? Doel 1, Doel 2 of Doel 3?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:1.4"
+    labels:
+      - key: topic
+        value: "Doel van het systeem"
+    type: [ "open_question" ]
+    suggested_roles: ["Opdrachtgever", "Projectleider"]
+    lifecycle: [ "Probleemanalyse" ]
+    links: [ {"url": "https://www.rekenkamer.nl/publicaties/rapporten/2021/01/26/aandacht-voor-algoritmes"} ]
+    template: *assessmentcard_template
+  - question: "Waar in de organisatie is beoogd het AI-systeem te gebruiken en welke beoogde impact is er voor de organisatie?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:1.5"
+    labels:
+      - key: topic
+        value: "Rol binnen de organisatie"
+    type: [ "open_question" ]
+    suggested_roles: ["Opdrachtgever", "Projectleider"]
+    lifecycle: ["Probleemanalyse" ]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Beschrijf de rolverdeling binnen het opzetten van het AI-systeem (zoals de ontwikkelaar, opdrachtgever, projectleider, beheerorganisaties en eindverantwoordelijke)."
+    urn: "urn:nl:aivt:ir:aiia:1.0:1.6"
+    labels:
+      - key: topic
+        value: "Rol binnen de organisatie"
+    type: [ "open_question" ]
+    suggested_roles: ["Opdrachtgever", "Projectleider"]
+    lifecycle: [ "Probleemanalyse" ]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Wie is de gebruiker van het AI-systeem, wie zijn de eindgebruikers die met het systeem werken en welke betrokkenen ondervinden impact van het AI-systeem?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:1.7"
+    labels:
+      - key: topic
+        value: "Rol binnen de organisatie"
+    type: [ "open_question" ]
+    suggested_roles: ["Opdrachtgever", "Projectleider"]
+    lifecycle: [ "Probleemanalyse" ]
+    links: [ { } ]
+    template: *assessmentcard_template
+#Chapter 2: Fundamentele rechten en fairness
+  - question: "Wat is de mogelijke impact op de grondrechten van burgers door het gebruik van het AI-systeem?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:2.1"
+    labels:
+      - key: topic
+        value: "Grondrechten"
+    type: [ "open_question" ]
+    suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Probleemanalyse"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Is het proportioneel en subsidiair om dit systeem in te zetten om de gestelde doelen te realiseren? Oftewel: is de impact in verhouding met de beoogde doelen en zijn er geen andere minder ingrijpende manieren om deze doelen te behalen?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:2.2"
+    labels:
+      - key: topic
+        value: "Grondrechten"
+    type: [ "open_question" ]
+    suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Probleemanalyse"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Wat is de wettelijke grondslag van de inzet van het AI-systeem en van de beoogde besluiten die genomen worden op basis van het AI-systeem?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:2.3"
+    labels:
+      - key: topic
+        value: "Grondrechten"
+    type: [ "open_question" ]
+    suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Probleenanalyse"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Hoe wordt rekening gehouden met mogelijk onwenselijke bias in de input, bias in het model en bias in de output van het AI-systeem?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:2.4"
+    labels:
+      - key: topic
+        value: "Bias"
+    type: [ "open_question" ]
+    suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Ontwerp"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Zijn alle stakeholders in kaart gebracht middels een stakeholderanalyse en is met hen het gesprek aangegaan?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:2.5"
+    labels:
+      - key: topic
+        value: "Stakeholderparticipatie"
+    type: [ "open_question" ]
+    suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
+    lifecycle: [ "Probleemanalyse", "Ontwerp"]
+    links: [ { } ]
+    template: *assessmentcard_template
+#Chapter 3: Technische robuustheid
+  - question: "Hoe wordt de doorlopende accuraatheid van het systeem gemeten en gewaarborgd?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:3.1"
+    labels:
+      - key: topic
+        value: "Accuraatheid"
+    type: [ "open_question" ]
+    suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Ontwikkelen", "Verificatie en validatie", "Monitoring en beheer"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Is het AI-systeem betrouwbaar?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:3.2"
+    labels:
+      - key: topic
+        value: "Betrouwbaarheid"
+    type: [ "open_question" ]
+    suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Verificatie en validatie"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Hoe is het AI systeem technisch geïmplementeerd?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:3.3"
+    labels:
+      - key: topic
+        value: "Technische implementatie"
+    type: [ "open_question" ]
+    suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Ontwerp", "Ontwikkelen"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Is het AI-systeem reproduceerbaar? Is er een proces ingesteld om dit te meten?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:3.4"
+    labels:
+      - key: topic
+        value: "Technische implementatie"
+    type: [ "open_question" ]
+    suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Dataverkenning en datapreparatie", "Ontwikkelen", "Verificatie en validatie"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Is het AI-systeem voldoende uitlegbaar en te interpreteren voor de ontwikkelaars?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:3.5"
+    labels:
+      - key: topic
+        value: "Uitlegbaarheid"
+    type: [ "open_question" ]
+    suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Ontwikkelen", "Verificatie en validatie"]
+    links: [ { } ]
+    template: *assessmentcard_template
+#Chapter 4: Data governance
+  - question: "Hoe wordt de kwaliteit van de data gewaarborgd?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:4.1"
+    labels:
+      - key: topic
+        value: "Kwaliteit en integriteit van data"
+    type: [ "open_question" ]
+    suggested_roles: ["Data scientist", "Domeinspecialist", "Privacy-officer", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Dataverkenning en datapreparatie", "Monitoring en beheer"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Hoe wordt er omgegaan met persoonsgegevens of vertrouwelijke gegevens? (Denk aan de DPIA)"
+    urn: "urn:nl:aivt:ir:aiia:1.0:4.2"
+    labels:
+      - key: topic
+        value: "Privacy en gegevensbescherming"
+    type: [ "open_question" ]
+    suggested_roles: ["Data scientist", "Domeinspecialist", "Privacy-officer", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Ontwikkelen", "Dataverkenning en datapreparatie"]
+    links: [ { } ]
+    template: *assessmentcard_template
+#Chapter 5: Risicobeheer
+  - question: "Hoe is het AI-systeem getest op de passende risicobeheersmaatregelen?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:5.1"
+    labels:
+      - key: topic
+        value: "Risicobeheersing"
+    type: [ "open_question" ]
+    suggested_roles: ["Security officer", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Ontwerp", "Ontwikkelen", "Verificatie en validatie", "Implementatie", "Monitoring en beheer"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Wat is het plan als er problemen met de werking van het AI-systeem zijn?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:5.2"
+    labels:
+      - key: topic
+        value: "Alternatieve werkwijze"
+    type: [ "open_question" ]
+    suggested_roles: ["Security officer", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Implementatie", Monitoring en beheer", "Uitfaseren"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Op welke manier worden informatiebeveiligingsrisico’s inzichtelijk gemaakt, teruggebracht naar een acceptabel niveau en (technisch) getest?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:5.3"
+    labels:
+      - key: topic
+        value: "Hackaanvallen en corruptie"
+    type: [ "open_question" ]
+    suggested_roles: ["Security officer", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Ontwikkelen", "Implementatie", "Monitoring en beheer"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  #Chapter 6: Verantwoordingsplicht
+  - question: "Ben je transparant richting betrokkenen en eindgebruikers over de beperkingen en werking van het AI-systeem? En blijven deze voldoende onder de aandacht zolang ze bestaan?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:6.1"
+    labels:
+      - key: topic
+        value: "Communicatie"
+    type: [ "open_question" ]
+    suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Implementatie", "Monitoring en beheer"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Worden er mechanismes ingesteld waarin eindgebruikers opmerkingen over het systeem (data, techniek, doelgroep, etc.) kunnen maken? En hoe of wanneer worde deze meldingen gewaarborgd (geanalyseerd en gevolgd)?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:6.2"
+    labels:
+      - key: topic
+        value: "Communicatie"
+    type: [ "open_question" ]
+    suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Implementatie", "Monitoring en beheer"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Hoe wordt het ai-systeem gecontroleerd?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:6.3"
+    labels:
+      - key: topic
+        value: "Controleerbaarheid"
+    type: [ "open_question" ]
+    suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Monitoring en beheer"]
+    links: [ { } ]
+    template: *assessmentcard_template
+  - question: "Hoe is menselijke controle en toezicht gewaarborgd?"
+    urn: "urn:nl:aivt:ir:aiia:1.0:6.4"
+    labels:
+      - key: topic
+        value: "Controleerbaarheid"
+    type: [ "open_question" ]
+    suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
+    lifecycle: ["Monitoring en beheer"]
+    links: [ { } ]
+    template: *assessmentcard_template
+#TO do: niet-verplichte vragen toevoegen, lifecycles checken per vraag

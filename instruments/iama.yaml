@@ -30,7 +30,7 @@ tasks: # each question can be seen as a separate task
         value: "Aanleiding en probleemdefinitie"
     type: [ "open_question" ]
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Domeinspecialist", "Gebruiker" ] #suggested roles in IAMA are coupled to roles that are described in the Algoritmekader
-    lifecycle: [ "Probleemanalyse" ]            # one or more out of 8 options from AK lifecycle: https://minbzk.github.io/Algoritmekader/levenscyclus/
+    lifecycle: [ "Probleemanalyse" ]            # one or more lifecycle stages as described in Algoritmekader: https://minbzk.github.io/Algoritmekader/levenscyclus/
     links: [ { "text": "DPIA vraag 1" } ]       # optional: list with links to other tasks / instruments (for example: is this question also asked in the DPIA?)
     template: *assessmentcard_template
   - question: "Wat is het doel dat bereikt dient te worden met de inzet van het algoritme? Wat is hierbij het hoofddoel en wat zijn subdoelen?"
@@ -90,7 +90,7 @@ tasks: # each question can be seen as a separate task
         value: "Betrokkenen en verantwoordelijkheden"
     type: [ "open_question" ]
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Security officer" ]
-    lifecycle: [ "Probleemanalyse", "Ontwerp", "Monitoren", "Beheer" ]
+    lifecycle: [ "Probleemanalyse", "Ontwerp", "Monitoring en beheer"]
     links: [ { "text": "DPIA vraag 5" } ]
     template: *assessmentcard_template
   - question: "Wie is eindverantwoordelijk voor het algoritme?"
@@ -100,7 +100,7 @@ tasks: # each question can be seen as a separate task
         value: "Betrokkenen en verantwoordelijkheden"
     type: [ "open_question" ]
     suggested_roles: [ "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Projectleider", "Security officer" ]
-    lifecycle: [ "Probleemanalyse", "Monitoren", "Beheer" ]
+    lifecycle: [ "Probleemanalyse", "Monitoring en beheer"]
     links: [ { "text": "DPIA vraag 5" } ]
     template: *assessmentcard_template
   - question: "Wat voor type algoritme wordt gebruikt, of wat voor type algoritme gaat ontwikkeld worden?"
@@ -109,7 +109,7 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Inschatting: type algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer", "Projectleider" ]
+    suggested_roles: [ "Opdrachtgever", "Data scientist", "Data engineer", "Projectleider" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 8" } ]
     template: *assessmentcard_template
@@ -119,8 +119,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Databronnen en kwaliteit"
     type: [ "open_question" ]
-    suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Ontwerp", "Dataverkenning en -preparatie" ]
+    suggested_roles: [ "Opdrachtgever", "Data scientist", "Data engineer" ]
+    lifecycle: [ "Ontwerp", "Dataverkenning en datapreparatie" ]
     links: [ { "text": "DPIA vraag 2" } ]
     template: *assessmentcard_template
   - question: "Is de kwaliteit en betrouwbaarheid van de data voldoende voor de beoogde datatoepassing? Leg uit."
@@ -129,8 +129,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Databronnen en kwaliteit"
     type: [ "open_question" ]
-    suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en -preparatie" ]
+    suggested_roles: [ "Opdrachtgever", "Data scientist", "Data engineer" ]
+    lifecycle: [ "Dataverkenning en datapreparatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
     template: *assessmentcard_template
   - question: "Welke aannames en bias liggen in de data besloten en hoe wordt de invloed daarvan op de output van het algoritme gecorrigeerd of anderszins ondervangen of gemitigeerd?"
@@ -139,8 +139,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Bias/aannames in de data"
     type: [ "open_question" ]
-    suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en -preparatie", "Ontwikkelen" ]
+    suggested_roles: [ "Opdrachtgever", "Data scientist", "Data engineer" ]
+    lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 16" } ]
     template: *assessmentcard_template
   - question: "Indien gebruik wordt gemaakt van trainingsdata: is de data representatief voor de context waarin het algoritme ingezet gaat worden?"
@@ -149,8 +149,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Bias/aannames in de data"
     type: [ "open_question" ]
-    suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en -preparatie", "Ontwikkelen" ]
+    suggested_roles: [ "Opdrachtgever", "Data scientist", "Data engineer" ]
+    lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 16" } ]
     template: *assessmentcard_template
   - question: "Is de data voldoende beveiligd? Maak hierin onderscheid tussen de inputdata en de outputdata."
@@ -159,8 +159,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Beveiliging en archivering"
     type: [ "open_question" ]
-    suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en -preparatie", "Ontwikkelen" ]
+    suggested_roles: [ "Opdrachtgever", "Data scientist", "Data engineer" ]
+    lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 17" } ]
     template: *assessmentcard_template
   - question: "Is er controle op de toegang tot de data? Maak hierin onderscheid tussen de inputdata en de outputdata."
@@ -169,8 +169,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Beveiliging en archivering"
     type: [ "open_question" ]
-    suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en -preparatie", "Ontwikkelen" ]
+    suggested_roles: [ "Opdrachtgever", "Data scientist", "Data engineer" ]
+    lifecycle: [ "Dataverkenning en datapreparatie", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 17" } ]
     template: *assessmentcard_template
   - question: "Hoe worden relevante regels over archivering in acht genomen, zoals die in de Archiefwet zijn vastgelegd?"
@@ -179,8 +179,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Beveiliging en archivering"
     type: [ "open_question" ]
-    suggested_roles: [ "Aanbieder", "Data scientist", "Data engineer" ]
-    lifecycle: [ "Dataverkenning en -preparatie" ]
+    suggested_roles: [ "Opdrachtgever", "Data scientist", "Data engineer" ]
+    lifecycle: [ "Dataverkenning en datapreparatie" ]
     links: [ { "text": "DPIA vraag 10" } ]
     template: *assessmentcard_template
   - question: "Type algoritme: wat voor soort algoritme wordt gebruikt of gaat worden gebruikt? Hoe werkt het? Onderscheid tussen: A) Een niet-zelflerend algoritme, waarin de mens de regels specificeert die de computer moet volgen, B) Een zelflerend algoritme, waarin de machine zelf leert over de patronen in de data (machine learning)"
@@ -189,7 +189,7 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Type algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
+    suggested_roles: [ "Data scientist", "Projectleider", "Opdrachtgever" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 8" } ]
     template: *assessmentcard_template
@@ -199,7 +199,7 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Type algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
+    suggested_roles: [ "Data scientist", "Projectleider", "Opdrachtgever" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 8" } ]
     template: *assessmentcard_template
@@ -209,7 +209,7 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Type algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
+    suggested_roles: [ "Data scientist", "Projectleider", "Opdrachtgever" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 8" } ]
     template: *assessmentcard_template
@@ -219,7 +219,7 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Type algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Data scientist", "Projectleider", "Aanbieder" ]
+    suggested_roles: [ "Data scientist", "Projectleider", "Opdrachtgever" ]
     lifecycle: [ "Ontwerp" ]
     links: [ { "text": "DPIA vraag 8" } ]
     template: *assessmentcard_template
@@ -229,8 +229,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Eigenaarschap en controle"
     type: [ "open_question" ]
-    suggested_roles: [ "Aanbieder", "Projectleider", "Jurist" ]
-    lifecycle: [ "Ontwerp", "Monitoren", "Beheer" ]
+    suggested_roles: [ "Opdrachtgever", "Projectleider", "Jurist" ]
+    lifecycle: [ "Ontwerp", "Monitoring en beheer"]
     links: [ { "text": "DPIA vraag 5" } ]
     template: *assessmentcard_template
   - question: "Wat is de accuraatheid van het algoritme, en op basis van welke evaluatiecriteria is deze accuraatheid bepaald?"
@@ -239,8 +239,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Accuraatheid algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
-    lifecycle: [ "Verificatie", "Validatie" ]
+    suggested_roles: [ "Data scientist", "Opdrachtgever", "Domeinspecialist" ]
+    lifecycle: [ "Verificatie en validatie"]
     links: [ { "text": "DPIA vraag 16" } ]
     template: *assessmentcard_template
   - question: "Is de mate van accuraatheid (vraag 2B.3.1) acceptabel voor de manier waarop het algoritme ingezet zal worden?"
@@ -249,8 +249,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Accuraatheid algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
-    lifecycle: [ "Verificatie", "Validatie" ]
+    suggested_roles: [ "Data scientist", "Opdrachtgever", "Domeinspecialist" ]
+    lifecycle: [ "Verificatie en validatie"]
     links: [ { "text": "DPIA vraag 16" } ]
     template: *assessmentcard_template
   - question: "Hoe wordt het algoritme getest?"
@@ -259,8 +259,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Accuraatheid algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
-    lifecycle: [ "Verificatie", "Validatie", "Implementatie" ]
+    suggested_roles: [ "Data scientist", "Opdrachtgever", "Domeinspecialist" ]
+    lifecycle: [ "Verificatie en validatie", "Implementatie" ]
     links: [ { "text": "DPIA vraag 16" } ]
     template: *assessmentcard_template
   - question: "Welke maatregelen kunnen worden getroffen om de risicos van reproductie of zelfs versterking van biases tegen te gaan (bijv. andere sampling- strategie, feature modification, ...)?"
@@ -269,8 +269,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Accuraatheid algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
-    lifecycle: [ "Ontwikkelen", "Verificatie", "Validatie" ]
+    suggested_roles: [ "Data scientist", "Opdrachtgever", "Domeinspecialist" ]
+    lifecycle: [ "Ontwikkelen", "Verificatie en validatie"]
     links: [ { "text": "DPIA vraag 16" } ]
     template: *assessmentcard_template
   - question: "Welke aannames liggen ten grondslag aan de selectie en weging van de indicatoren? Zijn die aannames terecht? Waarom wel/niet?"
@@ -279,7 +279,7 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Accuraatheid algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
+    suggested_roles: [ "Data scientist", "Opdrachtgever", "Domeinspecialist" ]
     lifecycle: [ "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 16" } ]
     template: *assessmentcard_template
@@ -289,8 +289,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Accuraatheid algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Data scientist", "Aanbieder", "Domeinspecialist" ]
-    lifecycle: [ "Verificatie", "Validatie" ]
+    suggested_roles: [ "Data scientist", "Opdrachtgever", "Domeinspecialist" ]
+    lifecycle: [ "Verificatie en validatie"]
     links: [ { "text": "DPIA vraag 16" } ]
     template: *assessmentcard_template
   - question: "Is het duidelijk wat het algoritme doet, hoe het dit doet, en op basis waarvan (welke data) het dit doet? Leg uit."
@@ -299,8 +299,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Transparantie en uitlegbaarheid"
     type: [ "open_question" ]
-    suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
-    lifecycle: [ "Ontwikkelen", "Verificatie", "Validatie" ]
+    suggested_roles: [ "Projectleider", "Data scientist", "Opdrachtgever", "Communicatieadviseur", "Jurist", "Ethicus" ]
+    lifecycle: [ "Ontwikkelen", "Verificatie en validatie"]
     links: [ { "text": "DPIA vraag 15" } ]
     template: *assessmentcard_template
   - question: "Voor welke personen en groepen binnen en buiten de eigen organisatie wordt de werking van het algoritme transparant gemaakt en hoe gebeurt dit?"
@@ -309,8 +309,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Transparantie en uitlegbaarheid"
     type: [ "open_question" ]
-    suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Ontwikkelen", "Verificatie", "Validatie", "Monitoren", "Beheer" ]
+    suggested_roles: [ "Projectleider", "Data scientist", "Opdrachtgever", "Communicatieadviseur", "Jurist", "Ethicus" ]
+    lifecycle: [ "Ontwerp", "Ontwikkelen", "Verificatie en validatie", "Monitoring en beheer"]
     links: [ { "text": "DPIA vraag 15" } ]
     template: *assessmentcard_template
   - question: "Voor welke doelgroepen moet het algoritme uitlegbaar zijn?"
@@ -319,7 +319,7 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Transparantie en uitlegbaarheid"
     type: [ "open_question" ]
-    suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
+    suggested_roles: [ "Projectleider", "Data scientist", "Opdrachtgever", "Communicatieadviseur", "Jurist", "Ethicus" ]
     lifecycle: [ "Ontwerp", "Ontwikkelen" ]
     links: [ { "text": "DPIA vraag 15" } ]
     template: *assessmentcard_template
@@ -329,8 +329,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Transparantie en uitlegbaarheid"
     type: [ "open_question" ]
-    suggested_roles: [ "Projectleider", "Data scientist", "Aanbieder", "Communicatieadviseur", "Jurist", "Ethicus" ]
-    lifecycle: [ "Ontwikkelen", "Verificatie", "Validatie" ]
+    suggested_roles: [ "Projectleider", "Data scientist", "Opdrachtgever", "Communicatieadviseur", "Jurist", "Ethicus" ]
+    lifecycle: [ "Ontwikkelen", "Verificatie en validatie"]
     links: [ { "text": "DPIA vraag 15" } ]
     template: *assessmentcard_template
   - question: "Wat gebeurt er met de uitkomsten van het algoritme? Welke beslissingen worden daarop gebaseerd?"
@@ -339,8 +339,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Beslissingen op basis van output algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Projectleider", "Domeinspecialist", "Security officer", "Ethicus", "Jurist", "Aanbieder" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    suggested_roles: [ "Projectleider", "Domeinspecialist", "Security officer", "Ethicus", "Jurist", "Opdrachtgever" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Welke rol spelen mensen bij het nemen van beslissingen op basis van de output van het algoritme ('human in the loop') en hoe worden zij in staat gesteld om die rol te spelen?"
@@ -350,7 +350,7 @@ tasks: # each question can be seen as a separate task
         value: "De rol van de mens in de beslissing"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Is er nu en in de toekomst voldoende gekwalificeerd personeel aanwezig om het algoritme te beheren, te herzien en aan te passen indien gewenst/nodig?"
@@ -360,7 +360,7 @@ tasks: # each question can be seen as a separate task
         value: "De rol van de mens in de beslissing"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Wat zullen de effecten zijn van de inzet van het algoritme voor burgers en hoe wordt rekening gehouden met de 'menselijke maat' bij het nemen van beslissingen op basis van de output van het algoritme?"
@@ -369,8 +369,8 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Effecten van het algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Aanbieder", "Gebruiker" ]
-    lifecycle: [ "Probleemanalyse", "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Opdrachtgever", "Gebruiker" ]
+    lifecycle: [ "Probleemanalyse", "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ { "text": "DPIA vraag 16" } ]
     template: *assessmentcard_template
   - question: "Welke risico's voor stigmatiserende, discriminerende of anderszins schadelijke of nadelige effecten zijn er voor de burger en hoe zullen die worden bestreden of gemitigeerd?"
@@ -379,7 +379,7 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Effecten van het algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Aanbieder", "Gebruiker" ]
+    suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Opdrachtgever", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse", "Ontwerp", "Ontwikkelen", "Implementatie" ]
     links: [ { "text": "DPIA vraag 16" }, { "text": "DPIA vraag 17" } ]
     template: *assessmentcard_template
@@ -389,7 +389,7 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Effecten van het algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Aanbieder", "Gebruiker" ]
+    suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Opdrachtgever", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ ]
     template: *assessmentcard_template
@@ -399,7 +399,7 @@ tasks: # each question can be seen as a separate task
       - key: topic
         value: "Effecten van het algoritme"
     type: [ "open_question" ]
-    suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Aanbieder", "Gebruiker" ]
+    suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Opdrachtgever", "Gebruiker" ]
     lifecycle: [ "Probleemanalyse" ]
     links: [ ]
     template: *assessmentcard_template
@@ -410,7 +410,7 @@ tasks: # each question can be seen as a separate task
         value: "Procedures"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Jurist" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Hoe worden verschillende relevante actoren (bestuurlijke en politiek verantwoordelijken, burgers) bij de besluitvorming betrokken?"
@@ -420,7 +420,7 @@ tasks: # each question can be seen as a separate task
         value: "Procedures"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Jurist" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Hoe wordt gegarandeerd dat in deze procedures wordt voldaan aan de eisen van goed en behoorlijk bestuur en - waar nodig - rechtsbescherming? Hebben burgers een effectieve mogelijkheid om een klacht in te dienen of bezwaar te maken? Zo ja, op welke manier?"
@@ -430,7 +430,7 @@ tasks: # each question can be seen as a separate task
         value: "Procedures"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus", "Jurist" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Tijd/periode: wanneer gaat het algoritme ingezet worden? Hoe lang is de periode dat het ingezet wordt?"
@@ -440,7 +440,7 @@ tasks: # each question can be seen as a separate task
         value: "Context"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Plaats: waar vindt inzet van het algoritme plaats? Is dat in een bepaald geografisch gebied, is dat bij een bepaalde groep personen of dossiers?"
@@ -450,7 +450,7 @@ tasks: # each question can be seen as a separate task
         value: "Context"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Kan het algoritme ook nog worden ingezet als contextfactoren veranderen of als het algoritme gebruikt wordt in een andere context dan waarvoor het is ontwikkeld?"
@@ -460,7 +460,7 @@ tasks: # each question can be seen as a separate task
         value: "Context"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Data scientist", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Hoe open kunt u zijn over de werking van het algoritme in het licht van de doelstellingen en context van de inzet ervan?"
@@ -470,7 +470,7 @@ tasks: # each question can be seen as a separate task
         value: "Communicatie"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ { "text": "DPIA vraag 15" } ]
     template: *assessmentcard_template
   - question: "Op welke manier beoogt u te communiceren over de inzet van het algoritme?"
@@ -480,7 +480,7 @@ tasks: # each question can be seen as a separate task
         value: "Communicatie"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ { "text": "DPIA vraag 15" } ]
     template: *assessmentcard_template
   - question: "Wordt de output van het algoritme gevisualiseerd, bijvoorbeeld in een tabel, grafiek of dashboard? Zo ja: is de vorm van visualisatie of weergave een correcte representatie van de output van het algoritme? Is de visualisatie makkelijk te lezen voor verschillende gebruikersgroepen?"
@@ -490,7 +490,7 @@ tasks: # each question can be seen as a separate task
         value: "Communicatie"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Ethicus" ]
-    lifecycle: [ "Verificatie", "Validatie", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Verificatie en validatie", "Implementatie", "Monitoring en beheer"]
     links: [ { "text": "DPIA vraag 15" } ]
     template: *assessmentcard_template
   - question: "Is voorzien in goede instrumenten voor evaluatie, auditing en borging van het algoritme?"
@@ -500,7 +500,7 @@ tasks: # each question can be seen as a separate task
         value: "Evaluatie, auditing en borging"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Data scientist" ]
-    lifecycle: [ "Verificatie", "Validatie", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Verificatie en validatie", "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Zijn er voldoende mogelijkheden om rekenschap en verantwoording af te leggen over het algoritme?"
@@ -510,7 +510,7 @@ tasks: # each question can be seen as a separate task
         value: "Evaluatie, auditing en borging"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Data scientist" ]
-    lifecycle: [ "Ontwerp", "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Welke mogelijkheden zijn er voor auditors en toezichthouders om (formele) consequenties te verbinden aan de inzet van een algoritme door de overheid (bijv. terugkoppeling van bevindingen, doen van aanbevelingen, budgettaire consequenties, ...)"
@@ -520,7 +520,7 @@ tasks: # each question can be seen as a separate task
         value: "Evaluatie, auditing en borging"
     type: [ "open_question" ]
     suggested_roles: [ "Projectleider", "Behoeftesteller", "Gemandateerd verantwoordelijke(n)", "Data scientist" ]
-    lifecycle: [ "Implementatie", "Monitoren", "Beheer" ]
+    lifecycle: [ "Implementatie", "Monitoring en beheer"]
     links: [ ]
     template: *assessmentcard_template
   - question: "Wordt er een grondrecht geraakt door het in te zetten algoritme?"

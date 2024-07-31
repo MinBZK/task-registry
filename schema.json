@@ -121,9 +121,12 @@
                 "Ethicus",
                 "Gebruiker",
                 "Gemandateerd verantwoordelijke(n)",
+                "Informatie analist",
                 "Informatiebeheerder",
                 "Inkoopadviseur",
                 "Jurist",
+                "Opdrachtgever",
+                "Opdrachtnemer",
                 "Privacy-officer",
                 "Proceseigenaar",
                 "Projectleider",
@@ -139,14 +142,12 @@
               "enum": [
                 "Probleemanalyse",
                 "Ontwerp",
-                "Dataverkenning en -preparatie",
+                "Dataverkenning en datapreparatie",
                 "Ontwikkelen",
-                "Validatie",
+                "Verificatie en validatie",
                 "Implementatie",
-                "Monitoren",
-                "Beheer",
-                "Archiveren",
-                "Verificatie"
+                "Monitoring en beheer",
+                "Uitfaseren"
               ]
             }
           },
@@ -157,6 +158,9 @@
               "type": "object",
               "properties": {
                 "text": {
+                  "type": "string"
+                },
+                "url": {
                   "type": "string"
                 },
                 "urn": {
