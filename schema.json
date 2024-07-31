@@ -98,7 +98,8 @@
                 "open_question",
                 "closed_question",
                 "sign_task",
-                "upload_document"
+                "upload_document",
+                "statement"
               ]
             }
           },
@@ -189,6 +190,26 @@
               }
             }
           },
+          "signature": {
+            "description": "To store the user's hash and the algorithm used to hash it",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "algorithm": {
+                  "type": "string"
+                },
+                "signature_hash": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "expiration_date": {
+            "description": "To store the date until when completing this task will be valid",
+            "type": "string",
+            "format": "date-time"
+          },
           "template": {
             "type": "object",
             "additionalProperties": {
@@ -232,6 +253,21 @@
           "lifecycle",
           "links",
           "template"
+        ]
+      },
+      "if": {
+        "properties": {
+          "type": {
+            "contains": {
+              "const": "sign_task"
+            }
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "signature",
+          "expiration_date"
         ]
       }
     }
