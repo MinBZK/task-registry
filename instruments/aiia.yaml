@@ -33,7 +33,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Opdrachtgever", "Projectleider"] #suggested roles 'Annex: Wie doet Wat' in AIIA are coupled to roles that are described in the Algoritmekader
     lifecycle: ["Probleemanalyse"]            # one or more lifecycle stages as described in Algoritmekader: https://minbzk.github.io/Algoritmekader/levenscyclus/
-    links: [ { } ]       # optional: list with links to other tasks / instruments (for example: is this question also asked in the DPIA?)
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:1.1.1" } ]       # optional: list with links to other tasks / instruments (for example: is this question also asked in the DPIA?)
     required_status: Yes
     template: *assessmentcard_template
   - question: "Waarom is er voor de huidige techniek gekozen? (hierbij is het van belang dat alle afwegingen van robuustheid tot mensenrechten, impact op gebruiker en eindgebruiker, verantwoordingsplicht etc. zijn meegenomen in het antwoord)"
@@ -44,7 +44,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Opdrachtgever", "Projectleider"]
     lifecycle: ["Probleemanalyse" , "Ontwerp"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2B.1.2"}, {"urn": "urn:nl:aivt:ir:iama:1.0:2B.1.3"} ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Wat is het doel en beoogde resultaat van het AI-systeem?"
@@ -55,7 +55,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Opdrachtgever", "Projectleider"]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ { } ]
+    links: [ { "urn": "urn:nl:aivt:ir:iama:1.0:1.2.1" }, {"urn": "urn:nl:aivt:ir:iama:1.0:4.4.1"} ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Welk doel wordt er aan het AI-systeem gekoppeld volgens het rapport Aandacht voor Algoritmes van de Algemene Rekenkamer? Doel 1, Doel 2 of Doel 3?"
@@ -77,7 +77,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Opdrachtgever", "Projectleider"]
     lifecycle: ["Probleemanalyse" ]
-    links: [ { } ]
+    links: [ {"urn":"urn:nl:aivt:ir:iama:1.0:1.5.1" } ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Beschrijf de rolverdeling binnen het opzetten van het AI-systeem (zoals de ontwikkelaar, opdrachtgever, projectleider, beheerorganisaties en eindverantwoordelijke)."
@@ -88,7 +88,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Opdrachtgever", "Projectleider"]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:1.5.1" }, {"urn": "urn:nl:aivt:ir:iama:1.0:1.5.2"}, {"urn": "urn:nl:aivt:ir:iama:1.0:1.5.3"}, {"urn": "urn:nl:aivt:ir:iama:1.0:2B.2.1"}]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Wie is de gebruiker van het AI-systeem, wie zijn de eindgebruikers die met het systeem werken en welke betrokkenen ondervinden impact van het AI-systeem?"
@@ -99,7 +99,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Opdrachtgever", "Projectleider"]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:1.5.1" } ]
     required_status: Yes
     template: *assessmentcard_template
 #Chapter 2: Fundamentele rechten en fairness
@@ -111,7 +111,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Probleemanalyse"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:3.3.1"}, {"urn": "urn:nl:aivt:ir:iama:1.0:3.3.2"}, {"urn": "urn:nl:aivt:ir:iama:1.0:4.3.1"}]
     template: *assessmentcard_template
   - question: "Is het proportioneel en subsidiair om dit systeem in te zetten om de gestelde doelen te realiseren? Oftewel: is de impact in verhouding met de beoogde doelen en zijn er geen andere minder ingrijpende manieren om deze doelen te behalen?"
     urn: "urn:nl:aivt:ir:aiia:1.0:2.2"
@@ -121,7 +121,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Probleemanalyse"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:3.3.4" }, {"urn": "urn:nl:aivt:ir:iama:1.0:4.6.1"} ]
     template: *assessmentcard_template
   - question: "Wat is de wettelijke grondslag van de inzet van het AI-systeem en van de beoogde besluiten die genomen worden op basis van het AI-systeem?"
     urn: "urn:nl:aivt:ir:aiia:1.0:2.3"
@@ -130,8 +130,8 @@ tasks: # each question can be seen as a separate task
         value: "Grondrechten"
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
-    lifecycle: ["Probleenanalyse"]
-    links: [ { } ]
+    lifecycle: ["Probleemanalyse"]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:1.4.1"}, {"urn": "urn:nl:aivt:ir:iama:1.0:4.2.1"} ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Welke grondrechtelijke bepalingen zijn mogelijk van toepassing?"
@@ -143,7 +143,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Probleemanalyse"]
-    links: [ { } ]
+    links: [{"urn": "urn:nl:aivt:ir:iama:1.0:4.1.1"}]
     required_status: No
     template: *assessmentcard_template
   - question: "Op welk van deze grondrechtelijke bepalingen kan mogelijk een inbreuk worden gemaakt bij verkeerde uitvoering van het AI-systeem? Welke acties worden genomen om dit te voorkomen?"
@@ -154,7 +154,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Probleemanalyse"]
-    links: [ { } ]
+    links: [{"urn": "urn:nl:aivt:ir:iama:1.0:4.1.1"}]
     required_status: No
     template: *assessmentcard_template
   - question: "Hoe wordt rekening gehouden met mogelijk onwenselijke bias in de input, bias in het model en bias in de output van het AI-systeem?"
@@ -165,7 +165,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.3.1" } ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Is de input(data) data representatief voor het onderwerp waarover een beslissing moet worden genomen?"
@@ -176,7 +176,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.3.2" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Worden indien nodig subpopulaties beschermd bij het trekken van steekproeven?"
@@ -198,7 +198,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2B.3.5"}]
     required_status: No
     template: *assessmentcard_template
   - question: "Op welke manier wordt er rekening gehouden met het feit dat er geen onterechte of onrechtvaardige bias in een AI-systeem wordt gecreëerd of versterkt?"
@@ -209,7 +209,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.3.1"}, {"urn": "urn:nl:aivt:ir:iama:1.0:2B.3.4" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Is het AI-systeem te gebruiken door de beoogde eindgebruikers (dus ongeacht diens kenmerken zoals leeftijd, geslacht of capaciteit)?"
@@ -285,7 +285,7 @@ tasks: # each question can be seen as a separate task
         value: "Stakeholderparticipatie"
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Jurist", "Opdrachtgever", "Projectleider"]
-    lifecycle: [ "Implementatie"]
+    lifecycle: ["Implementatie"]
     links: [ { } ]
     required_status: No
     template: *assessmentcard_template
@@ -309,7 +309,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwikkelen", "Verificatie en validatie", "Monitoring en beheer"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2B.3.1"} ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Wat zijn de opgezette acceptatiecriteria om de kwaliteit van de input(data) en output(data) van het model aan te toetsen?"
@@ -320,7 +320,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwikkelen", "Verificatie en validatie"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2.A.2.2" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Passen de acceptatiecriteria bij de data en het doel van het AI-systeem?"
@@ -342,7 +342,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwikkelen", "Verificatie en validatie"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2B.3.1"}, {"urn": "urn:nl:aivt:ir:iama:1.0:3.7.1"} ]
     required_status: No
     template: *assessmentcard_template
   - question: "Hoe wordt de output(data) (periodiek) steekproefsgewijs en doorlopend getest op juistheid?"
@@ -353,7 +353,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Implementatie", "Monitoring en beheer"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2B.3.3" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Hoe worden afwijkingen in de output(data) ten opzichte van acceptatiecriteria tijdig geanalyseerd en gecorrigeerd?"
@@ -363,7 +363,7 @@ tasks: # each question can be seen as a separate task
         value: "Accuraatheid"
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
-    lifecycle: ["Verificatie en validatie", "Implementatie", "Monnitoring en beheer"]
+    lifecycle: ["Verificatie en validatie", "Implementatie", "Monitoring en beheer"]
     links: [ { } ]
     required_status: No
     template: *assessmentcard_template
@@ -375,7 +375,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwikkelen"]
-    links: [ { } ]
+    links: [ { "urn": "urn:nl:aivt:ir:iama:1.0:2B.1.4"} ]
     required_status: No
     template: *assessmentcard_template
   - question: "Is het AI-systeem betrouwbaar?"
@@ -386,7 +386,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Verificatie en validatie"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2B.3.6"} ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Wat zijn de belangrijkste factoren die de prestaties van het AI-systeem beïnvloeden?"
@@ -430,7 +430,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp", "Ontwikkelen"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.1.1" }, {"urn": "urn:nl:aivt:ir:iama:1.0:2B.1.1"}]
     required_status: Yes
     template: *assessmentcard_template
   - question: " Is er nagedacht hoe het AI-systeem past in de al bestaande technische- en systeeminfrastructuur en zijn hier passende maatregelen voor genomen om deze uit te rollen (indien van toepassing)?"
@@ -529,7 +529,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwikkelen", "Verificatie en validatie"]
-    links: [ { } ]
+    links: [ { "urn": "urn:nl:aivt:ir:iama:1.0:2B.4.1"} ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Hoe heb je bij het ontwikkelen van het AI-systeem gekeken naar de uitlegbaarheid van het model?"
@@ -540,7 +540,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwikkelen"]
-    links: [ { } ]
+    links: [ { "urn": "urn:nl:aivt:ir:iama:1.0:2B.4.1"} ]
     required_status: No
     template: *assessmentcard_template
   - question: "In hoeverre is het mogelijk om een verklaring te geven aan een externe AI-expert hoe het AI-systeem op een bepaalde manier werkt?"
@@ -551,7 +551,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp", "Ontwikkelen"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2B.4.2" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Is de benodigde deskundigheid voor het beheer van AI-systeem gedocumenteerd?"
@@ -562,7 +562,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Monitoring en beheer"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2B.2.1" }, {"urn": "urn:nl:aivt:ir:iama:1.0:3.2.2"} ]
     required_status: No
     template: *assessmentcard_template
 #Chapter 4: Data governance
@@ -574,7 +574,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Privacy-officer", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Dataverkenning en datapreparatie", "Implementatie", "Monitoring en beheer"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2.A.2.2" } ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Is de gebruikte data noodzakelijk voor het AI-systeem?"
@@ -629,7 +629,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Privacy-officer", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Dataverkenning en datapreparatie"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.2.1"} ]
     required_status: No
     template: *assessmentcard_template
   - question: "Hoe wordt de data gelabeld?"
@@ -728,7 +728,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Privacy-officer", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp", "Ontwikkelen"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.4.1" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Zijn functionarissen betrokken, zoals de functionaris gegevensbescherming, privacy adviseur, informatiebeveiliger, Chief Information Officer, etc.?"
@@ -771,7 +771,7 @@ tasks: # each question can be seen as a separate task
         value: "Privacy en gegevensbescherming"
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Privacy-officer", "Opdrachtgever", "Projectleider"]
-    lifecycle: ["Ontwerp", "Dataverkenning en datepreparatie", "Ontwikkelen"]
+    lifecycle: ["Ontwerp", "Dataverkenning en datapreparatie", "Ontwikkelen"]
     links: [ { } ]
     required_status: No
     template: *assessmentcard_template
@@ -795,7 +795,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Security officer", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.4.2" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Hoe is het AI-systeem getest op het beoogde doel voordat het in gebruik wordt genomen?"
@@ -839,7 +839,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Security officer", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Implementatie", "Monitoring en beheer", "Uitfaseren"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2B.1.4"} ]
     required_status: No
     template: *assessmentcard_template
   - question: "Is de correctheid van de implementatie aangetoond? Denk hierbij bijvoorbeeld aan unit- integratie- en end-to-end tests, indien van toepassing"
@@ -871,7 +871,7 @@ tasks: # each question can be seen as a separate task
         value: "Alternatieve werkwijze"
     type: [ "open_question" ]
     suggested_roles: ["Security officer", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
-    lifecycle: ["Implementatie", Monitoring en beheer", "Uitfaseren"]
+    lifecycle: ["Implementatie", "Monitoring en beheer", "Uitfaseren"]
     links: [ { } ]
     required_status: Yes
     template: *assessmentcard_template
@@ -882,7 +882,7 @@ tasks: # each question can be seen as a separate task
         value: "Alternatieve werkwijze"
     type: [ "open_question" ]
     suggested_roles: ["Security officer", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
-    lifecycle: ["Implementatie", Monitoring en beheer", "Uitfaseren"]
+    lifecycle: ["Implementatie", "Monitoring en beheer", "Uitfaseren"]
     links: [ { } ]
     required_status: No
     template: *assessmentcard_template
@@ -904,7 +904,7 @@ tasks: # each question can be seen as a separate task
         value: "Alternatieve werkwijze"
     type: [ "open_question" ]
     suggested_roles: ["Security officer", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
-    lifecycle: ["Implementatie", Monitoring en beheer"]
+    lifecycle: ["Implementatie", "Monitoring en beheer"]
     links: [ { } ]
     required_status: No
     template: *assessmentcard_template
@@ -916,7 +916,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Security officer", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp", "Ontwikkelen", "Implementatie", "Monitoring en beheer"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.4.1" } ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Hoe wordt er voorkomen dat ongeautoriseerde derden gebruik kunnen maken van kwetsbaarheden van het AI-systeem?"
@@ -972,7 +972,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Implementatie", "Monitoring en beheer"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:3.6.1" } ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Worden er mechanismes ingesteld waarin eindgebruikers opmerkingen over het systeem (data, techniek, doelgroep, etc.) kunnen maken? En hoe of wanneer worde deze meldingen gewaarborgd (geanalyseerd en gevolgd)?"
@@ -983,7 +983,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Implementatie", "Monitoring en beheer"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:3.4.3" } ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Wordt er aan de eindgebruiker en betrokkenen van het AI-systeem gecommuniceerd dat de resultaten gegenereerd worden door een AI-systeem en wat dat voor hen betekent?"
@@ -994,7 +994,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Implementatie"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:3.6.2" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Zijn er eindgebruiksinstructies opgesteld? Deze moeten minstens het volgende bevatten: de naam en contactgegevens van de aanbieder; kenmerken, capaciteiten en beperkingen; mogelijke toekomstige wijzigingen; menselijk toezicht; en verwachte levensduur."
@@ -1027,7 +1027,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwikkelen", "Implementatie"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2B.4.4"}]
     required_status: No
     template: *assessmentcard_template
   - question: "Is het systeem voldoende transparant om eindgebruikers in staat te stellen de output(data) van het systeem te interpreteren en op passende wijze te gebruiken?"
@@ -1038,7 +1038,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwikkelen", "Implementatie"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:3.6.3" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Is er iets ingericht om eindgebruikers eventuele bijscholing te verlenen?"
@@ -1060,7 +1060,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Implementatie", "Monitoring en beheer"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:3.7.3"} ]
     required_status: No
     template: *assessmentcard_template
   - question: "Als een betrokkene bezwaar wil aantekenen,21 of een klacht wil indienen tegen een besluit van het AI-systeem,22 is het dan duidelijk welke stappen hij/zij kan nemen? Hetzelfde geldt voor beroep instellen."
@@ -1082,7 +1082,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Monitoring en beheer"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:3.2.1" }, {"urn": "urn:nl:aivt:ir:iama:1.0:3.7.3"} ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Hoe is menselijke controle en toezicht gewaarborgd?"
@@ -1093,7 +1093,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Monitoring en beheer"]
-    links: [ { } ]
+    links: [{"urn": "urn:nl:aivt:ir:iama:1.0:3.2.1"}, {"urn": "urn:nl:aivt:ir:iama:1.0:3.7.3"} ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Hoe wordt rekening gehouden met het ingaan van aangekondigde nieuwe wet- en regelgeving tijdens de levensduur van dit AI-systeem?"
@@ -1115,7 +1115,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Monitoring en beheer"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:3.7.3"} ]
     required_status: No
     template: *assessmentcard_template
   - question: "Hoe wordt de correctheid van de input(data) gecontroleerd en geïnterpreteerd?"
@@ -1159,7 +1159,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Implementatie", "Monitoring en beheer", "Uitfaseren"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.4.3"} ]
     required_status: No
     template: *assessmentcard_template
   - question: "Wat is de bewaartermijn van de input(data)?"
@@ -1170,7 +1170,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Implementatie", "Monitoring en beheer", "Uitfaseren"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.4.3" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Hoe wordt het model opgeslagen?"
@@ -1181,7 +1181,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Implementatie", "Monitoring en beheer", "Uitfaseren"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.4.3" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Kunnen de gebruikers de output(data) op de juiste manier interpreteren?"
@@ -1192,7 +1192,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Implementatie"]
-    links: [ { } ]
+    links: [ { "urn": "urn:nl:aivt:ir:iama:1.0:3.6.3"} ]
     required_status: No
     template: *assessmentcard_template
   - question: "Wat is de bewaartermijn van de output(data)?"
@@ -1203,7 +1203,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Implementatie", "Monitoring en beheer", "Uitfaseren"]
-    links: [ { } ]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.4.3"} ]
     required_status: No
     template: *assessmentcard_template
   - question: "Is er impact op het milieu door het invoeren van het AI-systeem (ontwikkeling, installatie en gebruik), en hoe wordt dit gemeten?"
@@ -1224,7 +1224,7 @@ tasks: # each question can be seen as a separate task
         value: "Klimaatadaptie"
     type: [ "open_question" ]
     suggested_roles: ["Communicatieadviseur", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
-    lifecycle: ["Ontwerp", Implementatie", "Monitoring en beheer"]
+    lifecycle: ["Ontwerp", "Implementatie", "Monitoring en beheer"]
     links: [ { } ]
     required_status: No
     template: *assessmentcard_template
@@ -1239,4 +1239,3 @@ tasks: # each question can be seen as a separate task
     links: [ { } ]
     required_status: No
     template: *assessmentcard_template
-
