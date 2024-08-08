@@ -43,7 +43,7 @@ tasks:
     type: ["open_question"]
     suggested_roles: [ "Projectleider", "Aanbieder"]
     lifecycle: [ ]
-    links: [ {"systemcard_path": ".owners", "version": ">0.1a1"}, {"text": "Vraag 1.a.2 van technical docs" , "urn": "urn:nl:aivt:ir:td:1.0:1.a.2"}]
+    links: [ {"systemcard_path": ".owners", "version": ">0.1a1"}, {"urn": "urn:nl:aivt:ir:td:1.0:1.a.2"}]
     template: *assessmentcard_template
   - question: "De in artikel 47 bedoelde EU-conformiteitsverklaring wordt verstrekt onder de uitsluitende verantwoordelijkheid van de aanbieder."
     urn: "urn:nl:aivt:ir:ca:1.0:3.0"
@@ -83,7 +83,7 @@ tasks:
     type: ["open_question", "upload_document"]
     suggested_roles: [ "Projectleider", "Aanbieder"]
     lifecycle: [ "Verificatie en validatie" ]
-    links: [{"text": "Vraag 7 van technical docs","urn": "urn:nl:aivt:ir:td:1.0:7"} ]
+    links: [{"urn": "urn:nl:aivt:ir:td:1.0:7"} ]
     template: *assessmentcard_template
   - question: "De naam en het identificatienummer van de aangemelde instantie, een beschrijving van de uitgevoerde conformiteitsbeoordelingsprocedure en identificatie van het afgegeven certificaat."
     urn: "urn:nl:aivt:ir:ca:1.0:7.0"

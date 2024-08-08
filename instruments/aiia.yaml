@@ -33,7 +33,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Opdrachtgever", "Projectleider"] #suggested roles 'Annex: Wie doet Wat' in AIIA are coupled to roles that are described in the Algoritmekader
     lifecycle: ["Probleemanalyse"]            # one or more lifecycle stages as described in Algoritmekader: https://minbzk.github.io/Algoritmekader/levenscyclus/
-    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:1.1.1" } ]       # optional: list with links to other tasks / instruments (for example: is this question also asked in the DPIA?)
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:1.1.1" }, { "systemcard_path": ".description", "version": ">0.1a1" }  ]       # optional: list with links to other tasks / instruments (for example: is this question also asked in the DPIA?)
     required_status: Yes
     template: *assessmentcard_template
   - question: "Waarom is er voor de huidige techniek gekozen? (hierbij is het van belang dat alle afwegingen van robuustheid tot mensenrechten, impact op gebruiker en eindgebruiker, verantwoordingsplicht etc. zijn meegenomen in het antwoord)"
@@ -55,7 +55,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Opdrachtgever", "Projectleider"]
     lifecycle: [ "Probleemanalyse" ]
-    links: [ { "urn": "urn:nl:aivt:ir:iama:1.0:1.2.1" }, {"urn": "urn:nl:aivt:ir:iama:1.0:4.4.1"} ]
+    links: [ { "urn": "urn:nl:aivt:ir:iama:1.0:1.2.1" }, {"urn": "urn:nl:aivt:ir:iama:1.0:4.4.1"}, { "systemcard_path": ".goal_and_impact", "version": ">0.1a1" } ]
     required_status: Yes
     template: *assessmentcard_template
   - question: "Welk doel wordt er aan het AI-systeem gekoppeld volgens het rapport Aandacht voor Algoritmes van de Algemene Rekenkamer? Doel 1, Doel 2 of Doel 3?"
@@ -63,7 +63,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Doel van het systeem"
-    type: [ "open_question" ]
+    type: [ "closed_question" ]
     suggested_roles: ["Opdrachtgever", "Projectleider"]
     lifecycle: [ "Probleemanalyse" ]
     links: [ {"url": "https://www.rekenkamer.nl/publicaties/rapporten/2021/01/26/aandacht-voor-algoritmes"} ]
@@ -430,15 +430,15 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp", "Ontwikkelen"]
-    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.1.1" }, {"urn": "urn:nl:aivt:ir:iama:1.0:2B.1.1"}]
+    links: [ {"urn": "urn:nl:aivt:ir:iama:1.0:2A.1.1" }, {"urn": "urn:nl:aivt:ir:iama:1.0:2B.1.1"}, { "systemcard_path": ".technical_design", "version": ">0.1a1" } ]
     required_status: Yes
     template: *assessmentcard_template
-  - question: " Is er nagedacht hoe het AI-systeem past in de al bestaande technische- en systeeminfrastructuur en zijn hier passende maatregelen voor genomen om deze uit te rollen (indien van toepassing)?"
+  - question: "Is er nagedacht hoe het AI-systeem past in de al bestaande technische- en systeeminfrastructuur en zijn hier passende maatregelen voor genomen om deze uit te rollen (indien van toepassing)?"
     urn: "urn:nl:aivt:ir:aiia:1.0:3.3.1"
     labels:
       - key: topic
         value: "Technische implementatie"
-    type: [ "open_question" ]
+    type: [ "open_question", "upload_document" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp"]
     links: [ { } ]
@@ -449,7 +449,7 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Technische implementatie"
-    type: [ "open_question" ]
+    type: [ "open_question", "upload_document"]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp", "Ontwikkelen"]
     links: [ { } ]
@@ -463,7 +463,7 @@ tasks: # each question can be seen as a separate task
     type: [ "open_question" ]
     suggested_roles: ["Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp"]
-    links: [ { } ]
+    links: [ { "systemcard_path": ".hardware_requirements", "version": ">0.1a5" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Is het AI-systeem reproduceerbaar? Is er een proces ingesteld om dit te meten?"
@@ -858,10 +858,10 @@ tasks: # each question can be seen as a separate task
     labels:
       - key: topic
         value: "Risicobeheersing"
-    type: [ "open_question" ]
+    type: [ "open_question", "upload_document"]
     suggested_roles: ["Security officer", "Data scientist", "Domeinspecialist", "Opdrachtgever", "Projectleider"]
     lifecycle: ["Ontwerp"]
-    links: [ { } ]
+    links: [ {"systemcard_path": ".hardware_requirements", "version": ">0.1a5" } ]
     required_status: No
     template: *assessmentcard_template
   - question: "Wat is het plan als er problemen met de werking van het AI-systeem zijn?"
