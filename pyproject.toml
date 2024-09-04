@@ -4,6 +4,9 @@ version = "0.1.0"
 readme = "README.md"
 description = ""
 authors = ["ai-validatie-team <ai-validatie@minbzk.nl>"]
+repository = "https://github.com/MinBZK/instrument-registry"
+keywords = ["AI", "Validation", "Instrument", "Registry"]
+license = "EUPL-1.2"
 packages = [
     { include = "instrument_registry" }
 ]
@@ -17,6 +20,7 @@ uvicorn = "^0.30.6"
 ruff = "^0.6.3"
 pydantic-settings = "^2.4.0"
 
+setuptools = "^74.1.1"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
