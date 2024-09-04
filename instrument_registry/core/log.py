@@ -52,6 +52,6 @@ def configure_logging(level: LoggingLevelType = "INFO", config: dict[str, Any] |
 
     logging.config.dictConfig(log_config)
 
-    logger = logging.getLogger("instrument-registry")
+    logger = logging.getLogger("ir")
 
     logger.setLevel(level)

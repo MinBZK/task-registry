@@ -27,3 +27,6 @@ __pypackages__/
 .idea/
 
 index.json
+
+# Logging files
+*.log
