@@ -9,8 +9,10 @@ router = APIRouter()
 logger = logging.getLogger(__name__)
 
 
+# Optional parameter 'version' is included, but not used. In a new ticket
+# versioning of instruments should be handled.
 @router.get("/")
-async def get_instrument(urn: str) -> JSONResponse:
+async def get_instrument(urn: str, version: str = "latest") -> JSONResponse:
     try:
         instrument_content = cached_data["urn_mapper"][urn]
         return JSONResponse(content=instrument_content)
