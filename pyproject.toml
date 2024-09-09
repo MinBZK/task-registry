@@ -11,13 +11,15 @@ packages = [
     { include = "instrument_registry" }
 ]
 
+[tool.poetry.scripts]
+deploy = "instrument_registry.data:main"
+
 [tool.poetry.dependencies]
 python = "^3.12"
 jsonschema = "^4.22.0"
 pyyaml = "^6.0.1"
 fastapi = "^0.112.2"
 uvicorn = "^0.30.6"
-ruff = "^0.6.3"
 pydantic-settings = "^2.4.0"
 
 setuptools = "^74.1.1"
@@ -48,7 +50,7 @@ types-pyyaml = "^6.0.12.20240724"
 line-length = 120
 target-version = "py311"
 src = ["instrument_registry", "tests", "script"]
-include = ['script/deploy', 'script/validate']
+include = ['script/validate']
 
 [tool.ruff.format]
 line-ending = "lf"

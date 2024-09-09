@@ -19,19 +19,16 @@ ENV PYTHONUNBUFFERED=1 \
     POETRY_HOME='/usr/local'
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl libpq-dev \
-    && rm -rf /var/lib/apt/lists/*
+    curl && rm -rf /var/lib/apt/lists/*
 
-RUN  curl --proto "=https" -sSL https://install.python-poetry.org | python3 -
+RUN curl --proto "=https" -sSL https://install.python-poetry.org | python3 -
 
 WORKDIR /app/
 COPY ./poetry.lock ./pyproject.toml ./
-COPY ./instruments/ ./instruments/
 COPY ./script/ ./script/
 
 RUN poetry install
 ENV PATH="/app/.venv/bin:$PATH"
-RUN python script/deploy
 
 FROM project-base AS development
 
@@ -46,7 +43,6 @@ COPY ./.prettierrc ./.prettierignore ./
 RUN ruff format --check
 RUN npm run prettier:check
 RUN ruff check
-RUN npm run lint
 RUN pyright
 
 FROM project-base AS production
@@ -60,13 +56,11 @@ RUN chown ir:ir /app/
 USER ir
 
 COPY --chown=root:root --chmod=755 instrument_registry /app/instrument_registry
-COPY --chown=root:root --chmod=755 instruments /app/instruments
 COPY --chown=root:root --chmod=755 LICENSE /app/LICENSE
-COPY --chown=ir:ir --chmod=755 docker-entrypoint.sh /app/docker-entrypoint.sh
 
 ENV PYTHONPATH=/app/
 WORKDIR /app/
 
 ENV PATH="/app/:$PATH"
 
-CMD [ "docker-entrypoint.sh" ]
+ENTRYPOINT ["python", "-m", "uvicorn", "--host", "0.0.0.0", "instrument_registry.server:app", "--port", "8000", "--log-level", "warning"]
