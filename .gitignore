@@ -25,3 +25,8 @@ __pypackages__/
 
 # PyCharm files
 .idea/
+
+index.json
+
+# Logging files
+*.log

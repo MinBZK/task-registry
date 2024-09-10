@@ -1,0 +1,16 @@
+services:
+  ir:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghcr.io/minbzk/ir:latest
+    restart: unless-stopped
+    volumes:
+      - ./instrument_registry:/app/instrument_registry/:cached
+      - ./instruments:/app/instruments/:cached
+    environment:
+      - ENVIRONMENT=local
+    ports:
+      - 8070:8000
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8000/health/live || exit 1"]

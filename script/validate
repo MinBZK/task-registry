@@ -3,13 +3,14 @@
 import json
 import sys
 from collections import Counter
+from collections.abc import Iterable
 
 import jsonschema
 import yaml
 from jsonschema import validate
 
 
-def extract_urns(data, urns=None, seen_urns=None):
+def extract_urns(data: Iterable, urns: list | None = None, seen_urns: set | None = None) -> list:  # noqa: C901
     if urns is None:
         urns = []
     if seen_urns is None:
@@ -32,13 +33,13 @@ def extract_urns(data, urns=None, seen_urns=None):
 
 
 # Load the JSON schema
-with open(sys.argv[1], "r") as schema_file:
+with open(sys.argv[1]) as schema_file:
     schema = json.load(schema_file)
 
 urns = []
 for f in sys.argv[2:]:
     # Load the YAML file
-    with open(f, "r") as yaml_file:
+    with open(f) as yaml_file:
         data = yaml.safe_load(yaml_file)
     urns.extend(extract_urns(data))
 
