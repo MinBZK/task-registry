@@ -42,7 +42,7 @@ jobs:
       run: |
         git fetch
         git checkout --orphan deployment
-        git add index.json
+        git add index.json -f
         git commit -m 'Auto-generate index.json'
         git push --force origin deployment
       env:
