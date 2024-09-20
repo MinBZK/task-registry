@@ -56,6 +56,7 @@ RUN chown ir:ir /app/
 USER ir
 
 COPY --chown=root:root --chmod=755 instrument_registry /app/instrument_registry
+COPY --chown=root:root --chmod=755 instruments /app/instruments
 COPY --chown=root:root --chmod=755 LICENSE /app/LICENSE
 
 ENV PYTHONPATH=/app/
