@@ -7,7 +7,6 @@ services:
     restart: unless-stopped
     volumes:
       - ./instrument_registry:/app/instrument_registry/:cached
-      - ./instruments:/app/instruments/:cached
     environment:
       - ENVIRONMENT=local
     ports:
