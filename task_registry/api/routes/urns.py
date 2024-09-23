@@ -2,7 +2,7 @@ import logging
 
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import JSONResponse
-from instrument_registry.lifespan import CACHED_DATA
+from task_registry.lifespan import CACHED_DATA
 
 router = APIRouter()
 
@@ -20,7 +20,7 @@ def _validate_urn(urn: str) -> str:
 @router.get(
     "/",
     summary="Get the contents of the specific Instrument by URN",
-    description="This endpoint returns a JSON with the contents of a specific Instrument identiefied by URN"
+    description="This endpoint returns a JSON with the contents of a specific Instrument identified by URN"
     " and version.",
     responses={
         200: {"description": "JSON with the specific contents of the Instrument."},

@@ -13,48 +13,13 @@ env:
   PIPX_BIN_DIR: /usr/local/bin
 
 jobs:
-  build: # TODO: REMOVE THIS STEP AFTER AMT HAS BEEN CHANGED TO USE THE API
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v4
-    - name: Install poetry
-      run: pipx install poetry
-
-    - name: Set up Python 3.12
-      uses: actions/setup-python@v5
-      with:
-        python-version: 3.12
-        cache: "poetry"
-
-    - name: Install dependencies
-      run: poetry install
-
-    - name: Configure Git Identity
-      run: |
-        git config user.email "actions@github.com"
-        git config user.name "GitHub Actions"
-
-    - name: Generate index.json
-      run: ./script/deploy
-
-    - name: Commit to deployment branch
-      run: |
-        git fetch
-        git checkout --orphan deployment
-        git add index.json -f
-        git commit -m 'Auto-generate index.json'
-        git push --force origin deployment
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Get GHCR package hash
         id: get_package_hash
         run: |
-            container_id=$(gh api --paginate -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /orgs/MinBZK/packages/container/instrument-registry/versions | jq -r '.[] | select(.metadata.container.tags | contains(["${{ inputs.image_tag }}"])) | .name')
+            container_id=$(gh api --paginate -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /orgs/MinBZK/packages/container/task-registry/versions | jq -r '.[] | select(.metadata.container.tags | contains(["${{ inputs.image_tag }}"])) | .name')
             echo "container_id=$container_id" >> "$GITHUB_OUTPUT"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -80,16 +45,16 @@ jobs:
 
       - name: Make changes to the file
         run: |
-          sed -i 's/newTag: .*$/newTag: ${{inputs.image_tag  }}@${{ steps.get_package_hash.outputs.container_id }}/g' apps/instrument-registry/sandbox/kustomization.yaml
-          sed -i 's|minbzk.github.io/version: .*$|minbzk.github.io/version: main|g' apps/instrument-registry/sandbox/kustomization.yaml
-          git add apps/instrument-registry/sandbox/kustomization.yaml
+          sed -i 's/newTag: .*$/newTag: ${{inputs.image_tag  }}@${{ steps.get_package_hash.outputs.container_id }}/g' apps/task-registry/sandbox/kustomization.yaml
+          sed -i 's|minbzk.github.io/version: .*$|minbzk.github.io/version: main|g' apps/task-registry/sandbox/kustomization.yaml
+          git add apps/task-registry/sandbox/kustomization.yaml
 
       - name: show changes
         run: git diff --staged
 
       - name: push changes
         run: |
-          git commit -m "Update instrument-registry sandbox tag ${{ steps.get_package_hash.outputs.container_id }}"
+          git commit -m "Update task-registry sandbox tag ${{ steps.get_package_hash.outputs.container_id }}"
           git push --force-with-lease
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}

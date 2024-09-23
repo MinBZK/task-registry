@@ -3,7 +3,7 @@ import logging
 import logging.config
 from typing import Any
 
-from instrument_registry.core.types import LoggingLevelType
+from task_registry.core.types import LoggingLevelType
 
 LOGGING_SIZE = 10 * 1024 * 1024
 LOGGING_BACKUP_COUNT = 5
@@ -28,7 +28,7 @@ LOGGING_CONFIG = {
         "file": {
             "formatter": "generic",
             "()": "logging.handlers.RotatingFileHandler",
-            "filename": "instrument-registry.log",
+            "filename": "task-registry.log",
             "maxBytes": LOGGING_SIZE,
             "backupCount": LOGGING_BACKUP_COUNT,
         },
@@ -52,6 +52,6 @@ def configure_logging(level: LoggingLevelType = "INFO", config: dict[str, Any] |
 
     logging.config.dictConfig(log_config)
 
-    logger = logging.getLogger("ir")
+    logger = logging.getLogger("tr")
 
     logger.setLevel(level)

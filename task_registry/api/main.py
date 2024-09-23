@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from instrument_registry.api.routes import health, instruments, urns
+from task_registry.api.routes import health, instruments, urns
 
 api_router = APIRouter()
 api_router.include_router(health.router, prefix="/health", tags=["health"])

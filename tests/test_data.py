@@ -1,7 +1,7 @@
 import logging
 from typing import Any
 
-from instrument_registry import data
+from task_registry import data
 
 logger = logging.getLogger(__name__)
 

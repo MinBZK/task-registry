@@ -4,9 +4,9 @@ from contextlib import asynccontextmanager
 from typing import Any
 
 from fastapi import FastAPI
-from instrument_registry.core.config import PROJECT_NAME, VERSION, get_settings
-from instrument_registry.core.log import configure_logging
-from instrument_registry.data import create_urn_mappper, generate_index
+from task_registry.core.config import PROJECT_NAME, VERSION, get_settings
+from task_registry.core.log import configure_logging
+from task_registry.data import create_urn_mappper, generate_index
 
 CACHED_DATA: dict[str, Any] = {}
 

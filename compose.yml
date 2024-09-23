@@ -1,12 +1,12 @@
 services:
-  ir:
+  tr:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ghcr.io/minbzk/ir:latest
+    image: ghcr.io/minbzk/tr:latest
     restart: unless-stopped
     volumes:
-      - ./instrument_registry:/app/instrument_registry/:cached
+      - ./task_registry:/app/task_registry/:cached
     environment:
       - ENVIRONMENT=local
     ports:

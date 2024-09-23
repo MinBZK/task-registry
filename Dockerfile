@@ -5,8 +5,8 @@ FROM  --platform=$BUILDPLATFORM python:${PYTHON_VERSION} AS project-base
 LABEL maintainer=ai-validatie@minbzk.nl \
     organization=MinBZK \
     license=EUPL-1.2 \
-    org.opencontainers.image.description="Instrument Registry" \
-    org.opencontainers.image.source=https://github.com/MinBZK/instrument-registry \
+    org.opencontainers.image.description="Task Registry" \
+    org.opencontainers.image.source=https://github.com/MinBZK/task-registry \
     org.opencontainers.image.licenses=EUPL-1.2
 
 ENV PYTHONUNBUFFERED=1 \
@@ -32,7 +32,7 @@ ENV PATH="/app/.venv/bin:$PATH"
 
 FROM project-base AS development
 
-COPY instrument-registry/ ./instrument-registry/
+COPY task-registry/ ./task-registry/
 COPY ./tests/ ./tests/
 COPY ./README.md ./README.md
 RUN poetry install
@@ -48,14 +48,14 @@ RUN pyright
 FROM project-base AS production
 
 
-RUN groupadd ir && \
-    adduser --uid 100 --system --ingroup ir ir
+RUN groupadd tr && \
+    adduser --uid 100 --system --ingroup tr tr
 
-RUN chown ir:ir /app/
+RUN chown tr:tr /app/
 
-USER ir
+USER tr
 
-COPY --chown=root:root --chmod=755 instrument_registry /app/instrument_registry
+COPY --chown=root:root --chmod=755 task_registry /app/task_registry
 COPY --chown=root:root --chmod=755 instruments /app/instruments
 COPY --chown=root:root --chmod=755 LICENSE /app/LICENSE
 
@@ -64,4 +64,4 @@ WORKDIR /app/
 
 ENV PATH="/app/:$PATH"
 
-ENTRYPOINT ["python", "-m", "uvicorn", "--host", "0.0.0.0", "instrument_registry.server:app", "--port", "8000", "--log-level", "warning"]
+ENTRYPOINT ["python", "-m", "uvicorn", "--host", "0.0.0.0", "task_registry.server:app", "--port", "8000", "--log-level", "warning"]
