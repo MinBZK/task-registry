@@ -1,14 +1,14 @@
-# Instrument Registry
+# 1. Task Registry
 
-Registry for instruments / measures as defined by the [Algoritmekader](https://minbzk.github.io/Algoritmekader/),
-examples are the IAMA or a technical bias scan.
-The purpose of the register is to bridge policy and running code.
+This registry is an overarching architecture to group all Tasks that can be performed in the context of algorithm and AI-system management, compliance and governance. The purpose of the register is to bridge policy and running code.
+A task could be part of an instrument and correspond to a maatregel/measure and/or vereisten/requirement (see Definitions).
 
 The registry is deployed
-here: [https://minbzk.github.io/instrument-registry/index.json](https://minbzk.github.io/instrument-registry/index.json).
+here: [https://minbzk.github.io/task-registry/index.json](https://minbzk.github.io/task-registry/index.json).
 
 
-# Definitions
+# 2. Definitions
+The definitions of maatregel/measure, vereisten/requirement and instrument are as defined by the [Algoritmekader](https://minbzk.github.io/Algoritmekader/).
 Since definitions are often closely tied to language, we provide them in both English and Dutch.
 
 ## English
@@ -31,7 +31,9 @@ Since definitions are often closely tied to language, we provide them in both En
     - Baseline Information Security Government
     - Dutch Constitution
 
-- **Instruments:** Tools for responsible and effective use of algorithms and AI systems such as guidelines, standards, guidance documents. Most tools are not mandatory, but others are.
+- **Instruments:** Tools for responsible and effective use of algorithms and AI systems such as guidelines, standards, guidance documents. Most tools are not mandatory, but others are. Examples are:
+    - IAMA
+    - DPIA
 
 
 ## Nederlands
@@ -53,4 +55,6 @@ Since definitions are often closely tied to language, we provide them in both En
     - Baseline Informatiebeveiliging Overheid (BIO)
     - Grondwet
 
-- **Instrumenten:** Hulpmiddelen voor verantwoord en effectief gebruik van algoritmes en AI-systemen zoals richtlijnen, standaarden, leidraden. De meeste instrumenten zijn niet verplicht, maar andere wel.
+- **Instrumenten:** Hulpmiddelen voor verantwoord en effectief gebruik van algoritmes en AI-systemen zoals richtlijnen, standaarden, leidraden. De meeste instrumenten zijn niet verplicht, maar andere wel. Zoals:
+    - IAMA
+    - DPIA
