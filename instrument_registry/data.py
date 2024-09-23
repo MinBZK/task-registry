@@ -30,7 +30,7 @@ def create_urn_mappper(entries: list[dict[str, Any]]) -> dict[str, Any]:
 
 
 def generate_index(
-    base_url: str = "https://minbzk.github.io/instrument-registry",
+    base_url: str = "https://minbzk.github.io/task-registry",
     directory: str = "instruments",
     output_file: str = "index.json",
 ) -> dict[str, Any]:
