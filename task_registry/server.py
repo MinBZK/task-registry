@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from instrument_registry.api.main import api_router
-from instrument_registry.core.config import PROJECT_DESCRIPTION, PROJECT_NAME, VERSION
-from instrument_registry.lifespan import lifespan
+from task_registry.api.main import api_router
+from task_registry.core.config import PROJECT_DESCRIPTION, PROJECT_NAME, VERSION
+from task_registry.lifespan import lifespan
 
 
 def create_app() -> FastAPI:

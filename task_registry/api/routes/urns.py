@@ -2,7 +2,7 @@ import logging
 
 from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import JSONResponse
-from instrument_registry.lifespan import CACHED_DATA
+from task_registry.lifespan import CACHED_DATA
 
 router = APIRouter()
 

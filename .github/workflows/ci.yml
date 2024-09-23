@@ -150,7 +150,7 @@ jobs:
 
       - name: Make changes to project to inject commit hash
         run: |
-          sed -i 's/VERSION: str = .*$/VERSION: str = "${{ steps.get_commit_hash.outputs.commit_hash }}"/g' instrument_registry/core/config.py
+          sed -i 's/VERSION: str = .*$/VERSION: str = "${{ steps.get_commit_hash.outputs.commit_hash }}"/g' task_registry/core/config.py
 
 
       - name: Log in to the Container registry

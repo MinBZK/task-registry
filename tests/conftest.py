@@ -4,7 +4,7 @@ from unittest.mock import mock_open, patch
 
 import pytest
 from fastapi.testclient import TestClient
-from instrument_registry.server import create_app
+from task_registry.server import create_app
 
 logger = logging.getLogger(__name__)
 

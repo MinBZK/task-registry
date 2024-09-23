@@ -1,11 +1,9 @@
 # 1. Task Registry
 
 This registry is an overarching architecture to group all Tasks that can be performed in the context of algorithm and AI-system management, compliance and governance. The purpose of the register is to bridge policy and running code.
-A task could be part of an instrument and correspond to a maatregel/measure and/or vereisten/requirement (see Definitions).
+A task could be part of an instrument and correspond to a maatregel/measure and/or vereisten/requirement (see 2. Definitions).
 
-The registry is deployed
-here: [https://minbzk.github.io/task-registry/index.json](https://minbzk.github.io/task-registry/index.json).
-
+The registry is deployed here: [https://task-registry.apps.digilab.network/](https://task-registry.apps.digilab.network/).
 
 # 2. Definitions
 The definitions of maatregel/measure, vereisten/requirement and instrument are as defined by the [Algoritmekader](https://minbzk.github.io/Algoritmekader/).

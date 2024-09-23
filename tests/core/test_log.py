@@ -1,16 +1,16 @@
 import logging
 
 import pytest
-from instrument_registry.core.config import Settings
-from instrument_registry.core.log import configure_logging
+from task_registry.core.config import Settings
+from task_registry.core.log import configure_logging
 
 
-def test_logging_ir_module(caplog: pytest.LogCaptureFixture):
-    config = {"loggers": {"ir": {"propagate": True}}}
+def test_logging_tr_module(caplog: pytest.LogCaptureFixture):
+    config = {"loggers": {"tr": {"propagate": True}}}
 
     configure_logging(config=config)
 
-    logger = logging.getLogger("ir")
+    logger = logging.getLogger("tr")
 
     message = "This is a test log message"
     logger.debug(message)  # defaults to INFO level so debug is not printed
@@ -24,11 +24,11 @@ def test_logging_ir_module(caplog: pytest.LogCaptureFixture):
 
 
 def test_logging_submodule(caplog: pytest.LogCaptureFixture):
-    config = {"loggers": {"ir": {"propagate": True}}}
+    config = {"loggers": {"tr": {"propagate": True}}}
 
     configure_logging(config=config)
 
-    logger = logging.getLogger("ir.main")
+    logger = logging.getLogger("tr.main")
 
     message = "This is a test log message"
     logger.debug(message)
@@ -44,14 +44,14 @@ def test_logging_submodule(caplog: pytest.LogCaptureFixture):
 def test_logging_config(caplog: pytest.LogCaptureFixture, monkeypatch: pytest.MonkeyPatch):
     monkeypatch.setenv(
         "LOGGING_CONFIG",
-        '{"loggers": { "ir": {  "propagate": "True" }},"formatters": { "generic": {  "fmt": "{name}: {message}"}}}',
+        '{"loggers": { "tr": {  "propagate": "True" }},"formatters": { "generic": {  "fmt": "{name}: {message}"}}}',
     )
 
     settings = Settings()
 
     configure_logging(config=settings.LOGGING_CONFIG)
 
-    logger = logging.getLogger("ir")
+    logger = logging.getLogger("tr")
 
     message = "This is a test log message with other formatting"
     logger.debug(message)
@@ -64,7 +64,7 @@ def test_logging_config(caplog: pytest.LogCaptureFixture, monkeypatch: pytest.Mo
 
 
 def test_logging_loglevel(caplog: pytest.LogCaptureFixture, monkeypatch: pytest.MonkeyPatch):
-    config = {"loggers": {"ir": {"propagate": True}}}
+    config = {"loggers": {"tr": {"propagate": True}}}
 
     configure_logging(config=config)
 
@@ -74,7 +74,7 @@ def test_logging_loglevel(caplog: pytest.LogCaptureFixture, monkeypatch: pytest.
 
     configure_logging(config=config, level=settings.LOGGING_LEVEL)
 
-    logger = logging.getLogger("ir.main")
+    logger = logging.getLogger("tr.main")
 
     message = "This is a test log message with different logging level"
     logger.debug(message)
