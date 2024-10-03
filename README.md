@@ -5,6 +5,10 @@ A task could be part of an instrument and correspond to a maatregel/measure and/
 
 The registry is deployed here: [https://task-registry.apps.digilab.network/](https://task-registry.apps.digilab.network/).
 
+A graphical overview of the task registry and its components is shown below:
+
+![Infographic](./task_registry.png)
+
 # 2. Definitions
 The definitions of maatregel/measure, vereisten/requirement and instrument are as defined by the [Algoritmekader](https://minbzk.github.io/Algoritmekader/).
 Since definitions are often closely tied to language, we provide them in both English and Dutch.
