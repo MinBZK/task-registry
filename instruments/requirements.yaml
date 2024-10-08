@@ -1,0 +1,35 @@
+systemcard_path: .assessments[]               # append requirements.yaml to 'assessments' list in system card
+schema_version: 1.1.0
+name: "Vereisten Algoritmekader"
+description: "De vereisten zijn gebaseerd op de wetten en regels voor het uitvoeren van wettelijke taken"
+urn: "urn:nl:aivt:tr:rq:1.0"
+language: "nl"
+owners:
+  - organization: ""
+    name: ""
+    email: ""
+    role: ""
+date: ""
+url: "https://minbzk.github.io/Algoritmekader/vereisten/"
+
+template: &assessmentcard_template                  # anchor for all fields belonging to answer
+  question: "$QUESTION"
+  answer: "$ANSWER"
+  remarks: "$REMARKS"
+  timestamp: "$TIMESTAMP"
+  authors:
+    - name: "$AUTHOR.NAME"
+      email: "$AUTHOR.EMAIL"
+      role: "$AUTHOR.ROLE"
+
+tasks:
+  - question: "Relevante feiten en belangen zijn bekend: De ontwikkeling en het gebruik van algoritmes en AI-systemen komt zorgvuldig tot stand."
+    urn: "urn:nl:ak:ver:awb-01" #same urn as AK
+    labels:
+      - key: topic
+        value: "Aanleiding en probleemdefinitie"
+    type: [ "requirement" ]
+    suggested_roles: [ "Aanbieder", "Gebruiksverantwoordelijke" ]
+    lifecycle: [ "Organisatieverantwoordelijkheden" ]
+    links: []
+    template: *assessmentcard_template
