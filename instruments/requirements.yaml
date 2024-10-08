@@ -27,9 +27,21 @@ tasks:
     urn: "urn:nl:ak:ver:awb-01" #same urn as AK
     labels:
       - key: topic
-        value: "Aanleiding en probleemdefinitie"
+        value: "Governance"
     type: [ "requirement" ]
     suggested_roles: [ "Aanbieder", "Gebruiksverantwoordelijke" ]
     lifecycle: [ "Organisatieverantwoordelijkheden" ]
     links: []
+    template: *assessmentcard_template
+  - question: "Automatische logregistratie voor hoog-risico AI: Algoritmes en AI-systemen zijn dusdanig technisch vormgegeven dat gebeurtenissen gedurende hun levenscyclus automatisch worden geregistreerd (“logs”)."
+    urn: "urn:nl:ak:ver:aia-07" #same urn as AK
+    labels:
+      - key: topic
+        value: "Governance"
+      - key: topic
+        value: "Technische robuustheid en veiligheid"
+    type: [ "requirement" ]
+    suggested_roles: [ "Aanbieder", "Gebruiksverantwoordelijke" ]
+    lifecycle: [ "Ontwikkelen", "Monitoring en beheer" ]
+    links: [{urn:urn:nl:ak:maa:0.1}]
     template: *assessmentcard_template

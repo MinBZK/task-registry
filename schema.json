@@ -100,7 +100,8 @@
                 "sign_task",
                 "upload_document",
                 "statement",
-                "requirement"
+                "requirement",
+                "measure"
               ]
             }
           },
