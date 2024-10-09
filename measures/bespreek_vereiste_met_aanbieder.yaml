@@ -20,7 +20,8 @@ lifecycle: [ "Ontwerp", "Ontwikkelen" ]
 links: [{"urn":"urn:nl:ak:ver:aia-07"}]
 
 template: &systemcard_measures_template
-  requirement: "$REQUIREMENT"
+  measure: "$MEASURE"
+  answer: "$ANSWER"
   remarks: "$REMARKS"
   status: "$STATUS"
   timestamp: "$TIMESTAMP"
