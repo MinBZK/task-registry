@@ -14,6 +14,8 @@ url: "https://minbzk.github.io/Algoritmekader/vereisten/awb-01-zorgvuldigheidsbe
 suggested_roles: [ "Aanbieder", "Gebruiksverantwoordelijke" ]
 lifecycle: [ "Ontwikkelen", "Monitoring en beheer" ]
 links: [{"urn:urn:nl:ak:maa:0.1"}]
+ai_risk_profile: ["AI-systeem", "Hoog-risico AI"]
+always_applicable: 0
 
 template: &systemcard_requirements_template
   requirement: "$REQUIREMENT"
