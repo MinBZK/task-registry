@@ -13,7 +13,7 @@ date: ""
 url: "https://minbzk.github.io/Algoritmekader/vereisten/awb-01-zorgvuldigheidsbeginsel/index.html"
 suggested_roles: [ "Aanbieder", "Gebruiksverantwoordelijke" ]
 lifecycle: [ "Ontwikkelen", "Monitoring en beheer" ]
-links: [{urn:urn:nl:ak:maa:0.1}]
+links: [{"urn:urn:nl:ak:maa:0.1"}]
 
 template: &systemcard_requirements_template
   requirement: "$REQUIREMENT"
