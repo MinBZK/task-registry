@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/menselijke_tussenkomst/index.html
 subject: ["menselijke-controle", "governance"]
-suggested_role: ["proceseigenaar", "gebruiker", "aanbieder"]
+suggested_roles: ["proceseigenaar", "gebruiker", "aanbieder"]
 lifecycle: ["ontwerp", "ontwikkelen", "verificatie-en-validatie", "implementatie", "monitoring-en-beheer"]
-links: [urn:nl:ak:ver:avg-10, urn:nl:ak:ver:grw-01, urn:nl:ak:ver:aia-24, urn:nl:ak:ver:awb-01, urn:nl:ak:ver:aia-09]
+links: ["urn:nl:ak:ver:avg-10", "urn:nl:ak:ver:grw-01", "urn:nl:ak:ver:aia-24", "urn:nl:ak:ver:awb-01", "urn:nl:ak:ver:aia-09"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

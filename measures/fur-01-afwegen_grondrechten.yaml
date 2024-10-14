@@ -11,10 +11,11 @@ owners:
     email: ''
     role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/afwegen_grondrechten/index.html
 subject: ["fundamentele-rechten"]
-suggested_role: []
+suggested_roles: []
 lifecycle: ["probleemanalyse", "ontwerp", "verificatie-en-validatie", "monitoring-en-beheer"]
-links: [urn:nl:ak:ver:grw-01, urn:nl:ak:ver:aia-29]
+links: ["urn:nl:ak:ver:grw-01", "urn:nl:ak:ver:aia-29"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

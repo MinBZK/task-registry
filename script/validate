@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import os
 import sys
 from collections import Counter
 from collections.abc import Iterable
@@ -32,25 +33,41 @@ def extract_urns(data: Iterable, urns: list | None = None, seen_urns: set | None
     return urns
 
 
-# Load the JSON schema
-with open(sys.argv[1]) as schema_file:
-    schema = json.load(schema_file)
+# Schema and file pairs for validation
+schema_file_pairs = [
+    ("schemas/schema_instruments.json", "./instruments"),
+    ("schemas/schema_measures.json", "./measures"),
+    ("schemas/schema_requirements.json", "./requirements"),
+]
 
 urns = []
-for f in sys.argv[2:]:
-    # Load the YAML file
-    with open(f) as yaml_file:
-        data = yaml.safe_load(yaml_file)
-    urns.extend(extract_urns(data))
 
-    # Validate the data
-    try:
-        validate(instance=data, schema=schema)
-        print(f"Validation of '{f}' successful.")
-    except jsonschema.exceptions.ValidationError as err:
-        print(f"Validation error in '{f}': {err.message}")
-        sys.exit(1)
+for schema_file, yaml_dir in schema_file_pairs:
+    # Load the JSON schema
+    with open(schema_file) as schema_file:
+        schema = json.load(schema_file)
 
+    # Process each YAML file in the specified directory
+    for filename in os.listdir(yaml_dir):
+        if filename.endswith(".yaml"):
+            yaml_file_path = os.path.join(yaml_dir, filename)
+
+            # Load the YAML file
+            with open(yaml_file_path) as file:
+                data = yaml.safe_load(file)
+
+            # Extract URNs
+            urns.extend(extract_urns(data))
+
+            # Validate the data
+            try:
+                validate(instance=data, schema=schema)
+                print(f"Validation of '{yaml_file_path}' against '{schema_file}' successful.")
+            except jsonschema.exceptions.ValidationError as err:
+                print(f"Validation error in '{yaml_file_path}': {err.message}")
+                sys.exit(1)
+
+# Check for duplicate URNs
 duplicates = [u for (u, c) in Counter(urns).most_common() if c > 1]
 if duplicates:
     print(f"URNs are not unique: {duplicates}")

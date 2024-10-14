@@ -21,10 +21,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/bepaal_bewaartermijnen_en_inrichten_vernietigingsprocedure/index.html
 subject: ["technische-robuustheid-en-veiligheid", "privacy-en-gegevensbescherming"]
-suggested_role: ["proceseigenaar", "aanbieder", "data-engineer", "data-scientist", "security-officer"]
+suggested_roles: ["proceseigenaar", "aanbieder", "data engineer", "data scientist", "security officer"]
 lifecycle: ["ontwikkelen", "verificatie-en-validatie", "monitoring-en-beheer"]
-links: [urn:nl:ak:ver:arc-01, urn:nl:ak:ver:aia-12, urn:nl:ak:ver:avg-02]
+links: ["urn:nl:ak:ver:arc-01", "urn:nl:ak:ver:aia-12", "urn:nl:ak:ver:avg-02"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

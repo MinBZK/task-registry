@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/richt_gebruikersbeheer_in/index.html
 subject: ["technische-robuustheid-en-veiligheid", "governance"]
-suggested_role: ["projectleider", "proceseigenaar", "informatiebeheerder", "security-officer"]
+suggested_roles: ["projectleider", "proceseigenaar", "informatiebeheerder", "security officer"]
 lifecycle: ["organisatieverantwoordelijkheden"]
-links: [urn:nl:ak:ver:bio-01]
+links: ["urn:nl:ak:ver:bio-01"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

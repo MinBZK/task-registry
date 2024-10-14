@@ -25,10 +25,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/publiceren_in_algoritmeregister/index.html
 subject: ["transparantie"]
-suggested_role: ["proceseigenaar", "beleidsmedewerker", "privacy-officer", "aanbieder"]
+suggested_roles: ["proceseigenaar", "beleidsmedewerker", "privacy-officer", "aanbieder"]
 lifecycle: ["ontwerp", "ontwikkelen", "verificatie-en-validatie", "implementatie", "monitoring-en-beheer", "uitfaseren"]
-links: [urn:nl:ak:ver:bzk-01, urn:nl:ak:ver:aia-08, urn:nl:ak:ver:avg-07, urn:nl:ak:ver:awb-01]
+links: ["urn:nl:ak:ver:bzk-01", "urn:nl:ak:ver:aia-08", "urn:nl:ak:ver:avg-07", "urn:nl:ak:ver:awb-01"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

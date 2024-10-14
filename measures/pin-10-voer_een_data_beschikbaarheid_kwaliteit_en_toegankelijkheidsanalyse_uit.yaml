@@ -11,11 +11,12 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/voer_een_data_beschikbaarheid_kwaliteit_en_toegankelijkheidsanalyse_uit/index.html
 subject: ["publieke-inkoop", "data"]
-suggested_role: ["proceseigenaar", "behoeftesteller", "informatie-analist", "data-scientist", "inkoopadviseur", "contractbeheerder", "aanbestedingsjurist", "aanbieder", "opdrachtnemer", "architect"]
+suggested_roles: ["proceseigenaar", "behoeftesteller", "informatie analist", "data scientist", "inkoopadviseur", "contractbeheerder", "aanbestedingsjurist", "aanbieder", "opdrachtnemer", "architect"]
 lifecycle: ["ontwerp", "ontwikkelen"]
 links: [
-  urn:nl:ak:ver:aia-05
+  "urn:nl:ak:ver:aia-05"
 ]
 template: &systemcard_measures_template
   requirement: $MEASURE

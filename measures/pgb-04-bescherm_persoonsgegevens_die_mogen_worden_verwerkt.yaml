@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/bescherm_persoonsgegevens_die_mogen_worden_verwerkt/index.html
 subject: ["privacy-en-gegevensbescherming", "technische-robuustheid-en-veiligheid"]
-suggested_role: ["proceseigenaar", "aanbieder", "data-scientist", "data-engineer", "security-officer", "privacy-officer"]
+suggested_roles: ["proceseigenaar", "aanbieder", "data scientist", "data engineer", "security officer", "privacy-officer"]
 lifecycle: ["ontwerp", "dataverkenning-en-datapreparatie", "ontwikkelen"]
-links: [urn:nl:ak:ver:avg-03, urn:nl:ak:ver:avg-12]
+links: ["urn:nl:ak:ver:avg-03", "urn:nl:ak:ver:avg-12"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

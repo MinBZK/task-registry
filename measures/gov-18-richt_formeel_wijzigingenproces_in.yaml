@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/richt_formeel_wijzigingenproces_in/index.html
 subject: ["technische-robuustheid-en-veiligheid", "governance"]
-suggested_role: ["projectleider", "proceseigenaar", "data-scientist", "data-engineer", "security-officer"]
+suggested_roles: ["projectleider", "proceseigenaar", "data scientist", "data engineer", "security officer"]
 lifecycle: ["ontwerp", "ontwikkelen", "implementatie", "monitoring-en-beheer"]
-links: [urn:nl:ak:ver:bio-01]
+links: ["urn:nl:ak:ver:bio-01"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

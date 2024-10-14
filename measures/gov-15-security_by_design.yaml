@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/security_by_design/index.html
 subject: ["technische-robuustheid-en-veiligheid", "governance", "transparantie", "menselijke-controle"]
-suggested_role: ["projectleider", "informatiebeheerder", "security-officer"]
+suggested_roles: ["projectleider", "informatiebeheerder", "security officer"]
 lifecycle: ["ontwerp", "dataverkenning-en-datapreparatie", "ontwikkelen", "verificatie-en-validatie", "implementatie", "monitoring-en-beheer"]
-links: [urn:nl:ak:ver:bio-01, urn:nl:ak:ver:avg-12, urn:nl:ak:ver:aia-07]
+links: ["urn:nl:ak:ver:bio-01", "urn:nl:ak:ver:avg-12", "urn:nl:ak:ver:aia-07"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

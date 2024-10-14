@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/persoonsgegevens_die_worden_verwerkt_zijn_beschreven/index.html
 subject: ["privacy-en-gegevensbescherming"]
-suggested_role: ["proceseigenaar", "informatie-analist", "data-engineer", "privacy-officer"]
+suggested_roles: ["proceseigenaar", "informatie analist", "data engineer", "privacy-officer"]
 lifecycle: ["ontwerp", "dataverkenning-en-datapreparatie", "ontwikkelen", "verificatie-en-validatie"]
-links: [urn:nl:ak:ver:avg-01, urn:nl:ak:ver:avg-04]
+links: ["urn:nl:ak:ver:avg-01", "urn:nl:ak:ver:avg-04"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

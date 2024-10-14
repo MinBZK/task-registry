@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/backups_maken/index.html
 subject: ["technische-robuustheid-en-veiligheid", "governance"]
-suggested_role: ["proceseigenaar", "projectleider", "informatiebeheerder", "data-engineer", "security-officer"]
+suggested_roles: ["proceseigenaar", "projectleider", "informatiebeheerder", "data engineer", "security officer"]
 lifecycle: ["ontwerp", "ontwikkelen", "verificatie-en-validatie", "implementatie", "monitoring-en-beheer"]
-links: [urn:nl:ak:ver:bio-01]
+links: ["urn:nl:ak:ver:bio-01"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

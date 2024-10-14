@@ -19,10 +19,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/archiveren_bewaartermijnen/index.html
 subject: ["governance"]
-suggested_role: ["proceseigenaar", "informatiebeheerder", "archiefdeskundige"]
+suggested_roles: ["proceseigenaar", "informatiebeheerder", "archiefdeskundige"]
 lifecycle: ["ontwerp", "ontwikkelen"]
-links: [urn:nl:ak:ver:arc-01, urn:nl:ak:ver:aia-12]
+links: ["urn:nl:ak:ver:arc-01", "urn:nl:ak:ver:aia-12"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

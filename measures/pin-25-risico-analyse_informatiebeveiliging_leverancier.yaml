@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/risico-analyse_informatiebeveiliging_leverancier/index.html
 subject: ["technische-robuustheid-en-veiligheid", "governance", "publieke-inkoop"]
-suggested_role: ["projectleider", "informatiebeheerder", "security-officer", "proceseigenaar", "aanbestedingsjurist", "inkoopadviseur", "opdrachtnemer", "behoeftesteller"]
+suggested_roles: ["projectleider", "informatiebeheerder", "security officer", "proceseigenaar", "aanbestedingsjurist", "inkoopadviseur", "opdrachtnemer", "behoeftesteller"]
 lifecycle: ["ontwerp", "ontwikkelen", "verificatie-en-validatie", "implementatie", "monitoring-en-beheer"]
-links: [urn:nl:ak:ver:bio-01]
+links: ["urn:nl:ak:ver:bio-01"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

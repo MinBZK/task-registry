@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/beschrijf_rollen_en_verantwoordelijkheden/index.html
 subject: ["privacy-en-gegevensbescherming", "governance"]
-suggested_role: ["proceseigenaar", "privacy-officer", "data-scientist", "data-engineer", "inkoopadviseur", "contractbeheerder", "aanbieder"]
+suggested_roles: ["proceseigenaar", "privacy-officer", "data scientist", "data engineer", "inkoopadviseur", "contractbeheerder", "aanbieder"]
 lifecycle: ["ontwerp", "dataverkenning-en-datapreparatie", "ontwikkelen", "implementatie", "monitoring-en-beheer"]
-links: [urn:nl:ak:ver:avg-06, urn:nl:ak:ver:awb-01]
+links: ["urn:nl:ak:ver:avg-06", "urn:nl:ak:ver:awb-01"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

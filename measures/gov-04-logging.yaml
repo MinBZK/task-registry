@@ -11,8 +11,9 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/logging/index.html
 subject: ["technische-robuustheid-en-veiligheid", "governance", "transparantie", "menselijke-controle"]
-suggested_role: ["projectleider", "informatiebeheerder", "security-officer", "archiefdeskundige"]
+suggested_roles: ["projectleider", "informatiebeheerder", "security officer", "archiefdeskundige"]
 lifecycle: ["ontwerp", "dataverkenning-en-datapreparatie", "ontwikkelen", "verificatie-en-validatie", "implementatie", "monitoring-en-beheer"]
 links: ["urn:nl:ak:ver:bio-01", "urn:nl:ak:ver:aia-07", "urn:nl:ak:ver:aia-13"]
 template: &systemcard_measures_template

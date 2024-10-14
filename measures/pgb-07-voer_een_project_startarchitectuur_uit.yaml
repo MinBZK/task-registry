@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/voer_een_project_startarchitectuur_uit/index.html
 subject: ["privacy-en-gegevensbescherming"]
-suggested_role: ["proceseigenaar", "informatie-analist", "data-engineer", "privacy-officer", "security-officer", "inkoopadviseur", "architect"]
+suggested_roles: ["proceseigenaar", "informatie analist", "data engineer", "privacy-officer", "security officer", "inkoopadviseur", "architect"]
 lifecycle: ["ontwerp", "ontwikkelen", "verificatie-en-validatie", "implementatie"]
-links: [urn:nl:ak:ver:aia-10, urn:nl:ak:ver:awb-01, urn:nl:ak:ver:avg-11]
+links: ["urn:nl:ak:ver:aia-10", "urn:nl:ak:ver:awb-01", "urn:nl:ak:ver:avg-11"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

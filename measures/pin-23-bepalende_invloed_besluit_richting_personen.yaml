@@ -15,10 +15,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/bepalende_invloed_besluit_richting_personen/index.html
 subject: ["publieke-inkoop"]
-suggested_role: ["behoeftesteller", "proceseigenaar", "gebruiker", "inkoopadviseur", "ethicus", "jurist"]
+suggested_roles: ["behoeftesteller", "proceseigenaar", "gebruiker", "inkoopadviseur", "ethicus", "jurist"]
 lifecycle: ["ontwikkelen", "monitoring-en-beheer"]
-links: [urn:nl:ak:ver:avg-10]
+links: ["urn:nl:ak:ver:avg-10"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

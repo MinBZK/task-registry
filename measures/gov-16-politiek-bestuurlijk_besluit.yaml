@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/politiek-bestuurlijk_besluit/index.html
 subject: ["governance", "transparantie"]
-suggested_role: ["proceseigenaar", "beleidsmedewerker", "privacy-officer", "aanbieder"]
+suggested_roles: ["proceseigenaar", "beleidsmedewerker", "privacy-officer", "aanbieder"]
 lifecycle: ["organisatieverantwoordelijkheden", "verificatie-en-validatie"]
-links: [urn:nl:ak:ver:awb-01, urn:nl:ak:ver:aia-08, urn:nl:ak:ver:awb-02]
+links: ["urn:nl:ak:ver:awb-01", "urn:nl:ak:ver:aia-08", "urn:nl:ak:ver:awb-02"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE

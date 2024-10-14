@@ -11,10 +11,11 @@ owners:
   email: ''
   role: ''
 date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/model-verwerkersovereenkomst_onderdeel_aanbesteding/index.html
 subject: ["publieke-inkoop", "privacy-en-gegevensbescherming"]
-suggested_role: ["proceseigenaar", "privacy-officer", "inkoopadviseur"]
+suggested_roles: ["proceseigenaar", "privacy-officer", "inkoopadviseur"]
 lifecycle: ["ontwerp", "monitoring-en-beheer"]
-links: [urn:nl:ak:ver:avg-13]
+links: ["urn:nl:ak:ver:avg-13"]
 template: &systemcard_measures_template
   requirement: $MEASURE
   value: $VALUE
