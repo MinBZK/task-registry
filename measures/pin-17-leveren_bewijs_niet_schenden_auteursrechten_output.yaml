@@ -7,7 +7,7 @@ description: Maak het al dan niet kunnen leveren van bewijs door een aanbieder d
 explanation: "Laat de aanbieder(s) uitleggen en (aantoonbaar) onderbouwen of de output\
   \ van een algoritme een (potentiële) inbreuk maakt op auteursrechten.\nMaak een\
   \ jurist onderdeel van de beoordeling hiervan."
-urn: urn:nl:ak:mtr:pin:17
+urn: urn:nl:ak:mtr:pin-17
 language: nl
 owners:
 - organization: Algoritmekader

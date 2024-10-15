@@ -27,7 +27,7 @@ explanation: "Er zijn beheersmaatregelen die kunnen helpen bij het zorgen voor e
   \ BIO 12.4.1).\n- Beoordeel of de data ten behoeve van het ontwikkelen en gebruiken\
   \ van het algoritme voldoende is beveiligd. Maak hierin onderscheid tussen de trainingsdata,\
   \ inputdata en de outputdata."
-urn: urn:nl:ak:mtr:gov:13
+urn: urn:nl:ak:mtr:gov-13
 language: nl
 owners:
 - organization: Algoritmekader

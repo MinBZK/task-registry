@@ -28,12 +28,12 @@ url: https://minbzk.github.io/Algoritmekader/vereisten/aia-38-melding-inbreuk-op
 subject: ["governance", "fundamentele-rechten"]
 lifecycle: ["organisatieverantwoordelijkheden", "monitoring-en-beheer"]
 links: [
-    "urn:nl:ak:mtr:pin:01",
-    "urn:nl:ak:mtr:pin:02",
-    "urn:nl:ak:mtr:pin:04",
-    "urn:nl:ak:mtr:pin:05",
-    "urn:nl:ak:mtr:pin:07",
-    "urn:nl:ak:mtr:pin:09"
+    "urn:nl:ak:mtr:pin-01",
+    "urn:nl:ak:mtr:pin-02",
+    "urn:nl:ak:mtr:pin-04",
+    "urn:nl:ak:mtr:pin-05",
+    "urn:nl:ak:mtr:pin-07",
+    "urn:nl:ak:mtr:pin-09"
 ]
 ai_risk_profile: ["AI-systeem", "AI-systeem voor algemene doeleinden", "AI-model voor algemene doeleinden"]
 always_applicable: 0

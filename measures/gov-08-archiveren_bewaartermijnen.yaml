@@ -11,7 +11,7 @@ explanation: 'Archiefbescheiden moeten voor een bepaalde tijd worden bewaard.
   Het is mogelijk dat de selectielijsten nog niet duiden welke informatie of data,
   specifiek bij de toepassing van algoritmen en AI, moet worden bewaard en dat hier
   dus ook nog geen termijnen aan zijn gekoppeld.'
-urn: urn:nl:ak:mtr:gov:08
+urn: urn:nl:ak:mtr:gov-08
 language: nl
 owners:
 - organization: Algoritmekader

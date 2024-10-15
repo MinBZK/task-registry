@@ -22,7 +22,7 @@
     },
     "urn": {
       "type": "string",
-      "pattern": "^urn:nl:ak:mtr:[a-z]+:[0-9]+"
+      "pattern": "^urn:nl:ak:mtr:[a-z]+-[0-9]+"
     },
     "language": {
       "type": "string",

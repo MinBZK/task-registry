@@ -4,7 +4,7 @@ name: Contractuele afspraken over data en artefacten
 description: Maak (contractuele) afspraken met de aanbieder wie eigenaar is van de
   data en artefacten die ontstaan bij het gebruik van algoritmen en AI-systemen.
 explanation: "Hier kan worden gedacht aan de initiële trainingsdataset, outputdata (richting gebruikers) en nieuwe trainingsdata (vanuit gebruikers)."
-urn: urn:nl:ak:mtr:pin:15
+urn: urn:nl:ak:mtr:pin-15
 language: nl
 owners:
 - organization: Algoritmekader

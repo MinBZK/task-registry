@@ -17,7 +17,7 @@ explanation: '- De regering wil dat de overheid algoritmes en AI-systemen verant
   - Er zijn gevallen waarin het publiceren van algoritmes of AI-systemen in het Algoritmeregister achterwege moet blijven. Deze gevallen zijn beschreven in de Handreiking van het Algoritmeregister.
 
   - Impactvolle algoritmes en hoog risico AI-systemen moet al tijdens de ontwikkeling ervan worden gepubliceerd in het Algoritmeregister.'
-urn: urn:nl:ak:mtr:tra:01
+urn: urn:nl:ak:mtr:tra-01
 language: nl
 owners:
 - organization: Algoritmekader

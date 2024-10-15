@@ -10,7 +10,7 @@ explanation: 'Het is van belang om te controleren of de te verwerken data waar o
 
   Hier kan worden gedacht aan data die is gescraped van het internet en zou kunnen
   worden gebruikt voor de ontwikkeling van een algoritme of AI-systeem.'
-urn: urn:nl:ak:mtr:dat:01
+urn: urn:nl:ak:mtr:dat-01
 language: nl
 owners:
 - organization: Algoritmekader

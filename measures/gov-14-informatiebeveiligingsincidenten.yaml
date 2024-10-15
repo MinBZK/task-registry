@@ -3,7 +3,7 @@ schema_version: 1.1.0
 name: "Richt een incidentmanagement proces in voor informatiebeveiligingsincidenten"
 description: "Richt een proces in waarmee beveiligingsincidenten m.b.t. algoritmes en data zo spoedig mogelijk worden opgelost."
 explanation: "- Er zijn procedures aanwezig die borgen dat beveiligingsincidenten m.b.t. algoritmes en data zo spoedig mogelijk, afhankelijk van de kwalificatie van het incident, worden opgepakt."
-urn: urn:nl:ak:mtr:gov:14
+urn: urn:nl:ak:mtr:gov-14
 language: nl
 owners:
 - organization: Algoritmekader

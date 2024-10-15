@@ -3,7 +3,7 @@ schema_version: 1.1.0
 name: Bescherm persoonsgegevens die mogen worden verwerkt voor het ontwikkelen en gebruiken van algoritmes en AI-systemen.
 description: Pas maatregelen toe als pseudonimiseren, anonimisering of aggregeren van persoonsgegevens toe bij het verwerken van de data.
 explanation: '- Als is vastgesteld welke persoonsgegevens mogen worden verwerkt voor het ontwikkelen en gebruiken van algoritmes en AI-systemen, moet worden nagegaan of er maatregelen kunnen worden getroffen om deze te beschermen.\n\n- Hierbij kan worden gedacht aan het pseudonomiseren, anonimiseren of aggregeren van persoonsgegevens.\n\n- Het bepalen of persoonsgegevens mogen worden verwerkt voor algoritmes en AI-systemen moet worden bekeken in samenhang met maatregelen die kunnen worden getroffen om deze gegevens te beschermen.'
-urn: urn:nl:ak:mtr:pgb:04
+urn: urn:nl:ak:mtr:pgb-04
 language: nl
 owners:
 - organization: Algoritmekader

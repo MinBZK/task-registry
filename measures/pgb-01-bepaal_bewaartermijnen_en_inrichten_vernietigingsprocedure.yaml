@@ -13,7 +13,7 @@ explanation: "- (Persoons)gegevens die het algoritme of AI-systeem verwerkt word
   \ (persoons)gegevens (in de onderliggende systemen) zijn getroffen en zorg dat dit\
   \ aantoonbaar is, bijvoorbeeld met logbestanden.\n- Maak aantoonbaar dat persoonsgegevens\
   \ zijn vernietigd, bijvoorbeeld met logbestanden."
-urn: urn:nl:ak:mtr:pgb:01
+urn: urn:nl:ak:mtr:pgb-01
 language: nl
 owners:
 - organization: Algoritmekader

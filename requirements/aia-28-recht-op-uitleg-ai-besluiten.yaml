@@ -40,14 +40,14 @@ url: https://minbzk.github.io/Algoritmekader/vereisten/aia-28-recht-op-uitleg-ai
 subject: ["governance", "fundamentele-rechten"]
 lifecycle: ["implementatie", "ontwerp", "monitoring-en-beheer"]
 links: [
-    "urn:nl:ak:mtr:pin:01",
-    "urn:nl:ak:mtr:pin:02",
-    "urn:nl:ak:mtr:pin:03",
-    "urn:nl:ak:mtr:pin:04",
-    "urn:nl:ak:mtr:pin:05",
-    "urn:nl:ak:mtr:pin:07",
-    "urn:nl:ak:mtr:pin:08",
-    "urn:nl:ak:mtr:pin:09"
+    "urn:nl:ak:mtr:pin-01",
+    "urn:nl:ak:mtr:pin-02",
+    "urn:nl:ak:mtr:pin-03",
+    "urn:nl:ak:mtr:pin-04",
+    "urn:nl:ak:mtr:pin-05",
+    "urn:nl:ak:mtr:pin-07",
+    "urn:nl:ak:mtr:pin-08",
+    "urn:nl:ak:mtr:pin-09"
 ]
 ai_risk_profile: ["AI-systeem", "AI-systeem voor algemene doeleinden", "hoog-risico AI", "gebruiksverantwoordelijke"]
 always_applicable: 0

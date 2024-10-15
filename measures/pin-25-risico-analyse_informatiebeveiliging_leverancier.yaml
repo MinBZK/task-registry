@@ -3,7 +3,7 @@ schema_version: 1.1.0
 name: "Voer een risico-analyse met de leverancier uit op het gebied van informatiebeveiliging bij een uitbestedingstraject"
 description: "Voer een risico-analyse met de leverancier uit op het gebied van informatiebeveiliging bij een uitbestedingstraject"
 explanation: "- Stel vast of een leverancier voldoet aan de Baseline Informatiebeveiliging Overheid.\n\n- Bespreek de informatiebeveiligingseisen met een eventuele leverancier die verband houden met de beschikbaarheid, integriteit en vertrouwelijkheid van de informatie en de informatiesystemen.\n\n- Bepaal of er, mede gezien de inzet van algoritmes en AI-systemen, aanvullende beveiligingsmaatregelen (door de leverancier of opdrachtgever) moeten worden getroffen om deze te beschermen."
-urn: urn:nl:ak:mtr:pin:25
+urn: urn:nl:ak:mtr:pin-25
 language: nl
 owners:
 - organization: Algoritmekader

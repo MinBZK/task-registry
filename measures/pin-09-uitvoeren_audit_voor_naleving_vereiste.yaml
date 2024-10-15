@@ -3,7 +3,7 @@ schema_version: 1.1.0
 name: Neem het kunnen uitvoeren van een audit over de vereiste op in contractvoorwaarden en de contractovereenkomst
 description: Neem het kunnen uitvoeren van een audit over de vereiste op in contractvoorwaarden en de contractovereenkomst
 explanation: 'Het is van belang dat opdrachtgever mogelijkheden heeft om te controleren in hoeverre door aanbieder/opdrachtnemer wordt voldaan aan naleving van de contractvoorwaarden'
-urn: urn:nl:ak:mtr:pin:09
+urn: urn:nl:ak:mtr:pin-09
 language: nl
 owners:
 - organization: Algoritmekader
