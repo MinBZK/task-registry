@@ -22,7 +22,8 @@ repos:
     hooks:
     -   id: validate-schema
         name: validate schema
-        entry: sh -c './script/validate schema.json ./instruments/*.yaml'
+        entry:
+          sh -c './script/validate'
         language: python
         additional_dependencies: [jsonschema, pyyaml]
         pass_filenames: false

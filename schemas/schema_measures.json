@@ -1,0 +1,196 @@
+{
+  "$id": "http://example.com/schemas/schema_v1.1.0.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "systemcard_path": {
+      "type": "string"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "const": "1.1.0"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "urn": {
+      "type": "string",
+      "pattern": "^urn:nl:ak:mtr:[a-z]+-[0-9]+"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2}(-[A-Z]{2})?$"
+    },
+    "owners": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "organization": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "organization",
+          "name",
+          "email",
+          "role"
+        ]
+      }
+    },
+    "date": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "lifecycle": {
+      "description": "Part of the algorithm lifecycle",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "probleemanalyse",
+          "ontwerp",
+          "dataverkenning-en-datapreparatie",
+          "ontwikkelen",
+          "organisatieverantwoordelijkheden",
+          "verificatie-en-validatie",
+          "implementatie",
+          "monitoring-en-beheer",
+          "uitfaseren"
+        ]
+      }
+    },
+    "suggested_roles": {
+      "description": "Roles suggested to answer question",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "aanbestedingsjurist",
+          "architect",
+          "aanbieder",
+          "archiefdeskundige",
+          "behoeftesteller",
+          "beleidsmedewerker",
+          "communicatieadviseur",
+          "contractbeheerder",
+          "data engineer",
+          "data scientist",
+          "domeinspecialist",
+          "ethicus",
+          "gebruiker",
+          "gebruiksverantwoordelijke",
+          "gemandateerd verantwoordelijke(n)",
+          "informatie analist",
+          "informatiebeheerder",
+          "inkoopadviseur",
+          "jurist",
+          "opdrachtgever",
+          "opdrachtnemer",
+          "privacy-officer",
+          "proceseigenaar",
+          "projectleider",
+          "security officer"
+        ]
+      },
+      "minItems": 0
+    },
+    "links": {
+      "description": "Links to other relevant measures / tasks",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "subject": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "template": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^\\$.*$"
+      },
+      "properties": {
+        "requirement": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "remarks": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string"
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "const": "$AUTHOR.NAME"
+              },
+              "email": {
+                "type": "string",
+                "const": "$AUTHOR.EMAIL"
+              },
+              "role": {
+                "type": "string",
+                "const": "$AUTHOR.ROLE"
+              }
+            },
+            "required": [
+              "name",
+              "email",
+              "role"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "systemcard_path",
+    "schema_version",
+    "name",
+    "description",
+    "explanation",
+    "urn",
+    "language",
+    "owners",
+    "date",
+    "url",
+    "lifecycle",
+    "suggested_roles",
+    "links",
+    "subject",
+    "template"
+  ]
+}
