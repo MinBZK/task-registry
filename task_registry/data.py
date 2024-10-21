@@ -1,4 +1,3 @@
-import json
 import logging
 import os
 from pathlib import Path
@@ -30,21 +29,17 @@ def create_urn_mappper(entries: list[dict[str, Any]]) -> dict[str, Any]:
 
 
 def generate_index(
-    base_url: str = "https://minbzk.github.io/task-registry",
+    base_url: str = "https://task-registry.apps.digilab.network",
     directory: str = "instruments",
-    output_file: str = "index.json",
 ) -> dict[str, Any]:
-    # TODO: For now the generation and saving of the index.json is coupled, because of backwards
-    # compatibility for AMT. In the future the download url and links will be the endpoint of
-    # our API, so the coupling can be removed.
     index: dict[str, Any] = {
         "type": "dir",
         "size": 0,
         "name": directory,
         "path": directory,
-        "download_url": f"{base_url}/{output_file}",
+        "download_url": f"{base_url}/instruments",
         "_links": {
-            "self": f"{base_url}/{output_file}",
+            "self": f"{base_url}/instruments",
         },
         "entries": [],
     }
@@ -62,21 +57,11 @@ def generate_index(
                         "name": file,
                         "path": relative_path,
                         "urn": instrument["urn"],
-                        "download_url": f"{base_url}/{relative_path}",
+                        "download_url": f"{base_url}/urns/?urn={instrument['urn']}",
                         "_links": {
-                            "self": f"{base_url}/{relative_path}",
+                            "self": f"{base_url}/urns/?urn={instrument['urn']}",
                         },
                     }
                     index["entries"].append(file_info)
 
-    with open(output_file, "w") as f:
-        json.dump(index, f, indent=4)
-        logger.info(f"Saved index file to {output_file}")
-
     return index
-
-
-# This will be removed when the deploy script in script/ is not necessary anymore.
-# This wrapper is needed because the CI script fails when other than None is returned.
-def main() -> None:
-    generate_index()  # pragma: no cover
