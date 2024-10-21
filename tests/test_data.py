@@ -6,8 +6,8 @@ from task_registry import data
 logger = logging.getLogger(__name__)
 
 TEST_INDEX: dict[str, Any] = {
-    "_links": {"self": "test.io/index.json"},
-    "download_url": "test.io/index.json",
+    "_links": {"self": "ourapi.io/instruments"},
+    "download_url": "ourapi.io/instruments",
     "entries": [],
     "name": "test",
     "path": "test",
@@ -22,5 +22,5 @@ def test_create_urn_mappper() -> None:
 
 
 def test_generate_index() -> None:
-    index = data.generate_index(base_url="test.io", directory="test", output_file="index.json")
+    index = data.generate_index(base_url="ourapi.io", directory="test")
     assert index == TEST_INDEX
