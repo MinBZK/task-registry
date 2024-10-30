@@ -1,6 +1,6 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Bewaartermijn voor gegenereerde logs
+name: Logs van hoog-risico-AI-systemen worden 6 maanden bewaard door de aanbieder
 description: 'Aanbieders van AI-systemen met een hoog risico bewaren de in artikel
   12, lid 1, bedoelde logs die automatisch worden gegenereerd door hun AI-systemen
   met een hoog risico voor zover dergelijke logs onder hun controle vallen.
@@ -25,20 +25,34 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/aia-13-bewaartermijn-voor-gegenereerde-logs/index.html
-subject: ["governance", "technische-robuustheid-en-veiligheid"]
-lifecycle: ["ontwerp", "ontwikkelen", "verificatie-en-validatie", "monitoring-en-beheer", "uitfaseren"]
-links: [
-    "urn:nl:ak:mtr:pin-01",
-    "urn:nl:ak:mtr:pin-02",
-    "urn:nl:ak:mtr:gov-04",
-    "urn:nl:ak:mtr:pin-04",
-    "urn:nl:ak:mtr:pin-05",
-    "urn:nl:ak:mtr:pin-07",
-    "urn:nl:ak:mtr:pin-09"
-]
-ai_risk_profile: []
-always_applicable: 1
-template: &systemcard_requirements_template
+subject:
+- transparantie
+- technische-robuustheid-en-veiligheid
+lifecycle:
+- ontwerp
+- monitoring-en-beheer
+- uitfaseren
+links:
+- 64_maak_vereiste_onderdeel_van_contractovereenkomst
+- 10_creeer_ruimte_voor_samenwerking_in_contract
+- 61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- 6_uitvoeren_audit_voor_naleving_vereiste
+- 4-owk-04-logging
+- 50_bespreek_vereiste_met_aanbieder
+- 32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_category:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+always_applicable: 0
+template:
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

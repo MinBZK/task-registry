@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# # Fetch the specified branch from the remote repository
+git fetch https://github.com/MinBZK/Algoritmekader.git release-v1.6/beslisboom-taggen:refs/remotes/other-repo/release-v1.6/beslisboom-taggen
+
+# # Check out specific directories from the fetched branch
+git checkout refs/remotes/other-repo/release-v1.6/beslisboom-taggen -- docs/maatregelen docs/vereisten
+
+# Run the Python scripts
+python script/convert_data_AK/convert_mkdocs_to_yaml_measure
+python script/convert_data_AK/convert_mkdocs_to_yaml_requirements
+python script/convert_data_AK/add_links_to_measures
+
+#Delete docs folder
+rm -r docs

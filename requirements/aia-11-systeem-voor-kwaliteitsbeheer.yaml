@@ -1,0 +1,83 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Hoog-risico-AI-systemen zijn voorzien van een kwaliteitsbeheersysteem
+description: 'Aanbieders van AI-systemen met een hoog risico voorzien in een systeem
+  voor kwaliteitsbeheer dat de naleving van deze verordening waarborgt.
+
+  Dit systeem wordt op systematische en ordelijke wijze gedocumenteerd in de vorm
+  van schriftelijke beleidslijnen, procedures en instructies en omvat ten minste de
+  aspecten vermeld in artikel 17 AI-verordening.'
+explanation: "Aanbieders van AI-systemen met een hoog risico moeten een kwaliteitsbeheersysteem\
+  \ implementeren om te garanderen dat ze voldoen aan de AI-verordening.\nDit systeem\
+  \ omvat gedocumenteerde beleidslijnen, procedures en instructies, en behandelt beknopt\
+  \ de volgende aspecten:\n\n1. een strategie voor de naleving van de regelgeving,\
+  \ inclusief de naleving van de conformiteitsbeoordelingsprocedures en de procedures\
+  \ voor het beheer van de wijzigingen van het AI-systeem met een hoog risico;\n2.\
+  \ technieken, procedures en systematische maatregelen die moeten worden toegepast\
+  \ voor het ontwerp, de controle van het ontwerp en de verificatie van het ontwerp\
+  \ van het AI-systeem met een hoog risico;\n3. technieken, procedures en systematische\
+  \ maatregelen die moeten worden toegepast voor de ontwikkeling, de kwaliteitscontrole\
+  \ en de kwaliteitsborging van het AI-systeem met een hoog risico;\n4. procedures\
+  \ voor het inspecteren, testen en valideren die v\xF3\xF3r, tijdens en na de ontwikkeling\
+  \ van het AI-systeem met een hoog risico moeten worden uitgevoerd en de regelmaat\
+  \ waarmee zij moeten worden uitgevoerd;\n5. technische specificaties, met inbegrip\
+  \ van normen, die moeten worden toegepast en, wanneer de relevante geharmoniseerde\
+  \ normen niet volledig worden toegepast of geen betrekking hebben op alle relevante\
+  \ eisen van afdeling 2, de middelen die worden gebruikt om ervoor te zorgen dat\
+  \ het AI-systeem met een hoog risico in overeenstemming is met deze eisen;\n6. systemen\
+  \ en procedures voor databeheer, met inbegrip van dataverwerving, - verzameling,\
+  \ -analyse, -labeling, -opslag, -zuivering, -aggregatie en -behoud en datamining\
+  \ en eventuele andere operaties met betrekking tot de data die worden uitgevoerd\
+  \ voorafgaand aan en met het oog op het in de handel brengen of in gebruik stellen\
+  \ van AI-systemen met een hoog risico;\n7. het systeem voor risicobeheer zoals bedoeld\
+  \ in artikel 9 van de AI-verordening;\n8. het opzetten, toepassen en onderhouden\
+  \ van een systeem voor monitoring na het in de handel brengen, overeenkomstig artikel\
+  \ 72 AI-verordening;\n9. procedures in verband met het melden van een ernstig incident\
+  \ in overeenstemming met artikel 73 van de AI-verordening;"
+urn: urn:nl:ak:ver:aia-11
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/vereisten/aia-11-systeem-voor-kwaliteitsbeheer/index.html
+subject:
+- governance
+lifecycle:
+- organisatieverantwoordelijkheden
+links:
+- 29_leveren_bewijs_onderdeel_beoordeling_inschrijving
+- 36_neem_vereiste_op_als_subgunningscriteria
+- 0-org-02-vastgestelde-beleidskaders
+- 0-org-07-periodieke-evaluatie-kwaliteit
+- 4-owk-02-stopzetten-gebruik
+- 64_maak_vereiste_onderdeel_van_contractovereenkomst
+- 10_creeer_ruimte_voor_samenwerking_in_contract
+- 61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- 7_maak_vereiste_onderdeel_van_service_level_agreement
+- 6_uitvoeren_audit_voor_naleving_vereiste
+- 50_bespreek_vereiste_met_aanbieder
+- 32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_category:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

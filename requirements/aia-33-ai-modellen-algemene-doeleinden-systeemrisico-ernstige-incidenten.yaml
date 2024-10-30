@@ -1,0 +1,61 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: "Als AI-modellen voor algemene doeleinden met systeemrisico\u2019s ernstige\
+  \ incidenten veroorzaken, wordt dit gedocumenteerd en gerapporteerd"
+description: Aanbieders van AI-modellen voor algemene doeleinden met een systeemrisico
+  moeten relevante informatie over ernstige incidenten en mogelijke corrigerende maatregelen
+  bijhouden, documenteren en onverwijld rapporteren aan het AI bureau en, in voorkomend
+  geval, aan de nationale bevoegde autoriteiten.
+explanation: 'Aanbieders van AI-modellen voor algemene doeleinden met een systeemrisico
+  moeten ernstige incidenten documenteren en rapporteren.
+
+  Deze informatie moet onmiddellijk worden gemeld aan het AI-bureau en eventueel aan
+  nationale autoriteiten.
+
+  Dit proces is cruciaal voor het waarborgen van de veiligheid en het nemen van passende
+  corrigerende maatregelen.
+
+  Dit vereiste is een aanvulling op de in artikel 53 AI-verordening genoemde verplichtingen.
+
+  '
+urn: urn:nl:ak:ver:aia-33
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/vereisten/aia-33-ai-modellen-algemene-doeleinden-systeemrisico-ernstige-incidenten/index.html
+subject:
+- governance
+- transparantie
+lifecycle:
+- monitoring-en-beheer
+links:
+- 64_maak_vereiste_onderdeel_van_contractovereenkomst
+- 10_creeer_ruimte_voor_samenwerking_in_contract
+- 61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- 6_uitvoeren_audit_voor_naleving_vereiste
+- 50_bespreek_vereiste_met_aanbieder
+- 32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type:
+  - AI-model voor algemene doeleinden
+  open_source: []
+  risk_category: []
+  systemic_risk:
+  - systeemrisico
+  transparency_obligations: []
+  role:
+  - aanbieder
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

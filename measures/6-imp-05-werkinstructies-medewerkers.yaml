@@ -1,0 +1,34 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Spreek af hoe medewerkers omgaan met het algoritme of AI-systeem
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:imp-05
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/6-imp-05-werkinstructies-medewerkers/index.html
+subject:
+- governance
+- menselijke-controle
+suggested_roles:
+- projectleider
+- beleid-en-advies
+lifecycle:
+- implementatie
+links:
+- urn:nl:ak:ver:grw-02
+- urn:nl:ak:ver:aia-09
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

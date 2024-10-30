@@ -1,0 +1,35 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Controleer de auteursrechten van eigen data
+description: 'Controleer of eventueel door de eigen organisatie verstrekte data binnen
+  of buiten auteursrechten vallen.
+
+  Bij voorkeur blijven de data eigendom van de (verstrekkende) overheidsorganisatie.'
+explanation: ''
+urn: urn:nl:ak:mtr:dat-06
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/3-dat-06-schending-auteursrechten/index.html
+subject:
+- data
+suggested_roles:
+- jurist
+lifecycle:
+- ontwerp
+- dataverkenning-en-datapreparatie
+links:
+- urn:nl:ak:ver:aut-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

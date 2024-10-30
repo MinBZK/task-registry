@@ -1,17 +1,9 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Auteursrechten mogen niet worden geschonden
+name: Auteursrechten zijn beschermd
 description: Auteursrechten mogen niet geschonden worden bij het ontwikkelen en gebruiken
   van algoritmes en AI.
-explanation: 'Bepaalde vormen van algoritmes en AI worden ontwikkeld op basis van
-  grote hoeveelheden data.
-
-  Deze data wordt gebruikt voor het trainen en testen van algoritmes en AI.
-
-  Het gebruiken van deze data mag geen inbreuk maken op Auteursrechten van diegene
-  die deze rechten heeft.
-
-  Ook de gegenereerde output van algoritmes en AI mag geen inbreuk maken op deze rechten.'
+explanation: ''
 urn: urn:nl:ak:ver:aut-01
 language: nl
 owners:
@@ -20,34 +12,40 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/aut-01-auteursrechten.md/index.html
-subject: ["data", "governance"]
-lifecycle: ["dataverkenning-en-datapreparatie", "ontwerp"]
-links: [
-    "urn:nl:ak:mtr:pin-12",
-    "urn:nl:ak:mtr:pin-01",
-    "urn:nl:ak:mtr:pin-01",
-    "urn:nl:ak:mtr:pin-15",
-    "urn:nl:ak:mtr:dat-01",
-    "urn:nl:ak:mtr:pin-02",
-    "urn:nl:ak:mtr:pin-16",
-    "urn:nl:ak:mtr:pin-17",
-    "urn:nl:ak:mtr:pin-18",
-    "urn:nl:ak:mtr:pin-03",
-    "urn:nl:ak:mtr:pin-04",
-    "urn:nl:ak:mtr:pin-05",
-    "urn:nl:ak:mtr:pin-07",
-    "urn:nl:ak:mtr:pin-08",
-    "urn:nl:ak:mtr:pin-19",
-    "urn:nl:ak:mtr:gov-02",
-    "urn:nl:ak:mtr:pin-20",
-    "urn:nl:ak:mtr:pin-21",
-    "urn:nl:ak:mtr:gov-05",
-    "urn:nl:ak:mtr:pin-09"
-]
-ai_risk_profile: []
+url: https://minbzk.github.io/Algoritmekader/vereisten/aut-01-auteursrechten/index.html
+subject:
+- data
+- governance
+lifecycle:
+- dataverkenning-en-datapreparatie
+- ontwerp
+links:
+- 29_leveren_bewijs_onderdeel_beoordeling_inschrijving
+- 36_neem_vereiste_op_als_subgunningscriteria
+- 44_contractuele_afspraken_data_en_artefacten
+- 28_getroffen_maatregelen_van_aanbieder_voorkomen_schending_auteursrechten
+- 64_maak_vereiste_onderdeel_van_contractovereenkomst
+- 8_schending_auteursrechten_trainingsdata_onderdeel_conceptovereenkomst
+- 52_omgaan_restrisico's_aanbiede_onderdeel_beoordelingsmaatrix
+- 10_creeer_ruimte_voor_samenwerking_in_contract
+- 31_leveren_bewijs_niet_schenden_auteursrechten_output
+- 61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- 39_leveren_bewijs_niet_schenden_auteursrechten_trainingsdata
+- 3-dat-06-schending-auteursrechten
+- 6_uitvoeren_audit_voor_naleving_vereiste
+- 19_aansprakelijkheidsvoorwaarden_aanbieder_onderdeel_beoordelingsmatrix
+- 50_bespreek_vereiste_met_aanbieder
+- 56_schending_auteursrechten_output_onderdeel_conceptovereenkomst
+- 32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type: []
+  open_source: []
+  risk_category: []
+  systemic_risk: []
+  transparency_obligations: []
+  role: []
 always_applicable: 1
-template: &systemcard_requirements_template
+template:
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

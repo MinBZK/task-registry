@@ -1,0 +1,32 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Beschrijf het probleem dat het algoritme moet oplossen
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:pba-01
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/1-pba-01-formuleren-probleemdefinitie/index.html
+subject:
+- governance
+- menselijke-controle
+suggested_roles:
+- projectleider
+lifecycle:
+- probleemanalyse
+links:
+- urn:nl:ak:ver:awb-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

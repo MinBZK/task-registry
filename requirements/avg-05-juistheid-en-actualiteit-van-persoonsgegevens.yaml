@@ -1,6 +1,6 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Juistheid en actualiteit van gegevens
+name: Persoonsgegevens zijn juist en actueel
 description: De te verwerken persoonsgegevens zijn juist, nauwkeurig en worden zo
   nodig geactualiseerd of gewist.
 explanation: 'De te verwerken persoonsgegevens moeten nauwkeurig, juist en zo nodig
@@ -22,21 +22,27 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/avg-05-juistheid-en-actualiteit-van-persoonsgegevens/index.html
-subject: ["privacy-en-gegevensbescherming", "data"]
-lifecycle: ["probleemanalyse", "ontwerp", "dataverkenning-en-datapreparatie", "ontwikkelen"]
-links: [
-    "urn:nl:ak:mtr:pin-01",
-    "urn:nl:ak:mtr:pin-02",
-    "urn:nl:ak:mtr:pin-04",
-    "urn:nl:ak:mtr:pin-05",
-    "urn:nl:ak:mtr:pin-07",
-    "urn:nl:ak:mtr:gov-02",
-    "urn:nl:ak:mtr:gov-05",
-    "urn:nl:ak:mtr:pin-09"
-]
-ai_risk_profile: []
+subject:
+- privacy-en-gegevensbescherming
+lifecycle:
+- dataverkenning-en-datapreparatie
+links:
+- 64_maak_vereiste_onderdeel_van_contractovereenkomst
+- 10_creeer_ruimte_voor_samenwerking_in_contract
+- 61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- 3-dat-01-datakwaliteit
+- 6_uitvoeren_audit_voor_naleving_vereiste
+- 50_bespreek_vereiste_met_aanbieder
+- 32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type: []
+  open_source: []
+  risk_category: []
+  systemic_risk: []
+  transparency_obligations: []
+  role: []
 always_applicable: 1
-template: &systemcard_requirements_template
+template:
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

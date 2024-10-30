@@ -1,0 +1,43 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Maak een noodplan voor het stoppen van het algoritme
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:owk-02
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/4-owk-02-stopzetten-gebruik/index.html
+subject:
+- governance
+- menselijke-controle
+suggested_roles:
+- projectleider
+- ontwikkelaar
+lifecycle:
+- ontwikkelen
+- implementatie
+links:
+- urn:nl:ak:ver:aia-18
+- urn:nl:ak:ver:awb-01
+- urn:nl:ak:ver:aia-11
+- urn:nl:ak:ver:grw-01
+- urn:nl:ak:ver:aia-29
+- urn:nl:ak:ver:grw-02
+- urn:nl:ak:ver:aia-19
+- urn:nl:ak:ver:aia-09
+- urn:nl:ak:ver:avg-04
+- urn:nl:ak:ver:aia-24
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

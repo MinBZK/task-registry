@@ -1,6 +1,6 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Verbod op schenden databankenrechten
+name: Databanken worden alleen gebruikt met toestemming van de databank-producent
 description: Het is verboden om zonder goedkeuring van de producent een databank op
   te vragen en/of te hergebruiken.
 explanation: "De Databankrichtlijn en Databankenwet beschermt de producten/fabrikanten\
@@ -13,7 +13,7 @@ explanation: "De Databankrichtlijn en Databankenwet beschermt de producten/fabri
   \ op bescherming van de originele keuze of rangschikking van de inhoud van databanken\
   \ (auteurswet).\n \n\nVoor het ontwikkelen van algoritme en AI is data nodig.\n\
   De data die hiervoor wordt gebruikt mag niet ongeoorloofd zijn verkregen uit een\
-  \ databank."
+  \ databank.\n"
 urn: urn:nl:ak:ver:dat-01
 language: nl
 owners:
@@ -23,22 +23,28 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/dat-01-databankenwet/index.html
-subject: ["data"]
-lifecycle: ["ontwerp", "dataverkenning-en-datapreparatie"]
-links: [
-    "urn:nl:ak:mtr:pin-01",
-    "urn:nl:ak:mtr:pin-02",
-    "urn:nl:ak:mtr:pin-03",
-    "urn:nl:ak:mtr:pin-04",
-    "urn:nl:ak:mtr:pin-05",
-    "urn:nl:ak:mtr:pin-07",
-    "urn:nl:ak:mtr:pin-08",
-    "urn:nl:ak:mtr:gov-02",
-    "urn:nl:ak:mtr:pin-09"
-]
-ai_risk_profile: []
+subject:
+- data
+lifecycle:
+- dataverkenning-en-datapreparatie
+links:
+- 29_leveren_bewijs_onderdeel_beoordeling_inschrijving
+- 36_neem_vereiste_op_als_subgunningscriteria
+- 64_maak_vereiste_onderdeel_van_contractovereenkomst
+- 10_creeer_ruimte_voor_samenwerking_in_contract
+- 61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- 6_uitvoeren_audit_voor_naleving_vereiste
+- 50_bespreek_vereiste_met_aanbieder
+- 32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type: []
+  open_source: []
+  risk_category: []
+  systemic_risk: []
+  transparency_obligations: []
+  role: []
 always_applicable: 1
-template: &systemcard_requirements_template
+template:
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS
