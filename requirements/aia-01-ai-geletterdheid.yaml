@@ -23,11 +23,11 @@ subject:
 lifecycle:
 - organisatieverantwoordelijkheden
 links:
-- 29_leveren_bewijs_onderdeel_beoordeling_inschrijving
-- 36_neem_vereiste_op_als_subgunningscriteria
-- 48_vaststellen_benodigde_kennisoverdracht_en_ondersteuning
-- 7_maak_vereiste_onderdeel_van_service_level_agreement
-- 63_vaststellen_passend_trainingsniveau_door_aanbieder
+- urn:nl:ak:mtr:29_leveren_bewijs_onderdeel_beoordeling_inschrijving
+- urn:nl:ak:mtr:36_neem_vereiste_op_als_subgunningscriteria
+- urn:nl:ak:mtr:48_vaststellen_benodigde_kennisoverdracht_en_ondersteuning
+- urn:nl:ak:mtr:7_maak_vereiste_onderdeel_van_service_level_agreement
+- urn:nl:ak:mtr:63_vaststellen_passend_trainingsniveau_door_aanbieder
 ai_act_profile:
 - type:
   - AI-systeem

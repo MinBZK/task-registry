@@ -37,17 +37,17 @@ subject:
 lifecycle:
 - ontwerp
 links:
-- 29_leveren_bewijs_onderdeel_beoordeling_inschrijving
-- 36_neem_vereiste_op_als_subgunningscriteria
-- 0-org-02-vastgestelde-beleidskaders
-- 4-owk-02-stopzetten-gebruik
-- 64_maak_vereiste_onderdeel_van_contractovereenkomst
-- 10_creeer_ruimte_voor_samenwerking_in_contract
-- 61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- 7_maak_vereiste_onderdeel_van_service_level_agreement
-- 6_uitvoeren_audit_voor_naleving_vereiste
-- 50_bespreek_vereiste_met_aanbieder
-- 32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+- urn:nl:ak:mtr:29_leveren_bewijs_onderdeel_beoordeling_inschrijving
+- urn:nl:ak:mtr:36_neem_vereiste_op_als_subgunningscriteria
+- urn:nl:ak:mtr:org-02
+- urn:nl:ak:mtr:owk-02
+- urn:nl:ak:mtr:64_maak_vereiste_onderdeel_van_contractovereenkomst
+- urn:nl:ak:mtr:10_creeer_ruimte_voor_samenwerking_in_contract
+- urn:nl:ak:mtr:61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- urn:nl:ak:mtr:7_maak_vereiste_onderdeel_van_service_level_agreement
+- urn:nl:ak:mtr:6_uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:50_bespreek_vereiste_met_aanbieder
+- urn:nl:ak:mtr:32_maak_de_vereiste_onderdeel_van_programma_van_eisen
 ai_act_profile:
 - type:
   - AI-systeem
