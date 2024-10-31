@@ -12,16 +12,16 @@ logger = logging.getLogger(__name__)
 
 @router.get(
     "/",
-    summary="Overview of all the instruments in the task registry.",
-    description="This endpoint returns a JSON with all the instruments in the task registry.",
-    responses={200: {"description": "JSON with all the instruments."}},
+    summary="Overview of all the requirements in the task registry.",
+    description="This endpoint returns a JSON with all the requirements in the task registry.",
+    responses={200: {"description": "JSON with all the requirements."}},
 )
-async def get_instruments() -> Index:
-    return CACHED_REGISTRY.get_tasks_index(TaskType.INSTRUMENTS)
+async def get_requirements() -> Index:
+    return CACHED_REGISTRY.get_tasks_index(TaskType.REQUIREMENTS)
 
 
 # Optional parameter 'version' is included, but not used. In a new ticket
-# versioning of instruments should be handled.
+# versioning of requirements should be handled.
 @router.get(
     "/urn/{urn}",
     summary="Get the contents of the specific instrument which has given URN.",
@@ -32,9 +32,9 @@ async def get_instruments() -> Index:
         400: {"description": "The URN does not exist or is not valid."},
     },
 )
-async def get_instrument(urn: str, version: str = "latest") -> JSONResponse:
+async def get_requirement(urn: str, version: str = "latest") -> JSONResponse:
     try:
-        content = CACHED_REGISTRY.get_task(urn, TaskType.INSTRUMENTS)
+        content = CACHED_REGISTRY.get_task(urn, TaskType.REQUIREMENTS)
         return JSONResponse(content=content)
     except KeyError as err:
         raise HTTPException(status_code=400, detail=f"invalid urn: {urn}") from err
