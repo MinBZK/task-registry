@@ -1,0 +1,38 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Toets het algoritme op bias
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:ver-01
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/5-ver-02-biasanalyse/index.html
+subject:
+- bias-en-non-discriminatie
+suggested_roles:
+- projectleider
+- beleid-en-advies
+- ontwikkelaar
+- jurist
+lifecycle:
+- ontwerp
+- verificatie-en-validatie
+- monitoring-en-beheer
+links:
+- urn:nl:ak:ver:grw-02
+- urn:nl:ak:ver:aia-29
+- urn:nl:ak:ver:grw-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

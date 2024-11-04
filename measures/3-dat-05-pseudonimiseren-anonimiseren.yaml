@@ -1,0 +1,35 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Bescherm persoonsgegevens door data te anonimiseren, pseudonimiseren of te aggregeren
+description: 'Pas maatregelen toe als pseudonimiseren, anonimisering of aggregeren
+  van persoonsgegevens toe bij het verwerken van de data. '
+explanation: ''
+urn: urn:nl:ak:mtr:dat-05
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/3-dat-05-pseudonimiseren-anonimiseren/index.html
+subject:
+- privacy-en-gegevensbescherming
+suggested_roles:
+- ontwikkelaar
+- jurist
+lifecycle:
+- dataverkenning-en-datapreparatie
+- ontwikkelen
+links:
+- urn:nl:ak:ver:avg-03
+- urn:nl:ak:ver:avg-12
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

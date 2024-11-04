@@ -1,0 +1,58 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Hoog-risico-AI-systemen zijn voorzien van voldoende technische documentatie
+description: 'De technische documentatie van een AI-systeem met een hoog risico wordt
+  opgesteld voordat dit systeem in de handel wordt gebracht of in gebruik wordt gesteld,
+  en wordt geactualiseerd.
+
+  De technische documentatie wordt op zodanige wijze opgesteld dat wordt aangetoond
+  dat het AI-systeem met een hoog risico in overeenstemming is met de eisen van Afdeling
+  2 van de AI-verordening en dat nationale bevoegde autoriteiten en aangemelde instanties
+  over de noodzakelijke, op heldere en begrijpelijke wijze gestelde informatie beschikken
+  om de overeenstemming van het AI-systeem met deze voorschriften te kunnen beoordelen.'
+explanation: ''
+urn: urn:nl:ak:ver:aia-06
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/vereisten/aia-06-technische-documentatie/index.html
+subject:
+- transparantie
+- technische-robuustheid-en-veiligheid
+lifecycle:
+- dataverkenning-en-datapreparatie
+- ontwikkelen
+- verificatie-en-validatie
+links:
+- urn:nl:ak:mtr:owp-04
+- urn:nl:ak:mtr:64_maak_vereiste_onderdeel_van_contractovereenkomst
+- urn:nl:ak:mtr:10_creeer_ruimte_voor_samenwerking_in_contract
+- urn:nl:ak:mtr:61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- urn:nl:ak:mtr:6_uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:50_bespreek_vereiste_met_aanbieder
+- urn:nl:ak:mtr:32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_category:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

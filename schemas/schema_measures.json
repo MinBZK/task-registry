@@ -22,7 +22,7 @@
     },
     "urn": {
       "type": "string",
-      "pattern": "^urn:nl:ak:mtr:[a-z]+-[0-9]+"
+      "pattern": "^urn:nl:ak:mtr:[a-z0-9_]+(?:-[0-9]+)?(.*)$"
     },
     "language": {
       "type": "string",
@@ -87,6 +87,7 @@
           "aanbestedingsjurist",
           "architect",
           "aanbieder",
+          "beleid-en-advies",
           "archiefdeskundige",
           "behoeftesteller",
           "beleidsmedewerker",
@@ -103,6 +104,7 @@
           "informatiebeheerder",
           "inkoopadviseur",
           "jurist",
+          "ontwikkelaar",
           "opdrachtgever",
           "opdrachtnemer",
           "privacy-officer",

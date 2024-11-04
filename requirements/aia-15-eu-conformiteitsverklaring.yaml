@@ -1,0 +1,63 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Hoog-risico-AI-systemen zijn voorzien van een EU-conformiteitsverklaring
+description: Aanbieders van AI-systemen met een hoog risico stellen een EU-conformiteitsverklaring
+  op.
+explanation: 'Een EU-conformiteitsverklaring is een verplicht document dat een fabrikant
+  of gemachtigde vertegenwoordiger moet ondertekenen, waarmee wordt verklaard dat
+  het product aan de EU-eisen voldoet.
+
+  De aanbieder stelt voor elk AI-systeem met een hoog risico een schriftelijke machineleesbare,
+  fysieke of elektronisch ondertekende EU-conformiteitsverklaring op en houdt deze
+  verklaring tot tien jaar na het in de handel brengen of het in gebruik stellen van
+  het AI-systeem met een hoog risico ter beschikking van de nationale bevoegde autoriteiten.
+
+  De conformiteitsverklaring bevat de informatie zoals genoemd in bijlage V AI-verordening.
+
+  Voorbeelden hiervan zijn de naam en type van het AI-systeem, naam en adres van de
+  aanbieder, dat de EU-conformiteitsverklaring wordt versterkt onder verantwoordelijkheid
+  van de aanbieder en de vermelding van eventuele toegepaste relevante geharmoniseerde
+  normen of van andere gemeenschappelijke specificaties waarop de conformiteitsverklaring
+  betrekking heeft.'
+urn: urn:nl:ak:ver:aia-15
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/vereisten/aia-15-eu-conformiteitsverklaring/index.html
+subject:
+- governance
+lifecycle:
+- verificatie-en-validatie
+- implementatie
+links:
+- urn:nl:ak:mtr:64_maak_vereiste_onderdeel_van_contractovereenkomst
+- urn:nl:ak:mtr:10_creeer_ruimte_voor_samenwerking_in_contract
+- urn:nl:ak:mtr:61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- urn:nl:ak:mtr:6_uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:50_bespreek_vereiste_met_aanbieder
+- urn:nl:ak:mtr:32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_category:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

@@ -1,0 +1,59 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Documentatie over Hoog-risico-AI-systemen wordt 10 jaar bewaard door de aanbieder
+description: "De aanbieder houdt gedurende een periode van tien jaar nadat het AI-systeem\
+  \ met een hoog risico in de handel is gebracht of in gebruik is gesteld de volgende\
+  \ elementen ter beschikking van de nationale bevoegde autoriteiten: \n\n1. de technische\
+  \ documentatie als bedoeld in artikel 11 van de AI-verordening; \n2. de documentatie\
+  \ betreffende het in artikel 17 bedoelde systeem voor kwaliteitsbeheer; \n3. in\
+  \ voorkomend geval de documentatie betreffende de door aangemelde instanties goedgekeurde\
+  \ wijzigingen; \n4. in voorkomend geval de besluiten en andere documenten die door\
+  \ de aangemelde instanties zijn afgegeven; \n5. de EU-conformiteitsverklaring als\
+  \ bedoeld in artikel 47. "
+explanation: ''
+urn: urn:nl:ak:ver:aia-12
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/vereisten/aia-12-bewaartermijn-voor-documentatie/index.html
+subject:
+- transparantie
+- technische-robuustheid-en-veiligheid
+lifecycle:
+- ontwerp
+- monitoring-en-beheer
+- uitfaseren
+links:
+- urn:nl:ak:mtr:64_maak_vereiste_onderdeel_van_contractovereenkomst
+- urn:nl:ak:mtr:dat-04
+- urn:nl:ak:mtr:10_creeer_ruimte_voor_samenwerking_in_contract
+- urn:nl:ak:mtr:61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- urn:nl:ak:mtr:6_uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:owp-08
+- urn:nl:ak:mtr:50_bespreek_vereiste_met_aanbieder
+- urn:nl:ak:mtr:32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_category:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

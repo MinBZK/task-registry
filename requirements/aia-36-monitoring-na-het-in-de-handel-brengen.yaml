@@ -1,0 +1,65 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Hoog-risico-AI-systemen zijn voorzien van een monitoringsysteem
+description: "Aanbieders moeten een systeem voor monitoring na het in de handel brengen\
+  \ vaststellen en documenteren op een manier die evenredig is aan de aard van de\
+  \ AI-technologie\xEBn en de risico\u2019s van het AI-systeem met een hoog risico.\n"
+explanation: "Aanbieders moeten een monitoringssysteem opzetten voor het monitoren\
+  \ na het in de handel brengen.\nDit systeem moet documenteren op een wijze die passend\
+  \ is bij de aard van de AI-technologie\xEBn en de risico's van het betreffende AI-systeem\
+  \ met een hoog risico.\nDit monitoringssysteem moet proportioneel zijn aan de complexiteit\
+  \ en potenti\xEBle impact van het AI-systeem.\n\nHet systeem voor monitoring na\
+  \ het in de handel brengen verzamelt, documenteert en analyseert actief en systematisch\
+  \ relevante data die door gebruiksverantwoordelijken kunnen zijn verstrekt of via\
+  \ andere bronnen kunnen zijn verzameld, over de prestaties van AI-systemen met een\
+  \ hoog risico gedurende hun hele levensduur.\nDit stelt de aanbieder in staat na\
+  \ te gaan of AI-systemen blijvend voldoen aan de in hoofdstuk III, afdeling 2, van\
+  \ de AI-verordening vermelde voorschriften.\nIn voorkomend geval omvat de monitoring\
+  \ na het in de handel brengen een analyse van de interactie met andere AI-systemen.\n\
+  Deze verplichting geldt niet voor gevoelige operationele gegevens van gebruiksverantwoordelijken\
+  \ die rechtshandhavingsinstanties zijn.\n\nHet systeem voor monitoring na het in\
+  \ de handel brengen is gebaseerd op een plan voor monitoring na het in de handel\
+  \ brengen.\nHet plan voor monitoring na het in de handel brengen maakt deel uit\
+  \ van de in bijlage IV bedoelde technische documentatie."
+urn: urn:nl:ak:ver:aia-36
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/vereisten/aia-36-monitoring-na-het-in-de-handel-brengen/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+lifecycle:
+- monitoring-en-beheer
+links:
+- urn:nl:ak:mtr:64_maak_vereiste_onderdeel_van_contractovereenkomst
+- urn:nl:ak:mtr:10_creeer_ruimte_voor_samenwerking_in_contract
+- urn:nl:ak:mtr:61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- urn:nl:ak:mtr:7_maak_vereiste_onderdeel_van_service_level_agreement
+- urn:nl:ak:mtr:6_uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:50_bespreek_vereiste_met_aanbieder
+- urn:nl:ak:mtr:32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_category:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

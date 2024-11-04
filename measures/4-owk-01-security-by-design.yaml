@@ -1,0 +1,42 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Ontwerp en ontwikkel het algoritme volgens de principes van ‘security by design’
+description: 'Hanteer principes van ‘security by design’ (informatiebeveiligingsmaatregelen)
+  als uitgangspunten bij de ontwikkeling van het algoritme.
+
+  Stel vast welke principes horen bij security by design en welke relevant zijn voor
+  het ontwerp of de ontwikkeling van het algoritme.
+
+  Mogelijke documenten waarin deze principes kunnen worden opgenomen, zijn het security
+  beleid, of ontwikkelbeleid. Bij het bepalen en vaststellen van de juiste principes
+  kunnen interviews met de ontwikkelaar en software-architecten helpen.'
+explanation: ''
+urn: urn:nl:ak:mtr:owk-01
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/4-owk-01-security-by-design/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+suggested_roles:
+- projectleider
+- ontwikkelaar
+lifecycle:
+- ontwikkelen
+links:
+- urn:nl:ak:ver:bio-01
+- urn:nl:ak:ver:avg-12
+- urn:nl:ak:ver:aia-07
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

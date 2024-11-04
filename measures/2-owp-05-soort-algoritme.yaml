@@ -1,0 +1,36 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Bepaal het soort algoritme en de risicogroep en vereisten die hierbij horen
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:owp-05
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/2-owp-05-soort-algoritme/index.html
+subject:
+- publieke-inkoop
+- governance
+suggested_roles:
+- projectleider
+- beleid-en-advies
+lifecycle:
+- ontwerp
+- ontwikkelen
+links:
+- urn:nl:ak:ver:aia-08
+- urn:nl:ak:ver:avg-04
+- urn:nl:ak:ver:aia-06.4
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

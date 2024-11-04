@@ -1,25 +1,8 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Beveiliging informatie en informatiesystemen
+name: Computersystemen zijn voldoende beveiligd tegen ongelukken en cyberaanvallen
 description: Informatie en informatiesystemen moeten op de juiste manier worden beveiligd.
-explanation: 'Informatiebeveiliging is het proces van vaststellen van de vereiste
-  beveiliging van informatiesystemen in termen van vertrouwelijkheid, beschikbaarheid
-  en integriteit alsmede het treffen, onderhouden en controleren van een samenhangend
-  pakket van bijbehorende maatregelen.
-
-  In Nederland is besloten dat overheidsinstellingen de Baseline Informatiebeveiliging
-  Overheid (BIO) dienen toe te passen over hun informatie en informatiesystemen.
-
-  De BIO beoogt de beveiliging van informatie(systemen) bij alle bestuurslagen en
-  bestuursorganen van de overheid te bevorderen, zodat alle onderdelen erop kunnen
-  vertrouwen dat onderling uitgewisselde gegevens, in lijn met wet- en regelgeving,
-  passend beveiligd zijn.
-
-  Algoritmes en AI-systemen en hun output kunnen onderdeel worden van de informatie
-  en informatiesystemen waar de BIO op van toepassing is.
-
-  Het is van belang om algoritmische toepassingen en AI-systemen op de juiste manier
-  te beveiligen.'
+explanation: ''
 urn: urn:nl:ak:ver:bio-01
 language: nl
 owners:
@@ -28,13 +11,38 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/bio-01-beveiliging-informatie-en-informatiesystemen.md/index.html
-subject: ["technische-robuustheid-en-veiligheid"]
-lifecycle: []
-links: ["urn:nl:ak:mtr:gov-13", "urn:nl:ak:mtr:pin-01", "urn:nl:ak:mtr:pin-02", "urn:nl:ak:mtr:gov-14", "urn:nl:ak:mtr:gov-04", "urn:nl:ak:mtr:pin-04", "urn:nl:ak:mtr:pin-05", "urn:nl:ak:mtr:pin-06", "urn:nl:ak:mtr:pin-07", "urn:nl:ak:mtr:gov-01", "urn:nl:ak:mtr:gov-15", "urn:nl:ak:mtr:gov-18", "urn:nl:ak:mtr:gov-19", "urn:nl:ak:mtr:gov-20", "urn:nl:ak:mtr:pin-09", "urn:nl:ak:mtr:gov-17"]
-ai_risk_profile: []
+url: https://minbzk.github.io/Algoritmekader/vereisten/bio-01-beveiliging-informatie-en-informatiesystemen/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+lifecycle:
+- organisatieverantwoordelijkheden
+links:
+- urn:nl:ak:mtr:mon-02
+- urn:nl:ak:mtr:org-02
+- urn:nl:ak:mtr:mon-03
+- urn:nl:ak:mtr:64_maak_vereiste_onderdeel_van_contractovereenkomst
+- urn:nl:ak:mtr:mon-01
+- urn:nl:ak:mtr:10_creeer_ruimte_voor_samenwerking_in_contract
+- urn:nl:ak:mtr:owk-01
+- urn:nl:ak:mtr:61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- urn:nl:ak:mtr:37_risico-analyse_informatiebeveiliging_leverancier
+- urn:nl:ak:mtr:org-06
+- urn:nl:ak:mtr:7_maak_vereiste_onderdeel_van_service_level_agreement
+- urn:nl:ak:mtr:6_uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:owk-04
+- urn:nl:ak:mtr:50_bespreek_vereiste_met_aanbieder
+- urn:nl:ak:mtr:org-05
+- urn:nl:ak:mtr:32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+- urn:nl:ak:mtr:org-04
+ai_act_profile:
+- type: []
+  open_source: []
+  risk_category: []
+  systemic_risk: []
+  transparency_obligations: []
+  role: []
 always_applicable: 1
-template: &systemcard_requirements_template
+template:
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

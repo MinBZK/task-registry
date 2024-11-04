@@ -1,0 +1,36 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Controleer regelmatig of het algoritme voldoet aan alle wetten en regels en
+  het eigen beleid
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:ver-03
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/5-ver-03-vertaling-wetgeving-naar-systeem/index.html
+subject:
+- governance
+- transparantie
+suggested_roles:
+- jurist
+lifecycle:
+- verificatie-en-validatie
+links:
+- urn:nl:ak:ver:awb-01
+- urn:nl:ak:ver:aia-08
+- urn:nl:ak:ver:awb-02
+- urn:nl:ak:ver:aia-05
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

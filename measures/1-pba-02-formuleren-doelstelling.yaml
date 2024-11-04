@@ -1,0 +1,44 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Beschrijf het doel van het algoritme
+description: "Het doel en de eventuele subdoelen van het algoritme moeten zo specifiek\
+  \ mogelijk zijn geformuleerd, en waar mogelijk gekwantificeerd. \nMaak de consequenties\
+  \ van het algoritme specifiek en zorg dat het doel van het algoritme formeel is\
+  \ vastgesteld en vastgelegd. "
+explanation: "- Het doel van de inzet van een algoritme dient zo concreet en specifiek\
+  \ mogelijk gedefinieerd te worden. \nIndien er meerdere doelen zijn, is het belangrijk\
+  \ om een zekere rangorde te maken: wat zijn de belangrijkste doelen? En waarom?\n\
+  Welke doelen zijn subdoelen, waarvoor het minder belangrijk is om deze te realiseren?\n\
+  \n- Indien mogelijk, dienen de doelstellingen gekwantificeerd te worden (SMART).\
+  \ \n\n- Om te zorgen voor voldoende draagvlak voor de beoogde doelen, is het noodzaak\
+  \ om [voldoende belanghebbenden te betrekken](../maatregelen/1-pba-04-betrek-belanghebbenden.md).\
+  \ \nHierbij kan het ook helpen om burgers te betrekken bij de totstandkoming van\
+  \ de doelstellingen, bijvoorbeeld door middel van een burgerpanel of het betrekken\
+  \ van belangengroepen. "
+urn: urn:nl:ak:mtr:pba-02
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/1-pba-02-formuleren-doelstelling/index.html
+subject:
+- governance
+- menselijke-controle
+suggested_roles:
+- projectleider
+lifecycle:
+- probleemanalyse
+links:
+- urn:nl:ak:ver:awb-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

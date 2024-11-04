@@ -1,0 +1,46 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Maak de vereiste onderdeel van Service Level Agreement
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:7_maak_vereiste_onderdeel_van_service_level_agreement
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/maak_vereiste_onderdeel_van_service_level_agreement/index.html
+subject:
+- publieke-inkoop
+suggested_roles: []
+lifecycle:
+- ontwerp
+- ontwikkelen
+links:
+- urn:nl:ak:ver:bio-01
+- urn:nl:ak:ver:avg-12
+- urn:nl:ak:ver:aia-37
+- urn:nl:ak:ver:aia-07
+- urn:nl:ak:ver:aia-01
+- urn:nl:ak:ver:aia-18
+- urn:nl:ak:ver:aia-11
+- urn:nl:ak:ver:aia-05
+- urn:nl:ak:ver:aia-36
+- urn:nl:ak:ver:aia-03
+- urn:nl:ak:ver:aia-09
+- urn:nl:ak:ver:avg-07
+- urn:nl:ak:ver:aia-03
+- urn:nl:ak:ver:aia-19
+- urn:nl:ak:ver:aia-20
+- urn:nl:ak:ver:woo-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

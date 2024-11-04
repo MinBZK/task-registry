@@ -1,0 +1,67 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Als een hoog-risico AI-systeem niet voldoet aan de AI-verordening, grijpt de
+  aanbieder in
+description: 'Aanbieders van AI-systemen met een hoog risico die van mening zijn of
+  redenen hebben om aan te nemen dat een door hen in de handel gebracht of in gebruik
+  gesteld AI systeem met een hoog risico niet in overeenstemming is met de AI-verordening,
+  nemen onmiddellijk de nodige corrigerende maatregelen om dat systeem naargelang
+  het geval in overeenstemming te brengen, uit de handel te nemen, te deactiveren
+  of terug te roepen.
+
+  Zij stellen de distributeurs van het betrokken AI-systeem met een hoog risico en,
+  indien van toepassing, de gebruiksverantwoordelijken, de gemachtigden en importeurs
+  dienovereenkomstig in kennis.'
+explanation: 'Aanbieders van AI-systemen met een hoog risico die constateren dat hun
+  systeem niet aan de verordening voldoet, moeten onmiddellijk corrigerende acties
+  ondernemen, zoals het terugroepen of uit de handel nemen van het systeem.
+
+  Ze moeten ook alle relevante partijen, zoals distributeurs, gebruiksverantwoordelijken
+  en importeurs, op de hoogte stellen van deze maatregelen.'
+urn: urn:nl:ak:ver:aia-18
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/vereisten/aia-18-corrigerende-maatregelen-voor-non-conforme-ai/index.html
+subject:
+- menselijke-controle
+- technische-robuustheid-en-veiligheid
+lifecycle:
+- organisatieverantwoordelijkheden
+- monitoring-en-beheer
+links:
+- urn:nl:ak:mtr:29_leveren_bewijs_onderdeel_beoordeling_inschrijving
+- urn:nl:ak:mtr:36_neem_vereiste_op_als_subgunningscriteria
+- urn:nl:ak:mtr:owk-02
+- urn:nl:ak:mtr:64_maak_vereiste_onderdeel_van_contractovereenkomst
+- urn:nl:ak:mtr:10_creeer_ruimte_voor_samenwerking_in_contract
+- urn:nl:ak:mtr:61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- urn:nl:ak:mtr:7_maak_vereiste_onderdeel_van_service_level_agreement
+- urn:nl:ak:mtr:6_uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:50_bespreek_vereiste_met_aanbieder
+- urn:nl:ak:mtr:32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_category:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

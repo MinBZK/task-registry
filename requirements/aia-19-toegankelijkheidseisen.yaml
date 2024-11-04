@@ -1,0 +1,71 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Hoog-risico-AI-systemen voldoen aan de toegankelijkheidseisen
+description: Aanbieders van AI-systemen met een hoog risico zorgen ervoor dat het
+  AI-systeem met een hoog risico voldoet aan de toegankelijkheidseisen overeenkomstig
+  de Richtlijnen (EU) 2016/2102 en (EU) 2019/882
+explanation: 'Aanbieders van AI-systemen met een hoog risico moeten ervoor zorgen
+  dat hun systeem toegankelijk is volgens de EU-richtlijnen 2016/2102 en 2019/882.
+
+  In het kader van Richtlijn 2016/2102 moet onder toegankelijkheid worden verstaan
+  het geheel van principes en technieken die in acht moeten worden genomen bij het
+  ontwerpen, bouwen, beheren en bijwerken van websites en mobiele applicaties om hen
+  voor gebruikers toegankelijker te maken, met name voor personen met een beperking.
+
+  Bijlage 1 bevat de toegankelijkheidsvoorschriften voor producten en diensten die
+  moeten worden toegepast op Hoog-risico-AI-systemen.
+
+
+  Richtlijn 2019/882 strekt ertoe een bijdrage te leveren tot het goed functioneren
+  van de interne markt middels onderlinge  aanpassing van de wettelijke en bestuursrechtelijke
+  bepalingen van de lidstaten inzake de toegankelijkheidsvoorschriften  voor bepaalde
+  producten en diensten, in het bijzonder door het wegwerken en voorkomen van belemmeringen
+  voor het vrije verkeer van onder deze richtlijn vallende producten en diensten ten
+  gevolge van uiteenlopende toegankelijkheidsvoorschriften in de lidstaten'
+urn: urn:nl:ak:ver:aia-19
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/vereisten/aia-19-toegankelijkheidseisen/index.html
+subject:
+- menselijke-controle
+- technische-robuustheid-en-veiligheid
+lifecycle:
+- ontwerp
+links:
+- urn:nl:ak:mtr:29_leveren_bewijs_onderdeel_beoordeling_inschrijving
+- urn:nl:ak:mtr:36_neem_vereiste_op_als_subgunningscriteria
+- urn:nl:ak:mtr:org-02
+- urn:nl:ak:mtr:owk-02
+- urn:nl:ak:mtr:64_maak_vereiste_onderdeel_van_contractovereenkomst
+- urn:nl:ak:mtr:10_creeer_ruimte_voor_samenwerking_in_contract
+- urn:nl:ak:mtr:61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- urn:nl:ak:mtr:7_maak_vereiste_onderdeel_van_service_level_agreement
+- urn:nl:ak:mtr:6_uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:50_bespreek_vereiste_met_aanbieder
+- urn:nl:ak:mtr:32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_category:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

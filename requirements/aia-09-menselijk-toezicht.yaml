@@ -1,0 +1,93 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Hoog-risico-AI-systemen staan onder menselijk toezicht
+description: AI-systemen met een hoog risico worden zodanig ontworpen en ontwikkeld,
+  met inbegrip van passende mens-machine-interface-instrumenten, dat hierop tijdens
+  de periode dat zij worden gebruikt, op doeltreffende wijze toezicht kan worden uitgeoefend
+  door natuurlijke personen.
+explanation: "Het menselijk toezicht is gericht op het voorkomen of beperken van de\
+  \ risico\u2019s voor de gezondheid, veiligheid of grondrechten die zich kunnen voordoen\
+  \ wanneer een AI-systeem met een hoog risico wordt gebruikt in overeenstemming met\
+  \ het beoogde doel ervan of in een situatie van redelijkerwijs te voorzien misbruik,\
+  \ met name wanneer dergelijke risico\u2019s blijven bestaan ondanks de toepassing\
+  \ van andere eisen van deze afdeling.\n\nDe toezichtmaatregelen staan in verhouding\
+  \ met de risico's, de mate van autonomie en de gebruikscontext van het AI-systeem\
+  \ met een hoog risico.\nHierbij kan het gaan om:\n\n1. door de aanbieder bepaalde\
+  \ maatregelen die waar technisch haalbaar in het AI-systeem met een hoog risico\
+  \ worden ingebouwd voordat dit systeem in de handel wordt gebracht of in gebruik\
+  \ wordt gesteld;\n2. door de aanbieder bepaalde maatregelen voordat het AI-systeem\
+  \ met een hoog risico in de handel wordt gebracht of in gebruik wordt gesteld en\
+  \ die passend zijn om door de gebruiksverantwoordelijke te worden uitgevoerd.\n\n\
+  De natuurlijke personen die verantwoordelijk zijn voor het menselijk toezicht, moeten\
+  \ in staat worden gesteld om waar passend en in verhouding tot de omstandigheden\
+  \ het volgende te kunnen doen:\n\n1. Goed kunnen begrijpen van de relevante capaciteiten\
+  \ en beperkingen van het AI-systeem met een hoog risico.\nMet het oog op het opsporen\
+  \ en aanpakken van onregelmatigheden, storingen en onverwachte prestaties moet de\
+  \ werking van het AI-systeem goed kunnen worden begrepen;\n2. Bewust blijven van\
+  \ de mogelijke neiging om automatisch of te veel te vertrouwen op de output van\
+  \ een AI-systeem met hoog risico (automation bias).\nDit geldt in het bijzonder\
+  \ voor het gebruik van een hoog risico AI-systeem dat wordt gebruikt om informatie\
+  \ of aanbevelingen te versterkken voor beslisisngen die door natuurlijke personen\
+  \ moeten worden genomen;\n3. De output juist kunnen interpreteren, bijvoorbeeld\
+  \ met behulp van de juiste instrumenten en methoden voor interpretatie;\n4. In alle\
+  \ specifieke situaties kunnen besluiten om het hoog risico AI-systeem niet te gebruiken\
+  \ of de output op een andere wijze te negeren, door een andere beslissing te vervangen\
+  \ of terug te draaien;\n5. ingrijpen in de werking van het hoog risico AI-systeem\
+  \ of het systeem onderbreken door middel van een stopknop of een vergelijkbare procedure\
+  \ waarmee het systeem op een veilige wijze kan worden stopgezet.\n\nIn het geval\
+  \ van een hoog risico systeem als bedoeld in bijlage III, punt 1, a  (systemen voor\
+  \ biometrische identificatie op afstand) geldt het vereiste dat twee natuurlijke\
+  \ personen met de nodige bekwaamheid, opleiding en bevoegdheid apart de indentificatie\
+  \ van het systeem verifici\xEBren en bevestigen, tenzij het wordt gebruikt voor\
+  \ rechtshandhaving, migratie, grenstoezicht of asiel, in gevallen waarin het Unierecht\
+  \ of het nationale recht de toepassing van dit vereiste onevenredig acht."
+urn: urn:nl:ak:ver:aia-09
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/vereisten/aia-09-menselijk-toezicht/index.html
+subject:
+- menselijke-controle
+lifecycle:
+- ontwerp
+- ontwikkelen
+- monitoring-en-beheer
+links:
+- urn:nl:ak:mtr:29_leveren_bewijs_onderdeel_beoordeling_inschrijving
+- urn:nl:ak:mtr:36_neem_vereiste_op_als_subgunningscriteria
+- urn:nl:ak:mtr:org-02
+- urn:nl:ak:mtr:owk-02
+- urn:nl:ak:mtr:64_maak_vereiste_onderdeel_van_contractovereenkomst
+- urn:nl:ak:mtr:imp-05
+- urn:nl:ak:mtr:imp-03
+- urn:nl:ak:mtr:10_creeer_ruimte_voor_samenwerking_in_contract
+- urn:nl:ak:mtr:61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- urn:nl:ak:mtr:7_maak_vereiste_onderdeel_van_service_level_agreement
+- urn:nl:ak:mtr:6_uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:50_bespreek_vereiste_met_aanbieder
+- urn:nl:ak:mtr:32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_category:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

@@ -1,0 +1,32 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Controleer de datakwaliteit
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:dat-01
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/3-dat-01-datakwaliteit/index.html
+subject:
+- data
+suggested_roles:
+- ontwikkelaar
+lifecycle:
+- dataverkenning-en-datapreparatie
+links:
+- urn:nl:ak:ver:avg-05
+- urn:nl:ak:ver:aia-05
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

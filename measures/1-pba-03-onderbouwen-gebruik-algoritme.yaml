@@ -1,0 +1,37 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Beschrijf waarom een algoritme het probleem moet oplossen
+description: ''
+explanation: "- Bepaal waarom het gewenst of nodig is om een algoritme in te zetten,\
+  \ en of er ook alternatieven zijn om het probleem op te lossen. \nDocumenteer de\
+  \ onderbouwing waarom een algoritme een betere oplossing zou bieden dan een niet-geautomatiseerd\
+  \ of niet-digitaal proces. \n\n- Maak een bewuste afweging of een algoritme het\
+  \ juiste middel is om [het probleem](../maatregelen/1-pba-01-formuleren-probleemdefinitie.md)\
+  \ op doelmatige en doeltreffende wijze op te lossen, en documenteer deze afweging. "
+urn: urn:nl:ak:mtr:pba-03
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/1-pba-03-onderbouwen-gebruik-algoritme/index.html
+subject:
+- governance
+- menselijke-controle
+suggested_roles:
+- projectleider
+lifecycle:
+- probleemanalyse
+links:
+- urn:nl:ak:ver:awb-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

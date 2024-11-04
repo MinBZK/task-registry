@@ -1,0 +1,36 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Controleer regelmatig of het algoritme werkt zoals het bedoeld is
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:ver-01
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/5-ver-01-functioneren-in-lijn-met-doeleinden/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+- bias-en-non-discriminatie
+suggested_roles:
+- projectleider
+- ontwikkelaar
+lifecycle:
+- ontwikkelen
+- verificatie-en-validatie
+- monitoring-en-beheer
+links:
+- urn:nl:ak:ver:awb-01
+- urn:nl:ak:ver:aia-10
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

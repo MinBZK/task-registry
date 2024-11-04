@@ -1,6 +1,7 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Beoordeling van grondrechten
+name: Hoog-risico-AI-systemen voor publieke taken worden beoordeeld op gevolgen voor
+  grondrechten
 description: Voordat een AI-systeem met een hoog risico als bedoeld in artikel 6,
   lid 2 AI-verordening, in gebruik wordt genomen, met uitzondering van AI-systemen
   met een hoog risico die bedoeld zijn om te worden gebruikt op het in punt 2 van
@@ -27,26 +28,38 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/aia-29-beoordelen-gevolgen-grondrechten/index.html
-subject: ["fundamentele-rechten"]
-lifecycle: ["ontwerp", "dataverkenning-en-datapreparatie", "ontwikkelen", "verificatie-en-validatie", "monitoring-en-beheer"]
-links: [
-    "urn:nl:ak:mtr:fur-01",
-    "urn:nl:ak:mtr:bnd-01",
-    "urn:nl:ak:mtr:bnd-02",
-    "urn:nl:ak:mtr:pin-01",
-    "urn:nl:ak:mtr:pin-02",
-    "urn:nl:ak:mtr:pin-03",
-    "urn:nl:ak:mtr:pin-04",
-    "urn:nl:ak:mtr:pin-05",
-    "urn:nl:ak:mtr:pin-07",
-    "urn:nl:ak:mtr:pin-08",
-    "urn:nl:ak:mtr:gov-02",
-    "urn:nl:ak:mtr:gov-05",
-    "urn:nl:ak:mtr:pin-09"
-]
-ai_risk_profile: ["AI-systeem", "AI-systeem voor algemene doeleinden", "hoog-risico AI"]
+subject:
+- fundamentele-rechten
+lifecycle:
+- ontwerp
+- verificatie-en-validatie
+links:
+- urn:nl:ak:mtr:29_leveren_bewijs_onderdeel_beoordeling_inschrijving
+- urn:nl:ak:mtr:36_neem_vereiste_op_als_subgunningscriteria
+- urn:nl:ak:mtr:org-07
+- urn:nl:ak:mtr:imp-02
+- urn:nl:ak:mtr:owk-02
+- urn:nl:ak:mtr:64_maak_vereiste_onderdeel_van_contractovereenkomst
+- urn:nl:ak:mtr:owp-06
+- urn:nl:ak:mtr:10_creeer_ruimte_voor_samenwerking_in_contract
+- urn:nl:ak:mtr:61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- urn:nl:ak:mtr:ver-01
+- urn:nl:ak:mtr:6_uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:50_bespreek_vereiste_met_aanbieder
+- urn:nl:ak:mtr:32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_category:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - gebruiksverantwoordelijke
 always_applicable: 0
-template: &systemcard_requirements_template
+template:
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

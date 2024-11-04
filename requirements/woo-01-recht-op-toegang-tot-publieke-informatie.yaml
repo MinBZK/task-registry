@@ -1,6 +1,6 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Eenieder heeft recht op toegang tot publieke informatie
+name: Iedereen kan openbare informatie over algoritmes vinden of aanvragen
 description: 'Een bestuursorgaan draagt er zorg voor dat de documenten die het ontvangt,
   vervaardigt of anderszins onder zich heeft, zich in goede, geordende en toegankelijke
   staat bevinden.
@@ -44,22 +44,29 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/woo-01-recht-op-toegang-tot-publieke-informatie/index.html
-subject: ["transparantie"]
-lifecycle: []
-links: [
-    "urn:nl:ak:mtr:pin-01",
-    "urn:nl:ak:mtr:pin-02",
-    "urn:nl:ak:mtr:pin-03",
-    "urn:nl:ak:mtr:pin-04",
-    "urn:nl:ak:mtr:pin-05",
-    "urn:nl:ak:mtr:pin-06",
-    "urn:nl:ak:mtr:pin-07",
-    "urn:nl:ak:mtr:pin-08",
-    "urn:nl:ak:mtr:pin-09"
-]
-ai_risk_profile: []
+subject:
+- transparantie
+lifecycle:
+- organisatieverantwoordelijkheden
+links:
+- urn:nl:ak:mtr:29_leveren_bewijs_onderdeel_beoordeling_inschrijving
+- urn:nl:ak:mtr:36_neem_vereiste_op_als_subgunningscriteria
+- urn:nl:ak:mtr:64_maak_vereiste_onderdeel_van_contractovereenkomst
+- urn:nl:ak:mtr:10_creeer_ruimte_voor_samenwerking_in_contract
+- urn:nl:ak:mtr:61_maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
+- urn:nl:ak:mtr:7_maak_vereiste_onderdeel_van_service_level_agreement
+- urn:nl:ak:mtr:6_uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:50_bespreek_vereiste_met_aanbieder
+- urn:nl:ak:mtr:32_maak_de_vereiste_onderdeel_van_programma_van_eisen
+ai_act_profile:
+- type: []
+  open_source: []
+  risk_category: []
+  systemic_risk: []
+  transparency_obligations: []
+  role: []
 always_applicable: 1
-template: &systemcard_requirements_template
+template:
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

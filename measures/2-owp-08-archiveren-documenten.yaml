@@ -1,0 +1,59 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Bepaal welke documenten voor hoe lang gearchiveerd moeten worden
+description: 'Stel vast welke documenten, (samengesteld geheel van) data/informatie
+  van/in het algoritme of het AI-systeem gelden als "archiefbescheiden" in de zin
+  van [artikel 1 c Archiefwet](https://wetten.overheid.nl/jci1.3:c:BWBR0007376&hoofdstuk=I&artikel=1&z=2024-06-19&g=2024-06-19)
+  en documenteer daarvan een overzicht, bij voorkeur vastgesteld door een daartoe
+  bevoegde. Bepaal de bijbehorende bewaartermijnen vast voor de archiefbescheiden.
+
+  '
+explanation: "- Bij archiefbescheiden kan worden gedacht aan de broncode, trainings-\
+  \ en testdata, (technische) documentatie en de output. \n- Deze archiefbescheiden\
+  \ moeten voor een bepaalde tijd worden bewaard (de bewaartermijn).\n- Overleg hierover\
+  \ met de verantwoordelijke binnen de organisatie voor het toepassen van de Archiefwet.\n\
+  - Het is mogelijk dat de selectielijsten nog niet duiden welke informatie of data,\
+  \ specifiek bij de toepassing van algoritmen en AI, moet worden toegepast en hier\
+  \ dus ook nog geen termijnen bij zijn gekoppeld. \n- Stel vast of beperkingen aan\
+  \ openbaarheid van de archiefbescheiden moeten worden gesteld. Er zijn gevallen\
+  \ waarbij het openbaren van archiefbescheiden is uitgesloten. Stem in het begin\
+  \ van het proces (pro-actief) met de opdrachtgever af wat de wenselijkheid is t.a.v.\n\
+  transparantie/openheid (uitgangspunt zou 'open, tenzij' moeten zijn).\n- Stel vast\
+  \ hoe de archiefbescheiden op een duurzame wijze toegankelijk kunnen worden gemaakt.\
+  \ Het moet mogelijk zijn dat de archiefbescheiden daadwerkelijk overhandigd kunnen\
+  \ worden aan betrokken partijen. Denk hierbij aan burgers, onderneming, toezichthouder\
+  \ of rechters. Duurzaam betekent hier met behoud van functie en kwaliteit voor langere\
+  \ tijd. Onderzoek welke voorziening hiervoor beschikbaar is binnen de organisatie.\n\
+  \n!!! tip \"Tip\" \n\n    Formeer hierbij een multi-discipinaire groep (bestaande\
+  \ uit bijvoorbeeld een inkoper, ontwikkelaar, data scientist, proceseigenaar en\
+  \ archiefdeskundige) om deze maatregel toe te passen."
+urn: urn:nl:ak:mtr:owp-08
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/2-owp-08-archiveren-documenten/index.html
+subject:
+- transparantie
+suggested_roles:
+- ontwikkelaar
+- projectleider
+- jurist
+lifecycle:
+- ontwerp
+- ontwikkelen
+links:
+- urn:nl:ak:ver:arc-01
+- urn:nl:ak:ver:aia-12
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE
