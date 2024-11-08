@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+
+import os
+import re
+from pathlib import Path
+from typing import Any
+
+import click
+import yaml
+
+
+def extract_title_from_file(input_file: str) -> str:
+    with open(input_file, encoding="utf-8") as file:
+        content = file.read()
+
+    front_matter = re.search(r"---\n(.*?)\n---", content, re.DOTALL)
+    front_matter_data: dict[Any, Any] = yaml.safe_load(front_matter.group(1)) if front_matter else {}
+
+    return front_matter_data["title"]
+
+
+@click.command()
+@click.argument("source", type=click.Path(exists=False, file_okay=False, dir_okay=True, path_type=Path))
+@click.argument("destination", type=click.Path(exists=False, file_okay=False, dir_okay=True, path_type=Path))
+def create_roles_file(source: Path, destination: Path) -> None:
+    destination.mkdir(parents=True, exist_ok=True)
+    roles: list[str] = []
+    for filename in sorted(os.listdir(source)):
+        file_path: str = os.path.join(source, filename)
+        if os.path.isfile(file_path) and "index" not in file_path:
+            roles.append(extract_title_from_file(file_path))
+
+    with open(destination / Path("roles.yaml"), "w", encoding="utf-8") as file:
+        yaml.dump({"roles": sorted(roles)}, file, allow_unicode=True, sort_keys=False)
+
+
+create_roles_file()
