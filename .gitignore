@@ -30,3 +30,5 @@ index.json
 
 # Logging files
 *.log
+
+.DS_Store

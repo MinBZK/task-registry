@@ -3,17 +3,17 @@ from fastapi.testclient import TestClient
 
 def test_get_main_page(client: TestClient) -> None:
     # when
-    response = client.get("/instruments/")
+    response = client.get("/measures/")
 
     # then
     assert response.status_code == 200
     assert response.headers["content-type"] == "application/json"
-    assert b'{"type":"dir","size":0,"name":"instruments","path":"instruments"' in response.content.lower()
+    assert b'{"type":"dir","size":0,"name":"measures","path":"measures"' in response.content.lower()
 
 
 def test_get_urn(client: TestClient) -> None:
     # when
-    response = client.get("/instruments/urn/test_urn")
+    response = client.get("/measures/urn/test_urn")
 
     # then
     assert response.status_code == 200
@@ -23,7 +23,7 @@ def test_get_urn(client: TestClient) -> None:
 
 def test_get_nonexistent_urn(client: TestClient) -> None:
     # when
-    response = client.get("/instruments/urn/idonotexist")
+    response = client.get("/measures/urn/idonotexist")
 
     # then
     assert response.status_code == 400

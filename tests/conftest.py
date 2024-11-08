@@ -8,10 +8,12 @@ from task_registry.server import create_app
 
 logger = logging.getLogger(__name__)
 
+MOCK_TASK = {"urn": "test_urn"}
+
 
 @pytest.fixture
 def _mock_open_file() -> Generator[None, None, None]:  # type: ignore
-    with patch("builtins.open", mock_open(read_data="{'urn':'test_urn'}")):
+    with patch("builtins.open", mock_open(read_data=f"{MOCK_TASK}")):
         yield
 
 
