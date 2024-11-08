@@ -1,0 +1,15 @@
+ai-act:
+  soort-toepassing:
+  - ai-model-voor-algemene-doeleinden
+  - ai-systeem
+  - ai-systeem-voor-algemene-doeleinden
+  - algoritme
+  rol-ai-act:
+  - aanbieder
+  - gebruiksverantwoordelijke
+  risicogroep:
+  - geen-hoog-risico-ai-systeem
+  - hoog-risico-ai-systeem
+  - verboden-ai
+  systeemrisico:
+  - systeemrisico

@@ -1,0 +1,114 @@
+#!/usr/bin/env python3
+
+import os
+import re
+from pathlib import Path
+from typing import Any
+
+import click
+import yaml
+
+ai_act_fields: list[str] = ["soort-toepassing", "rol-ai-act", "risicogroep", "systeemrisico"]
+ai_act_values: dict[str, Any] = {key: set() for key in ai_act_fields}
+
+
+def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
+    with open(input_file, encoding="utf-8") as file:
+        content = file.read()
+
+    # Extract front-matter (YAML-like header)
+    front_matter = re.search(r"---\n(.*?)\n---", content, re.DOTALL)
+    front_matter_data: dict[Any, Any] = yaml.safe_load(front_matter.group(1)) if front_matter else {}
+
+    # extract ai act labels
+    for key in ai_act_fields:
+        if key in front_matter_data:
+            ai_act_values[key].update(front_matter_data[key])
+
+    # Extract sections from Markdown content
+    sections = {
+        "Vereiste": re.search(r"## Vereiste\n\n(.*?)\n\n##", content, re.DOTALL),
+        "Toelichting": re.search(r"## Toelichting\n\n(.*?)\n\n##", content, re.DOTALL),
+        "Bronnen": re.search(r"## Bronnen\n\n(.*?)\n\n##", content, re.DOTALL),
+        "Risico": re.search(r"## Risico\n\n(.*?)\n\n##", content, re.DOTALL),
+        "Maatregelen": re.search(r"## Maatregelen\n\n(.*?)\n\n", content, re.DOTALL),
+    }
+
+    # Use found sections or defaults
+    explanation_text = (
+        sections["Toelichting"].group(1)
+        if sections["Toelichting"]
+        else "" + "\n" + sections["Risico"].group(1)
+        if sections["Risico"]
+        else ""
+    )
+    description_text = sections["Vereiste"].group(1) if sections["Vereiste"] else ""
+    urn: str = front_matter_data.get("id", "")
+    title = front_matter_data.get("title", "")
+    url_title = input_file.split("/")[-1].replace(".md", "")
+    output_file = destination / Path(url_title + ".yaml")
+
+    # Prepare data for YAML output
+    yaml_data: dict[str, Any] = {
+        "systemcard_path": ".systemcard.requirements[]",
+        "schema_version": "1.1.0",
+        "name": title,
+        "description": description_text,
+        "explanation": explanation_text,
+        "urn": urn,
+        "language": "nl",
+        "owners": [{"organization": "Algoritmekader", "name": "", "email": "", "role": ""}],
+        "date": "",
+        "url": f"https://minbzk.github.io/Algoritmekader/vereisten/{url_title}/index.html",
+        "subject": front_matter_data.get("onderwerp", []),
+        "lifecycle": front_matter_data.get("levenscyclus", []),
+        "links": [],
+        "ai_act_profile": [
+            {
+                "type": front_matter_data.get("soort-toepassing", []),
+                "open_source": [],
+                "risk_category": (
+                    front_matter_data.get("risicocategorie", [])
+                    or front_matter_data.get("risicogroep", [])
+                    or front_matter_data.get("publicatiecategorie", [])
+                ),
+                "systemic_risk": front_matter_data.get("systeemrisico", []),
+                "transparency_obligations": front_matter_data.get("transparantieverplichting", []),
+                "role": front_matter_data.get("rol-ai-act", []),
+            }
+        ],
+        "always_applicable": 0 if "aia" in input_file.lower() else 1,
+        "template": {
+            "requirement": "$REQUIREMENT",
+            "remarks": "$REMARKS",
+            "status": "$STATUS",
+            "timestamp": "$TIMESTAMP",
+            "authors": [{"name": "$AUTHOR.NAME", "email": "$AUTHOR.EMAIL", "role": "$AUTHOR.ROLE"}],
+        },
+    }
+
+    # Write to output YAML file
+    with open(output_file, "w", encoding="utf-8") as file:
+        yaml.dump(yaml_data, file, allow_unicode=True, sort_keys=False)
+
+
+@click.command()
+@click.argument("source", type=click.Path(exists=False, file_okay=False, dir_okay=True, path_type=Path))
+@click.argument("destination", type=click.Path(exists=False, file_okay=False, dir_okay=True, path_type=Path))
+def read_folder(source: Path, destination: Path) -> None:
+    requirements_destination = destination / Path("requirements")
+    requirements_destination.mkdir(parents=True, exist_ok=True)
+    for filename in sorted(os.listdir(source)):
+        file_path: str = os.path.join(source, filename)
+        if os.path.isfile(file_path) and "index" not in file_path:
+            parse_markdown_to_yaml(file_path, requirements_destination)
+
+    labels_destination = destination / Path("labels")
+    labels_destination.mkdir(parents=True, exist_ok=True)
+    # prepare data for yaml
+    yaml_output = {"ai-act": {key: sorted(value) for key, value in ai_act_values.items()}}
+    with open(labels_destination / Path("labels.yaml"), "w", encoding="utf-8") as file:
+        yaml.dump(yaml_output, file, allow_unicode=True, sort_keys=False)
+
+
+read_folder()

@@ -1,0 +1,34 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Contractuele afspraken over data en artefacten
+description: Maak (contractuele) afspraken met de aanbieder wie eigenaar is van de
+  data en artefacten die ontstaan bij het gebruik van algoritmen en AI-systemen.
+explanation: Hier kan worden gedacht aan de initiële trainingsdataset, outputdata
+  (richting gebruikers) en nieuwe trainingsdata (vanuit gebruikers).
+urn: urn:nl:ak:mtr:contractuele_afspraken_data_en_artefacten
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/maatregelen/contractuele_afspraken_data_en_artefacten/index.html
+subject:
+- publieke-inkoop
+suggested_roles:
+- jurist
+lifecycle:
+- ontwerp
+- monitoring-en-beheer
+links:
+- urn:nl:ak:ver:aut-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

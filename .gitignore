@@ -30,5 +30,5 @@ index.json
 
 # Logging files
 *.log
-
+/tmp-sync/
 .DS_Store

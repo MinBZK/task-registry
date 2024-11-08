@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# support for options in format: --name value
+while [ $# -gt 0 ]; do
+    if [[ $1 == "--"* ]]; then
+        v="${1/--/}"
+        declare "$v"="$2"
+        shift
+    fi
+    shift
+done
+
+REMOTE_BRANCH="${branch:-latest}" # on latest, the last tag is used
+REMOTE_GIT="https://github.com/MinBZK/Algoritmekader.git"
+TMP_DIR="${tmpdir:-tmp-sync}"
+MODE="${mode:-compare}" # use: compare, sync
+DESTINATION="${destination:-output}"
+UPDATE="${update:-commit}" # use: always, commit
+VERBOSE="${verbose:-true}"
+
+if [ "$VERBOSE" = "true" ]; then
+    printf "This script will compare or sync the status of the Algoritmekader.\n"
+    printf "Settings can be provided using the syntax: --name1 value1 --name2 value2 etc.\n"
+    printf "Current settings:\n"
+    echo "branch: ${REMOTE_BRANCH}"
+    echo "tmpdir: ${TMP_DIR}"
+    echo "mode: ${MODE} (options: compare,sync)"
+    echo "destination: ${DESTINATION}"
+    echo "update: ${UPDATE} (options: always, commit)"
+    echo "verbose: ${VERBOSE} (options: true,false)"
+    printf "\n\n"
+fi
+
+# create and use tmp location, note this is expected to be a 1-level-subfolder-of-root
+rm -Rf "$TMP_DIR"
+mkdir "$TMP_DIR"
+cd "$TMP_DIR" || exit
+
+if [ "$REMOTE_BRANCH" = "latest" ]; then
+  REMOTE_BRANCH=$(git ls-remote --tags --exit-code --refs --sort="version:refname" https://github.com/MinBZK/Algoritmekader.git | awk -F/ 'END{print$NF}')
+fi
+
+git fetch "$REMOTE_GIT"
+
+git clone --depth 1 -b "$REMOTE_BRANCH" "$REMOTE_GIT" "algoritmekader"
+
+cd "algoritmekader" || exit
+  RECENT_COMMITS=$(git --no-pager log --since='24 hours')
+cd ..
+
+if [ "$UPDATE" = "commit" ] && [ "$RECENT_COMMITS" = "" ]; then
+    echo "No recent commits found on branch ${REMOTE_BRANCH} and 'update' is set to ${UPDATE}."
+    exit 0
+fi
+
+# Run the conversion scripts
+poetry run ../script/conversion/convert_mkdocs_to_yaml_measure algoritmekader/docs/maatregelen "${DESTINATION}"/measures
+poetry run ../script/conversion/convert_mkdocs_to_yaml_requirements algoritmekader/docs/vereisten "${DESTINATION}"
+poetry run ../script/conversion/add_links_to_measures "${DESTINATION}"/requirements "${DESTINATION}"/measures
+poetry run ../script/conversion/convert_mkdocs_to_yaml_lifecycles algoritmekader/docs/levenscyclus/index.md "${DESTINATION}"/lifecycles
+poetry run ../script/conversion/convert_mkdocs_to_yaml_roles algoritmekader/docs/rollen "${DESTINATION}"/roles
+
+if [ "$MODE" = "compare" ]; then
+    diff -burN "${DESTINATION}"/measures ../measures; (( exit_status = exit_status || $? ))
+    diff -burN "${DESTINATION}"/requirements ../requirements; (( exit_status = exit_status || $? ))
+    diff -burN "${DESTINATION}"/lifecycles ../lifecycles; (( exit_status = exit_status || $? ))
+    diff -burN "${DESTINATION}"/roles ../roles; (( exit_status = exit_status || $? ))
+    diff -burN "${DESTINATION}"/labels ../labels; (( exit_status = exit_status || $? ))
+    exit "$exit_status" # diff gives exitcode > 0 when differences are found
+elif [ "$MODE" = "sync" ]; then
+    rsync -crv --delete "${DESTINATION}"/measures/ ../measures/
+    rsync -crv --delete "${DESTINATION}"/requirements/ ../requirements/
+    rsync -crv --delete "${DESTINATION}"/lifecycles/ ../lifecycles/
+    rsync -crv --delete "${DESTINATION}"/roles/ ../roles/
+    rsync -crv --delete "${DESTINATION}"/labels/ ../labels/
+fi

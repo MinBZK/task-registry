@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+
+import os
+from pathlib import Path
+from typing import Any, TextIO
+
+import click
+import yaml
+from yaml.loader import FullLoader, Loader, SafeLoader
+
+rename_ai_act_labels_dict = {
+    "ai-systeem": "AI-systeem",
+    "ai-systeem-voor-algemene-doeleinden": "AI-systeem voor algemene doeleinden",
+    "ai-model-voor-algemene-doeleinden": "AI-model voor algemene doeleinden",
+    "verboden-ai": "verboden AI",
+    "hoog-risico-ai-systeem": "hoog-risico AI",
+    "geen-hoog-risico-ai-systeem": "geen hoog-risico AI",
+}
+
+
+# Custom loader to preserve order
+def ordered_load(stream: TextIO, loader: type[Loader] | type[SafeLoader] | type[FullLoader] = yaml.Loader) -> dict:
+    return yaml.load(stream, Loader=loader)  # noqa
+
+
+# Custom dumper to preserve order
+def ordered_dump(data: dict[Any, Any], stream: TextIO, dumper: type[yaml.Dumper] = yaml.Dumper, **kwargs: str):  # noqa
+    return yaml.dump(data, stream, Dumper=dumper, default_flow_style=False, sort_keys=False, **kwargs)
+
+
+def link_measures_to_requirements(measure_folder: Path) -> dict[Any, Any]:
+    urns_to_original = {}
+
+    for filename in sorted(os.listdir(measure_folder)):
+        if filename.endswith(".yaml"):
+            with open(os.path.join(measure_folder, filename)) as file:
+                data = ordered_load(file, loader=yaml.FullLoader)  # Load with order preserved
+                urns_requirements = data.get("links", [])
+                urn_measure = data.get("urn", [])
+                for urn_req in urns_requirements:
+                    if urn_req not in urns_to_original:
+                        urns_to_original[urn_req] = [urn_measure]
+                    else:
+                        if urn_measure not in urns_to_original[urn_req]:
+                            urns_to_original[urn_req].append(urn_measure)
+    return urns_to_original
+
+
+@click.command()
+@click.argument("requirement_folder", type=click.Path(exists=True, file_okay=False, dir_okay=True, path_type=Path))
+@click.argument("measure_folder", type=click.Path(exists=False, file_okay=False, dir_okay=True, path_type=Path))
+def insert_into_requirements(requirement_folder: Path, measure_folder: Path):  # noqa
+    urns_to_original = link_measures_to_requirements(measure_folder)
+
+    for filename in sorted(os.listdir(requirement_folder)):
+        if filename.endswith(".yaml"):
+            with open(os.path.join(requirement_folder, filename)) as file:
+                data: dict[Any, Any] = ordered_load(file, loader=yaml.FullLoader)  # Load while preserving order
+
+                if "links" in data and isinstance(data["links"], list):
+                    # Create reverse links based on the URN
+                    data["links"] = urns_to_original.get(data.get("urn"), [])
+
+                if "ai_act_profile" in data:
+                    for profile in data["ai_act_profile"]:
+                        for key in profile:
+                            if isinstance(profile[key], list):
+                                profile[key] = [rename_ai_act_labels_dict.get(item, item) for item in profile[key]]
+
+                # Write out the modified data to the secondary folder
+                with open(os.path.join(requirement_folder, filename), "w") as new_file:
+                    ordered_dump(data, new_file)  # Dump with order preserved
+
+
+insert_into_requirements()
