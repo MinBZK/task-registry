@@ -57,6 +57,8 @@ USER tr
 
 COPY --chown=root:root --chmod=755 task_registry /app/task_registry
 COPY --chown=root:root --chmod=755 instruments /app/instruments
+COPY --chown=root:root --chmod=755 requirements /app/requirement
+COPY --chown=root:root --chmod=755 measures /app/measures
 COPY --chown=root:root --chmod=755 LICENSE /app/LICENSE
 
 ENV PYTHONPATH=/app/
