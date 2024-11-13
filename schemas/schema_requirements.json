@@ -123,6 +123,88 @@
         "type": "string"
       }
     },
+    "ai_act_profile": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "AI-systeem",
+                "AI-systeem voor algemene doeleinden",
+                "AI-model voor algemene doeleinden",
+                "algoritme"
+              ]
+            }
+          },
+          "open_source": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "open-source",
+                "geen open-source"
+              ]
+            }
+          },
+          "risk_category": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "geen hoog-risico AI",
+                "hoog-risico AI",
+                "verboden AI"
+              ]
+            }
+          },
+          "systemic_risk": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "systeemrisico",
+                "geen systeemrisico"
+              ]
+            }
+          },
+          "transparency_obligations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "transparantieverplichting",
+                "geen transparantieverplichting"
+              ]
+            }
+          },
+          "role": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "aanbieder",
+                "gebruiksverantwoordelijke",
+                "importeur",
+                "distributeur"
+              ]
+            }
+          }
+        },
+        "required": [
+          "type",
+          "risk_category",
+          "role"
+        ]
+      }
+    },
+    "always_applicable":{
+      "description": "1 if requirements applies to every system, 0 if only for specific systems",
+      "type": "integer"
+    },
     "template": {
       "type": "object",
       "additionalProperties": {
@@ -184,6 +266,8 @@
     "subject",
     "lifecycle",
     "links",
+    "ai_act_profile",
+    "always_applicable",
     "template"
   ]
 }
