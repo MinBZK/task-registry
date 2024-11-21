@@ -1,73 +1,39 @@
-systemcard_path: .systemcard.requirements[]
+systemcard_path: .systemcard.requirements[]               # append requirements.yaml to 'assessments' list in system card
 schema_version: 1.1.0
-name: AI-systemen loggen automatisch bepaalde gegevens
-description: "Algoritmes en AI-systemen zijn dusdanig technisch vormgegeven dat gebeurtenissen\
-  \ gedurende hun levenscyclus automatisch worden geregistreerd (\u201Clogs\u201D\
-  ). \n"
-explanation: 'AI-systemen met een hoog risico zijn ontworpen met functionaliteiten
-  die gebeurtenissen gedurende hun levenscyclus automatisch registreren.
-
-  Dit wordt vaak aangeduid als "logs".
-
-  Deze logs bieden een traceerbaarheidsmechanisme waarmee gebruiksverantwoordelijken
-  en autoriteiten incidenten en fouten kunnen analyseren, naleving kunnen controleren
-  en mogelijke risico''s kunnen identificeren en aanpakken.
-
-  Het doel van deze registratie is om de transparantie en verantwoordingsplicht van
-  AI-systemen te vergroten, waardoor het beheer van risico''s en incidenten verbetert.
-
-
-  Voor AI-systemen met een hoog-risico voorziet de loggingcapaciteit ten minste in:
-  a) de registratie van de duur van elk gebruik van het systeem; b) de referentiedatabank
-  aan de hand waarvan de inputdata zijn gecontroleerd door het systeem; c) de inputdata
-  ten aanzien waarvan de zoekopdracht een match heeft opgeleverd; d) de identificatie
-  van natuurlijke personen die betrokken zijn bij de verificatie van de resultaten.
-  Specifiek voor gebruiksverantwoordelijken
-
-
-  Voor AI-systemen die door bestuursorganen worden gebruikt of AI-systmen die persoonsgegevens
-  verwerken leveren de BIO en AVG vergelijkbare verplichingen op die ook van toepassing
-  zijn op AI-systmen die niet gezien worden als een AI-systeem met hoog risico. Daarbij
-  komen nog verplichtingen om de logs doorlopend of periodiek te monitoren op incidenten.'
-urn: urn:nl:ak:ver:aia-07
-language: nl
+name: "Automatische logregistratie voor hoog-risico AI"
+description: "Algoritmes en AI-systemen zijn dusdanig technisch vormgegeven dat gebeurtenissen gedurende hun levenscyclus automatisch worden geregistreerd (“logs”)."
+urn: "urn:nl:ak:ver:aia-7"
+language: "nl"
 owners:
-- organization: Algoritmekader
-  name: ''
-  email: ''
-  role: ''
-date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/aia-07-automatische-logregistratie/index.html
-subject:
-- transparantie
-- technische-robuustheid-en-veiligheid
-lifecycle:
-- ontwikkelen
-- monitoring-en-beheer
-links:
-- urn:nl:ak:mtr:owk-01
-- urn:nl:ak:mtr:owk-04
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_service_level_agreement
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
-ai_act_profile:
-- type: []
-  open_source: []
-  risk_category: []
-  systemic_risk: []
-  transparency_obligations: []
-  role: []
+  - organization: "Algoritmekader"
+    name: ""
+    email: ""
+    role: ""
+date: ""
+url: "https://minbzk.github.io/Algoritmekader/vereisten/aia-07-automatische-logregistratie/index.html"
+suggested_roles: [ "aanbieder", "gebruiksverantwoordelijke" ]
+lifecycle: [ "ontwikkelen", "monitoring-en-beheer" ]
+subject: ["governance", "technische-robuustheid-en-veiligheid"]
+links: [
+    "urn:nl:ak:mtr:pin-01",
+    "urn:nl:ak:mtr:pin-02",
+    "urn:nl:ak:mtr:pin-04",
+    "urn:nl:ak:mtr:pin-05",
+    "urn:nl:ak:mtr:pin-06",
+    "urn:nl:ak:mtr:pin-07",
+    "urn:nl:ak:mtr:pin-09",
+    "urn:nl:ak:mtr:gov-01",
+    "urn:nl:ak:mtr:gov-02",
+    "urn:nl:ak:mtr:gov-03"
+]
+ai_risk_profile: ["AI-systeem", "AI-systeem voor algemene doeleinden", "hoog-risico AI"]
 always_applicable: 0
-template:
+template: &systemcard_requirements_template
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS
   timestamp: $TIMESTAMP
   authors:
-  - name: $AUTHOR.NAME
-    email: $AUTHOR.EMAIL
-    role: $AUTHOR.ROLE
+    - name: $AUTHOR.NAME
+      email: $AUTHOR.EMAIL
+      role: $AUTHOR.ROLE

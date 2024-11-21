@@ -1,6 +1,6 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: De werking van Hoog-risico-AI-systemen wordt gemonitord
+name: Gebruiksverantwoordelijken monitoren werking hoog risico AI-systeem
 description: Gebruiksverantwoordelijken monitoren de werking van het AI-systeem met
   een hoog risico op basis van de gebruiksaanwijzingen en stellen in voorkomend geval
   de aanbieders in kennis overeenkomstig artikel 72 AI Verordening
@@ -33,26 +33,12 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/aia-24-gebruiksverantwoordelijken-monitoren-werking/index.html
-subject:
-- menselijke-controle
-lifecycle:
-- monitoring-en-beheer
-links:
-- urn:nl:ak:mtr:owk-02
-- urn:nl:ak:mtr:imp-03
-ai_act_profile:
-- type:
-  - AI-systeem
-  - AI-systeem voor algemene doeleinden
-  open_source: []
-  risk_category:
-  - hoog-risico AI
-  systemic_risk: []
-  transparency_obligations: []
-  role:
-  - gebruiksverantwoordelijke
+subject: ["governance", "menselijke-controle"]
+lifecycle: ["monitoring-en-beheer"]
+links: ["urn:nl:ak:mtr:gov-02", "urn:nl:ak:mtr:gov-05", "urn:nl:ak:mtr:gov-06"]
+ai_risk_profile: ["AI-systeem", "AI-systeem voor algemene doeleinden", "hoog-risico AI", "gebruiksverantwoordelijke"]
 always_applicable: 0
-template:
+template: &systemcard_requirements_template
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

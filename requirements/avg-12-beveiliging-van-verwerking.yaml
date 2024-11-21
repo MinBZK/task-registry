@@ -1,15 +1,23 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Data zoals persoonsgegevens zijn voldoende beveiligd tegen ongelukken en cyberaanvallen
-description: 'Rekening houdend met de stand van de techniek, de uitvoeringskosten,
+name: Beveiliging van de verwerking
+description: Rekening houdend met de stand van de techniek, de uitvoeringskosten,
   alsook met de aard, de omvang, de context en de verwerkingsdoeleinden en de qua
-  waarschijnlijkheid en ernst uiteenlopende risico''s voor de rechten en vrijheden
+  waarschijnlijkheid en ernst uiteenlopende risico's voor de rechten en vrijheden
   van personen, treffen de verwerkingsverantwoordelijke en de verwerker passende technische
   en organisatorische maatregelen om een op het risico afgestemd beveiligingsniveau
   te waarborgen.
+explanation: 'Voor de ontwikkeling en gebruik van algoritmes en AI is dat data nodig.
 
-  '
-explanation: ''
+  Deze data kan persoonsgegevens bevatten die moeten worden beschermd.
+
+  De organisatie zal technische en organisatorische maatregelen moeten treffen om
+  de data en de algoritmische toepassing of AI-systeem voldoende te beschermen.
+
+  Hierbij kan worden gedacht aan dataminimalisatie, het pseudonimiseren of aggregeren
+  van persoonsgegevens.
+
+  Per toepassing moet worden onderzocht welke maatregelen hiervoor geschikt zijn.'
 urn: urn:nl:ak:ver:avg-12
 language: nl
 owners:
@@ -19,32 +27,24 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/avg-12-beveiliging-van-verwerking/index.html
-subject:
-- privacy-en-gegevensbescherming
-- technische-robuustheid-en-veiligheid
-lifecycle:
-- organisatieverantwoordelijkheden
-links:
-- urn:nl:ak:mtr:dat-05
-- urn:nl:ak:mtr:owk-01
-- urn:nl:ak:mtr:mon-02
-- urn:nl:ak:mtr:mon-03
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_service_level_agreement
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
-ai_act_profile:
-- type: []
-  open_source: []
-  risk_category: []
-  systemic_risk: []
-  transparency_obligations: []
-  role: []
+subject: ["privacy-en-gegevensbescherming", "technische-robuustheid-en-veiligheid"]
+lifecycle: ["organisatieverantwoordelijkheden"]
+links: [
+    "urn:nl:ak:mtr:pgb-04",
+    "urn:nl:ak:mtr:pin-01",
+    "urn:nl:ak:mtr:gov-13",
+    "urn:nl:ak:mtr:pin-02",
+    "urn:nl:ak:mtr:gov-14",
+    "urn:nl:ak:mtr:pin-04",
+    "urn:nl:ak:mtr:pin-05",
+    "urn:nl:ak:mtr:pin-06",
+    "urn:nl:ak:mtr:pin-07",
+    "urn:nl:ak:mtr:gov-15",
+    "urn:nl:ak:mtr:pin-09"
+]
+ai_risk_profile: []
 always_applicable: 1
-template:
+template: &systemcard_requirements_template
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

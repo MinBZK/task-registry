@@ -1,6 +1,6 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: AI-testomgevingen die persoonsgegevens verwerken, voldoen aan strenge voorwaarden
+name: Verdere verwerking van persoonsgegevens in AI-testomgevingen
 description: Rechtmatig voor andere doeleinden verzamelde persoonsgegevens mogen uitsluitend
   in de AI-testomgeving voor regelgeving worden verwerkt ten behoeve van het ontwikkelen,
   trainen en testen van bepaalde AI-systemen en indien aan alle voorwaarden van art.
@@ -26,34 +26,19 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/aia-35-verwerking-in-testomgeving/index.html
-subject:
-- privacy-en-gegevensbescherming
-- data
-lifecycle:
-- organisatieverantwoordelijkheden
-- ontwikkelen
-- dataverkenning-en-datapreparatie
-links:
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
-ai_act_profile:
-- type:
-  - AI-model voor algemene doeleinden
-  - AI-systeem
-  - AI-systeem voor algemene doeleinden
-  open_source: []
-  risk_category: []
-  systemic_risk: []
-  transparency_obligations: []
-  role:
-  - aanbieder
-  - gebruiksverantwoordelijke
+subject: ["privacy-en-gegevensbescherming", "data"]
+lifecycle: ["ontwikkelen", "dataverkenning-en-datapreparatie"]
+links: [
+    "urn:nl:ak:mtr:pin-01",
+    "urn:nl:ak:mtr:pin-02",
+    "urn:nl:ak:mtr:pin-04",
+    "urn:nl:ak:mtr:pin-05",
+    "urn:nl:ak:mtr:pin-07",
+    "urn:nl:ak:mtr:pin-09"
+]
+ai_risk_profile: ["AI-systeem", "AI-systeem voor algemene doeleinden", "AI-model voor algemene doeleinden"]
 always_applicable: 0
-template:
+template: &systemcard_requirements_template
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

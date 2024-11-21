@@ -1,9 +1,17 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Impactvolle algoritmes en hoog-risico-AI-systemen staan in het Nederlandse Algoritmeregister
-description: Bestuursorganen publiceren algoritmes met impact en hoog-risico-AI-systemen
-  in het [Nederlandse Algoritmeregister](../hulpmiddelen/algoritmeregister.md).
-explanation: ''
+name: Impactvolle algoritmes worden gepubliceerd in het Nederlandse algoritmeregister
+description: Bestuursorganen publiceren algoritmes met impact en hoog-risico AI-systemen
+  in het [Nederlandse Algoritmeregister](https://algoritmes.overheid.nl/nl).
+explanation: 'Het publiceren van impactvolle algoritmes en AI-systemen draagt bij
+  aan transparantie voor belanghebbenden en derden over welke algoritmes en AI worden
+  gebruikt door de overheid.
+
+  Het is vastgesteld beleid dat overheidsinstellingen, tenzij er uitsluitingsgronden
+  zijn, de door hen gebruikte impactvolle algoritmes en hoogrisico AI-systemen publiceren
+  in het algoritmeregister.
+
+  Er wordt gewerkt aan wetgeving om het bij wet verplicht te stellen.'
 urn: urn:nl:ak:ver:bzk-01
 language: nl
 owners:
@@ -13,28 +21,12 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/bzk-01-algoritmeregister/index.html
-subject:
-- transparantie
-lifecycle:
-- implementatie
-- monitoring-en-beheer
-links:
-- urn:nl:ak:mtr:imp-04
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
-ai_act_profile:
-- type: []
-  open_source: []
-  risk_category: []
-  systemic_risk: []
-  transparency_obligations: []
-  role: []
-always_applicable: 1
-template:
+subject: ["transparantie"]
+lifecycle: ["implementatie", "monitoring-en-beheer"]
+links: ["urn:nl:ak:mtr:pin-01", "urn:nl:ak:mtr:pin-02", "urn:nl:ak:mtr:pin-04", "urn:nl:ak:mtr:pin-05", "urn:nl:ak:mtr:pin-07", "urn:nl:ak:mtr:pin-09", "urn:nl:ak:mtr:tra-01", "urn:nl:ak:mtr:tra-02"]
+ai_risk_profile: ["AI-systeem",  "AI-systeem voor algemene doeleinden", "impactvol algoritme", "Hoog-risico AI"]
+always_applicable: 0
+template: &systemcard_requirements_template
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

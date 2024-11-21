@@ -1,6 +1,6 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Hoog-risico-AI-systemen worden gebruikt volgens de gebruiksaanwijzing
+name: Maatregelen van gebruiksverantwoordelijken voor gebruik
 description: Gebruiksverantwoordelijken van AI-systemen met een hoog risico nemen
   passende technische en organisatorische maatregelen om te waarborgen dat zij dergelijke
   systemen gebruiken in overeenstemming met de gebruiksaanwijzingen die bij de systemen
@@ -11,9 +11,7 @@ explanation: 'Gebruiksverantwoordelijken van AI-systemen met een hoog risico moe
 
   De gebruiksverantwoordelijke zorgt ervoor dat de inputdata relevant en voldoende
   representatief zijn voor het beoogde doel van het AI-systeem met een hoog risico,
-  voor zover hij daar controle over heeft.
-
-  '
+  voor zover hij daar controle over heeft.'
 urn: urn:nl:ak:ver:aia-22
 language: nl
 owners:
@@ -23,25 +21,12 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/aia-22-gebruiksverantwoordelijken-maatregelen/index.html
-subject:
-- governance
-lifecycle:
-- organisatieverantwoordelijkheden
-- implementatie
-links: []
-ai_act_profile:
-- type:
-  - AI-systeem
-  - AI-systeem voor algemene doeleinden
-  open_source: []
-  risk_category:
-  - hoog-risico AI
-  systemic_risk: []
-  transparency_obligations: []
-  role:
-  - gebruiksverantwoordelijke
+subject: ["governance"]
+lifecycle: ["implementatie"]
+links: ["urn:nl:ak:mtr:gov-02"]
+ai_risk_profile: ["AI-systeem", "AI-systeem voor algemene doeleinden", "hoog-risico AI", "gebruiksverantwoordelijke"]
 always_applicable: 0
-template:
+template: &systemcard_requirements_template
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

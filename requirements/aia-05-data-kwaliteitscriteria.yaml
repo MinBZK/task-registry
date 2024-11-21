@@ -1,11 +1,28 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Datasets voor Hoog-risico-AI-systemen voldoen aan kwaliteitscriteria
+name: Data van hoog-risico ai moet voldoen aan kwaliteitscriteria
 description: AI-systemen met een hoog risico die technieken gebruiken die het trainen
   van AI-modellen met data omvatten, worden ontwikkeld op basis van datasets voor
   training, validatie en tests die voldoen aan de kwaliteitscriteria telkens wanneer
   dergelijke datasets worden gebruikt.
-explanation: ''
+explanation: "AI-systemen met een hoog risico die data gebruiken voor het trainen\
+  \ van AI-modellen, moeten gebaseerd zijn op datasets die voldoen aan specifieke\
+  \ kwaliteitscriteria.\nDeze criteria zorgen ervoor dat de data geschikt zijn voor\
+  \ training, validatie en tests, wat de betrouwbaarheid en nauwkeurigheid van het\
+  \ AI-systeem waarborgt.\n\nDeze vereiste houdt in dat de gebruikte datasets onder\
+  \ meer moeten voldoen aan:\n\n- datasets voor training, validatie en tests worden\
+  \ onderworpen aan praktijken op het gebied van databeheer die stroken met het beoogde\
+  \ doel van het AI-systeem met een hoog risico. Dit heeft in het bijzonder betrekking\
+  \ op relevante ontwerpkeuzes, processen voor dataverzameling, verwerkingsactiviteiten\
+  \ voor datavoorbereiding, het opstellen van aannames met name betrekking tot de\
+  \ informatie die de data moeten meten en vertegenwoordigen, beschikbaarheid, kwantiteit\
+  \ en geschiktheid van de datasets en een beoordeling op mogelijke vooringenomenheid\
+  \ en passende maatregelen om deze vooringenomenheid op te sporen, te voorkomen en\
+  \ te beperken. \n- datasets voor training, validatie en tests zijn relevant, voldoende\
+  \ representatief en zoveel mogelijk foutenvrij en volledig met het oog op het beoogde\
+  \ doel.\n- Er wordt rekening gehouden met de eigenschappen of elementen die specifiek\
+  \ zijn voor een bepaalde geografische, contextuele, functionele of gedragsomgeving\
+  \ waarin het AI-systeem wordt gebruikt."
 urn: urn:nl:ak:ver:aia-05
 language: nl
 owners:
@@ -15,38 +32,26 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/aia-05-data-kwaliteitscriteria/index.html
-subject:
-- data
-lifecycle:
-- dataverkenning-en-datapreparatie
-- verificatie-en-validatie
-links:
-- urn:nl:ak:mtr:org-02
-- urn:nl:ak:mtr:owp-02
-- urn:nl:ak:mtr:dat-01
-- urn:nl:ak:mtr:ver-03
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:leveren_bewijs_onderdeel_beoordeling_inschrijving
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_service_level_agreement
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:neem_vereiste_op_als_subgunningscriteria
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
-ai_act_profile:
-- type:
-  - AI-systeem
-  - AI-systeem voor algemene doeleinden
-  open_source: []
-  risk_category:
-  - hoog-risico AI
-  systemic_risk: []
-  transparency_obligations: []
-  role:
-  - aanbieder
+subject: ["governance", "data"]
+lifecycle: ["ontwerp", "dataverkenning-en-datapreparatie", "verificatie-en-validatie"]
+links: [
+    "urn:nl:ak:mtr:pin-01",
+    "urn:nl:ak:mtr:pin-02",
+    "urn:nl:ak:mtr:pin-03",
+    "urn:nl:ak:mtr:pin-04",
+    "urn:nl:ak:mtr:pin-05",
+    "urn:nl:ak:mtr:pin-06",
+    "urn:nl:ak:mtr:pin-07",
+    "urn:nl:ak:mtr:pin-08",
+    "urn:nl:ak:mtr:pin-09",
+    "urn:nl:ak:mtr:pin-10",
+    "urn:nl:ak:mtr:gov-01",
+    "urn:nl:ak:mtr:gov-02",
+    "urn:nl:ak:mtr:gov-03"
+]
+ai_risk_profile: ["AI-systeem", "AI-systeem voor algemene doeleinden", "hoog-risico AI"]
 always_applicable: 0
-template:
+template: &systemcard_requirements_template
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

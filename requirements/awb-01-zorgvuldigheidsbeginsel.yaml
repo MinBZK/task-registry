@@ -1,10 +1,24 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Organisaties die algoritmes gebruiken voor publieke taken gaan zorgvuldig te
-  werk
+name: Relevante feiten en belangen zijn bekend
 description: De ontwikkeling en het gebruik van algoritmes en AI-systemen komt zorgvuldig
   tot stand.
-explanation: ''
+explanation: 'Dit beginsel vereist dat een besluit met de nodige zorgvuldigheid wordt
+  voorbereid en genomen.
+
+  Dit vraagt onder meer om een zorgvuldig onderzoek naar feiten, een zorgvuldige beslissingsprocedure
+  en een deugdelijke besluitvorming.
+
+  Dit betekent dat  algoritmes en AI zodanig moet worden ontwikkeld en gebruikt, dat
+  dit passend is ter ondersteuning van de wettelijke taak en de bijbehorende beslissing
+  of besluitvorming.
+
+
+  Het doel en eventuele subdoelen van het algoritme of AI-systeem moet helder zijn
+  gedefinieerd, ook in relatie tot het maatschappelijke resultaat (outcome), en wordt
+  gedeeld door de eigenaar, ontwikkelaar en gebruiker van het algoritme. Een bewuste
+  afweging of het algoritme het juiste middel is om het probleem op doelmatige en
+  doeltreffende wijze op te lossen is gemaakt en vastgelegd.'
 urn: urn:nl:ak:ver:awb-01
 language: nl
 owners:
@@ -14,46 +28,12 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/awb-01-zorgvuldigheidsbeginsel/index.html
-subject:
-- fundamentele-rechten
-lifecycle:
-- ontwerp
-- ontwikkelen
-- verificatie-en-validatie
-links:
-- urn:nl:ak:mtr:org-01
-- urn:nl:ak:mtr:org-02
-- urn:nl:ak:mtr:org-03
-- urn:nl:ak:mtr:pba-01
-- urn:nl:ak:mtr:pba-02
-- urn:nl:ak:mtr:pba-03
-- urn:nl:ak:mtr:pba-04
-- urn:nl:ak:mtr:pba-05
-- urn:nl:ak:mtr:owp-01
-- urn:nl:ak:mtr:owp-03
-- urn:nl:ak:mtr:owp-04
-- urn:nl:ak:mtr:owp-10
-- urn:nl:ak:mtr:owk-02
-- urn:nl:ak:mtr:ver-01
-- urn:nl:ak:mtr:ver-03
-- urn:nl:ak:mtr:imp-01
-- urn:nl:ak:mtr:imp-03
-- urn:nl:ak:mtr:imp-04
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
-ai_act_profile:
-- type: []
-  open_source: []
-  risk_category: []
-  systemic_risk: []
-  transparency_obligations: []
-  role: []
+subject: ["governance"]
+lifecycle: ["organisatieverantwoordelijkheden"]
+links: ["urn:nl:ak:mtr:gov-01", "urn:nl:ak:mtr:gov-02", "urn:nl:ak:mtr:gov-03"]
+ai_risk_profile: []
 always_applicable: 1
-template:
+template: &systemcard_requirements_template
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

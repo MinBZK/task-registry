@@ -1,7 +1,8 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Gebruiksverantwoordelijken controleren de registratie van het hoog-risico AI-systeem
-  in de EU-databank
+name: Gebruiksverantwoordelijken, zijnde overheidsinstanties of instellingen, organen
+  of instanties van de Unie, leven de registratieverplichting na als het gaat om een
+  hoog risico AI-systeem
 description: 'Gebruiksverantwoordelijken van AI-systemen met een hoog risico die de
   hoedanigheid van overheidsinstanties of instellingen, organen of instanties van
   de Unie hebben, leven de in artikel 49 bedoelde registratieverplichtingen na.
@@ -36,26 +37,12 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/aia-27-gebruiksverantwoordelijken-registratieverplichtingen/index.html
-subject:
-- transparantie
-- governance
-lifecycle:
-- implementatie
-- monitoring-en-beheer
+subject: ["transparantie", "governance"]
+lifecycle: ["implementatie", "monitoring-en-beheer"]
 links: []
-ai_act_profile:
-- type:
-  - AI-systeem
-  - AI-systeem voor algemene doeleinden
-  open_source: []
-  risk_category:
-  - hoog-risico AI
-  systemic_risk: []
-  transparency_obligations: []
-  role:
-  - gebruiksverantwoordelijke
+ai_risk_profile: ["AI-systeem", "AI-systeem voor algemene doeleinden", "hoog-risico AI", "gebruiksverantwoordelijke"]
 always_applicable: 0
-template:
+template: &systemcard_requirements_template
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS

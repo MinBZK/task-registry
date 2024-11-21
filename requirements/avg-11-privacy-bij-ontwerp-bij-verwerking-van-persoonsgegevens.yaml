@@ -1,7 +1,6 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Ontwerp en standaardinstellingen (defaults) zijn zo gunstig mogelijk voor de
-  privacy van betrokkenen
+name: Privacy door ontwerp
 description: Privacy en gegevensbescherming door goed ontwerp en door standaardinstellingen
 explanation: "Gegevensbescherming door ontwerp en standaardinstellingen houdt in dat\
   \ privacy- en gegevensbescherming vanaf het begin worden ge\xEFntegreerd in de ontwikkeling\
@@ -12,7 +11,7 @@ explanation: "Gegevensbescherming door ontwerp en standaardinstellingen houdt in
   Deze aanpak zorgt ervoor dat privacy-overwegingen een integraal onderdeel zijn van\
   \ alle aspecten van gegevensverwerking en draagt bij aan het vertrouwen van individuen\
   \ in de veilige omgang met hun gegevens.\nDit is eveneens van toepassing als persoonsgegevens\
-  \ worden verwerkt bij het ontwikkelen en gebruiken van algoritmes en AI.\n"
+  \ worden verwerkt bij het ontwikkelen en gebruiken van algoritmes en AI."
 urn: urn:nl:ak:ver:avg-11
 language: nl
 owners:
@@ -22,30 +21,23 @@ owners:
   role: ''
 date: ''
 url: https://minbzk.github.io/Algoritmekader/vereisten/avg-11-privacy-bij-ontwerp-bij-verwerking-van-persoonsgegevens/index.html
-subject:
-- privacy-en-gegevensbescherming
-lifecycle:
-- ontwerp
-- dataverkenning-en-datapreparatie
-links:
-- urn:nl:ak:mtr:owp-10
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:leveren_bewijs_onderdeel_beoordeling_inschrijving
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:neem_vereiste_op_als_subgunningscriteria
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
-ai_act_profile:
-- type: []
-  open_source: []
-  risk_category: []
-  systemic_risk: []
-  transparency_obligations: []
-  role: []
+subject: ["privacy-en-gegevensbescherming", "data"]
+lifecycle: ["ontwerp", "dataverkenning-en-datapreparatie", "ontwikkelen", "implementatie"]
+links: [
+    "urn:nl:ak:mtr:gov-01",
+    "urn:nl:ak:mtr:pin-01",
+    "urn:nl:ak:mtr:pin-02",
+    "urn:nl:ak:mtr:pin-03",
+    "urn:nl:ak:mtr:pin-04",
+    "urn:nl:ak:mtr:pin-05",
+    "urn:nl:ak:mtr:pin-07",
+    "urn:nl:ak:mtr:pin-08",
+    "urn:nl:ak:mtr:pin-09",
+    "urn:nl:ak:mtr:pgb-07"
+]
+ai_risk_profile: []
 always_applicable: 1
-template:
+template: &systemcard_requirements_template
   requirement: $REQUIREMENT
   remarks: $REMARKS
   status: $STATUS
