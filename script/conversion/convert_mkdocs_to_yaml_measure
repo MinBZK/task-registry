@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import re
+import sys
 from pathlib import Path
 
 import click
@@ -81,11 +82,15 @@ def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
 @click.argument("source", type=click.Path(exists=True, file_okay=False, dir_okay=True, path_type=Path))
 @click.argument("destination", type=click.Path(exists=False, file_okay=False, dir_okay=True, path_type=Path))
 def read_folder(source: Path, destination: Path) -> None:
-    destination.mkdir(parents=True, exist_ok=True)
-    for filename in sorted(os.listdir(source)):
-        file_path: str = os.path.join(source, filename)
-        if os.path.isfile(file_path) and "index" not in file_path:
-            parse_markdown_to_yaml(file_path, destination)
+    try:
+        destination.mkdir(parents=True, exist_ok=True)
+        for filename in sorted(os.listdir(source)):
+            file_path: str = os.path.join(source, filename)
+            if os.path.isfile(file_path) and "index" not in file_path:
+                parse_markdown_to_yaml(file_path, destination)
+    except Exception as e:  # Catch any exception
+        print(f"Error: {e}", file=sys.stderr)  # Print error to stderr
+        sys.exit(1)
 
 
 read_folder()

@@ -2,6 +2,7 @@
 
 import os
 import re
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -96,19 +97,23 @@ def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
 @click.argument("source", type=click.Path(exists=False, file_okay=False, dir_okay=True, path_type=Path))
 @click.argument("destination", type=click.Path(exists=False, file_okay=False, dir_okay=True, path_type=Path))
 def read_folder(source: Path, destination: Path) -> None:
-    requirements_destination = destination / Path("requirements")
-    requirements_destination.mkdir(parents=True, exist_ok=True)
-    for filename in sorted(os.listdir(source)):
-        file_path: str = os.path.join(source, filename)
-        if os.path.isfile(file_path) and "index" not in file_path:
-            parse_markdown_to_yaml(file_path, requirements_destination)
+    try:
+        requirements_destination = destination / Path("requirements")
+        requirements_destination.mkdir(parents=True, exist_ok=True)
+        for filename in sorted(os.listdir(source)):
+            file_path: str = os.path.join(source, filename)
+            if os.path.isfile(file_path) and "index" not in file_path:
+                parse_markdown_to_yaml(file_path, requirements_destination)
 
-    labels_destination = destination / Path("labels")
-    labels_destination.mkdir(parents=True, exist_ok=True)
-    # prepare data for yaml
-    yaml_output = {"ai-act": {key: sorted(value) for key, value in ai_act_values.items()}}
-    with open(labels_destination / Path("labels.yaml"), "w", encoding="utf-8") as file:
-        yaml.dump(yaml_output, file, allow_unicode=True, sort_keys=False)
+        labels_destination = destination / Path("labels")
+        labels_destination.mkdir(parents=True, exist_ok=True)
+        # prepare data for yaml
+        yaml_output = {"ai-act": {key: sorted(value) for key, value in ai_act_values.items()}}
+        with open(labels_destination / Path("labels.yaml"), "w", encoding="utf-8") as file:
+            yaml.dump(yaml_output, file, allow_unicode=True, sort_keys=False)
+    except Exception as e:  # Catch any exception
+        print(f"Error: {e}", file=sys.stderr)  # Print error to stderr
+        sys.exit(1)
 
 
 read_folder()
