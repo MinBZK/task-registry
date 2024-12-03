@@ -60,6 +60,7 @@ jobs:
           MATTERMOST_WEBHOOK_URL: ${{ secrets.MM_WEBHOOK_DEV }}
           TEXT: |
             Wijziging geconstateerd in bestanden van het Algoritmekader die invloed hebben op het Task Registry.
+            [Link naar de GitHub Action run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
             ```
             ${{ needs.sync.outputs.file_contents }}
             ```
