@@ -60,7 +60,7 @@ def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
         "language": "nl",
         "owners": [{"organization": "Algoritmekader", "name": "", "email": "", "role": ""}],
         "date": "",
-        "url": f"https://minbzk.github.io/Algoritmekader/vereisten/{url_title}/index.html",
+        "url": f"https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/{url_title}/index.html",
         "subject": front_matter_data.get("onderwerp", []),
         "lifecycle": front_matter_data.get("levenscyclus", []),
         "links": [],
