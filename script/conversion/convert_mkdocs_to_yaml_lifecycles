@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import re
+import sys
 from pathlib import Path
 
 import click
@@ -11,17 +12,21 @@ import yaml
 @click.argument("source", type=click.Path(exists=True, file_okay=True, dir_okay=False, path_type=Path))
 @click.argument("destination", type=click.Path(exists=False, file_okay=False, dir_okay=True, path_type=Path))
 def do_sync(source: Path, destination: Path) -> None:
-    destination.mkdir(parents=True, exist_ok=True)
-    with open(source, encoding="utf-8") as file:
-        document = file.read()
-    regex = r"[\s\t]?<li>\s?<a href=\".*\">(.*)</a></li>"
-    matches = re.findall(regex, document)
-    if not matches:
-        regex = r"\d\.[\s\t]*\[(.*)\]\(.*\)"
+    try:
+        destination.mkdir(parents=True, exist_ok=True)
+        with open(source, encoding="utf-8") as file:
+            document = file.read()
+        regex = r"[\s\t]?<li>\s?<a href=\".*\">(.*)</a></li>"
         matches = re.findall(regex, document)
+        if not matches:
+            regex = r"\d\.[\s\t]*\[(.*)\]\(.*\)"
+            matches = re.findall(regex, document)
 
-    with open(destination / Path("lifecycles.yaml"), "w", encoding="utf-8") as file:
-        yaml.dump({"lifecycles": matches}, file, allow_unicode=True, sort_keys=False)
+        with open(destination / Path("lifecycles.yaml"), "w", encoding="utf-8") as file:
+            yaml.dump({"lifecycles": matches}, file, allow_unicode=True, sort_keys=False)
+    except Exception as e:  # Catch any exception
+        print(f"Error: {e}", file=sys.stderr)  # Print error to stderr
+        sys.exit(1)
 
 
 do_sync()
