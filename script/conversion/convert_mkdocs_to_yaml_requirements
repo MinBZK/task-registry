@@ -68,7 +68,7 @@ def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
             {
                 "type": front_matter_data.get("soort-toepassing", []),
                 "open_source": [],
-                "risk_category": (
+                "risk_group": (
                     front_matter_data.get("risicocategorie", [])
                     or front_matter_data.get("risicogroep", [])
                     or front_matter_data.get("publicatiecategorie", [])
@@ -76,6 +76,7 @@ def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
                 "systemic_risk": front_matter_data.get("systeemrisico", []),
                 "transparency_obligations": front_matter_data.get("transparantieverplichting", []),
                 "role": front_matter_data.get("rol-ai-act", []),
+                "conformity_assessment_body": front_matter_data.get("conformity-assessment-body", []),
             }
         ],
         "always_applicable": 0 if "aia" in input_file.lower() else 1,

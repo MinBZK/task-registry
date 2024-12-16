@@ -136,7 +136,9 @@
                 "AI-systeem",
                 "AI-systeem voor algemene doeleinden",
                 "AI-model voor algemene doeleinden",
-                "algoritme"
+                "geen algoritme",
+                "impactvol algoritme",
+                "niet-impactvol algoritme"
               ]
             }
           },
@@ -150,14 +152,15 @@
               ]
             }
           },
-          "risk_category": {
+          "risk_group": {
             "type": "array",
             "items": {
               "type": "string",
               "enum": [
-                "geen hoog-risico AI",
                 "hoog-risico AI",
-                "verboden AI"
+                "geen hoog-risico AI",
+                "verboden AI",
+                "uitzondering van toepassing"
               ]
             }
           },
@@ -192,11 +195,20 @@
                 "distributeur"
               ]
             }
+          },
+          "conformity_assessment_body": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "beoordeling door derde partij"
+              ]
+            }
           }
         },
         "required": [
           "type",
-          "risk_category",
+          "risk_group",
           "role"
         ]
       }

@@ -16,6 +16,7 @@ rename_ai_act_labels_dict = {
     "verboden-ai": "verboden AI",
     "hoog-risico-ai-systeem": "hoog-risico AI",
     "geen-hoog-risico-ai-systeem": "geen hoog-risico AI",
+    "systeemrisico": "systeemrisico",
 }
 
 
