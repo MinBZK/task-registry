@@ -1,0 +1,34 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Zorg dat je controle of eigenaarschap hebt over de data
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:dat-08
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-08-eigenaarschap-data/index.html
+subject:
+- data
+- publieke-inkoop
+suggested_roles:
+- projectleider
+lifecycle:
+- dataverkenning-en-datapreparatie
+links:
+- urn:nl:ak:ver:aia-05
+- urn:nl:ak:ver:dat-01
+- urn:nl:ak:ver:aut-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

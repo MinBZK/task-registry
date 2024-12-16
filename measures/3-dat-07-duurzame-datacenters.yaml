@@ -1,0 +1,36 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Gebruik duurzame datacenters
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:dat-07
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-07-duurzame-datacenters/index.html
+subject:
+- duurzaamheid
+suggested_roles:
+- ontwikkelaar
+- projectleider
+- beleid-en-advies
+lifecycle:
+- ontwerp
+- dataverkenning-en-datapreparatie
+- ontwikkelen
+- implementatie
+- monitoring-en-beheer
+links: []
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

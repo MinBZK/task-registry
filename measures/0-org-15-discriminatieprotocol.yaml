@@ -1,0 +1,34 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Stel een protocol vast voor de situatie dat er (een vermoeden van) discriminatie
+  door een algoritme is geconstateerd en pas dit wanneer nodig toe.
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:imp-10
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/0-org-15-discriminatieprotocol/index.html
+subject:
+- bias-en-non-discriminatie
+suggested_roles:
+- projectleider
+- beleid-en-advies
+lifecycle:
+- organisatieverantwoordelijkheden
+- implementatie
+links:
+- urn:nl:ak:ver:grw-02
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

@@ -16,7 +16,7 @@ def do_sync(source: Path, destination: Path) -> None:
         destination.mkdir(parents=True, exist_ok=True)
         with open(source, encoding="utf-8") as file:
             document = file.read()
-        regex = r"[\s\t]?<li>\s?<a href=\".*\">(.*)</a></li>"
+        regex = r"-\s*\[__Fase \d+: ([^]]+)__\]\([^)]+\)"
         matches = re.findall(regex, document)
         if not matches:
             regex = r"\d\.[\s\t]*\[(.*)\]\(.*\)"

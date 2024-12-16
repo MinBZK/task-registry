@@ -16,25 +16,24 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/aia-01-ai-geletterdheid/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-01-ai-geletterdheid/index.html
 subject:
 - menselijke-controle
 - governance
 lifecycle:
 - organisatieverantwoordelijkheden
 links:
-- urn:nl:ak:mtr:leveren_bewijs_onderdeel_beoordeling_inschrijving
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_service_level_agreement
-- urn:nl:ak:mtr:neem_vereiste_op_als_subgunningscriteria
-- urn:nl:ak:mtr:vaststellen_benodigde_kennisoverdracht_en_ondersteuning
-- urn:nl:ak:mtr:vaststellen_passend_trainingsniveau_door_aanbieder
+- urn:nl:ak:mtr:owp-18
+- urn:nl:ak:mtr:owp-23
+- urn:nl:ak:mtr:owp-26
+- urn:nl:ak:mtr:imp-01
 ai_act_profile:
 - type:
   - AI-systeem
   - AI-systeem voor algemene doeleinden
   - AI-model voor algemene doeleinden
   open_source: []
-  risk_category:
+  risk_group:
   - hoog-risico AI
   - verboden AI
   - geen hoog-risico AI
@@ -43,6 +42,7 @@ ai_act_profile:
   role:
   - aanbieder
   - gebruiksverantwoordelijke
+  conformity_assessment_body: []
 always_applicable: 0
 template:
   requirement: $REQUIREMENT

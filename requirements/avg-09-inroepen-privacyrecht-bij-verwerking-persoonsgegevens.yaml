@@ -10,12 +10,13 @@ explanation: 'Mensen hebben het recht om hun privacyrechten uit te oefenen door 
   en kunnen verzoeken om toegang te krijgen tot hun gegevens of om wijzigingen aan
   te brengen indien nodig.
 
+
   Het kunnen uitoefenen van privacyrechten is essentieel voor het beschermen van de
   privacy van individuen, het waarborgen van transparantie en controle uitvoeren over
   persoonsgegevens.
 
-  Als persoonsgegevens worden verwerkt voor het ontwikkelen en gebruiken van algoritmes
-  en AI, is het van belang dat maatregelen worden getroffen om deze rechten te eerbiedigen.'
+  Als persoonsgegevens worden verwerkt voor het ontwikkelen en gebruiken van algoritmes,
+  is het van belang dat maatregelen worden getroffen om deze rechten te eerbiedigen.'
 urn: urn:nl:ak:ver:avg-09
 language: nl
 owners:
@@ -24,7 +25,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/avg-09-inroepen-privacyrecht-bij-verwerking-persoonsgegevens/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/avg-09-inroepen-privacyrecht-bij-verwerking-persoonsgegevens/index.html
 subject:
 - privacy-en-gegevensbescherming
 - data
@@ -32,21 +33,22 @@ lifecycle:
 - organisatieverantwoordelijkheden
 - ontwikkelen
 links:
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
+- urn:nl:ak:mtr:owp-28
 - urn:nl:ak:mtr:imp-06
 - urn:nl:ak:mtr:imp-09
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
 ai_act_profile:
 - type: []
   open_source: []
-  risk_category: []
+  risk_group: []
   systemic_risk: []
   transparency_obligations: []
   role: []
+  conformity_assessment_body: []
 always_applicable: 1
 template:
   requirement: $REQUIREMENT

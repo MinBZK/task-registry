@@ -1,0 +1,31 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Taken en verantwoordelijkheden zijn toebedeeld in de algoritmegovernance
+description: Taken en verantwoordelijkheden zijn toebedeeld in de algoritmegovernance
+explanation: ''
+urn: urn:nl:ak:mtr:org-10
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/0-org-10-inrichten-taken-en-verantwoordelijkheden-algoritmegovernance/index.html
+subject:
+- governance
+suggested_roles:
+- projectleider
+- beleid-en-advies
+lifecycle:
+- organisatieverantwoordelijkheden
+links: []
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

@@ -1,0 +1,34 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Voer een risico-analyse met de aanbieder uit op het gebied van informatiebeveiliging
+  bij een uitbestedingstraject
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:owp-24
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-24-risico-analyse-informatiebeveiliging-leverancier/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+- publieke-inkoop
+suggested_roles:
+- projectleider
+- beleid-en-advies
+lifecycle:
+- ontwerp
+links:
+- urn:nl:ak:ver:bio-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

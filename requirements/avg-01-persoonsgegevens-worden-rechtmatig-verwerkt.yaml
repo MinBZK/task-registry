@@ -9,12 +9,12 @@ explanation: "De verwerking van persoonsgegevens moet rechtmatig plaatsvinden, w
   \ en gerechtvaardigde doeleinden.\nHet is niet toegestaan om deze gegevens verder\
   \ te verwerken op een manier die niet verenigbaar is met deze oorspronkelijke doeleinden.\n\
   \nBij het verwerken van persoonsgegevens ten behoeve van de ontwikkeling en gebruik\
-  \ van algoritmes en AI moet worden onderzocht of dit kan worden gebaseerd op \xE9\
-  \xE9n van de verwerkingsgrondslagen.\nHet is van belang dat wordt uitgewerkt welke\
-  \ persoonsgegevens waarvoor worden verwerkt en op basis van welke grondslag.\nHierbij\
-  \ kan worden gedacht aan persoonsgegevens ten behoeve van trainingsdata, voor het\
-  \ genereren van output of, indien (juridisch) mogelijk, voor het uitvoeren van een\
-  \ onderzoek naar onbewuste vooringenomenheid."
+  \ van algoritmes moet worden onderzocht of dit kan worden gebaseerd op \xE9\xE9\
+  n van de verwerkingsgrondslagen.\nHet is van belang dat wordt uitgewerkt welke persoonsgegevens\
+  \ waarvoor worden verwerkt en op basis van welke grondslag.\nHierbij kan worden\
+  \ gedacht aan persoonsgegevens ten behoeve van trainingsdata, voor het genereren\
+  \ van output of, indien (juridisch) mogelijk, voor het uitvoeren van een onderzoek\
+  \ naar onbewuste vooringenomenheid."
 urn: urn:nl:ak:ver:avg-01
 language: nl
 owners:
@@ -23,7 +23,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/avg-01-persoonsgegevens-worden-rechtmatig-verwerkt/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/avg-01-persoonsgegevens-worden-rechtmatig-verwerkt/index.html
 subject:
 - privacy-en-gegevensbescherming
 lifecycle:
@@ -33,20 +33,20 @@ lifecycle:
 links:
 - urn:nl:ak:mtr:pba-05
 - urn:nl:ak:mtr:owp-03
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
 - urn:nl:ak:mtr:dat-03
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
 ai_act_profile:
 - type: []
   open_source: []
-  risk_category: []
+  risk_group: []
   systemic_risk: []
   transparency_obligations: []
   role: []
+  conformity_assessment_body: []
 always_applicable: 1
 template:
   requirement: $REQUIREMENT

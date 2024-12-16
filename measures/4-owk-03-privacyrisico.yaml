@@ -2,25 +2,25 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Analyseer de privacy-risico’s en neem maatregelen om deze risico’s laag te houden
 description: ''
-explanation: "- Verifieer of een [DPIA](../instrumenten/DPIA.md) is uitgevoerd over\
-  \ het werkproces dat wordt of zal worden ondersteund met een algoritme of AI-systeem.\
-  \ Zo nee, voer een risico analyse (DPIA) uit om de risico's voor de rechten en vrijheden\
-  \ van betrokkenen met de inzet van algoritmes en AI-systemen in beeld te brengen.\n\
-  - Organisatorische en technische maatregelen moeten worden getroffen om persoonsgegevens\
-  \ bij de ontwikkeling en het gebruik van het algoritme of AI-systeem te beschermen.\n\
-  - Beleg de mitigerende maatregelen bij betrokken actoren. Denk bijvoorbeeld aan\
-  \ het toekennen van de maatregelen als [anonimiseren en pseudonimiseren van persoonsgegevens](3-dat-05-pseudonimiseren-anonimiseren.md)\
+explanation: "- Verifieer of een [DPIA](../hulpmiddelen/DPIA.md) is uitgevoerd over\
+  \ het werkproces dat wordt of zal worden ondersteund met een algoritme. Zo nee,\
+  \ voer een risico analyse (DPIA) uit om de risico's voor de rechten en vrijheden\
+  \ van betrokkenen met de inzet van algoritmes in beeld te brengen.\n- Organisatorische\
+  \ en technische maatregelen moeten worden getroffen om persoonsgegevens bij de ontwikkeling\
+  \ en het gebruik van het algoritme te beschermen.\n- Beleg de mitigerende maatregelen\
+  \ bij betrokken actoren. Denk bijvoorbeeld aan het toekennen van de maatregelen\
+  \ als [anonimiseren en pseudonimiseren van persoonsgegevens](3-dat-05-pseudonimiseren-anonimiseren.md)\
   \ aan een data engineer, voordat deze kunnen worden gebruikt ten behoeve van het\
-  \ ontwikkelen of controleren van het algoritme of AI-systeem.\n- Bepaal welke maatregelen\
-  \ moeten zijn gerealiseerd voordat mag worden gestart met de verwerking van de persoonsgegevens\
+  \ ontwikkelen of controleren van het algoritme.\n- Bepaal welke maatregelen moeten\
+  \ zijn gerealiseerd voordat mag worden gestart met de verwerking van de persoonsgegevens\
   \ en welke moeten worden gemonitord.  \n- Monitor de voortgang op het realiseren\
   \ van de maatregelen en zorg voor bewijsstuken als deze zijn gerealiseerd. Deze\
   \ bewijsstukken kunnen onderdeel worden van een audit.\n- Als er een noodzaak is\
   \ om na verloop van tijd meer persoonsgegevens te verwerken of om andere verwerkingen\
   \ uit te voeren, zal opnieuw een beoordeling moeten plaatsvinden of er privacyrisico's\
   \ ontstaan en hoe deze kunnen worden gemitigeerd. Gedurende de levenscyclus van\
-  \ het algoritme of AI-systeem moet aandacht blijven voor het uitvoeren van de risicoanalyse\
-  \ voor privacyrisico's.\n- Bij hoge risico's voor het verwerken van persoonsgegevens\
+  \ het algoritme moet aandacht blijven voor het uitvoeren van de risicoanalyse voor\
+  \ privacyrisico's.\n- Bij hoge risico's voor het verwerken van persoonsgegevens\
   \ is een voorafgaande raadpleging bij de Autoriteit Persoonsgegevens onder artikel\
   \ 36 AVG verplicht. Bepaal of raadpleging noodzakelijk is. "
 urn: urn:nl:ak:mtr:owk-03
@@ -31,7 +31,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/4-owk-03-privacyrisico/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-03-privacyrisico/index.html
 subject:
 - privacy-en-gegevensbescherming
 suggested_roles:

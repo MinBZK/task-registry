@@ -1,0 +1,31 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Richt algoritmegovernance op basis van de risicoclassificatie van algoritmes.
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:org-09
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/0-org-09-governance-per-risicocategorie/index.html
+subject:
+- governance
+suggested_roles:
+- projectleider
+- beleid-en-advies
+lifecycle:
+- organisatieverantwoordelijkheden
+links: []
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

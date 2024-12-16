@@ -1,0 +1,31 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Ontwerp algoritmes zo eenvoudig mogelijk
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:owp-12
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-12-eenvoudigere-algoritmes/index.html
+subject:
+- duurzaamheid
+suggested_roles:
+- ontwikkelaar
+lifecycle:
+- ontwerp
+- ontwikkelen
+links: []
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

@@ -1,0 +1,34 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Meten, monitoren en rapporteren van milieu-impact van algoritmes
+description: ''
+explanation: 'Tref bijvoorbeeld de volgende maatregelen, wanneer je de milieu-impact
+  van algoritmes gaat inventariseren of monitoren:'
+urn: urn:nl:ak:mtr:mon-05
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/7-mon-05-meten-milieu-impact/index.html
+subject:
+- duurzaamheid
+suggested_roles:
+- ontwikkelaar
+- beleid-en-advies
+- projectleider
+lifecycle:
+- ontwerp
+- monitoring-en-beheer
+links: []
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

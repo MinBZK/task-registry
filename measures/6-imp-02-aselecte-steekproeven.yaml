@@ -11,7 +11,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/6-imp-02-aselecte-steekproeven/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/6-imp-02-aselecte-steekproeven/index.html
 subject:
 - bias-en-non-discriminatie
 - technische-robuustheid-en-veiligheid
@@ -22,7 +22,7 @@ lifecycle:
 - implementatie
 - monitoring-en-beheer
 links:
-- urn:nl:ak:ver:aia-29
+- urn:nl:ak:ver:aia-27
 - urn:nl:ak:ver:grw-02
 - urn:nl:ak:ver:aia-10
 template:

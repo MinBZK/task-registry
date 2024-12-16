@@ -9,14 +9,15 @@ explanation: "- Er is een overzicht opgesteld welke persoonsgegevens mogen worde
   \ verwerkt mogen worden verwerkt.\n- Bij de persoonsgegevens is aangegeven om wat\
   \ voor categorie persoonsgegevens het gaat.\n- Per kenmerk is toegelicht waarom\
   \ deze noodzakelijk is om te verwerken voor het ontwikkelen en gebruiken van het\
-  \ algoritme of AI-systeem.\n- Het principe van dataminimalisatie is toegepast, wat\
-  \ betekent dat een keuze is gemaakt of een persoonsgegevens al dan niet strikt noodzakelijk\
-  \ is om het doel te bereiken of dat verwerking ervan achterwege kan blijven.\n-\
-  \ Voor [het beschermen van deze persoonsgegevens](3-dat-05-pseudonimiseren-anonimiseren.md)\
+  \ algoritme.\n- Het principe van dataminimalisatie is toegepast, wat betekent dat\
+  \ een keuze is gemaakt of een persoonsgegevens al dan niet strikt noodzakelijk is\
+  \ om het doel te bereiken of dat verwerking ervan achterwege kan blijven.\n- Voor\
+  \ [het beschermen van deze persoonsgegevens](3-dat-05-pseudonimiseren-anonimiseren.md)\
   \ wordt per kenmerk aangegeven op welke manier deze kan worden beschermd (anonimiseren,\
-  \ pseudonomiseren, aggregeren). \n- Een [DPIA](../instrumenten/DPIA.md) kan worden\
-  \ gebruikt om bovenstaande activiteiten uit te voeren.\n  \n## Bijbehorende vereiste(n)\n\
-  \n<!-- list_vereisten_on_maatregelen_page -->"
+  \ pseudonomiseren, aggregeren). \n- Een [DPIA](../hulpmiddelen/DPIA.md) kan worden\
+  \ gebruikt om bovenstaande activiteiten uit te voeren.\n  \n## Bijbehorende vereiste(n)\
+  \ { data-search-exclude }\n??? expander \"Bekijk alle vereisten\"\n    <!-- list_vereisten_on_maatregelen_page\
+  \ -->"
 urn: urn:nl:ak:mtr:dat-03
 language: nl
 owners:
@@ -25,9 +26,10 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/3-dat-03-persoonsgegevens-beschrijven/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-03-persoonsgegevens-beschrijven/index.html
 subject:
 - privacy-en-gegevensbescherming
+- transparantie
 suggested_roles:
 - projectleider
 - ontwikkelaar

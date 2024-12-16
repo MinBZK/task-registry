@@ -1,0 +1,61 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Menselijke controle van hoog-risico-AI-systemen wordt uitgevoerd door mensen
+  met voldoende kennis en mogelijkheden
+description: Gebruiksverantwoordelijken dragen het menselijk toezicht over een hoog
+  risico AI-systeem op aan natuurlijke personen die over de nodige bekwaamheid, opleiding
+  en autoriteit beschikken en de nodige ondersteuning krijgen.
+explanation: 'Het is van belang dat natuurlijke personen die het menselijk toezicht
+  moeten uitvoeren over het AI-systeem met een hoog risico, daarvoor over de nodige
+  bekwaamheid, opleiding en autoriteit beschikt.
+
+  Daarbij kan het van belang zijn dat deze natuurlijke personen ondersteuning krijgen
+  bij het uitvoeren van deze taak.
+
+  '
+urn: urn:nl:ak:ver:aia-21
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-21-gebruiksverantwoordelijken-menselijk-toezicht/index.html
+subject:
+- governance
+- menselijke-controle
+lifecycle:
+- organisatieverantwoordelijkheden
+links:
+- urn:nl:ak:mtr:org-01
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
+- urn:nl:ak:mtr:imp-03
+- urn:nl:ak:mtr:imp-05
+- urn:nl:ak:mtr:imp-01
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_group:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - gebruiksverantwoordelijke
+  conformity_assessment_body: []
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

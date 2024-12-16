@@ -1,0 +1,76 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: AI-modellen voor algemene doeleinden zijn voorzien van voldoende technische
+  documentatie en informatie
+description: 'Aanbieders van AI-modellen voor algemene doeleinden moeten (technische)
+  informatie en documentatie opstellen, up-to-date houden en beschikbaar stellen voor
+  aanbieders van AI-systemen die het AI-model voor algemene doeleinden in hun AI-systemen
+  willen integreren.
+
+  '
+explanation: 'Aanbieders van AI-modellen voor algemene doeleinden hebben een bijzondere
+  rol en verantwoordelijkheid.
+
+  Zij leveren modellen die de basis kunnen vormen voor weer andere systemen en algoritmen,
+  die vaak weer door andere partijen worden aangeboden dan de ontwikkelaar van het
+  algemene systeem.
+
+  Dit vraagt om een goed inzicht in de modellen en hun capaciteiten, zowel qua integratie
+  van de modellen in producten als qua naleving van verplichtingen.
+
+
+
+  Er zijn daarom evenredige transparantiemaatregelen nodig, zoals het opstellen en
+  bijwerken van documentatie en verstrekken van informatie over het AI-model voor
+  algemeen gebruik door de aanbieders van systemen die de algemene modellen gebruiken
+  in hun product.
+
+  De aanbieder van het AI-model voor algemene doeleinden dient technische documentatie
+  op te stellen en bij te werken om deze op verzoek te kunnen overleggen aan het AI-bureau
+  en de nationale bevoegde autoriteiten.
+
+  De minimaal in de documentatie op te nemen elementen moeten worden vastgelegd volgens
+  bijlage XII van de AI-Verordening.
+
+  Hierbij is het ook van belang dat de aanbieder van AI-modellen voor algemene doelstelling
+  beleid opstellen voor naleving van auteursrechten en naburige rechten (artikel 4,
+  lid 3 Richtlijn (EU) 2019/790).
+
+
+  In art. 53 lid 2 wordt een uitzondering gemaakt op deze vereisten.'
+urn: urn:nl:ak:ver:aia-29
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-29-ai-modellen-algemene-doeleinden/index.html
+subject:
+- transparantie
+lifecycle:
+- ontwerp
+- ontwikkelen
+- monitoring-en-beheer
+links: []
+ai_act_profile:
+- type:
+  - AI-model voor algemene doeleinden
+  open_source: []
+  risk_group: []
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+  conformity_assessment_body: []
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

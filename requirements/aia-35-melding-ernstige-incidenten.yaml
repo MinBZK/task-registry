@@ -1,0 +1,62 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Ernstige incidenten door hoog-risico-AI-systemen worden gemeld aan de toezichthouder
+description: Aanbieders van in de Europese Unie in de handel gebrachte AI-systemen
+  met een hoog risico melden ernstige incidenten bij de markttoezichtautoriteiten
+  van de lidstaten waarin dat incident heeft plaatsgevonden.
+explanation: "Aanbieders van AI-systemen met een hoog risico die binnen de EU worden\
+  \ verhandeld, moeten ernstige incidenten melden bij de markttoezichtautoriteiten\
+  \ van de lidstaten waar het incident heeft plaatsgevonden.\nEen 'ernstig incident'\
+  \ wordt in artikel 3 van de AI-verordening gedefinieerd als: een incident of gebrekkig\
+  \ functioneren van een AI-systeem dat direct of indirect leidt tot: \n\n1. het overlijden\
+  \ van een persoon of ernstige schade voor de gezondheid van een persoon;\n2. een\
+  \ ernstige en onomkeerbare verstoring van het beheer of de exploitatie van kritieke\
+  \ infrastructuur;\n3. een schending van de uit het recht van de Unie voortvloeiende\
+  \ verplichtingen ter bescherming van de grondrechten;\n4. ernstige schade aan eigendommen\
+  \ of het milieu.\n\nDit meldingsproces is bedoeld om snel en adequaat te reageren\
+  \ op ernstige incidenten die zich voordoen bij het gebruik van deze AI-systemen,\
+  \ en om passende maatregelen te nemen ter bescherming van de consumenten en het\
+  \ publiek.\nHet doel is om de veiligheid en betrouwbaarheid van AI-systemen te waarborgen\
+  \ en mogelijke risico's voor gebruikers te minimaliseren."
+urn: urn:nl:ak:ver:aia-35
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-35-melding-ernstige-incidenten/index.html
+subject:
+- governance
+lifecycle:
+- organisatieverantwoordelijkheden
+- monitoring-en-beheer
+links:
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
+ai_act_profile:
+- type:
+  - AI-systeem
+  - AI-systeem voor algemene doeleinden
+  open_source: []
+  risk_group:
+  - hoog-risico AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+  conformity_assessment_body: []
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

@@ -20,30 +20,30 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/aia-17-registratieverplichtingen/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-17-registratieverplichtingen/index.html
 subject:
 - governance
 - transparantie
 lifecycle:
 - implementatie
 links:
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
 ai_act_profile:
 - type:
   - AI-systeem
   - AI-systeem voor algemene doeleinden
   open_source: []
-  risk_category:
+  risk_group:
   - hoog-risico AI
   systemic_risk: []
   transparency_obligations: []
   role:
   - aanbieder
+  conformity_assessment_body: []
 always_applicable: 0
 template:
   requirement: $REQUIREMENT

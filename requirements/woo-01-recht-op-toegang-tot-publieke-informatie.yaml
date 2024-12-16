@@ -7,8 +7,8 @@ description: 'Een bestuursorgaan draagt er zorg voor dat de documenten die het o
 
   Een bestuursorgaan draagt er zoveel mogelijk zorg voor dat de informatie die het
   overeenkomstig deze wet verstrekt, actueel, nauwkeurig en vergelijkbaar is.'
-explanation: 'Bij het ontwikkelen en gebruiken van algoritmes en AI kunnen documenten
-  en publieke informatie ontstaan die (op verzoek) in aanmerking komen voor openbaarmaking.
+explanation: 'Bij het ontwikkelen en gebruiken van algoritmes kunnen documenten en
+  publieke informatie ontstaan die (op verzoek) in aanmerking komen voor openbaarmaking.
 
   Het kunnen openbaren van publieke informatie is in het belang van een democratische
   rechtstaat.
@@ -28,9 +28,8 @@ explanation: 'Bij het ontwikkelen en gebruiken van algoritmes en AI kunnen docum
   5.1 Woo).
 
 
-  In de context van het ontwikkelen en gebruiken van algoritmes en AI-systemen is
-  het van belang dat tijdig wordt vastgesteld welke documenten in aanmerking komen
-  voor openbaarmaking.
+  In de context van het ontwikkelen en gebruiken van algoritmes is het van belang
+  dat tijdig wordt vastgesteld welke documenten in aanmerking komen voor openbaarmaking.
 
   Dit moet worden bekeken in het licht van wat ''actief'' moet worden geopenbaard,
   dus proactief vanuit overheidsinstanties zelf, of wat op ''verzoek'' van iemand
@@ -43,28 +42,27 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/woo-01-recht-op-toegang-tot-publieke-informatie/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/woo-01-recht-op-toegang-tot-publieke-informatie/index.html
 subject:
 - transparantie
 lifecycle:
 - organisatieverantwoordelijkheden
 links:
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:leveren_bewijs_onderdeel_beoordeling_inschrijving
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_service_level_agreement
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:neem_vereiste_op_als_subgunningscriteria
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-18
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
+- urn:nl:ak:mtr:owp-26
 ai_act_profile:
 - type: []
   open_source: []
-  risk_category: []
+  risk_group: []
   systemic_risk: []
   transparency_obligations: []
   role: []
+  conformity_assessment_body: []
 always_applicable: 1
 template:
   requirement: $REQUIREMENT

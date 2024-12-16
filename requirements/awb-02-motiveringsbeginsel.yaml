@@ -2,19 +2,27 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Organisaties kunnen duidelijk uitleggen waarom en hoe algoritmes leiden tot
   een besluit
-description: 'Een besluit berust op een deugdelijke motivering
+description: 'Een besluit berust op een deugdelijke en kenbare motivering.
 
   '
-explanation: "Een bestuursorgaan moet inzichtelijk maken: \n\n1. dat een besluit tot\
-  \ stand is gekomen met behulp van een algoritme; \n2. van welke feiten het is uitgegaan\
-  \ en welke gegevens van de burger gebruikt c.q. verwerkt zijn;\n3. welke relevante\
-  \ belangen tegen elkaar zijn afgewogen en hoe die afweging is verlopen (bijvoorbeeld\
-  \ het gewicht dat wordt toegekend aan elk afgewogen kenmerk; welke analytische technieken\
-  \ gebruikt zijn; welke specifieke voorspellende data; wat de belangrijkste policy-keuzes\
-  \ waren; een uitleg van het voorspellende algoritme); \n4. hoe het algoritme werkt\
-  \ (niet de techniek, maar hoe de uitkomsten van het algoritme tot stand komen).\
-  \ \n\nDe keuzes en aannames die zijn gemaakt en gedaan moeten worden beschreven\
-  \ en toegelicht."
+explanation: "De Awb eist dat een besluit een deugdelijke en kenbare motivering heeft.\
+  \ Dit geldt ook als algoritmes worden ingezet. Een betrokkene moet in staat zijn\
+  \ om te controleren of de overheid een besluit correct heeft genomen. Het motiveringsbeginsel\
+  \ draagt bij aan doelen als verantwoording kunnen afleggen en het bieden van rechtsbescherming.\
+  \ Het kan in samenhang worden gezien met [transparantieverplichtingen](avg-07-transparantie-bij-verwerken-persoonsgegevens.md)\
+  \ die voortkomen uit de AVG. \n\nHet is van belang dat inzichtelijk wordt gemaakt\
+  \ in het besluit welke gegevens zijn verwerkt en welke 'aannames' een algoritme\
+  \ bevat. Dit speelt in het bijzonder als gebruik wordt gemaakt van geautomatiseerde\
+  \ besluitvormingsprocessen. Hierbij kan worden gedacht aan:\n- Dat een besluit tot\
+  \ stand is gekomen met behulp van een algoritme.\n- Van welke feiten het bestuursorgaan\
+  \ is uitgegaan.\n- Welke gegevens zijn verwerkt.\n- Welke relevante belangen tegen\
+  \ elkaar zijn afgewogen en hoe die afweging is verlopen.\n- Welke regels zijn gebruikt.\n\
+  - Wat de hierachter is (kenbaarheid).\n- Welke analytische technieken zijn gebruikt\n\
+  - Waarom deze regels en logica relevant zijn (uitleg)?\n- Op welke wijze de regels\
+  \ en logica tot stand zijn gekomen en hoe deze regels worden gevalideerd.\n  \n\
+  Een besluit moet informatie hierover bevatten om als om als voldoende draagkrachtig\
+  \ gemotiveerd te gelden.\nHet motiveringsbeginsel op grond van de Awb is beperkt\
+  \ tot besluiten in de zin van de Awb. "
 urn: urn:nl:ak:ver:awb-02
 language: nl
 owners:
@@ -23,7 +31,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/awb-02-motiveringsbeginsel/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/awb-02-motiveringsbeginsel/index.html
 subject:
 - transparantie
 lifecycle:
@@ -31,21 +39,22 @@ lifecycle:
 - implementatie
 - monitoring-en-beheer
 links:
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
+- urn:nl:ak:mtr:owp-07
 - urn:nl:ak:mtr:ver-03
 - urn:nl:ak:mtr:imp-01
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
 ai_act_profile:
 - type: []
   open_source: []
-  risk_category: []
+  risk_group: []
   systemic_risk: []
   transparency_obligations: []
   role: []
+  conformity_assessment_body: []
 always_applicable: 1
 template:
   requirement: $REQUIREMENT

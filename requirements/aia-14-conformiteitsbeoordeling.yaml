@@ -4,21 +4,30 @@ name: Hoog-risico-AI-systemen worden pas geleverd of gebruikt na een conformitei
 description: Aanbieders van AI-systemen met een hoog risico zorgen ervoor dat voor
   het AI-systeem met een hoog risico een conformiteitsbeoordelingsprocedure wordt
   uitgevoerd voordat dit systeem in de handel wordt gebracht of in gebruik wordt gesteld
-explanation: 'Aanbieders van AI-systemen met een hoog risico moeten ervoor zorgen
-  dat de conformiteitsbeoordelingsprocedure wordt uitgevoerd voor het systeem op de
-  markt wordt gebracht of in gebruik wordt genomen.
-
-  Dit is mogelijk door middel van een interne controle (als bedoeld in bijlage VI
-  van de AI-verordening) of met betrokkenheid van een aangemelde instantie voor de
-  beoordeling van het systeem voor kwaliteitsbeheer en de technische documentatie
-  (als bedoeld in bijlage VII van de AI-verordening).
-
-
-  AI-systemen met een hoog risico die reeds aan een conformiteitsbeoordelingsprocedure
-  zijn onderworpen, ondergaan een nieuwe conformiteitsbeoordelingsprocedure telkens
-  wanneer zij substantieel zijn gewijzigd, ongeacht of het gewijzigde systeem bedoeld
-  is om verder te worden gedistribueerd of door de huidige gebruiksverantwoordelijke
-  gebruikt blijft worden.'
+explanation: "Conformiteitsbeoordelingen dragen bij aan het kunnen vertrouwen op de\
+  \ kwaliteit van producten en diensten. Aanbieders van AI-systemen met een hoog risico\
+  \ moeten ervoor zorgen dat de conformiteitsbeoordelingsprocedure wordt uitgevoerd\
+  \ v\xF3\xF3rdat het systeem op de markt wordt gebracht of in gebruik wordt genomen.\
+  \ Hiervoor moet worden beoordeeld of het ontwikkelde hoog risico AI-systeem voldoet\
+  \ aan de vereisten die gelden voor deze systemen. Denk hierbij aan de vereisten\
+  \ van risicobeheer, technische documentatie, data en datagovernance en transparantie\
+  \ en informatieverstrekking aan gebruiksverantwoordelijken (Afdeling 2, AI-Verordening).\
+  \  \n\nEen conformiteitbeoordeling kan worden uitgevoerd door middel van \n- een\
+  \ interne controle (als bedoeld in bijlage VI van de AI-verordening)\n- of met betrokkenheid\
+  \ van een aangemelde instantie voor de beoordeling van het systeem voor kwaliteitsbeheer\
+  \ en de technische documentatie (als bedoeld in bijlage VII van de AI-verordening).\
+  \ Een conformiteitsbeoordeling door een aangemelde instatie wordt ookwel een conformiteitsbeoordeling\
+  \ door een derden genoemd. \n\nAls overheidsorganisaties hoog risico AI-systemen\
+  \ gebruiken van aanbieders of deze zelf ontwikkelen, zullen deze systemen veelal\
+  \ de conformiteitsbeoordeling middels een interne controle moeten doorlopen (bijlage\
+  \ VI). Let op! In het geval dat een hoog risico AI-systeem door een rechtshandhavingsinstantie,\
+  \ immigratie- of asielautoriteit wordt ingezet, dan zal de markttoezichtautoriteit\
+  \ als aangemelde instantie optreden die de conformiteitsbeoordeling zal uitvoeren.\
+  \  \n\nAI-systemen met een hoog risico die al aan een conformiteitsbeoordelingsprocedure\
+  \ zijn onderworpen, ondergaan een nieuwe conformiteitsbeoordelingsprocedure telkens\
+  \ wanneer zij substantieel zijn gewijzigd, ongeacht of het gewijzigde systeem bedoeld\
+  \ is om verder te worden gedistribueerd of door de huidige gebruiksverantwoordelijke\
+  \ gebruikt blijft worden.\n\n\n\n![ai_lifecycle_visual_7FC0D14E-A775-A92E-DE5A38FDB7C238EB_75759](https://github.com/user-attachments/assets/47996f0e-d769-4ac5-a504-db12da4d1e21)\n"
 urn: urn:nl:ak:ver:aia-14
 language: nl
 owners:
@@ -27,30 +36,31 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/aia-14-conformiteitsbeoordeling/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-14-conformiteitsbeoordeling/index.html
 subject:
 - governance
 lifecycle:
 - verificatie-en-validatie
 - implementatie
 links:
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-15
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
 ai_act_profile:
 - type:
   - AI-systeem
   - AI-systeem voor algemene doeleinden
   open_source: []
-  risk_category:
+  risk_group:
   - hoog-risico AI
   systemic_risk: []
   transparency_obligations: []
   role:
   - aanbieder
+  conformity_assessment_body: []
 always_applicable: 0
 template:
   requirement: $REQUIREMENT

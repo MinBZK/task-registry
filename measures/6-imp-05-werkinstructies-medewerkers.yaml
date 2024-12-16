@@ -1,6 +1,6 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Spreek af hoe medewerkers omgaan met het algoritme of AI-systeem
+name: Spreek af hoe medewerkers omgaan met het algoritme.
 description: ''
 explanation: ''
 urn: urn:nl:ak:mtr:imp-05
@@ -11,7 +11,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/6-imp-05-werkinstructies-medewerkers/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/6-imp-05-werkinstructies-medewerkers/index.html
 subject:
 - governance
 - menselijke-controle
@@ -23,6 +23,7 @@ lifecycle:
 links:
 - urn:nl:ak:ver:grw-02
 - urn:nl:ak:ver:aia-09
+- urn:nl:ak:ver:aia-21
 template:
   requirement: $REQUIREMENT
   remarks: $REMARKS

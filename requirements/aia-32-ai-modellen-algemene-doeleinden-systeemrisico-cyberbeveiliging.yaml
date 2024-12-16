@@ -1,0 +1,55 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: "AI-modellen voor algemene doeleinden met systeemrisico\u2019s zijn voldoende\
+  \ beveiligd tegen cyberaanvallen"
+description: Aanbieders van AI-modellen voor algemene doeleinden met een systeemrisico
+  zorgen voor een passend niveau van cyberbeveiligingsbescherming voor het AI-model
+  voor algemene doeleinden met een systeemrisico en de fysieke infrastructuur van
+  het model.
+explanation: "Aanbieders van AI-modellen met systeemrisico moeten zorgen voor passende\
+  \ cyberbeveiligingsmaatregelen.\nDit omvat het beschermen van zowel het AI-model\
+  \ als de fysieke infrastructuur tegen potenti\xEBle cyberdreigingen.\nHet doel is\
+  \ om de integriteit en veiligheid van het model en de infrastructuur te waarborgen.\n\
+  Dit vereiste is een aanvulling op de in artikel 53 AI-verordening genoemde verplichtingen.\n"
+urn: urn:nl:ak:ver:aia-32
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-32-ai-modellen-algemene-doeleinden-systeemrisico-cyberbeveiliging/index.html
+subject:
+- governance
+- technische-robuustheid-en-veiligheid
+lifecycle:
+- ontwikkelen
+- monitoring-en-beheer
+links:
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
+ai_act_profile:
+- type:
+  - AI-model voor algemene doeleinden
+  open_source: []
+  risk_group: []
+  systemic_risk:
+  - systeemrisico
+  transparency_obligations: []
+  role:
+  - aanbieder
+  conformity_assessment_body: []
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

@@ -1,0 +1,36 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Laat de aanbieder aangeven welke mate van opleiding en ondersteuning bij de
+  implementatie nodig is om de beoogde algoritmes verantwoord te gebruiken.
+description: 'Laat de aanbieder aangeven welke mate van kennisoverdracht (opleiding
+  en training) en ondersteuning bij de organisatorische implementatie nodig is om
+  de beoogde algoritmes verantwoord te kunnen gebruiken. '
+explanation: ''
+urn: urn:nl:ak:mtr:owp-23
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-23-kennisoverdracht-en-ondersteuning-aanbieder/index.html
+subject:
+- publieke-inkoop
+suggested_roles:
+- projectleider
+- beleid-en-advies
+- ontwikkelaar
+lifecycle:
+- ontwerp
+links:
+- urn:nl:ak:ver:aia-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

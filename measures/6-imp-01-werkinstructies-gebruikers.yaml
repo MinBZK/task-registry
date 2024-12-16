@@ -1,0 +1,36 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Stel een werkinstructie op voor gebruikers.
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:imp-01
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/6-imp-01-werkinstructies-gebruikers/index.html
+subject:
+- menselijke-controle
+- transparantie
+suggested_roles:
+- projectleider
+- ontwikkelaar
+lifecycle:
+- implementatie
+links:
+- urn:nl:ak:ver:aia-01
+- urn:nl:ak:ver:awb-01
+- urn:nl:ak:ver:aia-28
+- urn:nl:ak:ver:aia-09
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

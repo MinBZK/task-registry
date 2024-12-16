@@ -1,0 +1,52 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Klachtrecht aanbieders verder in AI-waardeketen
+description: Aanbieders verder in de AI-waardeketen hebben het recht een klacht in
+  te dienen wegens inbreuk op de AI verordening bij het AI-bureau.
+explanation: "Aanbieders verder in de AI-waardeketen hebben het recht om een klacht\
+  \ in te dienen bij het AI-bureau in het geval van een inbreuk op de AI-verordening.\n\
+  Dit biedt hen een mechanisme om actie te ondernemen bij schendingen van de regels\
+  \ met betrekking tot AI-modellen voor algemene doeleinden die zij ge\xEFntrigeerd\
+  \ hebben in AI-systemen.\nHet AI-bureau kan dan passende maatregelen nemen om de\
+  \ naleving van de verordening te handhaven en eventuele geschillen tussen aanbieders\
+  \ op te lossen."
+urn: urn:nl:ak:ver:aia-37
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-37-recht-klacht-indienen-bij-ai-bureau/index.html
+subject:
+- governance
+- fundamentele-rechten
+lifecycle:
+- organisatieverantwoordelijkheden
+links:
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
+- urn:nl:ak:mtr:owp-26
+- urn:nl:ak:mtr:owp-28
+ai_act_profile:
+- type: []
+  open_source: []
+  risk_group: []
+  systemic_risk: []
+  transparency_obligations: []
+  role: []
+  conformity_assessment_body: []
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

@@ -6,8 +6,8 @@ explanation: "- Bepaal waarom het gewenst of nodig is om een algoritme in te zet
   \ en of er ook alternatieven zijn om het probleem op te lossen. \nDocumenteer de\
   \ onderbouwing waarom een algoritme een betere oplossing zou bieden dan een niet-geautomatiseerd\
   \ of niet-digitaal proces. \n\n- Maak een bewuste afweging of een algoritme het\
-  \ juiste middel is om [het probleem](../maatregelen/1-pba-01-formuleren-probleemdefinitie.md)\
-  \ op doelmatige en doeltreffende wijze op te lossen, en documenteer deze afweging. "
+  \ juiste middel is om [het probleem](1-pba-01-formuleren-probleemdefinitie.md) op\
+  \ doelmatige en doeltreffende wijze op te lossen, en documenteer deze afweging. "
 urn: urn:nl:ak:mtr:pba-03
 language: nl
 owners:
@@ -16,7 +16,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/1-pba-03-onderbouwen-gebruik-algoritme/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-03-onderbouwen-gebruik-algoritme/index.html
 subject:
 - governance
 - menselijke-controle

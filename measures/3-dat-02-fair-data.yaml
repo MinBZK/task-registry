@@ -13,11 +13,11 @@ explanation: "De internationale [FAIR-principes](https://www.gofair.foundation/)
   \ applicaties, opslag en processen.\n- **Reusable** (herbruikbaar): Het uiteindelijke\
   \ doel van FAIR is om hergebruik van data te optimaliseren.\n\nWanneer je voldoet\
   \ aan de 15 principes is je data 'machine actionable'. Dit maakt het mogelijk dat\
-  \ de data effectief gebruikt kan worden voor verschillende algoritmes en AI-systemen.\n\
-  \nFAIR data betekent niet per definitie dat data open data is. Juist ook voor (privacy)\
-  \ gevoelige data (gesloten data) kan het heel zinvol zijn om te voldoen aan de principes\
-  \ voor FAIR data, om juist daarmee specifieke geautoriseerde toegang tot gevoelige\
-  \ data mogelijk te kunnen maken."
+  \ de data effectief gebruikt kan worden voor verschillende algoritmes.\n\nFAIR data\
+  \ betekent niet per definitie dat data open data is. Juist ook voor (privacy) gevoelige\
+  \ data (gesloten data) kan het heel zinvol zijn om te voldoen aan de principes voor\
+  \ FAIR data, om juist daarmee specifieke geautoriseerde toegang tot gevoelige data\
+  \ mogelijk te kunnen maken."
 urn: urn:nl:ak:mtr:dat-02
 language: nl
 owners:
@@ -26,7 +26,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/3-dat-02-fair-data/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-02-fair-data/index.html
 subject:
 - data
 suggested_roles:

@@ -1,0 +1,39 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Richt een algoritmegovernance in met three lines of defence
+description: Richt een algoritmegovernance in met three lines of defence.
+explanation: "Een inrichting van algoritmegovernance die vaak wordt toegepast is het\
+  \ three lines of defence model:\n\n- De eerste linie gaat over eigenaarschap, ontwikkeling,\
+  \ gebruik en risicobeheersing van algoritmes.\n- De tweede linie identificeert,\
+  \ beoordeelt en rapporteert over risico’s en het uitgevoerde gebruik algoritmes.\n\
+  - De derde verdedigingslinie controleert de werking van de governance en betreft\
+  \ interne advisering en toetsing. \n\nSchuett (2022) presenteert het three lines\
+  \ of defence model als volgt:\n\n![Three Lines of Defence Model](https://github.com/user-attachments/assets/4974f07d-9810-44e0-a0bb-56f1b1061732)\n\
+  \nHet toepassen van een 'three lines of defence' is slechts één aspect van het toepassen\
+  \ van algoritmegoverance. "
+urn: urn:nl:ak:mtr:org-07
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/0-org-07-intern-toezicht/index.html
+subject:
+- governance
+suggested_roles:
+- projectleider
+- beleid-en-advies
+lifecycle:
+- organisatieverantwoordelijkheden
+links: []
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE
