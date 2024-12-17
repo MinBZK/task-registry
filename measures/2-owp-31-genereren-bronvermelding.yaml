@@ -20,7 +20,7 @@ suggested_roles:
 - beleid-en-advies
 lifecycle:
 - ontwerp
-- validatie-en-verificatie
+- verificatie-en-validatie
 links:
 - urn:nl:ak:ver:dat-01
 - urn:nl:ak:ver:awb-02
