@@ -13,16 +13,17 @@ explanation: "De Awb eist dat een besluit een deugdelijke en kenbare motivering 
   \ die voortkomen uit de AVG. \n\nHet is van belang dat inzichtelijk wordt gemaakt\
   \ in het besluit welke gegevens zijn verwerkt en welke 'aannames' een algoritme\
   \ bevat. Dit speelt in het bijzonder als gebruik wordt gemaakt van geautomatiseerde\
-  \ besluitvormingsprocessen. Hierbij kan worden gedacht aan:\n- Dat een besluit tot\
-  \ stand is gekomen met behulp van een algoritme.\n- Van welke feiten het bestuursorgaan\
-  \ is uitgegaan.\n- Welke gegevens zijn verwerkt.\n- Welke relevante belangen tegen\
-  \ elkaar zijn afgewogen en hoe die afweging is verlopen.\n- Welke regels zijn gebruikt.\n\
-  - Wat de hierachter is (kenbaarheid).\n- Welke analytische technieken zijn gebruikt\n\
-  - Waarom deze regels en logica relevant zijn (uitleg)?\n- Op welke wijze de regels\
-  \ en logica tot stand zijn gekomen en hoe deze regels worden gevalideerd.\n  \n\
-  Een besluit moet informatie hierover bevatten om als om als voldoende draagkrachtig\
-  \ gemotiveerd te gelden.\nHet motiveringsbeginsel op grond van de Awb is beperkt\
-  \ tot besluiten in de zin van de Awb. "
+  \ besluitvormingsprocessen. Hierbij kan worden gedacht aan:\n\n- Dat een besluit\
+  \ tot stand is gekomen met behulp van een algoritme.\n  \n- Van welke feiten het\
+  \ bestuursorgaan is uitgegaan.\n  \n- Welke gegevens zijn verwerkt.\n  \n- Welke\
+  \ relevante belangen tegen elkaar zijn afgewogen en hoe die afweging is verlopen.\n\
+  \  \n- Welke regels zijn gebruikt.\n  \n- Wat de hierachter is (kenbaarheid).\n\
+  \  \n- Welke analytische technieken zijn gebruikt.\n  \n- Waarom deze regels en\
+  \ logica relevant zijn (uitleg)?\n  \n- Op welke wijze de regels en logica tot stand\
+  \ zijn gekomen en hoe deze regels worden gevalideerd.\n  \nEen besluit moet informatie\
+  \ hierover bevatten om als om als voldoende draagkrachtig gemotiveerd te gelden.\n\
+  Het motiveringsbeginsel op grond van de Awb is beperkt tot besluiten in de zin van\
+  \ de Awb. "
 urn: urn:nl:ak:ver:awb-02
 language: nl
 owners:
@@ -45,6 +46,7 @@ links:
 - urn:nl:ak:mtr:owp-21
 - urn:nl:ak:mtr:owp-25
 - urn:nl:ak:mtr:owp-07
+- urn:nl:ak:mtr:imp-10
 - urn:nl:ak:mtr:ver-03
 - urn:nl:ak:mtr:imp-01
 ai_act_profile:

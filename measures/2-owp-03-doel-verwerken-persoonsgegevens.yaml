@@ -4,16 +4,7 @@ name: Beschrijf voor welk doel het algoritme persoonsgegevens gebruikt en waarom
   mag
 description: Het doel voor het verwerken van persoonsgegevens met een algoritme is
   welbepaald en omschreven.
-explanation: "- Persoonsgegevens mogen alleen worden verwerkt voor een ‘welbepaald,\
-  \ uitdrukkelijk omschreven en gerechtvaardigd’ doel;\n- De  wettelijke grondslag\
-  \ / wettelijke taak voor de verwerking van de persoonsgegevens moet zijn beschreven,\
-  \ bijvoorbeeld in een DPIA;\n- De verwerking van persoonsgevens voor het ontwikkelen\
-  \ en gebruiken van het algoritme moet verenigbaar met het oorspronkelijke verwerkingsdoel\
-  \ (doelbinding);\n- Eventuele verdere (subsidiaire) verwerkingen, zoals het verwerken\
-  \ van persoonsgegevens voor een onderzoek naar onbewuste vooringenomenheid, moeten\
-  \ uitdrukkelijk worden omschreven.\n  \n## Bijbehorende vereiste(n) { data-search-exclude\
-  \ }\n??? expander \"Bekijk alle vereisten\"\n    <!-- list_vereisten_on_maatregelen_page\
-  \ -->\n"
+explanation: ''
 urn: urn:nl:ak:mtr:owp-03
 language: nl
 owners:

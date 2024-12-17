@@ -1,15 +1,11 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Hoog-risico-AI-systemen zijn voorzien van een kwaliteitsbeheersysteem
-description: 'Aanbieders van AI-systemen met een hoog risico voorzien in een systeem
-  voor kwaliteitsbeheer dat de naleving van deze verordening waarborgt.
-
-  Dit systeem wordt op systematische en ordelijke wijze gedocumenteerd in de vorm
-  van schriftelijke beleidslijnen, procedures en instructies en omvat ten minste de
-  aspecten vermeld in artikel 17 AI-verordening.'
-explanation: "Aanbieders van AI-systemen met een hoog risico moeten een kwaliteitsbeheersysteem\
-  \ implementeren om te garanderen dat ze voldoen aan de AI-verordening.\nDit systeem\
-  \ omvat gedocumenteerde beleidslijnen, procedures en instructies, en behandelt beknopt\
+name: Hoog-risico-AI-systemen zijn voorzien van een kwaliteitsbeheersysteem.
+description: Hoog-risico-AI-systemen zijn voorzien van een kwaliteitsbeheersysteem.
+explanation: "Aanbieders van AI-systemen met een hoog risico voorzien in een systeem\
+  \ voor kwaliteitsbeheer dat de naleving van de AI-Verordening waarborgt.\n\nDit\
+  \ systeem omvat gedocumenteerde beleidslijnen, procedures en instructies, en omvat\
+  \ ten minste de aspecten vermeld in artikel 17 AI-verordening. Het behandelt beknopt\
   \ de volgende aspecten:\n\n1. een strategie voor de naleving van de regelgeving,\
   \ inclusief de naleving van de conformiteitsbeoordelingsprocedures en de procedures\
   \ voor het beheer van de wijzigingen van het AI-systeem met een hoog risico;\n2.\
@@ -33,7 +29,12 @@ explanation: "Aanbieders van AI-systemen met een hoog risico moeten een kwalitei
   \ in artikel 9 van de AI-verordening;\n8. het opzetten, toepassen en onderhouden\
   \ van een systeem voor monitoring na het in de handel brengen, overeenkomstig artikel\
   \ 72 AI-verordening;\n9. procedures in verband met het melden van een ernstig incident\
-  \ in overeenstemming met artikel 73 van de AI-verordening;"
+  \ in overeenstemming met artikel 73 van de AI-verordening;\n\nOverheidsinstanties\
+  \ die AI-systemen met een hoog risico in gebruik stellen voor eigen gebruik, mogen\
+  \ de regels voor het systeem voor kwaliteitsbeheer goedkeuren en uitvoeren als onderdeel\
+  \ van het systeem voor kwaliteitsbeheer dat, naargelang het geval, op nationaal\
+  \ of regionaal niveau is goedgekeurd, rekening houdend met de specifieke kenmerken\
+  \ van de sector en de competenties en organisatie van de overheidsinstantie in kwestie."
 urn: urn:nl:ak:ver:aia-11
 language: nl
 owners:

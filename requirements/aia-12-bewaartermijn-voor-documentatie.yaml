@@ -1,6 +1,6 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Documentatie over hoog-risico-AI-systemen wordt 10 jaar bewaard door de aanbieder
+name: Documentatie over hoog-risico-AI-systemen wordt 10 jaar bewaard door de aanbieder.
 description: "De aanbieder houdt gedurende een periode van tien jaar nadat het AI-systeem\
   \ met een hoog risico in de handel is gebracht of in gebruik is gesteld de volgende\
   \ elementen ter beschikking van de nationale bevoegde autoriteiten: \n\n1. de technische\
@@ -21,6 +21,7 @@ owners:
 date: ''
 url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-12-bewaartermijn-voor-documentatie/index.html
 subject:
+- transparantie
 - technische-robuustheid-en-veiligheid
 lifecycle:
 - ontwerp

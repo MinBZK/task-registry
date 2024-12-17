@@ -1,17 +1,17 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Hoog-risico-AI-systemen loggen automatisch bepaalde gegevens
-description: "Algoritmes en AI-systemen zijn dusdanig technisch vormgegeven dat gebeurtenissen\
-  \ gedurende hun levenscyclus automatisch worden geregistreerd (\u201Clogs\u201D\
-  ). \n"
+name: Hoog-risico-AI-systemen loggen automatisch bepaalde gegevens.
+description: 'Hoog-risico-AI-systemen loggen automatisch bepaalde gegevens.
+
+  '
 explanation: "AI-systemen met een hoog risico zijn ontworpen met functionaliteiten\
-  \ die gebeurtenissen gedurende hun levenscyclus automatisch registreren.\nDit wordt\
-  \ vaak aangeduid als \"logs\".\nDeze logs bieden een traceerbaarheidsmechanisme\
+  \ die gebeurtenissen gedurende hun levenscyclus automatisch registreren. Dit wordt\
+  \ vaak aangeduid als \"logs\".\n\nDeze logs bieden een traceerbaarheidsmechanisme\
   \ waarmee gebruiksverantwoordelijken en autoriteiten incidenten en fouten kunnen\
   \ analyseren, naleving kunnen controleren en mogelijke risico's kunnen identificeren\
-  \ en aanpakken.\nHet doel van deze registratie is om de transparantie en verantwoordingsplicht\
-  \ van AI-systemen te vergroten, waardoor het beheer van risico's en incidenten verbetert.\n\
-  \nVoor AI-systemen met een hoog-risico voorziet de loggingcapaciteit ten minste\
+  \ en aanpakken.\n\nHet doel van deze registratie is om de transparantie en verantwoordingsplicht\
+  \ van AI-systemen te vergroten, waardoor het beheer van risico's en incidenten verbetert.\
+  \ Voor AI-systemen met een hoog-risico voorziet de loggingcapaciteit ten minste\
   \ in: \n\n1. de registratie van de duur van elk gebruik van het systeem; \n2. de\
   \ referentiedatabank aan de hand waarvan de inputdata zijn gecontroleerd door het\
   \ systeem; \n3. de inputdata ten aanzien waarvan de zoekopdracht een match heeft\
@@ -19,7 +19,7 @@ explanation: "AI-systemen met een hoog risico zijn ontworpen met functionaliteit
   \ bij de verificatie van de resultaten. Specifiek voor gebruiksverantwoordelijken\n\
   \nVoor AI-systemen die door bestuursorganen worden gebruikt of AI-systmen die persoonsgegevens\
   \ verwerken leveren de BIO en AVG vergelijkbare verplichingen op die ook van toepassing\
-  \ zijn op AI-systmen die niet gezien worden als een AI-systeem met hoog risico.\
+  \ zijn op AI-systemen die niet gezien worden als een AI-systeem met hoog risico.\
   \ Daarbij komen nog verplichtingen om de logs doorlopend of periodiek te monitoren\
   \ op incidenten."
 urn: urn:nl:ak:ver:aia-07

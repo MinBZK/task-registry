@@ -1,12 +1,7 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Personeel en gebruikers zijn voldoende AI-geletterd
-description: Aanbieders en gebruiksverantwoordelijken van AI-systemen nemen maatregelen
-  om, zoveel als mogelijk, te zorgen voor een toereikend niveau van AI-geletterdheid
-  bij hun personeel en andere personen die namens hen AI-systemen exploiteren en gebruiken,
-  en houden daarbij rekening met hun technische kennis, ervaring, onderwijs en opleiding
-  en de context waarin de AI-systemen zullen worden gebruikt, evenals met de personen
-  of groepen personen ten aanzien van wie de AI-systemen zullen worden gebruikt.
+name: Personeel en gebruikers zijn voldoende AI-geletterd.
+description: Personeel en gebruikers zijn voldoende AI-geletterd.
 explanation: ''
 urn: urn:nl:ak:ver:aia-01
 language: nl
@@ -23,6 +18,7 @@ subject:
 lifecycle:
 - organisatieverantwoordelijkheden
 links:
+- urn:nl:ak:mtr:pba-03
 - urn:nl:ak:mtr:owp-18
 - urn:nl:ak:mtr:owp-23
 - urn:nl:ak:mtr:owp-26
