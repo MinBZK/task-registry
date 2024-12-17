@@ -1,19 +1,13 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Beoordeling als niet 'hoog-risico-AI-systeem' is gedocumenteerd
+name: Beoordeling als niet 'hoog-risico-AI-systeem' is gedocumenteerd.
 description: ''
-explanation: 'Een aanbieder die oordeelt dat een AI-systeem niet valt onder hoog-risico
-  zoals gefedinieerd in bijlage III van de AI-verordening, documenteert deze beoordeling
-  voorafgaand aan het in de handel brengen of in gebruik nemen van het systeem.
+explanation: '
 
-  Op verzoek van de nationale autoriteiten verstrekt de aanbieder de documentatie
-  van de beoordeling.
+  Gebrek aan transparantie en verantwoording bij risicobeoordeling kan leiden tot
+  onrechtmatig in de markt brengen en onrechtmatig gebruik van (risicovolle) AI-systemen.
 
-  De aanbieder of in voorkomend geval de gemachtigd registreert zichzelf en het betreffende
-  AI-systeem in de EU-databank (artikel 71 AI-verordening).
-
-  AI-systemen met een hoog risico als bedoeld in punt 2 van bijlage III (kritieke
-  infrastructuur) worden op nationaal niveau geregistreerd.'
+  '
 urn: urn:nl:ak:ver:aia-02
 language: nl
 owners:

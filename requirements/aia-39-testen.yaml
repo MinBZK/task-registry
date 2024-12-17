@@ -1,9 +1,9 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Hoog-risico-AI-systemen zijn voorzien van voldoende technische documentatie.
-description: Hoog-risico-AI-systemen zijn voorzien van voldoende technische documentatie.
+name: Hoog-risico-AI-systemen zijn getest.
+description: Hoog-risico-AI-systemen zijn getest.
 explanation: ''
-urn: urn:nl:ak:ver:aia-06
+urn: urn:nl:ak:ver:aia-39
 language: nl
 owners:
 - organization: Algoritmekader
@@ -11,16 +11,15 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-06-technische-documentatie/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-39-testen/index.html
 subject:
-- transparantie
+- technische-robuustheid-en-veiligheid
 lifecycle:
-- dataverkenning-en-datapreparatie
+- ontwerp
 - ontwikkelen
+- monitoring-en-beheer
 - verificatie-en-validatie
 links:
-- urn:nl:ak:mtr:owp-04
-- urn:nl:ak:mtr:owp-05
 - urn:nl:ak:mtr:owp-12
 - urn:nl:ak:mtr:owp-13
 - urn:nl:ak:mtr:owp-19

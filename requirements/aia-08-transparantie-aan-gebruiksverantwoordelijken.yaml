@@ -1,14 +1,8 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Hoog-risico-AI-systemen zijn op een transparante manier ontwikkeld en ontworpen
-description: 'AI-systemen met een hoog risico worden op zodanige wijze ontworpen en
-  ontwikkeld dat de werking ervan voldoende transparant is om gebruiksverantwoordelijken
-  in staat te stellen de output van een systeem te interpreteren en op passende wijze
-  te gebruiken.
-
-  Een passende soort en mate van transparantie wordt gewaarborgd met het oog op de
-  naleving van de relevante verplichtingen van de aanbieder en de gebruiksverantwoordelijke
-  zoals uiteengezet in afdeling 3 van Artikel 13 van de AI verordening.'
+name: Hoog-risico-AI-systemen zijn op een transparante manier ontwikkeld en ontworpen.
+description: Hoog-risico-AI-systemen zijn op een transparante manier ontwikkeld en
+  ontworpen.
 explanation: ''
 urn: urn:nl:ak:ver:aia-08
 language: nl

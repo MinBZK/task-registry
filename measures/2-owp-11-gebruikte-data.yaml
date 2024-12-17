@@ -1,10 +1,10 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Voer voorafgaand aan een project een data beschikbaarheid, kwaliteit- en toegankelijkheidsanalayse
-  uit.
+name: Beschrijf welke data gebruikt wordt voor de beoogde toepassing
 description: ''
-explanation: ''
-urn: urn:nl:ak:mtr:owp-11
+explanation: " \n## Bijbehorende vereiste(n) { data-search-exclude }\n??? expander\
+  \ \"Bekijk alle vereisten\"\n    <!-- list_vereisten_on_maatregelen_page -->"
+urn: urn:nl:ak:mtr:owp-02
 language: nl
 owners:
 - organization: Algoritmekader
@@ -12,15 +12,15 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-11-data-beschikbaarheid/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-11-gebruikte-data/index.html
 subject:
-- publieke-inkoop
 - data
 suggested_roles:
-- projectleider
+- ontwikkelaar
 - beleid-en-advies
 lifecycle:
 - ontwerp
+- dataverkenning-en-datapreparatie
 links:
 - urn:nl:ak:ver:aia-05
 template:
