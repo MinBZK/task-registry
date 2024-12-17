@@ -3,7 +3,6 @@ ai-act:
   - ai-model-voor-algemene-doeleinden
   - ai-systeem
   - ai-systeem-voor-algemene-doeleinden
-  - algoritme
   rol-ai-act:
   - aanbieder
   - gebruiksverantwoordelijke

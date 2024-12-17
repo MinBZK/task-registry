@@ -2,9 +2,8 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Beschrijf welke techniek gebruikt wordt voor de beoogde toepassing
 description: ''
-explanation: ' ## Bijbehorende vereiste(n)
-
-  <!-- list_vereisten_on_maatregelen_page -->'
+explanation: " ## Bijbehorende vereiste(n) { data-search-exclude }\n??? expander \"\
+  Bekijk alle vereisten\"\n    <!-- list_vereisten_on_maatregelen_page -->"
 urn: urn:nl:ak:mtr:owp-04
 language: nl
 owners:
@@ -13,7 +12,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/2-owp-04-gebruikte-techniek/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-04-gebruikte-techniek/index.html
 subject:
 - technische-robuustheid-en-veiligheid
 suggested_roles:

@@ -9,11 +9,11 @@ description: 'De verwerking van persoonsgegevens moet minimaal worden gehouden, 
 explanation: "Het is van belang dat \xE9nkel persoonsgegevens worden verwerkt die\
   \ noodzakelijk zijn gezien de doeleinden van die vewerking.\nEr moet een beoordeling\
   \ worden gemaakt welke persoonsgegevens dit wel en eventueel niet zijn.\nVoor het\
-  \ ontwikkelen en gebruiken van algoritmes of AI-systemen is het van belang om te\
-  \ beoordelen welke persoonsgegevens noodzakelijk zijn om het beoogde doel te bereiken.\
-  \ Afhankelijk van de toepassing vraagt dit om een intensieve toets. Er moet voor\
-  \ worden gezorgd dat persoonsgegevens die niet als noodzakelijk worden beschouwd,\
-  \ buiten de verwerking blijven. "
+  \ ontwikkelen en gebruiken van algoritmes is het van belang om te beoordelen welke\
+  \ persoonsgegevens noodzakelijk zijn om het beoogde doel te bereiken. Afhankelijk\
+  \ van de toepassing vraagt dit om een intensieve toets. Er moet voor worden gezorgd\
+  \ dat persoonsgegevens die niet als noodzakelijk worden beschouwd, buiten de verwerking\
+  \ blijven. "
 urn: urn:nl:ak:ver:avg-03
 language: nl
 owners:
@@ -22,7 +22,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/avg-03-minimale-verwerking-van-persoonsgegevens/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/avg-03-minimale-verwerking-van-persoonsgegevens/index.html
 subject:
 - privacy-en-gegevensbescherming
 lifecycle:
@@ -30,22 +30,21 @@ lifecycle:
 - dataverkenning-en-datapreparatie
 - ontwikkelen
 links:
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-18
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
 - urn:nl:ak:mtr:dat-05
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:leveren_bewijs_onderdeel_beoordeling_inschrijving
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:neem_vereiste_op_als_subgunningscriteria
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
 ai_act_profile:
 - type: []
   open_source: []
-  risk_category: []
+  risk_group: []
   systemic_risk: []
   transparency_obligations: []
   role: []
+  conformity_assessment_body: []
 always_applicable: 1
 template:
   requirement: $REQUIREMENT

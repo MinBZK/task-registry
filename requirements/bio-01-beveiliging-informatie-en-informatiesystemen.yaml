@@ -11,36 +11,37 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/bio-01-beveiliging-informatie-en-informatiesystemen/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/bio-01-beveiliging-informatie-en-informatiesystemen/index.html
 subject:
 - technische-robuustheid-en-veiligheid
 lifecycle:
 - organisatieverantwoordelijkheden
 links:
+- urn:nl:ak:mtr:org-11
+- urn:nl:ak:mtr:org-13
+- urn:nl:ak:mtr:org-14
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-24
+- urn:nl:ak:mtr:owp-25
+- urn:nl:ak:mtr:owp-26
+- urn:nl:ak:mtr:owp-28
 - urn:nl:ak:mtr:org-02
-- urn:nl:ak:mtr:org-04
-- urn:nl:ak:mtr:org-05
-- urn:nl:ak:mtr:org-06
 - urn:nl:ak:mtr:owk-01
 - urn:nl:ak:mtr:owk-04
 - urn:nl:ak:mtr:mon-01
 - urn:nl:ak:mtr:mon-02
 - urn:nl:ak:mtr:mon-03
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_service_level_agreement
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:risico-analyse_informatiebeveiliging_leverancier
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
 ai_act_profile:
 - type: []
   open_source: []
-  risk_category: []
+  risk_group: []
   systemic_risk: []
   transparency_obligations: []
   role: []
+  conformity_assessment_body: []
 always_applicable: 1
 template:
   requirement: $REQUIREMENT

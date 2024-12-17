@@ -1,0 +1,35 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Gebruik bij machine learning technieken gescheiden train-, test- en validatiedata
+  en houdt rekening met underfitting en overfitting.
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:dat-07
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-07-training-validatie-en-testdata/index.html
+subject:
+- data
+- technische-robuustheid-en-veiligheid
+- bias-en-non-discriminatie
+suggested_roles:
+- ontwikkelaar
+lifecycle:
+- dataverkenning-en-datapreparatie
+- ontwikkelen
+links:
+- urn:nl:ak:ver:aia-10
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

@@ -11,7 +11,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/2-owp-06-afwegen-grondrechten/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-06-afwegen-grondrechten/index.html
 subject:
 - fundamentele-rechten
 suggested_roles:
@@ -24,7 +24,7 @@ lifecycle:
 - monitoring-en-beheer
 links:
 - urn:nl:ak:ver:grw-01
-- urn:nl:ak:ver:aia-29
+- urn:nl:ak:ver:aia-27
 template:
   requirement: $REQUIREMENT
   remarks: $REMARKS

@@ -11,7 +11,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/4-owk-02-stopzetten-gebruik/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-02-stopzetten-gebruik/index.html
 subject:
 - governance
 - menselijke-controle
@@ -26,12 +26,12 @@ links:
 - urn:nl:ak:ver:awb-01
 - urn:nl:ak:ver:aia-11
 - urn:nl:ak:ver:grw-01
-- urn:nl:ak:ver:aia-29
+- urn:nl:ak:ver:aia-27
 - urn:nl:ak:ver:grw-02
 - urn:nl:ak:ver:aia-19
 - urn:nl:ak:ver:aia-09
 - urn:nl:ak:ver:avg-04
-- urn:nl:ak:ver:aia-24
+- urn:nl:ak:ver:aia-22
 template:
   requirement: $REQUIREMENT
   remarks: $REMARKS

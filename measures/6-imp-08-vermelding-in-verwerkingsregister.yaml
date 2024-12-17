@@ -1,8 +1,8 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Vermeld het gebruik van persoonsgegevens in het verwerkingsregister
-description: ' Neem de ontwikkeling en gebruik van een algoritme of AI-systeem op
-  in het verwerkingsregister als persoonsgegevens worden verwerkt.  '
+description: ' Neem de ontwikkeling en gebruik van een algoritme op in het verwerkingsregister
+  als persoonsgegevens worden verwerkt.  '
 explanation: ''
 urn: urn:nl:ak:mtr:imp-08
 language: nl
@@ -12,7 +12,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/6-imp-08-vermelding-in-verwerkingsregister/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/6-imp-08-vermelding-in-verwerkingsregister/index.html
 subject:
 - transparantie
 - privacy-en-gegevensbescherming

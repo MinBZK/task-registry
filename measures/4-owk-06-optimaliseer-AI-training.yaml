@@ -1,0 +1,30 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Optimaliseer AI-trainingsprocessen voor energie-efficiëntie
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:owk-06
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-06-optimaliseer-AI-training/index.html
+subject:
+- duurzaamheid
+suggested_roles:
+- ontwikkelaar
+lifecycle:
+- ontwikkelen
+links: []
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

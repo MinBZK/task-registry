@@ -11,7 +11,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/0-org-01-benodigde-expertise-en-capaciteit/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/0-org-01-benodigde-expertise-en-capaciteit/index.html
 subject:
 - governance
 suggested_roles:
@@ -21,6 +21,7 @@ lifecycle:
 - organisatieverantwoordelijkheden
 links:
 - urn:nl:ak:ver:awb-01
+- urn:nl:ak:ver:aia-21
 template:
   requirement: $REQUIREMENT
   remarks: $REMARKS

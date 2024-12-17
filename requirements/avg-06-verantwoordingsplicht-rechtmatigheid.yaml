@@ -2,14 +2,14 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Organisaties kunnen bewijzen dat zij persoonsgegevens op de juiste manier verwerken
 description: "De verantwoordelijken moeten bij de verwerking van persoonsgegevens\
-  \ door algoritmes en AI-systemen kunnen aantonen dat de verwerkingen rechtmatig\
-  \ plaatsvinden.\nDit betekent concreet dat de volgende punten aangetoond kunnen\
-  \ worden:\n\n - Rechtmatigheid, behoorlijkheid en transparantie\n - Doelbinding\n\
-  \ - Minimale gegevensverwerking\n - Juistheid\n - Opslagbeperking\n - Integriteit\
-  \ en vertrouwelijkheid\n\nEen aandachtpunt daarbij is dat de rechtmatigheid van\
-  \ de verwerking ten opzichte van andere gerelateerde wetgeving zoals de AI Act en\
-  \ de Algemene wet gelijke behandeling ook moeten kunnen worden aangetoond voor zover\
-  \ de rechtmatigheid van de verwerking onder de AVG daarvan afhankelijk is."
+  \ door algoritmes kunnen aantonen dat de verwerkingen rechtmatig plaatsvinden.\n\
+  Dit betekent concreet dat de volgende punten aangetoond kunnen worden:\n\n - Rechtmatigheid,\
+  \ behoorlijkheid en transparantie\n - Doelbinding\n - Minimale gegevensverwerking\n\
+  \ - Juistheid\n - Opslagbeperking\n - Integriteit en vertrouwelijkheid\n\nEen aandachtpunt\
+  \ daarbij is dat de rechtmatigheid van de verwerking ten opzichte van andere gerelateerde\
+  \ wetgeving zoals de AI Act en de Algemene wet gelijke behandeling ook moeten kunnen\
+  \ worden aangetoond voor zover de rechtmatigheid van de verwerking onder de AVG\
+  \ daarvan afhankelijk is."
 explanation: ''
 urn: urn:nl:ak:ver:avg-06
 language: nl
@@ -19,7 +19,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/avg-06-verantwoordingsplicht-rechtmatigheid/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/avg-06-verantwoordingsplicht-rechtmatigheid/index.html
 subject:
 - governance
 - privacy-en-gegevensbescherming
@@ -28,19 +28,19 @@ lifecycle:
 - dataverkenning-en-datapreparatie
 links:
 - urn:nl:ak:mtr:owp-01
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
 ai_act_profile:
 - type: []
   open_source: []
-  risk_category: []
+  risk_group: []
   systemic_risk: []
   transparency_obligations: []
   role: []
+  conformity_assessment_body: []
 always_applicable: 1
 template:
   requirement: $REQUIREMENT

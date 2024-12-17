@@ -11,7 +11,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/5-ver-02-biasanalyse/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-02-biasanalyse/index.html
 subject:
 - bias-en-non-discriminatie
 suggested_roles:
@@ -25,7 +25,7 @@ lifecycle:
 - monitoring-en-beheer
 links:
 - urn:nl:ak:ver:grw-02
-- urn:nl:ak:ver:aia-29
+- urn:nl:ak:ver:aia-27
 - urn:nl:ak:ver:grw-01
 template:
   requirement: $REQUIREMENT

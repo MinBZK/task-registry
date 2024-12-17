@@ -1,0 +1,32 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Stel een multidisciplinair team samen bij het ontwikkelen of inkopen van algoritmes.
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:owp-09
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-09-multidisciplinair-inkoopteam/index.html
+subject:
+- publieke-inkoop
+suggested_roles:
+- projectleider
+- beleid-en-advies
+lifecycle:
+- ontwerp
+links:
+- urn:nl:ak:ver:awb-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

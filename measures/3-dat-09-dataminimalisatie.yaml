@@ -1,0 +1,33 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Beperk de omvang van datasets voor energie-efficiëntie
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:dat-09
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-09-dataminimalisatie/index.html
+subject:
+- data
+- duurzaamheid
+suggested_roles:
+- ontwikkelaar
+- projectleider
+lifecycle:
+- dataverkenning-en-datapreparatie
+- ontwikkelen
+links: []
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

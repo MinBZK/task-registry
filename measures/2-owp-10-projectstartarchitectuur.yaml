@@ -2,8 +2,8 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak een Project Startarchitectuur (PSA) voor de ontwikkeling of inkoop van
   algoritmes
-description: Voer een Project Startarchitectuur (PSA) uit als algoritmes of AI-systemen
-  worden ontwikkeld of ingekocht.
+description: Voer een Project Startarchitectuur (PSA) uit als algoritmes worden ontwikkeld
+  of ingekocht.
 explanation: "- Een Project Startarchitectuur (PSA) is een hulpmiddel dat bij een\
   \ project wordt ingezet om veranderingen van A naar Beter te faciliteren.\n- De\
   \ PSA richt zich daarbij op de kaders die op een project van toepassing zijn en\
@@ -12,13 +12,13 @@ explanation: "- Een Project Startarchitectuur (PSA) is een hulpmiddel dat bij ee
   \ zal afwijken van bestaande beelden.\n- Met de PSA wordt een concreet en doelgericht\
   \ ICT-architectuurkader opgesteld, waarbinnen het project moet worden uitgevoerd.\
   \ \n- De PSA maakt concreet wat architectuur voor een project betekent.\n- Door\
-  \ een PSA uit te voeren ontstaan inzichten hoe het betreffende algoritme of AI-systeem\
-  \ zo optimaal mogelijk onderdeel kan worden gemaakt van het bestaande applicatielandschap,\
-  \ waarmee bijvoorbeeld kan worden voorkomen dat het algoritme of AI-systeem na verloop\
-  \ van tijd geen input meer kan ontvangen door onverwachte wijzigingen in systemen.\n\
+  \ een PSA uit te voeren ontstaan inzichten hoe het betreffende algoritme zo optimaal\
+  \ mogelijk onderdeel kan worden gemaakt van het bestaande applicatielandschap, waarmee\
+  \ bijvoorbeeld kan worden voorkomen dat het algoritme of AI-systeem na verloop van\
+  \ tijd geen input meer kan ontvangen door onverwachte wijzigingen in systemen.\n\
   - Onderwerpen als privacy, informatiebeheer en beheer worden hierin ook globaal\
-  \ meegenomen. \n  \n## Bijbehorende vereiste(n)\n\n<!-- list_vereisten_on_maatregelen_page\
-  \ -->"
+  \ meegenomen. \n  \n## Bijbehorende vereiste(n) { data-search-exclude }\n??? expander\
+  \ \"Bekijk alle vereisten\"\n    <!-- list_vereisten_on_maatregelen_page -->"
 urn: urn:nl:ak:mtr:owp-10
 language: nl
 owners:
@@ -27,9 +27,8 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/maatregelen/2-owp-10-projectstartarchitectuur/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-10-projectstartarchitectuur/index.html
 subject:
-- publieke-inkoop
 - technische-robuustheid-en-veiligheid
 suggested_roles:
 - projectleider

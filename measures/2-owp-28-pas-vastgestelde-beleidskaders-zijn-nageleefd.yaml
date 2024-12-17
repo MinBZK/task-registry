@@ -1,0 +1,48 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Pas vastgestelde interne beleidskaders toe en maak aantoonbaar dat deze zijn
+  nageleefd bij het ontwikkelen, inkopen en gebruiken van algoritmes.
+description: ' Pas vastgestelde interne beleidskaders toe en maak aantoonbaar dat
+  deze zijn nageleefd bij het ontwikkelen, inkopen en gebruiken van algoritmes.'
+explanation: ''
+urn: urn:nl:ak:mtr:owp-28
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-28-pas-vastgestelde-beleidskaders-zijn-nageleefd/index.html
+subject:
+- governance
+suggested_roles:
+- projectleider
+- beleid-en-advies
+lifecycle:
+- organisatieverantwoordelijkheden
+links:
+- urn:nl:ak:ver:awb-01
+- urn:nl:ak:ver:aia-11
+- urn:nl:ak:ver:aia-05
+- urn:nl:ak:ver:aia-37
+- urn:nl:ak:ver:aia-10
+- urn:nl:ak:ver:avg-11
+- urn:nl:ak:ver:aia-03
+- urn:nl:ak:ver:grw-01
+- urn:nl:ak:ver:bio-01
+- urn:nl:ak:ver:avg-09
+- urn:nl:ak:ver:grw-02
+- urn:nl:ak:ver:aia-19
+- urn:nl:ak:ver:aia-09
+- urn:nl:ak:ver:aia-08
+- urn:nl:ak:ver:aia-20
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

@@ -2,7 +2,7 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Auteursrechten zijn beschermd
 description: Auteursrechten mogen niet geschonden worden bij het ontwikkelen en gebruiken
-  van algoritmes en AI.
+  van algoritmes.
 explanation: ''
 urn: urn:nl:ak:ver:aut-01
 language: nl
@@ -12,7 +12,7 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/vereisten/aut-01-auteursrechten/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aut-01-auteursrechten/index.html
 subject:
 - data
 - governance
@@ -20,30 +20,25 @@ lifecycle:
 - dataverkenning-en-datapreparatie
 - ontwerp
 links:
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-16
+- urn:nl:ak:mtr:owp-17
+- urn:nl:ak:mtr:owp-18
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
+- urn:nl:ak:mtr:owp-27
 - urn:nl:ak:mtr:dat-06
-- urn:nl:ak:mtr:aansprakelijkheidsvoorwaarden_aanbieder_onderdeel_beoordelingsmatrix
-- urn:nl:ak:mtr:bespreek_vereiste_met_aanbieder
-- urn:nl:ak:mtr:contractuele_afspraken_data_en_artefacten
-- urn:nl:ak:mtr:creeer_ruimte_voor_samenwerking_in_contract
-- urn:nl:ak:mtr:getroffen_maatregelen_van_aanbieder_voorkomen_schending_auteursrechten
-- urn:nl:ak:mtr:leveren_bewijs_niet_schenden_auteursrechten_output
-- urn:nl:ak:mtr:leveren_bewijs_niet_schenden_auteursrechten_trainingsdata
-- urn:nl:ak:mtr:leveren_bewijs_onderdeel_beoordeling_inschrijving
-- urn:nl:ak:mtr:maak_de_vereiste_onderdeel_van_programma_van_eisen
-- urn:nl:ak:mtr:maak_vereiste_onderdeel_van_contractovereenkomst
-- urn:nl:ak:mtr:maak_vereisten_voor_algoritmes_en_AI-systemen_onder_van_contractvoorwaarden
-- urn:nl:ak:mtr:neem_vereiste_op_als_subgunningscriteria
-- urn:nl:ak:mtr:omgaan_restrisico's_aanbiede_onderdeel_beoordelingsmaatrix
-- urn:nl:ak:mtr:schending_auteursrechten_output_onderdeel_conceptovereenkomst
-- urn:nl:ak:mtr:schending_auteursrechten_trainingsdata_onderdeel_conceptovereenkomst
-- urn:nl:ak:mtr:uitvoeren_audit_voor_naleving_vereiste
+- urn:nl:ak:mtr:dat-08
 ai_act_profile:
 - type: []
   open_source: []
-  risk_category: []
+  risk_group: []
   systemic_risk: []
   transparency_obligations: []
   role: []
+  conformity_assessment_body: []
 always_applicable: 1
 template:
   requirement: $REQUIREMENT
