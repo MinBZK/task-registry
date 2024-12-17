@@ -1,23 +1,22 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Als een hoog-risico-AI-systeem niet voldoet aan de AI-verordening, grijpt de
-  aanbieder in
-description: 'Aanbieders van AI-systemen met een hoog risico die van mening zijn of
+  aanbieder in.
+description: Aanbieders van AI-systemen met een hoog risico die van mening zijn of
   redenen hebben om aan te nemen dat een door hen in de handel gebracht of in gebruik
   gesteld AI systeem met een hoog risico niet in overeenstemming is met de AI-verordening,
   nemen onmiddellijk de nodige corrigerende maatregelen om dat systeem naargelang
   het geval in overeenstemming te brengen, uit de handel te nemen, te deactiveren
   of terug te roepen.
-
-  Zij stellen de distributeurs van het betrokken AI-systeem met een hoog risico en,
-  indien van toepassing, de gebruiksverantwoordelijken, de gemachtigden en importeurs
-  dienovereenkomstig in kennis.'
-explanation: 'Aanbieders van AI-systemen met een hoog risico die constateren dat hun
-  systeem niet aan de verordening voldoet, moeten onmiddellijk corrigerende acties
-  ondernemen, zoals het terugroepen of uit de handel nemen van het systeem.
-
-  Ze moeten ook alle relevante partijen, zoals distributeurs, gebruiksverantwoordelijken
-  en importeurs, op de hoogte stellen van deze maatregelen.'
+explanation: "Aanbieders van AI-systemen met een hoog risico die constateren dat hun\
+  \ systeem niet aan de verordening voldoet, moeten onmiddellijk corrigerende acties\
+  \ ondernemen, zoals het terugroepen of uit de handel nemen van het systeem.\n\n\
+  Ze moeten ook alle relevante partijen, zoals distributeurs, gebruiksverantwoordelijken\
+  \ en importeurs, op de hoogte stellen van deze maatregelen.\n\nOver AI-modellen\
+  \ voor algemene doeleinden met een systeemrisico wordt relevante informatie over\
+  \ ernstige incidenten en mogelijke corrigerende maatregelen bijgehouden, gedocumenteerd\
+  \ en onverwijld gerapporteerd aan het AI-bureau en, in voorkomende gevallen, aan\
+  \ de nationale bevoegde autoriteiten. \n"
 urn: urn:nl:ak:ver:aia-18
 language: nl
 owners:

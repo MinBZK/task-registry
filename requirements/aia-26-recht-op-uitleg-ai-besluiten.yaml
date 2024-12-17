@@ -31,7 +31,7 @@ explanation: 'Getroffen personen moeten het recht hebben om uitleg te krijgen in
   verwerking en electriciteit (punt 2 bij Bijlage III van AI-verordening).
 
   '
-urn: urn:nl:ak:ver:aia-28
+urn: urn:nl:ak:ver:aia-26
 language: nl
 owners:
 - organization: Algoritmekader
@@ -49,14 +49,7 @@ lifecycle:
 - ontwerp
 - monitoring-en-beheer
 links:
-- urn:nl:ak:mtr:owp-12
-- urn:nl:ak:mtr:owp-13
-- urn:nl:ak:mtr:owp-18
-- urn:nl:ak:mtr:owp-19
-- urn:nl:ak:mtr:owp-21
-- urn:nl:ak:mtr:owp-25
-- urn:nl:ak:mtr:pba-04
-- urn:nl:ak:mtr:imp-01
+- urn:nl:ak:mtr:owp-07
 ai_act_profile:
 - type:
   - AI-systeem

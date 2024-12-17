@@ -19,7 +19,7 @@ explanation: "Voordat een AI-systeem met een hoog risico in gebruik wordt genome
   \ deze risico's te beheersen.\nHet doel is om de bescherming van grondrechten te\
   \ waarborgen bij het gebruik van AI-systemen met een hoog risico, met name in sectoren\
   \ waar deze systemen cruciale diensten leveren aan het publiek."
-urn: urn:nl:ak:ver:aia-29
+urn: urn:nl:ak:ver:aia-27
 language: nl
 owners:
 - organization: Algoritmekader
@@ -33,7 +33,18 @@ subject:
 lifecycle:
 - ontwerp
 - verificatie-en-validatie
-links: []
+links:
+- urn:nl:ak:mtr:org-12
+- urn:nl:ak:mtr:owp-06
+- urn:nl:ak:mtr:owp-12
+- urn:nl:ak:mtr:owp-13
+- urn:nl:ak:mtr:owp-18
+- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-25
+- urn:nl:ak:mtr:owk-02
+- urn:nl:ak:mtr:ver-01
+- urn:nl:ak:mtr:imp-02
 ai_act_profile:
 - type:
   - AI-systeem

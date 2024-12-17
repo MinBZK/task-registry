@@ -1,34 +1,34 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Hoog-risico-AI-systemen staan onder menselijk toezicht
-description: AI-systemen met een hoog risico worden zodanig ontworpen en ontwikkeld,
-  met inbegrip van passende mens-machine-interface-hulpmiddelen, dat hierop tijdens
-  de periode dat zij worden gebruikt, op doeltreffende wijze toezicht kan worden uitgeoefend
-  door natuurlijke personen.
-explanation: "Het menselijk toezicht is gericht op het voorkomen of beperken van de\
-  \ risico\u2019s voor de gezondheid, veiligheid of grondrechten die zich kunnen voordoen\
-  \ wanneer een AI-systeem met een hoog risico wordt gebruikt in overeenstemming met\
-  \ het beoogde doel ervan of in een situatie van redelijkerwijs te voorzien misbruik,\
-  \ met name wanneer dergelijke risico\u2019s blijven bestaan ondanks de toepassing\
-  \ van andere eisen van deze afdeling.\n\nDe toezichtmaatregelen staan in verhouding\
-  \ met de risico's, de mate van autonomie en de gebruikscontext van het AI-systeem\
-  \ met een hoog risico.\nHierbij kan het gaan om:\n\n1. door de aanbieder bepaalde\
-  \ maatregelen die waar technisch haalbaar in het AI-systeem met een hoog risico\
-  \ worden ingebouwd voordat dit systeem in de handel wordt gebracht of in gebruik\
-  \ wordt gesteld;\n2. door de aanbieder bepaalde maatregelen voordat het AI-systeem\
-  \ met een hoog risico in de handel wordt gebracht of in gebruik wordt gesteld en\
-  \ die passend zijn om door de gebruiksverantwoordelijke te worden uitgevoerd.\n\n\
-  De natuurlijke personen die verantwoordelijk zijn voor het menselijk toezicht, moeten\
-  \ in staat worden gesteld om waar passend en in verhouding tot de omstandigheden\
-  \ het volgende te kunnen doen:\n\n1. Goed kunnen begrijpen van de relevante capaciteiten\
-  \ en beperkingen van het AI-systeem met een hoog risico.\nMet het oog op het opsporen\
-  \ en aanpakken van onregelmatigheden, storingen en onverwachte prestaties moet de\
-  \ werking van het AI-systeem goed kunnen worden begrepen;\n2. Bewust blijven van\
-  \ de mogelijke neiging om automatisch of te veel te vertrouwen op de output van\
-  \ een AI-systeem met hoog risico (automation bias).\nDit geldt in het bijzonder\
-  \ voor het gebruik van een hoog risico AI-systeem dat wordt gebruikt om informatie\
-  \ of aanbevelingen te versterkken voor beslisisngen die door natuurlijke personen\
-  \ moeten worden genomen;\n3. De output juist kunnen interpreteren, bijvoorbeeld\
+name: Hoog-risico-AI-systemen staan onder menselijk toezicht.
+description: 'Hoog-risico-AI-systemen staan onder menselijk toezicht. '
+explanation: "AI-systemen met een hoog risico worden zodanig ontworpen en ontwikkeld,\
+  \ met inbegrip van passende mens-machine-interface-hulpmiddelen, dat hierop tijdens\
+  \ de periode dat zij worden gebruikt, op doeltreffende wijze toezicht kan worden\
+  \ uitgeoefend door natuurlijke personen.\n\nHet menselijk toezicht is gericht op\
+  \ het voorkomen of beperken van de risico\u2019s voor de gezondheid, veiligheid\
+  \ of grondrechten die zich kunnen voordoen wanneer een AI-systeem met een hoog risico\
+  \ wordt gebruikt in overeenstemming met het beoogde doel ervan of in een situatie\
+  \ van redelijkerwijs te voorzien misbruik, met name wanneer dergelijke risico\u2019\
+  s blijven bestaan ondanks de toepassing van andere eisen van deze afdeling.\n\n\
+  De te treffen toezichtmaatregelen staan in verhouding met de risico's, de mate van\
+  \ autonomie en de gebruikscontext van het AI-systeem met een hoog risico.\nHierbij\
+  \ kan het gaan om:\n\n1. door de aanbieder bepaalde maatregelen die waar technisch\
+  \ haalbaar in het AI-systeem met een hoog risico worden ingebouwd voordat dit systeem\
+  \ in de handel wordt gebracht of in gebruik wordt gesteld;\n2. door de aanbieder\
+  \ bepaalde maatregelen voordat het AI-systeem met een hoog risico in de handel wordt\
+  \ gebracht of in gebruik wordt gesteld en die passend zijn om door de gebruiksverantwoordelijke\
+  \ te worden uitgevoerd.\n\n\nDe natuurlijke personen die verantwoordelijk zijn voor\
+  \ het menselijk toezicht, moeten in staat worden gesteld om waar passend en in verhouding\
+  \ tot de omstandigheden het volgende te kunnen doen:\n\n1. Goed kunnen begrijpen\
+  \ van de relevante capaciteiten en beperkingen van het AI-systeem met een hoog risico.\n\
+  Met het oog op het opsporen en aanpakken van onregelmatigheden, storingen en onverwachte\
+  \ prestaties moet de werking van het AI-systeem goed kunnen worden begrepen;\n2.\
+  \ Bewust blijven van de mogelijke neiging om automatisch of te veel te vertrouwen\
+  \ op de output van een AI-systeem met hoog risico (automation bias).\nDit geldt\
+  \ in het bijzonder voor het gebruik van een hoog risico AI-systeem dat wordt gebruikt\
+  \ om informatie of aanbevelingen te versterkken voor beslisisngen die door natuurlijke\
+  \ personen moeten worden genomen;\n3. De output juist kunnen interpreteren, bijvoorbeeld\
   \ met behulp van de juiste hulpmiddelen en methoden voor interpretatie;\n4. In alle\
   \ specifieke situaties kunnen besluiten om het hoog risico AI-systeem niet te gebruiken\
   \ of de output op een andere wijze te negeren, door een andere beslissing te vervangen\
@@ -65,6 +65,7 @@ links:
 - urn:nl:ak:mtr:owp-25
 - urn:nl:ak:mtr:owp-26
 - urn:nl:ak:mtr:owp-28
+- urn:nl:ak:mtr:imp-10
 - urn:nl:ak:mtr:org-02
 - urn:nl:ak:mtr:owk-02
 - urn:nl:ak:mtr:imp-01

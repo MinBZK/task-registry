@@ -1,17 +1,18 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Hoog-risico-AI-systemen zijn geregistreerd in de EU-databank
-description: 'Aanbieders van AI-systemen met een hoog risico leven de registratieverplichtingen
-  als bedoeld in artikel 49 na, wat betekent dat voor het in de handel brengen of
-  in bedrijf te stellen van het hoog risico AI-systeem, de aanbieder of in voorkomende
-  gevallen de gemachtigde het systeem registreert in de EU-databank.
-
-  '
-explanation: "V\xF3\xF3r de distributie of inbedrijfstelling van een AI-systeem met\
-  \ een hoog risico van bijlage III, met uitzondering van specifieke gevallen zoals\
-  \ beschreven in punt 2 van bijlage III, is het vereist dat de aanbieder of gemachtigde\
-  \ zichzelf en het systeem registreert in de EU-databank zoals genoemd in art.\n\
-  71 AI-verordening."
+name: Hoog-risico-AI-systemen zijn geregistreerd in de EU-databank.
+description: Hoog-risico-AI-systemen zijn geregistreerd in de EU-databank.
+explanation: "Aanbieders van AI-systemen met een hoog risico registeren het systeem\
+  \ in de EU-databank voorafgaand aan ingebruikname van het AI-systeem. \n\nV\xF3\xF3\
+  r de distributie of inbedrijfstelling van een AI-systeem met een hoog risico van\
+  \ bijlage III, met uitzondering van specifieke gevallen zoals beschreven in punt\
+  \ 2 van bijlage III, is het vereist dat de aanbieder of gemachtigde zichzelf en\
+  \ het systeem registreert in de EU-databank zoals genoemd in art. 71 AI-verordening.\
+  \ Ook substanti\xEBle wijzigingen van AI-systemen met een hoog risico moeten in\
+  \ de EU-databank worden geregistreerd. \n\nAls een AI-systeem met een hoog risico\
+  \ wordt gebruikt zoals omschreven in bijlage III, moeten gebruiksverantwoordelijken\
+  \ die overheidsinstanties, -agentschappen of -organen zijn, zich bij een dergelijke\
+  \ databank registreren en het systeem selecteren dat zij voornemens zijn te gebruiken. "
 urn: urn:nl:ak:ver:aia-17
 language: nl
 owners:
@@ -22,7 +23,6 @@ owners:
 date: ''
 url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-17-registratieverplichtingen/index.html
 subject:
-- governance
 - transparantie
 lifecycle:
 - implementatie

@@ -1,0 +1,39 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Maak gebruik van een algoritme dat bronvermelding kan genereren bij de output.
+description: ''
+explanation: ''
+urn: urn:nl:ak:mtr:imp-10
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-31-genereren-bronvermelding/index.html
+subject:
+- transparantie
+- publieke-inkoop
+suggested_roles:
+- projectleider
+- beleid-en-advies
+lifecycle:
+- ontwerp
+- validatie-en-verificatie
+links:
+- urn:nl:ak:ver:dat-01
+- urn:nl:ak:ver:awb-02
+- urn:nl:ak:ver:awb-01
+- urn:nl:ak:ver:aut-01
+- urn:nl:ak:ver:aia-28
+- urn:nl:ak:ver:aia-09
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

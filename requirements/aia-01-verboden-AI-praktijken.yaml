@@ -1,7 +1,7 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Personeel en gebruikers zijn voldoende AI-geletterd.
-description: Personeel en gebruikers zijn voldoende AI-geletterd.
+name: Verboden AI-systemen mogen niet worden gebruikt.
+description: Verboden AI-systemen mogen niet worden gebruikt.
 explanation: ''
 urn: urn:nl:ak:ver:aia-01
 language: nl
@@ -11,12 +11,12 @@ owners:
   email: ''
   role: ''
 date: ''
-url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-01-ai-geletterdheid/index.html
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-01-verboden-AI-praktijken/index.html
 subject:
-- menselijke-controle
 - governance
 lifecycle:
 - organisatieverantwoordelijkheden
+- probleemanalyse
 links:
 - urn:nl:ak:mtr:pba-03
 - urn:nl:ak:mtr:owp-18
@@ -26,13 +26,9 @@ links:
 ai_act_profile:
 - type:
   - AI-systeem
-  - AI-systeem voor algemene doeleinden
-  - AI-model voor algemene doeleinden
   open_source: []
   risk_group:
-  - hoog-risico AI
   - verboden AI
-  - geen hoog-risico AI
   systemic_risk: []
   transparency_obligations: []
   role:

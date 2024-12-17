@@ -4,19 +4,36 @@ name: "Besluiten die levens kunnen be\xEFnvloeden, zijn niet volledig geautomati
 description: Betrokkenen hebben het recht om niet onderworpen te worden aan een enkel
   op geautomatiseerde verwerking, waaronder proflering, gebaseerd besluit, wanneer
   dit rechtsgevolgen heeft voor hen of het hen anderszins in aanzienlijke mate treft.
-  Dit verbod geldt niet indien de  geautomatiseerde individuele besluitvorming, anders
+  Dit verbod geldt niet indien de geautomatiseerde individuele besluitvorming, anders
   dan op basis van profilering, noodzakelijk is om te voldoen aan een wettelijke verplichting
   die op de verwerkingsverantwoordelijke rust of noodzakelijk is voor de vervulling
   van een taak van algemeen belang.
-explanation: "Mensen hebben het recht om niet onderworpen te worden aan beslissingen\
-  \ die uitsluitend gebaseerd zijn op geautomatiseerde verwerking, zoals profilering,\
-  \ als dit aanzienlijke gevolgen voor hen heeft of hen op een andere manier aanzienlijk\
-  \ be\xEFnvloedt.\nDit recht biedt bescherming tegen mogelijke negatieve effecten\
-  \ van volledig geautomatiseerde besluitvormingssystemen, en waarborgt dat individuen\
-  \ kunnen rekenen op menselijke tussenkomst en beoordeling bij belangrijke beslissingen\
-  \ die hen kunnen treffen.\nUitgangspunt is dat voor elk individueel geval een zorgvuldige\
-  \ beoordeling van de kenmerken en omstandigheden plaatsvindt voordat een besluit\
-  \ wordt genomen."
+explanation: "Overheidsorganisaties zijn vaak belast met de uitvoering van wettelijke\
+  \ taken waarbij zij 'besluiten' moeten nemen, bijvoorbeeld als een burger vraagt\
+  \ om een uitkering, toeslag of een subsidie.\nHiervoor moeten gegevens worden verwerkt\
+  \ om te kunnen bepalen of een burger hier ook recht op heeft. Om deze gegevens snel\
+  \ en accuraat te verwerken, zetten overheidsorganisaties vaak algoritmes in. Deze\
+  \ gegevens worden dan vaak 'geautomatiseerd' door deze algoritmes verwerkt, zonder\
+  \ dat een ambtenaar dit werk controleert.\nSoms wordt het proces voor het nemen\
+  \ van een **besluit** volledig geautomatiseerd ingericht. Denk hierbij aan het opleggen\
+  \ van een boete voor een snelheidsovertreding. Hierdoor kan in korte tijd en op\
+  \ een effici\xEBnte wijze, een grote hoeveelheid besluiten worden genomen. \n\n\
+  Het geautomatiseerd verwerken van gegevens voor de totstandkoming van een besluit\
+  \ brengt risico's met zich mee. Zeker als hierbij persoonsgegevens van individuen\
+  \ worden verwerkt en er sprake is van profilering. Hierdoor ontstaat bijvoorbeeld\
+  \ het risico op discriminatie. Daarom is in art. 22 AVG het recht voor betrokkenen\
+  \ gecre\xEBerd om niet te worden onderworpen aan een uitsluitend op geautomatiseerde\
+  \ verwerking, waaronder profilering, gebaseerd besluit. \n\nDit verbod geldt voor\
+  \ besluiten die **'rechtsgevolgen'** hebben voor een betrokkene, bijvoorbeeld een\
+  \ burger die een boete ontvangt voor de snelheidsovertreding, of hem anderzijds\
+  \ in **aanmerkelijke mate treft**. Het besluit mag in die gevallen niet geautomatiseerd\
+  \ worden genomen. Een individu moet namelijk kunnen rekenen op voldoende 'menselijke\
+  \ tussenkomst' bij de beoordeling van belangrijke beslissingen die deze persoon\
+  \ treffen.\n\nBij het geautomatiseerd uitvoeren van processen dient altijd te worden\
+  \ voldaan aan de voorwaarden uit wetgeving, waaronder in het bijzonder de Algemene\
+  \ Verordening Gegevensbescherming (AVG) en de Algemene wet bestuursrecht(Awb). Bestuursorganen\
+  \ dienen dan ook te handelen conform de algemene beginselen van behoorlijk bestuur.\
+  \ Dit samenstel van regels moet de rechten van betrokkenen borgen. "
 urn: urn:nl:ak:ver:avg-10
 language: nl
 owners:
