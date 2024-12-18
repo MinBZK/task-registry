@@ -1,7 +1,11 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Hoog-risico-AI-systemen zijn geregistreerd in de EU-databank.
-description: Hoog-risico-AI-systemen zijn geregistreerd in de EU-databank.
+description: '
+
+  Hoog-risico-AI-systemen zijn geregistreerd in de EU-databank.
+
+  '
 explanation: "Aanbieders van AI-systemen met een hoog risico registeren het systeem\
   \ in de EU-databank voorafgaand aan ingebruikname van het AI-systeem. \n\nV\xF3\xF3\
   r de distributie of inbedrijfstelling van een AI-systeem met een hoog risico van\
@@ -12,7 +16,10 @@ explanation: "Aanbieders van AI-systemen met een hoog risico registeren het syst
   \ de EU-databank worden geregistreerd. \n\nAls een AI-systeem met een hoog risico\
   \ wordt gebruikt zoals omschreven in bijlage III, moeten gebruiksverantwoordelijken\
   \ die overheidsinstanties, -agentschappen of -organen zijn, zich bij een dergelijke\
-  \ databank registreren en het systeem selecteren dat zij voornemens zijn te gebruiken. "
+  \ databank registreren en het systeem selecteren dat zij voornemens zijn te gebruiken.\
+  \ \n\n\nNiet naleven van deze verplichtingen kan leiden tot juridische en operationele\
+  \ problemen, en kan de veiligheid en betrouwbaarheid van het AI-systeem in gevaar\
+  \ brengen.\n\n"
 urn: urn:nl:ak:ver:aia-17
 language: nl
 owners:

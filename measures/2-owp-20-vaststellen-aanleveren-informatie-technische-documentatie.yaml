@@ -2,9 +2,13 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Vul technische documentatie van aanbieder aan met relevante informatie vanuit
   de gebruiksverantwoordelijke.
-description: Vul technische documentatie van aanbieder aan met relevante informatie
-  vanuit de gebruiksverantwoordelijke, zodat het alle relevante onderdelen van het
-  algoritme zijn beschreven.
+description: '
+
+  Vul technische documentatie van aanbieder aan met relevante informatie vanuit de
+  gebruiksverantwoordelijke, zodat het alle relevante onderdelen van het algoritme
+  zijn beschreven.
+
+  '
 explanation: "- Het is van belang dat duidelijke afspraken worden gemaakt over het\
   \ opstellen, aanvullen en actueel houden van technische documentatie van algorites.\
   \ Bij het inkopen van algoritmes moet hier rekening mee worden gehouden. De aanbieder\
@@ -18,7 +22,7 @@ explanation: "- Het is van belang dat duidelijke afspraken worden gemaakt over h
   \ verschillende toepassingen of versies. Bespreek met het projectteam welke onderdelen\
   \ van de technische documentatie voor AI-systemen, als genoemd in de Bijlage 4 AI-verordening,\
   \ door welke partij (aanbieder of gebruiksverantwoordelijke) moeten worden ingevuld\
-  \ of aangevuld. "
+  \ of aangevuld. \n"
 urn: urn:nl:ak:mtr:owp-20
 language: nl
 owners:

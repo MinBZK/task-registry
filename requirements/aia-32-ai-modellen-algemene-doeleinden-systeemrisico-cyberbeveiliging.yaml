@@ -1,16 +1,20 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: "AI-modellen voor algemene doeleinden met systeemrisico\u2019s zijn voldoende\
-  \ beveiligd tegen cyberaanvallen"
-description: Aanbieders van AI-modellen voor algemene doeleinden met een systeemrisico
-  zorgen voor een passend niveau van cyberbeveiligingsbescherming voor het AI-model
-  voor algemene doeleinden met een systeemrisico en de fysieke infrastructuur van
-  het model.
-explanation: "Aanbieders van AI-modellen met systeemrisico moeten zorgen voor passende\
-  \ cyberbeveiligingsmaatregelen.\nDit omvat het beschermen van zowel het AI-model\
-  \ als de fysieke infrastructuur tegen potenti\xEBle cyberdreigingen.\nHet doel is\
-  \ om de integriteit en veiligheid van het model en de infrastructuur te waarborgen.\n\
-  Dit vereiste is een aanvulling op de in artikel 53 AI-verordening genoemde verplichtingen.\n"
+  \ beveiligd tegen cyberaanvallen."
+description: "AI-modellen voor algemene doeleinden met systeemrisico\u2019s zijn voldoende\
+  \ beveiligd tegen cyberaanvallen.\n"
+explanation: "Aanbieders van AI-modellen voor algemene doeleinden met een systeemrisico\
+  \ zorgen voor een passend niveau van cyberbeveiligingsbescherming voor het AI-model\
+  \ voor algemene doeleinden met een systeemrisico en de fysieke infrastructuur van\
+  \ het model.\n\nAanbieders van AI-modellen met systeemrisico moeten zorgen voor\
+  \ passende cyberbeveiligingsmaatregelen. Dit omvat het beschermen van zowel het\
+  \ AI-model als de fysieke infrastructuur tegen potenti\xEBle cyberdreigingen.\n\n\
+  Het doel is om de integriteit en veiligheid van het model en de infrastructuur te\
+  \ waarborgen. Dit vereiste is een aanvulling op de in artikel 53 AI-verordening\
+  \ genoemde verplichtingen.\n\n\nNiet voldoen aan deze verplichtingen kan leiden\
+  \ tot risico's op veiligheidsincidenten, datalekken en schade aan de betrokken partijen\
+  \ en het publiek.\n"
 urn: urn:nl:ak:ver:aia-32
 language: nl
 owners:
@@ -21,7 +25,6 @@ owners:
 date: ''
 url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-32-ai-modellen-algemene-doeleinden-systeemrisico-cyberbeveiliging/index.html
 subject:
-- governance
 - technische-robuustheid-en-veiligheid
 lifecycle:
 - ontwikkelen

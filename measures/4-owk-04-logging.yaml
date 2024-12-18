@@ -1,8 +1,35 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak logbestanden waarin staat wie wanneer toegang had tot de data en de code
-description: ''
-explanation: ''
+description: 'Zorg ervoor dat logbestanden worden gecreëerd waarin informatie wordt
+  geregistreerd over gebruikersactiviteiten, uitzonderingen en informatiebeveiligingsgebeurtenissen.
+
+  Door goede logging is te achterhalen wanneer en door wie er toegang is geweest tot
+  code en data (audit trail).
+
+  Er kan loginformatie gegenereerd, bewaard, toegankelijk gemaakt en gemonitord worden.
+  Logbestanden bevatten vaak gebeurtenissen die gebruikersactiviteiten, uitzonderingen
+  en informatiebeveiligingsgebeurtenissen registreren.
+
+  Bedenk wat deze informatie betekent in de context van de werking van het algoritme.
+
+  '
+explanation: "- Met logbestanden is te achterhalen wanneer en door wie er (ongewenste)\
+  \ aanpassingen zijn gedaan (audit trail).\n- Loginformatie moet worden gegenereerd,\
+  \ bewaard, gemonitord en toegankelijk worden gemaakt.\n- Logbestanden bevatten vaak\
+  \ gebeurtenissen die gebruikersactiviteiten, uitzonderingen en informatiebeveiligingsgebeurtenissen\
+  \ registreren.\n- Bedenk wat deze informatie betekent in de context van de werking\
+  \ van het algoritme. loginformatie gegenereerd, bewaard, toegankelijk gemaakt en\
+  \ gemonitord worden. Logbestanden bevatten vaak gebeurtenissen die gebruikersactiviteiten,\
+  \ uitzonderingen en informatiebeveiligingsgebeurtenissen registreren.\n- Stel vast\
+  \ welke informatie bij het ontwikkelen en gebruiken van algoritmes relevant is om\
+  \ te loggen. \n- Log behalve het aanpassen van gegevens ook het uitlezen van gegevens\
+  \ waar dat relevant is. Bijvoorbeeld als persoonsgegevens worden opgevraagd.\n-\
+  \ Logs dienen periodiek (of doorlopend) gecontroleerd to worden op relevante incidenten.\
+  \ Dat betekent dat wat er gelogd wordt geschikt moet zijn om relevante beveiligingsincidenten\
+  \ op te merken. \n\nWanneer loginformatie ontbreekt, is niet te achterhalen wanneer\
+  \ er (eventueel ongewenste) aanpassingen zijn gedaan (audit trail) op (de code van)\
+  \ het algoritme, of door wie.\n"
 urn: urn:nl:ak:mtr:owk-04
 language: nl
 owners:

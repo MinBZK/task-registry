@@ -1,9 +1,23 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Auteursrechten zijn beschermd
-description: Auteursrechten mogen niet geschonden worden bij het ontwikkelen en gebruiken
-  van algoritmes.
-explanation: ''
+name: Auteursrechten zijn beschermd.
+description: '
+
+  Auteursrechten en naburige rechten mogen niet geschonden worden bij het ontwikkelen,
+  testen en gebruiken van algoritmes.
+
+  '
+explanation: 'Bepaalde type algoritmes worden ontwikkeld op basis van grote hoeveelheden
+  data.
+
+  Deze data wordt gebruikt voor het trainen en testen van algoritmes.
+
+  Het gebruiken van deze data mag geen inbreuk maken op auteursrechten van diegene
+  die deze rechten heeft.
+
+  Ook de gegenereerde output van algoritmes mag geen inbreuk maken op deze rechten.
+
+  '
 urn: urn:nl:ak:ver:aut-01
 language: nl
 owners:
@@ -15,10 +29,9 @@ date: ''
 url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aut-01-auteursrechten/index.html
 subject:
 - data
-- governance
 lifecycle:
-- dataverkenning-en-datapreparatie
 - ontwerp
+- dataverkenning-en-datapreparatie
 links:
 - urn:nl:ak:mtr:owp-12
 - urn:nl:ak:mtr:owp-13

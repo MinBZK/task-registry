@@ -1,8 +1,21 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak een noodplan voor beveiligingsincidenten
-description: ''
-explanation: ''
+description: 'Richt een proces in waarmee beveiligingsincidenten m.b.t. algoritmes
+  en data zo spoedig mogelijk worden opgelost.
+
+
+  '
+explanation: 'Er zijn procedures aanwezig die borgen dat beveiligingsincidenten m.b.t.
+  algoritmes en data zo spoedig mogelijk, afhankelijk van de kwalificatie van het
+  incident, worden opgepakt.
+
+
+
+  Te late reactie op incidenten kan ervoor zorgen dat de BIV (beschikbaarheid, integriteit
+  en vertrouwelijkheid) van het algoritme of data kan worden aangetast.
+
+  '
 urn: urn:nl:ak:mtr:mon-03
 language: nl
 owners:

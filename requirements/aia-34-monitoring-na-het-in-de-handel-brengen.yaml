@@ -1,26 +1,31 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Hoog-risico-AI-systemen zijn voorzien van een monitoringsysteem
-description: "Aanbieders moeten een systeem voor monitoring na het in de handel brengen\
-  \ vaststellen en documenteren op een manier die evenredig is aan de aard van de\
-  \ AI-technologie\xEBn en de risico\u2019s van het AI-systeem met een hoog risico.\n"
+name: Hoog-risico-AI-systemen zijn voorzien van een monitoringsysteem.
+description: '
+
+  Hoog-risico-AI-systemen zijn voorzien van een monitoringsysteem.
+
+  '
 explanation: "Aanbieders moeten een monitoringssysteem opzetten voor het monitoren\
-  \ na het in de handel brengen.\nDit systeem moet documenteren op een wijze die passend\
-  \ is bij de aard van de AI-technologie\xEBn en de risico's van het betreffende AI-systeem\
-  \ met een hoog risico.\nDit monitoringssysteem moet proportioneel zijn aan de complexiteit\
-  \ en potenti\xEBle impact van het AI-systeem.\n\nHet systeem voor monitoring na\
-  \ het in de handel brengen verzamelt, documenteert en analyseert actief en systematisch\
-  \ relevante data die door gebruiksverantwoordelijken kunnen zijn verstrekt of via\
-  \ andere bronnen kunnen zijn verzameld, over de prestaties van AI-systemen met een\
-  \ hoog risico gedurende hun hele levensduur.\nDit stelt de aanbieder in staat na\
-  \ te gaan of AI-systemen blijvend voldoen aan de in hoofdstuk III, afdeling 2, van\
-  \ de AI-verordening vermelde voorschriften.\nIn voorkomend geval omvat de monitoring\
-  \ na het in de handel brengen een analyse van de interactie met andere AI-systemen.\n\
-  Deze verplichting geldt niet voor gevoelige operationele gegevens van gebruiksverantwoordelijken\
-  \ die rechtshandhavingsinstanties zijn.\n\nHet systeem voor monitoring na het in\
-  \ de handel brengen is gebaseerd op een plan voor monitoring na het in de handel\
-  \ brengen.\nHet plan voor monitoring na het in de handel brengen maakt deel uit\
-  \ van de in bijlage IV bedoelde technische documentatie."
+  \ na het in de handel brengen van het AI-systeem.\n\nDit systeem moet documenteren\
+  \ op een wijze die passend is bij de aard van de AI-technologie\xEBn en de risico's\
+  \ van het betreffende AI-systeem met een hoog risico.\nDit monitoringssysteem moet\
+  \ proportioneel zijn aan de complexiteit en potenti\xEBle impact van het AI-systeem.\n\
+  \nHet systeem voor monitoring na het in de handel brengen verzamelt, documenteert\
+  \ en analyseert actief en systematisch relevante data die door gebruiksverantwoordelijken\
+  \ kunnen zijn verstrekt of via andere bronnen kunnen zijn verzameld, over de prestaties\
+  \ van AI-systemen met een hoog risico gedurende hun hele levensduur.\n\nDit stelt\
+  \ de aanbieder in staat na te gaan of AI-systemen blijvend voldoen aan de in hoofdstuk\
+  \ III, afdeling 2, van de AI-verordening vermelde voorschriften.\nIn voorkomend\
+  \ geval omvat de monitoring na het in de handel brengen een analyse van de interactie\
+  \ met andere AI-systemen.\nDeze verplichting geldt niet voor gevoelige operationele\
+  \ gegevens van gebruiksverantwoordelijken die rechtshandhavingsinstanties zijn.\n\
+  \nHet systeem voor monitoring na het in de handel brengen is gebaseerd op een plan\
+  \ voor monitoring na het in de handel brengen.\nHet plan voor monitoring na het\
+  \ in de handel brengen maakt deel uit van de in bijlage IV bedoelde technische documentatie.\n\
+  \n\nZonder monitoringssysteem voor na het in handel brengen is er een risico dat\
+  \ verminderde pestaties van een AI-systeem met hoog risico ongedeteceerd blijven.\n\
+  Een aanbieder kan niet nagaan of een AI-systeem blijvend voldoet aan voorschriften.\n"
 urn: urn:nl:ak:ver:aia-34
 language: nl
 owners:

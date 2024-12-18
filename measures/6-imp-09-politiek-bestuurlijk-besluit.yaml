@@ -1,8 +1,22 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak een openbaar besluit over de inzet van het algoritme
-description: ''
-explanation: ''
+description: "Een politieke-bestuurlijk besluit wordt genomen over de inzet van een\
+  \ impactvol algoritme. \n"
+explanation: "- Door een politiek-bestuurlijk besluit te nemen over de inzet of beëindiging\
+  \ van een impactvol algoritme, wordt een afweging en keuze gemaakt over de wenselijkheid,\
+  \ haalbaarheid, transparantie, invulling van menselijke controle en eventueel de\
+  \ mate van onbewuste vooringenomenheid van het betreffende algoritme.\n- Impactvolle\
+  \ algoritmes bevatten aspecten die vragen om politieke afwegingen, en niet enkel\
+  \ door de ambtelijke organistie mogen worden beoordeeld.\n- Een voorbeeld van een\
+  \ politiek afweging is wanneer er wel of geen sprake is van een gerechtvaardigd\
+  \ onderscheid wat wordt gemaakt door een algoritme. \n- Het is van belang dat overheidsorganisaties\
+  \ een politiek-bestuurlijk kader opstellen waarin wordt beschreven hoe wordt omgegaan\
+  \ met dergelijke gevallen. \n- Een openbaar besluit draagt bij aan de legitimiteit\
+  \ van de inzet van het algoritme en de controleerbaarheid van de overheidsorganisatie.\
+  \ \n    \nDe ambtelijke organisatie maakt politieke-bestuurlijke afwegingen en beslissingen\
+  \ bij de inzet of beëindiging van het gebruik van impactvolle algoritmes, terwijl\
+  \ deze daar niet toe bevoegd is.\n"
 urn: urn:nl:ak:mtr:imp-01
 language: nl
 owners:

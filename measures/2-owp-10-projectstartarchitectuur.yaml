@@ -2,8 +2,12 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak een Project Startarchitectuur (PSA) voor de ontwikkeling of inkoop van
   algoritmes
-description: Voer een Project Startarchitectuur (PSA) uit als algoritmes worden ontwikkeld
-  of ingekocht.
+description: '
+
+  Voer een Project Startarchitectuur (PSA) uit als algoritmes worden ontwikkeld of
+  ingekocht.
+
+  '
 explanation: "- Een Project Startarchitectuur (PSA) is een hulpmiddel dat bij een\
   \ project wordt ingezet om veranderingen van A naar Beter te faciliteren.\n- De\
   \ PSA richt zich daarbij op de kaders die op een project van toepassing zijn en\
@@ -17,8 +21,9 @@ explanation: "- Een Project Startarchitectuur (PSA) is een hulpmiddel dat bij ee
   \ bijvoorbeeld kan worden voorkomen dat het algoritme of AI-systeem na verloop van\
   \ tijd geen input meer kan ontvangen door onverwachte wijzigingen in systemen.\n\
   - Onderwerpen als privacy, informatiebeheer en beheer worden hierin ook globaal\
-  \ meegenomen. \n  \n## Bijbehorende vereiste(n) { data-search-exclude }\n??? expander\
-  \ \"Bekijk alle vereisten\"\n    <!-- list_vereisten_on_maatregelen_page -->"
+  \ meegenomen. \n  \nHet algoritme kan niet of na verloop van tijd niet meer functioneren,\
+  \ doordat onverwachte of ongewenst wijzigingen in het applicatielandschap plaatsvinden.\
+  \ \n"
 urn: urn:nl:ak:mtr:owp-10
 language: nl
 owners:

@@ -1,8 +1,22 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Taken en verantwoordelijkheden zijn toebedeeld in de algoritmegovernance
-description: Taken en verantwoordelijkheden zijn toebedeeld in de algoritmegovernance
-explanation: ''
+description: '
+
+  Taken en verantwoordelijkheden zijn toebedeeld in de algoritmegovernance
+
+  '
+explanation: "- Bij het vormgeven van een doeltreffende algoritmegovernance is het\
+  \ beleggen van expliciete taken en verantwoordelijkheden cruciaal.\n- Het beleggen\
+  \ van deze taken en verantwoordelijkheden zorgt voor een actiegerichte structuur\
+  \ waarin duidelijkheid bestaat over wie wanneer aan zet is.\n- Denk hierbij aan\
+  \ het opstellen van een RACI-matrix en pas dit binnen de organisatie toe per risicoclassificatie\
+  \ voor algoritmes. \n- Rollen en verantwoordelijkheden kunnen worden gekoppeld aan\
+  \ de vereisten en maatregelen die moeten worden gerealiseerd in de verschillende\
+  \ fasen van de levenscyclus van een algoritme.\n- Organisaties zullen zelf moeten\
+  \ beoordelen welke taken en verantwoordelijkheden ze willen koppelen aan de beschikbare\
+  \ (of nieuwe) rollen binnen hun organisaties.  \n- Zie hieronder een mogelijk voorbeeld\
+  \ van hoe dit eruit kan zien. \n\n![Format](https://github.com/user-attachments/assets/3debe7b6-0c42-40f5-a366-9cc5cc90cd3e)\n"
 urn: urn:nl:ak:mtr:org-10
 language: nl
 owners:

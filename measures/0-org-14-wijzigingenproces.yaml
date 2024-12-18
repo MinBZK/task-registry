@@ -1,8 +1,10 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak afspraken over het wijzigen van de code
-description: 'Richt een wijzigingenproces in, waarmee bepaald wordt hoe codewijzigingen
-  plaatsvinden.
+description: '
+
+  Richt een wijzigingenproces in, waarmee bepaald wordt hoe codewijzigingen plaatsvinden.
+
 
   '
 explanation: 'Bij het inrichten van een proces om wijzigingen aan de code te mogen
@@ -24,7 +26,14 @@ explanation: 'Bij het inrichten van een proces om wijzigingen aan de code te mog
   (BIO 6.1.2, 14.2.2)
 
   - Er dient periodiek controle plaats te vinden op wijzigingen aan het systeem, zodanig
-  dat oneigenlijke wijzigingen worden gesignaleerd. (BIO 9.4.4, 12.4.1)'
+  dat oneigenlijke wijzigingen worden gesignaleerd. (BIO 9.4.4, 12.4.1)
+
+
+  Als een formeel wijzigingenproces ontbreekt bestaat het risico van ongeautoriseerde
+  toegang, wijziging of beschadiging van de code van het algoritme, of de uitkomsten
+  van het algoritme.
+
+  '
 urn: urn:nl:ak:mtr:org-14
 language: nl
 owners:

@@ -1,8 +1,30 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Hoog-risico-AI-systemen zijn voorzien van voldoende technische documentatie.
-description: Hoog-risico-AI-systemen zijn voorzien van voldoende technische documentatie.
-explanation: ''
+description: '
+
+  Hoog-risico-AI-systemen zijn voorzien van voldoende technische documentatie.
+
+  '
+explanation: "De technische documentatie van een AI-systeem met een hoog risico wordt\
+  \ voorafgaand aan het in de handel brengen of in gebruik nemen opgesteld en regelmatig\
+  \ bijgewerkt.\n\nDeze documentatie moet duidelijk aantonen dat het systeem voldoet\
+  \ aan de vereisten van AI-Verordening (afdeling 2), zodat nationale autoriteiten\
+  \ en aangemelde instanties de naleving kunnen beoordelen. Daarvoor moet de informatie\
+  \ op een heldere en begrijpelijke wijze zijn opgesteld. \n\nDe documentatie bevat\
+  \ ten minste de elementen zoals uiteengezet in bijlage IV AI-Verordening:\n\n1.\
+  \ Een algemene beschrijving van het AI-syseem.\n2. Een gedetailleerde beschrijving\
+  \ van de elementen van het AI-systeem en het proces voor de ontwikkeling ervan.\n\
+  3. Gedetailleerde informatie over de monitoring, werking en controle van het AI-systeem.\n\
+  4. Een beschrijving van de geschiktheid van de prestatiestatistieken.\n5. Een gedetailleerde\
+  \ beschrijving van het systeem voor risicobeheer overeenkomstig artikel 9 van de\
+  \ AI verordening.\n6. Een beschrijving van de wijzigingen die tijdens de levensduur\
+  \ worden aangebracht.\n7. Een lijst van normen die worden toegepast.\n8. Een exemplaar\
+  \ van de EU-conformiteitsverklaring.\n9. Een gedetailleerde beschrijving voor evaluatie\
+  \ van prestaties nadat het systeem in handel is gebracht, in overeenstemming met\
+  \ artikel 72 van de AI-verordening.\n\nDe documentatie kan opgevraagd worden door\
+  \ een bevoegde autoriteit met een met redenen omkleed verzoek, zoals toegelicht\
+  \ in artikel 21 van de AI-verordening.\n"
 urn: urn:nl:ak:ver:aia-06
 language: nl
 owners:

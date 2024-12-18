@@ -1,15 +1,20 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Klachtrecht aanbieders verder in AI-waardeketen
-description: Aanbieders verder in de AI-waardeketen hebben het recht een klacht in
-  te dienen wegens inbreuk op de AI verordening bij het AI-bureau.
+name: Klachtrecht voor aanbieders verder in AI-waardeketen.
+description: '
+
+  Aanbieders verder in de AI-waardeketen hebben het recht een klacht in te dienen
+  wegens inbreuk op de AI verordening bij het AI-bureau.
+
+  '
 explanation: "Aanbieders verder in de AI-waardeketen hebben het recht om een klacht\
   \ in te dienen bij het AI-bureau in het geval van een inbreuk op de AI-verordening.\n\
-  Dit biedt hen een mechanisme om actie te ondernemen bij schendingen van de regels\
+  \nDit biedt hen een mechanisme om actie te ondernemen bij schendingen van de regels\
   \ met betrekking tot AI-modellen voor algemene doeleinden die zij ge\xEFntrigeerd\
-  \ hebben in AI-systemen.\nHet AI-bureau kan dan passende maatregelen nemen om de\
-  \ naleving van de verordening te handhaven en eventuele geschillen tussen aanbieders\
-  \ op te lossen."
+  \ hebben in AI-systemen.\n\nHet AI-bureau kan dan passende maatregelen nemen om\
+  \ de naleving van de verordening te handhaven en eventuele geschillen tussen aanbieders\
+  \ op te lossen.\n\n\nGebrek aan klachtrecht verhindert het AI-bureau om tijdig en\
+  \ zorgvuldig te kunnen ingrijpen bij overtreding van de AI-verordening.\n"
 urn: urn:nl:ak:ver:aia-37
 language: nl
 owners:

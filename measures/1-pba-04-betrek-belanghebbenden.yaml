@@ -1,8 +1,31 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Overleg regelmatig met belanghebbenden
-description: ''
-explanation: ''
+description: '
+
+  Breng in kaart welke belanghebbenden er zijn en betrek hen op verschillende momenten
+  in de levenscyclus.
+
+  '
+explanation: "Het betrekken van belanghebbenden is van belang in bijna alle fasen\
+  \ van de levenscyclus.\nBelanghebbenden zijn onder meer eindgebruikers, mensen en\
+  \ rechtspersonen die door het algoritme geraakt kunnen worden en vertegenwoordigende\
+  \ organisaties.\n\nIn de fase van de probleemanalyse is het allereerst van belang\
+  \ in kaart te brengen welke stakeholders er zijn.\nWie gaan bijvoorbeeld werken\
+  \ met het algoritme (eindgebruikers)? En welke demografieën worden geraakt door\
+  \ een algoritme?\nBij wie liggen de voordelen en bij wie liggen de nadelen?\nGa\
+  \ in gesprek met deze belanghebbenden - al dan niet vertegenwoordigd door belangenorganisaties\
+  \ zoals burgerrechtenorganisaties - over het te ontwerpen algoritme en de context\
+  \ waarin het gebruikt wordt. Zij kunnen waardevolle inzichten en wensen delen, wat\
+  \ kan bijdragen aan een betere werking van het algoritme. \n\nEnkele voorbeelden\
+  \ hierbij zijn:\n- Het betrekken van burgers bij het ontwerpen van een algoritme\
+  \ in de ontwerpfase. \n- Het bespreken welke definitie en metriek van _fairness_\
+  \ past bij de context met de proceseigenaar en een ethicus.\n- Het betrekken van\
+  \ domeinexperts in de fase van dataverkenning en datapreparatie, om zo in kaart\
+  \ te brengen wat de data features betekenen en waar zij vandaan komen.\n- Het betrekken\
+  \ van eindgebruikers bij het ontwikkelen en het implementeren van het algoritme.\n\
+  - Het betrekken van belanghebbenden bij het monitoren en evalueren van het algoritme.\
+  \ \n"
 urn: urn:nl:ak:mtr:pba-04
 language: nl
 owners:

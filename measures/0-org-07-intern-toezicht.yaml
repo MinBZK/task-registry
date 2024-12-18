@@ -1,7 +1,11 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Richt een algoritmegovernance in met three lines of defence
-description: Richt een algoritmegovernance in met three lines of defence.
+description: '
+
+  Richt een algoritmegovernance in met three lines of defence.
+
+  '
 explanation: "Een inrichting van algoritmegovernance die vaak wordt toegepast is het\
   \ three lines of defence model:\n\n- De eerste linie gaat over eigenaarschap, ontwikkeling,\
   \ gebruik en risicobeheersing van algoritmes.\n- De tweede linie identificeert,\
@@ -10,7 +14,7 @@ explanation: "Een inrichting van algoritmegovernance die vaak wordt toegepast is
   \ interne advisering en toetsing. \n\nSchuett (2022) presenteert het three lines\
   \ of defence model als volgt:\n\n![Three Lines of Defence Model](https://github.com/user-attachments/assets/4974f07d-9810-44e0-a0bb-56f1b1061732)\n\
   \nHet toepassen van een 'three lines of defence' is slechts één aspect van het toepassen\
-  \ van algoritmegoverance. "
+  \ van algoritmegoverance. \n"
 urn: urn:nl:ak:mtr:org-07
 language: nl
 owners:

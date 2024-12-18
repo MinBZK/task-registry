@@ -1,22 +1,33 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Klokkenluiders kunnen veilig melden dat een organisatie zich niet houdt aan
-  de AI-verordening
-description: Inbreuken op de AI verordening moeten gemeld kunnen worden en melders
+  de AI-verordening.
+description: 'Klokkenluiders kunnen veilig melden dat een organisatie zich niet houdt
+  aan de AI-verordening.
+
+  '
+explanation: 'Inbreuken op de AI-Verordening moeten gemeld kunnen worden en melders
   moeten dit op een veilige en vertrouwelijke manier kunnen doen, zoals beschreven
   in Richtlijn (EU) 2019/1937.
-explanation: 'Personen die optreden als klokkenluiders bij inbreuken op de AI-verordening,
-  moeten worden beschermd uit hoofde van het Unierecht.
 
-  Richtlijn (EU) 2019/1937 (https://eur-lex.europa.eu/legal-content/NL/LSU/?uri=CELEX:32019L1937)
+
+  Personen die optreden als klokkenluiders bij inbreuken op de AI-verordening, moeten
+  worden beschermd uit hoofde van het Unierecht. Richtlijn (EU) 2019/1937 (https://eur-lex.europa.eu/legal-content/NL/LSU/?uri=CELEX:32019L1937)
   van het Europees Parlement en de Raad moet daarom van toepassing zijn.
+
 
   De richtlijn biedt een kader voor het veilig en vertrouwelijk melden van schendingen
   van de verordening, terwijl het de melders ("klokkenluiders") beschermt tegen represailles
-  of vervolging.
+  of vervolging. Deze richtlijn bevordert transparantie en verantwoording binnen organisaties
+  en draagt bij aan een cultuur van naleving en integriteit.
 
-  Deze richtlijn bevordert transparantie en verantwoording binnen organisaties en
-  draagt bij aan een cultuur van naleving en integriteit.'
+
+
+  Gebrek aan een veilige omgeving kan ertoe leiden dat klokkenluiders geen melding
+  maken van inbreuk op de AI-verordening. Dit schaadt het rapportagesysteem en heeft
+  negatief effect op het maatschappelijk welzijn.
+
+  '
 urn: urn:nl:ak:ver:aia-36
 language: nl
 owners:

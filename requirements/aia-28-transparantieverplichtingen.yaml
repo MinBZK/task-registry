@@ -1,9 +1,23 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: AI-systemen worden zo ontworpen en gebruikt, dat mensen begrijpen wanneer zij
-  met een AI-systeem communiceren en welke content gemaakt is door een AI-systeem
-description: ''
-explanation: ''
+  met een AI-systeem communiceren en welke content gemaakt is door een AI-systeem.
+description: 'AI-systemen worden zo ontworpen en gebruikt, dat mensen begrijpen wanneer
+  zij met een AI-systeem communiceren en welke content gemaakt is door een AI-systeem.
+
+  '
+explanation: "Aanbieders van AI-systemen zorgen dat AI-sytemen zodanig worden ontworpen\
+  \ en ontwikkeld dat de betrokken natuurlijke personen worden ge\xEFnformeerd dat\
+  \ zij interacteren met een AI-systeem. \n\nGebruiksverantwoordelijken moeten betrokkenen\
+  \ informeren over de werking van het systeem en in het geval van een AI-systeem\
+  \ dat content gegenereert duidelijk kenbaar maken dat de content kunstmatig is gegenereerd\
+  \ of gemanipuleerd.\n\nDit geldt voor AI-systemen die:\n\n- gebruikt worden voor\
+  \ directe interactie met natuurlijke personen (zoals chatbots). \n- synthetische\
+  \ afbeeldingen, audio, video of tekst genereert en/of manipuleert (bijvoorbeeld\
+  \ deepfake).\n- doen aan emotieherkenning of biometrische categorisatie.\n\nBepaalde\
+  \ AI-systemen die bedoeld zijn om met natuurlijke personen te interageren of om\
+  \ content te genereren, kunnen specifieke risico\u2019s op imitatie of misleiding\
+  \ met zich meebrengen, ongeacht of zij als systeem met een hoog risico gelden. \n"
 urn: urn:nl:ak:ver:aia-28
 language: nl
 owners:

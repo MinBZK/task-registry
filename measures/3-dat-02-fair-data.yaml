@@ -2,8 +2,12 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak waardevolle data vindbaar, toegankelijk, interoperabel en herbruikbaar
   (FAIR) binnen en buiten de eigen organisatie.
-description: Maak waardevolle data vindbaar, toegankelijk, interoperabel en herbruikbaar
-  (FAIR) binnen en buiten de eigen organisatie.
+description: '
+
+  Maak waardevolle data vindbaar, toegankelijk, interoperabel en herbruikbaar (FAIR)
+  binnen en buiten de eigen organisatie.
+
+  '
 explanation: "De internationale [FAIR-principes](https://www.gofair.foundation/) zijn\
   \ richtlijnen voor de manier van beschrijven, opslag en publicatie van data. \n\n\
   - **Findable** (vindbaar): Metadata moet gemakkelijk te vinden zijn voor zowel mensen\
@@ -17,7 +21,48 @@ explanation: "De internationale [FAIR-principes](https://www.gofair.foundation/)
   \ betekent niet per definitie dat data open data is. Juist ook voor (privacy) gevoelige\
   \ data (gesloten data) kan het heel zinvol zijn om te voldoen aan de principes voor\
   \ FAIR data, om juist daarmee specifieke geautoriseerde toegang tot gevoelige data\
-  \ mogelijk te kunnen maken."
+  \ mogelijk te kunnen maken.\n\n### 15 principes voor FAIR data\n\nEr zijn 15 principes\
+  \ voor FAIR data geformuleerd:\n\n#### Findable (vindbaar)\n- [F1: Aan (meta)data\
+  \ wordt een wereldwijd unieke en permanente identifier toegevoegd](https://www.gofair.foundation/f1)\n\
+  \n    !!! example \"Voorbeeld\"\n\n        Met behulp van [Persistent Identifiers\
+  \ (PID)](https://www.surf.nl/diensten/persistent-identifiers) zorg je ervoor dat\
+  \ jouw data (bijvoorbeeld onderzoeksdata) altijd vindbaar blijft. \n        PID's\
+  \ kun je vergelijken met het ISBN-nummer bij boeken. Het idee is dat ook als de\
+  \ locatie of de onderliggende infrastructuur verandert, de verwijzing intact blijft.\
+  \ \n\n- [F2: Data wordt beschreven met rijke metadata](https://www.gofair.foundation/f2)\n\
+  \n    !!! example \"Voorbeeld\"\n\n        Het team van [data.overheid.nl](https://data.overheid.nl/)\
+  \ heeft de metadata standaard [DCAT-AP-DONL](https://docs.datacommunities.nl/data-overheid-nl-documentatie/dcat/dcat-ap-donl)\
+  \ ontwikkeld die speciaal voor de uitwisseling van dataset informatie voor de Nederlandse\
+  \ situatie is ingericht. Dit is gebaseerd op de [Data Catalog Vocabulary (DCAT)\
+  \ versie](https://www.w3.org/TR/vocab-dcat/) die de Europese Unie heeft opgesteld.\
+  \ Je kan hierover meer lezen op de site van [data.overheid.nl](https://data.overheid.nl/ondersteuning/open-data/dcat).\n\
+  \n- [F3: Metadata bevat duidelijk en expliciet de identificatie van de data die\
+  \ ze beschrijven](https://www.gofair.foundation/f3)\n- [F4: (Meta)data worden geregistreerd\
+  \ of geïndexeerd in een doorzoekbare bron](https://www.gofair.foundation/f4) \n\n\
+  #### Accessible (toegankelijk)\n- [A1: (Meta)data zijn opvraagbaar op basis van\
+  \ hun identificatiecode met behulp van een gestandaardiseerd communicatieprotocol](https://www.gofair.foundation/a1)\
+  \ \n- [A1.1: Het protocol is open, vrij en universeel implementeerbaar](https://www.gofair.foundation/a1-1)\
+  \ \n- [A1.2: Het protocol maakt waar nodig een authenticatie- en autorisatieprocedure\
+  \ mogelijk](https://www.gofair.foundation/a1-2) \n- [A2: Metadata zijn toegankelijk,\
+  \ ook als de data niet meer beschikbaar zijn](https://www.gofair.foundation/a2)\
+  \ \n\n#### Interoperable (uitwisselbaar)\n- [I1: (Meta)data gebruikt een formele,\
+  \ toegankelijke, gedeelde en breed toepasbare taal voor kennisrepresentatie](https://www.gofair.foundation/i1)\
+  \ \n- [I2: (Meta)data gebruikt gegevenswoordenboeken of vocabulaires die FAIR-principes\
+  \ volgen](https://www.gofair.foundation/i2) \n\n    !!! example \"Voorbeeld woordenboek\"\
+  \n\n        In het [woordenboek Hitte](https://woordenboek.klimaatadaptatienederland.nl/hitte/nl/)\
+  \ staan ongeveer 230 definities van termen rond het thema hitte die gebruikt worden\
+  \ in het klimaatadaptatieveld. Dit woordenboek is ontwikkeld in opdracht van het\
+  \ ministerie van Infrastructuur en Waterstaat door overheidsstichting Geonovum.\n\
+  \n- [I3: (Meta)data bevat gekwalificeerde verwijzingen naar andere (meta)data](https://www.gofair.foundation/i3)\
+  \ \n\n#### Reusable (herbruikbaar)\n- [R1: (Meta)data wordt rijkelijk beschreven\
+  \ met een veelheid aan nauwkeurige en relevante attributen](https://www.gofair.foundation/r1)\
+  \ \n- [R1.1: (Meta)data wordt vrijgegeven met een duidelijke en toegankelijke licentie\
+  \ voor datagebruik](https://www.gofair.foundation/r1-1) \n- [R1.2: (Meta)data wordt\
+  \ geassocieerd met gedetailleerde herkomst](https://www.gofair.foundation/r1-1)\
+  \ \n\n    !!! example \"Voorbeeld\"\n\n        [PROV-DM](https://www.w3.org/TR/prov-dm/)\
+  \ is een conceptueel datamodel dat gebruikt kan worden voor de herkomstinformatie\
+  \ (provenance) van data. \n        \n- [R1.3: (Meta)data voldoet aan domein-relevante\
+  \ normen](https://www.gofair.foundation/r1-3) \n"
 urn: urn:nl:ak:mtr:dat-02
 language: nl
 owners:

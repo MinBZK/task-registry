@@ -1,13 +1,27 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak back-ups van algoritmes
-description: 'Back-up kopieën van informatie, software en systeemafbeeldingen dienen
-  regelmatig te worden gemaakt en getest. Idealiter gebeurt dit in overeenstemming
-  met een afgesproken back-up beleid.
+description: '
+
+  Back-up kopieën van informatie, software en systeemafbeeldingen dienen regelmatig
+  te worden gemaakt en getest. Idealiter gebeurt dit in overeenstemming met een afgesproken
+  back-up beleid.
 
   Maak back-ups van de omgeving van het algoritme en zorg ervoor dat het algoritme
-  en de data hersteld kunnen worden.'
-explanation: ''
+  en de data hersteld kunnen worden.
+
+  '
+explanation: 'Er is een back-up beleid waarin de eisen voor het bewaren en beschermen
+  zijn gedefinieerd en vastgesteld. Dit beleid moet vervolgens worden vertaald naar
+  (technische) maatregelen om het kunnen maken van back-ups te realiseren.
+
+
+  Als er geen regelmatige back-ups worden gemaakt en de restore-procedure niet regelmatig
+  wordt getest, bestaat het risico dat er geen hersteloptie is en mogelijkheid van
+  gegevensverlies.
+
+
+  '
 urn: urn:nl:ak:mtr:mon-01
 language: nl
 owners:

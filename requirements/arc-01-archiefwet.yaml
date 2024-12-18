@@ -1,10 +1,15 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Informatie over algoritmes wordt gedocumenteerd volgens de Archiefwet
-description: Overheidsorganen zijn verplicht de onder hen berustende archiefbescheiden
-  in goede, geordende en toegankelijke staat te brengen en te bewaren, alsmede zorg
-  te dragen voor de vernietiging van de daarvoor in aanmerking komende archiefbescheiden.
-explanation: ''
+name: Informatie over algoritmes wordt in goede, geordende en toegankelijke staat
+  gebracht, bewaard en vernietigd wanneer nodig.
+description: "\nInformatie over algoritmes wordt in goede, geordende en toegankelijke\
+  \ staat gebracht, bewaard en vernietigd wanneer nodig. \n"
+explanation: "Overheden moeten informatie over algoritmes in goede, geordende en toegankelijke\
+  \ staat brengen en bewaren. Ook moeten ze zorgen voor de vernietiging van archiefbescheiden\
+  \ die daarvoor in aanmerking komen. \n\nOp basis van deze informatie moet bijvoorbeeld\
+  \ gereconstrueerd kunnen worden hoe besluiten, ook in de context van algoritmes,\
+  \ tot stand zijn gekomen. Informatie over algoritmes moet daarom op basis van de\
+  \ selectielijst bewaard en vernietigd worden.\n"
 urn: urn:nl:ak:ver:arc-01
 language: nl
 owners:

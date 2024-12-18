@@ -1,9 +1,22 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Organisaties die algoritmes gebruiken voor publieke taken nemen besluiten zorgvuldig.
-description: Organisaties die algoritmes gebruiken voor publieke taken nemen besluiten
+description: 'Organisaties die algoritmes gebruiken voor publieke taken nemen besluiten
   zorgvuldig.
-explanation: ''
+
+  '
+explanation: "Het zorgvuldigheidsvereiste eist dat een besluit met de nodige zorgvuldigheid\
+  \ wordt voorbereid en juist wordt genomen.\nDit vraagt onder meer om een zorgvuldig\
+  \ onderzoek naar informatie, feiten, een zorgvuldige beslissingsprocedure en een\
+  \ deugdelijke besluitvorming. \n\nDit betekent dat bij de ontwikkeling en gebruik\
+  \ van algoritmes informatie moet worden vastgelegd  over het algoritme. Hierbij\
+  \ kan worden gedacht aan:\n- Dat het [doel en eventuele subdoelen](1-pba-01-formuleren-probleemdefinitie.md)\
+  \ van het algoritme of AI-systeem helder zijn gedefinieerd, ook in relatie tot het\
+  \ maatschappelijke resultaat (outcome).\n- Een bewuste afweging afmaken en vaststellen\
+  \ of het algoritme het [juiste middel is om het probleem](1-pba-01-formuleren-probleemdefinitie)\
+  \ op doelmatige en doeltreffende wijze op te lossen.\n- Dat de werking van het algoritme\
+  \ is onderzocht en is vastgesteld dat dit [passend is](5-ver-03-functioneren-in-lijn-met-doeleinden.md)\
+  \ om te gebruiken in een besluitvormingsproces.\n"
 urn: urn:nl:ak:ver:awb-01
 language: nl
 owners:

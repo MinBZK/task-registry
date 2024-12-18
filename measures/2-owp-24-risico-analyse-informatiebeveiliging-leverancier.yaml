@@ -2,8 +2,18 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Voer een risico-analyse met de aanbieder uit op het gebied van informatiebeveiliging
   bij een uitbestedingstraject
-description: ''
-explanation: ''
+description: 'Voer een risico-analyse met de aanbieder uit op het gebied van informatiebeveiliging
+  bij een uitbestedingstraject
+
+  '
+explanation: '- Stel vast of een aanbieder voldoet aan de Baseline Informatiebeveiliging
+  Overheid.
+
+  - Bespreek de informatiebeveiligingseisen met aanbieder die verband houden met de
+  beschikbaarheid, integriteit en vertrouwelijkheid van de informatie en de informatiesystemen.
+
+  - Bepaal of er, gezien de restrisico''s, aanvullende beveiligingsmaatregelen (door
+  de aanbieder of opdrachtgever) moeten worden getroffen om deze te beschermen.'
 urn: urn:nl:ak:mtr:owp-24
 language: nl
 owners:

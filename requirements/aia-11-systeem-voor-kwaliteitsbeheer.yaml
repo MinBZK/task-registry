@@ -1,7 +1,11 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Hoog-risico-AI-systemen zijn voorzien van een kwaliteitsbeheersysteem.
-description: Hoog-risico-AI-systemen zijn voorzien van een kwaliteitsbeheersysteem.
+description: '
+
+  Hoog-risico-AI-systemen zijn voorzien van een kwaliteitsbeheersysteem.
+
+  '
 explanation: "Aanbieders van AI-systemen met een hoog risico voorzien in een systeem\
   \ voor kwaliteitsbeheer dat de naleving van de AI-Verordening waarborgt.\n\nDit\
   \ systeem omvat gedocumenteerde beleidslijnen, procedures en instructies, en omvat\
@@ -34,7 +38,10 @@ explanation: "Aanbieders van AI-systemen met een hoog risico voorzien in een sys
   \ de regels voor het systeem voor kwaliteitsbeheer goedkeuren en uitvoeren als onderdeel\
   \ van het systeem voor kwaliteitsbeheer dat, naargelang het geval, op nationaal\
   \ of regionaal niveau is goedgekeurd, rekening houdend met de specifieke kenmerken\
-  \ van de sector en de competenties en organisatie van de overheidsinstantie in kwestie."
+  \ van de sector en de competenties en organisatie van de overheidsinstantie in kwestie.\n\
+  \n\nZonder toepassing van een kwaliteitsbeheersysteem kunnen risico's ontstaan voor\
+  \ de veiligheid, betrouwbaarheid en naleving van het AI-systeem en conformiteit\
+  \ met wet- en regelgeving.\n"
 urn: urn:nl:ak:ver:aia-11
 language: nl
 owners:

@@ -1,9 +1,26 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Beschrijf welke techniek gebruikt wordt voor de beoogde toepassing
-description: ''
-explanation: " ## Bijbehorende vereiste(n) { data-search-exclude }\n??? expander \"\
-  Bekijk alle vereisten\"\n    <!-- list_vereisten_on_maatregelen_page -->"
+description: "Beschrijf welke techniek gebruikt wordt voor de beoogde toepassing.\
+  \ \n"
+explanation: "- Beschrijf wat voor soort algoritme er gebruikt gaat worden voor de\
+  \ beoogde toepassing. \n- Bepaal of je gebruik wilt maken van een:\n\n    - [zelflerend\
+  \ algoritme](../../overhetalgoritmekader/soorten-algoritmes.md#zelflerende-algoritmes)\n\
+  \    - niet-zelflerend algoritme zoals een algoritme gebaseerd op [rekenregels](../../overhetalgoritmekader/soorten-algoritmes.md#rekenregels)\n\
+  \n- Beschrijf vervolgens ook:\n    \n    - waarom er voor dit type algoritme wordt\
+  \ gekozen\n    - wat de alternatieven zijn en waarom die minder passend zijn?\n\
+  \    - waarom dit algoritme het meest geschikt is om het [beoogde doel](1-pba-02-formuleren-doelstelling.md)\
+  \ van het algoritme te bereiken. \n\n- De precieze details kunnen in dit stadium\
+  \ van de levenscyclus waarschijnlijk nog niet ingevuld worden. Maak een goede eerste\
+  \ inschatting van de gebruikte techniek. Eventueel kan je er ook voor kiezen om\
+  \ verschillende technieken verder te onderzoeken. Dat betekent dat er meerdere algoritmes\
+  \ ontwikkeld worden (op basis van verschillende technieken), en je later een definitieve\
+  \ keuze maakt. \n\n- Het is belangrijk om uiteindelijk een passend uitlegbaar algoritme\
+  \ te selecteren voor de context waarin het wordt toegepast. Daarin moet de afweging\
+  \ gemaakt worden of de technische [uitlegbaarheid](2-owp-30-toepassen_uitlegbaarheidstechnieken.md)\
+  \ voldoende is in de context die de inzet van het algoritme vereist. Hierbij kan\
+  \ ook de conclusie worden getrokken dat een simpeler, inzichtelijker algoritme de\
+  \ voorkeur krijgt. \n\n"
 urn: urn:nl:ak:mtr:owp-04
 language: nl
 owners:

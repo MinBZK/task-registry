@@ -1,22 +1,25 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: AI-testomgevingen die persoonsgegevens verwerken, voldoen aan strenge voorwaarden
-description: Rechtmatig voor andere doeleinden verzamelde persoonsgegevens mogen uitsluitend
-  in de AI-testomgeving voor regelgeving worden verwerkt ten behoeve van het ontwikkelen,
-  trainen en testen van bepaalde AI-systemen en indien aan alle voorwaarden van art.
-  57 is voldaan.
-explanation: 'De verwerking van persoonsgegevens voor AI-testdoeleinden is mogelijk
-  maar het moet voldoen aan strikte voorwaarden die zijn opgenomen in artikel 57 AI-Verordening.
+name: AI-testomgevingen die persoonsgegevens verwerken, voldoen aan strenge voorwaarden.
+description: '
 
-  Hierbij kan worden gedacht aan voorwaarden als het beschermen van persoonsgevens
-  met passende technische en organisatorische maatregelen,  persoonsgegevens die in
-  de testomgeving worden aangemaakt mogen niet buiten de testomgeving worden gedeeld
-  en logbestanden worden bijgehouden voor de duur van de deelname aan de testomgeving.
+  AI-testomgevingen die persoonsgegevens verwerken, voldoen aan strenge voorwaarden.
 
-  Voor toepassingen voor het verder verwerken van gegevens kan worden gedacht aan
-  het ontwikkelen van een AI-systeem zodat een overheidsinstantie of een andere natuurlijke
-  of rechtspersoon een aanzienlijk openbaar belang kan waarborgen, bijvoorbeeld op
-  het gebied van kwaliteit van milieu, duurzaamheid, openbare veiligheid en gezondheid.'
+  '
+explanation: "De rechtmatige verwerking van persoonsgegevens voor andere doeleinden\
+  \ voor het ontwikkelen, trainen en testen van AI-modellen is mogelijk, maar het\
+  \ moet voldoen aan strikte voorwaarden die zijn opgenomen in artikel 57 AI-Verordening.\
+  \ Hiervoor is een AI-testomgeving noodzakelijk, waarin maatregelen of kunnen worden\
+  \ getroffen om de data veilig te verwerken. \n\nPersoonsgegevens die in de testomgeving\
+  \ worden aangemaakt mogen niet buiten de testomgeving worden gedeeld en logbestanden\
+  \ worden bijgehouden voor de duur van de deelname aan de testomgeving.\n\nVoor toepassingen\
+  \ voor het verder verwerken van gegevens kan worden gedacht aan het ontwikkelen\
+  \ van een AI-systeem zodat een overheidsinstantie of een andere natuurlijke of rechtspersoon\
+  \ een aanzienlijk openbaar belang kan waarborgen, bijvoorbeeld op het gebied van\
+  \ kwaliteit van milieu, duurzaamheid, openbare veiligheid en gezondheid.\n\nVerdere\
+  \ verwerking van persoonsgegevens buiten een AI-testomgeving vergroot de kans op\
+  \ bijvoorbeeld het lekken van de persoonsgegevens, wat kan leiden tot een inbreuk\
+  \ op de privacyrechten van betrokken.\n"
 urn: urn:nl:ak:ver:aia-33
 language: nl
 owners:

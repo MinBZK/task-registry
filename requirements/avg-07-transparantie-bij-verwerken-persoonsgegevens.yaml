@@ -1,19 +1,21 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Organisaties zijn transparant over het verwerken van persoonsgegevens
-description: De verwerking van persoonsgegevens moet transparant zijn.
-explanation: 'Een betrokkene moet op de hoogte worden gesteld van het feit dat er
-  verwerking plaatsvindt van diens persoonsgegevens en van de doeleinden daarvan (zoals
-  ook is verwoord in het beginsel van transparante verwerking, artikel 5 AVG).
+description: '
 
-  Hierbij moeten de specifieke omstandigheden en de context waarin de persoonsgegevens
-  worden verwerkt, worden meegenomen.
+  De verwerking van persoonsgegevens moet transparant zijn.
 
-  In artikel 13 en 14 AVG wordt toegelicht welke informatie in welke gevallen moet
-  worden verstrekt door de verwerkersverantwoordelijke.
-
-  Als persoonsgegevens worden verwerkt ten behoeve van het ontwikkelen of gebruiken
-  van algoritmes, zal deze informatie moeten worden verstrekt.'
+  '
+explanation: "Een betrokkene moet op de hoogte worden gesteld van het feit dat er\
+  \ verwerking plaatsvindt van diens persoonsgegevens en van de doeleinden daarvan\
+  \ (zoals ook is verwoord in het beginsel van transparante verwerking, artikel 5\
+  \ AVG).\n\nHierbij moeten de specifieke omstandigheden en de context waarin de persoonsgegevens\
+  \ worden verwerkt, worden meegenomen.\nIn artikel 13 en 14 AVG wordt toegelicht\
+  \ welke informatie in welke gevallen moet worden verstrekt door de verwerkersverantwoordelijke.\n\
+  \nAls persoonsgegevens worden verwerkt ten behoeve van het ontwikkelen of gebruiken\
+  \ van algoritmes, zal deze informatie moeten worden verstrekt.\n\n\nRechten van\
+  \ betrokken worden geschonden als er geen sprake is van transparantie over de verwerkingen\
+  \ van de persoonsgegevens.\n "
 urn: urn:nl:ak:ver:avg-07
 language: nl
 owners:

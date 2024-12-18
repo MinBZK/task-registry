@@ -1,8 +1,38 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Pas uitlegbaarheidstechnieken toe en evalueer en valideer deze.
-description: ''
-explanation: ''
+description: 'Pas uitlegbaarheidstechnieken toe en evalueer en valideer deze.
+
+  '
+explanation: "Uitlegbaarheidstechnieken helpen om de werking van een algoritme transparant\
+  \ te maken.\nDe keuze voor het type algoritme bepaalt hoe transparant je kunt zijn.\
+  \ Van rekenregels kun je namelijk precies uitleggen hoe deze tot een beslissing\
+  \ komen. Maar complexe AI-systemen kunnen een black box zijn. Het is dan onduidelijk\
+  \ hoe deze systemen beslissingen maken. \n\nAfhankelijk van het type algoritme zijn\
+  \ er uitlegbaarheidstechnieken beschikbaar om de werking en keuzes van een algoritme\
+  \ bloot te leggen. Er moet eerst een keuze worden gemaakt welk type algoritme geschikt\
+  \ is gezien de [informatiebehoefte](2-owp-29-informeer_betrokkenen.md). Het is belangrijk\
+  \ om samen met de betrokken partijen vast te leggen welke uitlegbaarheidstechnieken\
+  \ moeten worden toegepast. Bij bronnen kan informatie worden geraadpleegd die helpen\
+  \ bij het vinden van de juiste methodiek.\n\n### Gebruik uitlegbaarheid bij besluiten\n\
+  \nOnderzoek hoe uitlegbaarheidstechnieken kunnen bijdragen aan het motiveren van\
+  \ besluiten. Dit kan bijvoorbeeld door:\n\t\n\t- De output van het algoritme te\
+  \ koppelen aan het zaakdossier, met een toelichting op de interpretatie van die\
+  \ output.\n\t- De output of een samenvatting hiervan op te nemen in de beschikking.\n\
+  \ \n### Beperkingen en veiligheid\n\nVanuit veiligheidsoverwegingen kan bij specifieke\
+  \ algoritmes besloten worden om bepaalde informatie over de werking van een algoritme\
+  \ niet aan iedereen vrij te geven. Denk hierbij aan de beperkingen die de [Wet Open\
+  \ Overheid](../vereisten/woo-01-recht-op-toegang-tot-publieke-informatie.md) oplegt.\
+  \ Houd ook rekening met mogelijke risico’s op aanvallen die kunnen ontstaan door\
+  \ het gebruik van uitlegbaarheidstechnieken, zoals omschreven in: A Survey of Privacy-Preserving\
+  \ Model Explanations: Privacy Risks, Attacks, and Countermeasures. \n\n### Evaluatie\
+  \ en validatie\n\nEvalueer de uitlegbaarheid van het systeem op functionele, operationele,\
+  \ bruikbaarheids- en veiligheidsvereisten in samenwerking met betrokkenen zoals\
+  \ gebruikers. Valideer of de uitkomst van het algoritme begrijpelijk genoeg is voor\
+  \ gebruiker om hier op een verantwoorde wijze mee te werken.\n\nAls er geen rekening\
+  \ wordt gehouden met de uitlegbaarheid van een algoritme binnen een bepaalde context,\
+  \ ontstaat het risico dat de output van het algoritme niet wordt begrepen of verkeerd\
+  \ wordt geïnterpreteerd, wat kan leiden tot onjuist gebruik.\n"
 urn: urn:nl:ak:mtr:owp-07
 language: nl
 owners:

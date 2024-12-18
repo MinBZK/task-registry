@@ -1,8 +1,8 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Vermeld het gebruik van persoonsgegevens in een privacyverklaring
-description: ' Neem het gebruik van een algoritme op in de privacyverklaring als hierbij
-  persoonsgegevens worden verwerkt.  '
+description: "\n Neem het gebruik van een algoritme op in de privacyverklaring als\
+  \ hierbij persoonsgegevens worden verwerkt.  \n"
 explanation: "- Door in een privacyverklaring te vermelden welke persoonsgegevens\
   \ worden verwerkt voor het gebruik van een algoritme, wordt een betrokkene geïnformeerd\
   \ over de verwerking van diens persoonsgegevens.\n- Een privacyverklaring kan op\
@@ -29,9 +29,10 @@ explanation: "- Door in een privacyverklaring te vermelden welke persoonsgegeven
   \ het algoritme, alsmede het belang en de verwachte gevolgen van die verwerking\
   \ voor de betrokkene. Het is ook denkbaar dat deze informatie in het algoritmeregister\
   \ wordt opgenomen.\n- Als ervoor wordt gekozen om het algoritme uit te faseren,\
-  \ dan moet informatie in het algoriteregister hierop worden aangepast. \n  \n##\
-  \ Bijbehorende vereiste(n) { data-search-exclude }\n??? expander \"Bekijk alle vereisten\"\
-  \n    <!-- list_vereisten_on_maatregelen_page -->\n"
+  \ dan moet informatie in het algoriteregister hierop worden aangepast. \n  \nBetrokkenen\
+  \ zijn niet op de hoogte dat hun persoonsgegevens worden verwerkt met een algoritme,\
+  \ waardoor zij hier geen controle over hebben en zich niet kunnen beroepen op hun\
+  \ privacyrechten.\n"
 urn: urn:nl:ak:mtr:imp-07
 language: nl
 owners:

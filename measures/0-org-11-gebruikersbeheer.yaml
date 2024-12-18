@@ -1,8 +1,12 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak afspraken over het beheer van gebruikers
-description: Richt gebruikersbeheer in, waarmee bepaald wordt wie toegang heeft tot
-  wat, en wat er bijvoorbeeld gebeurt bij indiensttreding, functiewijziging en uitdiensttreding.
+description: '
+
+  Richt gebruikersbeheer in, waarmee bepaald wordt wie toegang heeft tot wat, en wat
+  er bijvoorbeeld gebeurt bij indiensttreding, functiewijziging en uitdiensttreding.
+
+  '
 explanation: 'Gebruikersbeheer zorgt ervoor dat accounts en autorisaties beheerst
   worden aangevraagd, geautoriseerd, gewijzigd en ingetrokken bij indiensttreding,
   functiewijziging en uitdiensttreding. Ook wordt functievermenging voorkomen bij
@@ -54,7 +58,26 @@ explanation: 'Gebruikersbeheer zorgt ervoor dat accounts en autorisaties beheers
 
   - Lijst met wijzigingen rollen en bijbehorende goedkeuringen
 
-  - Overzicht aantallen en rechten per (systeem)laag'
+  - Overzicht aantallen en rechten per (systeem)laag
+
+
+  Er bestaan meerdere risico''s wanneer er geen gebruikersbeheer is:
+
+  - Toegangsrechten kunnen niet meer up-to-date zijn, bijvoorbeeld wanneer er geen
+  rekening wordt gehouden met het IDU-proces (). Er bestaat dan het risico dat gebruikers
+  toegang tot de omgeving van het algoritme, de data of de uitkomsten van het algoritme
+  hebben die zij niet zouden mogen hebben.
+
+  - Wanneer functievermenging niet wordt voorkomen bij toegang en gebruik van het
+  algoritme, bestaat het risico dat er ongeautoriseerde wijzigingen worden doorgevoerd
+  aan het algoritme, de data of de uitkomsten van het algoritme.
+
+  - Wanneer gebruik wordt gemaakt van generieke-, groeps- of onpersoonlijke accounts,
+  bestaat het risico dat handelingen niet te herleiden zijn naar een verantwoordelijke
+  persoon.
+
+
+  '
 urn: urn:nl:ak:mtr:org-11
 language: nl
 owners:

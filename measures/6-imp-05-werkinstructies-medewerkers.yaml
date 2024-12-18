@@ -1,8 +1,24 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Spreek af hoe medewerkers omgaan met het algoritme.
-description: ''
-explanation: ''
+description: "Stel duidelijke werkinstructies op voor de medewerkers die het algoritme\
+  \ gaan gebruiken. \n"
+explanation: "-\tMaak keuzes rondom de rol van het systeem in de werkwijze van medewerkers.\n\
+  -\tGebruik duidelijke werkinstructies en protocollen om te voorkomen dat beslissingen,\
+  \ gebaseerd op de output van het systeem, door (automation) bias worden beïnvloed.\n\
+  -\tStel een structuur op voor het melden van mogelijke problemen die medewerkers\
+  \ ervaren met het systeem.\n-\tOpleiding van medewerkers over:\n\n\t-\tAlgoritmes,\
+  \ waaronder AI;\n\t-\thet systeem waarmee ze gaan werken;\n\t-\tde rol van het systeem\
+  \ in hun werkwijze;\n\t-\tde risico's die aan het gebruik van een systeem verbonden\
+  \ zijn (bijv. (automation) bias, false positives/negatives);\n\t-\tde maatregelen\
+  \ die genomen zijn om deze risico’s te beperken (bijv. willekeurige of fictieve\
+  \ casussen, transparantie over de output).\n\n-\tBespreek regelmatig de uitdagingen\
+  \ die medewerkers ondervinden bij het werken met het systeem (bijv. tijdsdruk).\n\
+  -\tDocumenteer alle keuzes en de onderliggende redenen/afwegingen rondom menselijke\
+  \ tussenkomst en overzicht. Evalueer en pas gemaakte keuzes waar nodig aan.\n\n\
+  - Goede samenwerking tussen medewerkers en systemen helpt bij het voorkomen van\
+  \ (automation) bias en discriminatie, het signaleren van algoritmische problemen,\
+  \ en het vermijden van de facto automatische besluitvorming.\n"
 urn: urn:nl:ak:mtr:imp-05
 language: nl
 owners:

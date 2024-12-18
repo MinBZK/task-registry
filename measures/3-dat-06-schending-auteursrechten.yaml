@@ -1,11 +1,21 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Controleer de auteursrechten van eigen data
-description: 'Controleer of eventueel door de eigen organisatie verstrekte data binnen
-  of buiten auteursrechten vallen.
+description: '
 
-  Bij voorkeur blijven de data eigendom van de (verstrekkende) overheidsorganisatie.'
-explanation: ''
+  Controleer of eventueel door de eigen organisatie verstrekte data binnen of buiten
+  auteursrechten vallen.
+
+  Bij voorkeur blijven de data eigendom van de (verstrekkende) overheidsorganisatie.
+
+  '
+explanation: 'Het is van belang om te controleren of de te verwerken data waar overheidsorganisaties
+  zelf over beschikken rechtmatig zijn verkregen en geen inbreuken maken op auteursrechten.
+
+  Hier kan worden gedacht aan data die is gescraped van het internet en zou kunnen
+  worden gebruikt voor de ontwikkeling van een algoritme.
+
+  '
 urn: urn:nl:ak:mtr:dat-06
 language: nl
 owners:

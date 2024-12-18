@@ -1,10 +1,14 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak (contractuele) afspraken over data en artefacten met een aanbieder
-description: Maak (contractuele) afspraken met de aanbieder wie eigenaar is van de
-  data en artefacten die ontstaan bij het gebruik van algoritmes.
-explanation: 'Hier kan worden gedacht aan (initiële) trainingsdatasets, outputdata
-  (richting gebruikers) en nieuwe trainingsdata (vanuit gebruikers). '
+description: '
+
+  Maak (contractuele) afspraken met de aanbieder wie eigenaar is van de data en artefacten
+  die ontstaan bij het gebruik van algoritmes.
+
+  '
+explanation: "Hier kan worden gedacht aan (initiële) trainingsdatasets, outputdata\
+  \ (richting gebruikers) en nieuwe trainingsdata (vanuit gebruikers). \n"
 urn: urn:nl:ak:mtr:owp-27
 language: nl
 owners:

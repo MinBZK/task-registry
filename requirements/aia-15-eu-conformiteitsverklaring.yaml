@@ -1,8 +1,12 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Hoog-risico-AI-systemen zijn voorzien van een EU-conformiteitsverklaring.
-description: Aanbieders van AI-systemen met een hoog risico stellen een EU-conformiteitsverklaring
+description: '
+
+  Aanbieders van AI-systemen met een hoog risico stellen een EU-conformiteitsverklaring
   op.
+
+  '
 explanation: 'Een EU-conformiteitsverklaring is een verplicht document dat een fabrikant
   of gemachtigde vertegenwoordiger moet ondertekenen, waarmee wordt verklaard dat
   het product aan de EU-eisen voldoet.
@@ -21,7 +25,15 @@ explanation: 'Een EU-conformiteitsverklaring is een verplicht document dat een f
   aanbieder, dat de EU-conformiteitsverklaring wordt versterkt onder verantwoordelijkheid
   van de aanbieder en de vermelding van eventuele toegepaste [relevante geharmoniseerde
   normen](../hulpmiddelen/standaarden.md) of van andere gemeenschappelijke specificaties
-  waarop de conformiteitsverklaring betrekking heeft.'
+  waarop de conformiteitsverklaring betrekking heeft.
+
+
+
+  Niet naleven van deze verplichtingen kan leiden tot juridische en operationele problemen,
+  en kan de veiligheid en betrouwbaarheid van het AI-systeem in gevaar brengen.
+
+
+  '
 urn: urn:nl:ak:ver:aia-15
 language: nl
 owners:

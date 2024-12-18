@@ -1,9 +1,15 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Beschrijf welke data gebruikt wordt voor de beoogde toepassing
-description: ''
-explanation: " \n## Bijbehorende vereiste(n) { data-search-exclude }\n??? expander\
-  \ \"Bekijk alle vereisten\"\n    <!-- list_vereisten_on_maatregelen_page -->"
+description: "Beschrijf welke data gebruikt wordt voor de beoogde toepassing. \n"
+explanation: "- Maak in een vroege fase van de ontwikkeling een inschatting van welke\
+  \ data er gebruikt gaat worden voor het algoritme.\n- Leg na het uitvoeren van een\
+  \ [beschikbaarheids-](2-owp-02-data-beschikbaarheid.md), [kwaliteit](3-dat-01-datakwaliteit.md)\
+  \ en toegankelijkheidsanalyse vast, welke data wordt verwerkt voor het ontwikkelen\
+  \ en gebruiken van het algoritme\n- Beschrijf daarbij om wat voor gegevens het gaat\
+  \ en uit welke bron deze komen.\n- Bepaal of het is [toegestaan om deze data](2-owp-03-doel-verwerken-persoonsgegevens.md)\
+  \ te verwerken.\n- Het is denkbaar dat het onderzoek van de kwaliteit van de data\
+  \ in een latere fase in de levenscyclus pas grondig kan worden uitgevoerd. \n\n\n"
 urn: urn:nl:ak:mtr:owp-02
 language: nl
 owners:

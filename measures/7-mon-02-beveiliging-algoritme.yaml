@@ -1,7 +1,13 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Beveilig de software
-description: ''
+description: 'Zorg voor een goede beveiliging van de verschillende softwarecomponenten
+  van een algoritme.
+
+  Bepaal of de data voldoende is beveiligd en maak hierin onderscheid tussen de inputdata
+  en de outputdata.
+
+  '
 explanation: 'Er zijn beheersmaatregelen die kunnen helpen bij het zorgen voor een
   goede beveiliging van verschillende (software-)componenten van een algoritme. Hierbij
   kan worden gedacht aan:
@@ -40,6 +46,10 @@ explanation: 'Er zijn beheersmaatregelen die kunnen helpen bij het zorgen voor e
   - Beoordeel of de data ten behoeve van het ontwikkelen en gebruiken van het algoritme
   voldoende is beveiligd. Maak hierin onderscheid tussen de trainingsdata, inputdata
   en de outputdata.
+
+
+
+  Oneigenlijke toegang van buitenaf kan plaatsvinden via zwakheden in het systeem.
 
   '
 urn: urn:nl:ak:mtr:mon-02

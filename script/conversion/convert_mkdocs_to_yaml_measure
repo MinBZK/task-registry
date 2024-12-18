@@ -12,6 +12,9 @@ def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
     with open(input_file, encoding="utf-8") as file:
         content = file.read()
 
+    # Remove comments enclosed in <!-- -->
+    content = re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL)
+
     # Extract front-matter (YAML-like header)
     front_matter = re.search(r"---\n(.*?)\n---", content, re.DOTALL)
 
@@ -19,19 +22,21 @@ def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
 
     # Extract sections from Markdown content
     sections = {
-        "Maatregel": re.search(r"## Maatregel\n\n(.*?)\n\n##", content, re.DOTALL),
-        "Toelichting": re.search(r"## Toelichting\n\n(.*?)\n\n##", content, re.DOTALL),
-        "Bronnen": re.search(r"## Bronnen\n\n(.*?)\n\n##", content, re.DOTALL),
-        "Risico": re.search(r"## Risico\n\n(.*?)\n\n##", content, re.DOTALL),
-        "Maatregelen": re.search(r"## Maatregelen\n\n(.*?)\n\n", content, re.DOTALL),
+        "Maatregel": re.search(r"## Maatregel\n(.*?)(?=\n## |\n<!--)", content, re.DOTALL),
+        "Toelichting": re.search(r"## Toelichting\s*\n(.*?)(?=\n## |\n<!--)", content, re.DOTALL),
+        "Bronnen": re.search(r"## Bronnen\n(.*?)(?=\n## |\n<!--)", content, re.DOTALL),
+        "Risico": re.search(r"## Risico\n(.*?)(?=\n## |\n<!--)", content, re.DOTALL),
+        "Maatregelen": re.search(r"## Maatregelen.*\n(.*?)$", content, re.DOTALL),
     }
 
     # Use found sections or defaults
     explanation_text = (
         sections["Toelichting"].group(1)
-        if sections["Toelichting"]
-        else "" + " " + sections["Risico"].group(1)
-        if sections["Risico"]
+        if sections["Toelichting"] and not sections["Risico"]
+        else sections["Risico"].group(1)
+        if sections["Risico"] and not sections["Toelichting"]
+        else (sections["Toelichting"].group(1) + "\n" + sections["Risico"].group(1))
+        if sections["Toelichting"] and sections["Risico"]
         else ""
     )
     description_text = sections["Maatregel"].group(1) if sections["Maatregel"] else ""

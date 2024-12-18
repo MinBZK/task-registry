@@ -2,8 +2,12 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Neem het kunnen uitvoeren van een audit over de vereiste op in contractvoorwaarden
   en de contractovereenkomst
-description: ''
-explanation: ''
+description: "\nNeem het kunnen uitvoeren van een audit over de vereiste op in contractvoorwaarden\
+  \ en de contractovereenkomst \n"
+explanation: 'Het is van belang dat opdrachtgever mogelijkheden heeft om te controleren
+  in hoeverre door aanbieder/opdrachtnemer wordt voldaan aan naleving van de contractvoorwaarden
+
+  '
 urn: urn:nl:ak:mtr:owp-21
 language: nl
 owners:

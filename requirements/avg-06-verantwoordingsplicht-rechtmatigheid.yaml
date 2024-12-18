@@ -1,7 +1,11 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Organisaties kunnen bewijzen dat zij persoonsgegevens op de juiste manier verwerken
-description: "De verantwoordelijken moeten bij de verwerking van persoonsgegevens\
+name: Organisaties kunnen bewijzen dat zij persoonsgegevens op de juiste manier verwerken.
+description: 'Organisaties kunnen bewijzen dat zij persoonsgegevens op de juiste manier
+  verwerken.
+
+  '
+explanation: "De verantwoordelijken moeten bij de verwerking van persoonsgegevens\
   \ door algoritmes kunnen aantonen dat de verwerkingen rechtmatig plaatsvinden.\n\
   Dit betekent concreet dat de volgende punten aangetoond kunnen worden:\n\n - Rechtmatigheid,\
   \ behoorlijkheid en transparantie\n - Doelbinding\n - Minimale gegevensverwerking\n\
@@ -9,8 +13,10 @@ description: "De verantwoordelijken moeten bij de verwerking van persoonsgegeven
   \ daarbij is dat de rechtmatigheid van de verwerking ten opzichte van andere gerelateerde\
   \ wetgeving zoals de AI Act en de Algemene wet gelijke behandeling ook moeten kunnen\
   \ worden aangetoond voor zover de rechtmatigheid van de verwerking onder de AVG\
-  \ daarvan afhankelijk is."
-explanation: ''
+  \ daarvan afhankelijk is.\n\nBij het verwerken van persoonsgegevens voor algoritmes\
+  \ moeten de verantwoordelijkheden duidelijk beschreven en toegewezen zijn.\n\nDe\
+  \ verwerkingsverantwoordelijke is degene die ervoor zorgt dat deze verantwoordelijkheden\
+  \ worden nageleefd en kan dit aantonen, wat bekend staat als de verantwoordingsplicht.\n"
 urn: urn:nl:ak:ver:avg-06
 language: nl
 owners:

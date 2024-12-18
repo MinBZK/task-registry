@@ -1,8 +1,13 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Beschrijf het probleem dat het algoritme moet oplossen
-description: ''
-explanation: ''
+description: "Formuleer en documenteer wat de aanleiding is om een algoritme in te\
+  \ willen zetten. \nFormuleer duidelijk de probleemdefinitie en probleemafbakening\
+  \ waarvoor het algoritme een oplossing zou moeten vormen. \n"
+explanation: "Formuleer de probleemdefinitie en probleemafbakening zo concreet en\
+  \ precies mogelijk. Maak dit waar mogelijk kwantificeerbaar. \n\nHet algoritme dient\
+  \ niet het onderliggende probleem. \nZonder eenduidigheid over het op te lossen\
+  \ probleem is geen sturing op en verantwoording over het algoritme mogelijk. \n"
 urn: urn:nl:ak:mtr:pba-01
 language: nl
 owners:
