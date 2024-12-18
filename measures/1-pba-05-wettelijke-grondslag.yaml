@@ -1,8 +1,17 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Beschrijf de wettelijke grondslag voor de inzet van het algoritme
-description: ''
-explanation: ''
+description: 'Beschrijf de wettelijke grondslag voor de inzet van het algoritme en
+  de beoogde besluiten die genomen zullen worden op basis van het algoritme.
+
+  '
+explanation: "- Analyseer of er een concrete wettelijke grondslag is die de inzet\
+  \ van het algoritme mogelijk maakt en deze inzet voldoende voorzienbaar maakt. \n\
+  - Als de verwachting is dat een algoritme tot gevolg heeft dat wordt ingegrepen\
+  \ in het leven of de vrijheid van mensen, en zeker als de verwachting is dat er\
+  \ grondrechten worden geraakt, moet er een wettelijke grondslag bestaan voor de\
+  \ inzet van het algoritme.\n- Voor het verwerken van persoonsgegevens is een wettelijke\
+  \ grondslag noodzakelijk. \n"
 urn: urn:nl:ak:mtr:pba-05
 language: nl
 owners:

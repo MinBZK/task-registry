@@ -1,27 +1,26 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Persoonsgegevens worden zo kort mogelijk bewaard
-description: Persoonsgegevens moeten worden bewaard in een vorm die het mogelijk maakt
-  om de betrokkenen niet langer te identificeren dan nodig is voor de realisering
-  van de doeleinden waarvoor de persoonsgegevens initieel worden verwerkt.
-explanation: 'Persoonsgegevens dienen toereikend en ter zake dienend te zijn en beperkt
-  te blijven tot wat noodzakelijk is voor de doeleinden waarvoor zij worden verwerkt.
+name: Persoonsgegevens worden zo kort mogelijk bewaard.
+description: '
 
-  Dit vereist dat ervoor wordt gezorgd dat de opslagperiode van de persoonsgegevens
-  tot een strikt minimum wordt beperkt.
-
-  Het beginsel van opslagbeperking betekent dat persoonsgegevens moeten worden bewaard
-  in een vorm die het mogelijk maakt om de betrokkenen niet langer te identificeren
-  dan voor de realisering van de doeleinden waarvoor de persoonsgegevens worden verwerkt.
-
-
-  In de context van algoritmes is het belangrijk dat, wanneer persoonsgegevens worden
-  verwerkt, er onderzocht wordt op welke manieren identificatie van betrokkenen tegen
-  kan worden gegaan.
-
-  Hierbij kan worden gedacht aan maatregelen als pseudonomisering en anonimisering.
+  Persoonsgegevens moeten worden bewaard in een vorm die het mogelijk maakt om de
+  betrokkenen niet langer te identificeren dan nodig is voor de realisering van de
+  doeleinden waarvoor de persoonsgegevens initieel worden verwerkt.
 
   '
+explanation: "Persoonsgegevens dienen toereikend en ter zake dienend te zijn en beperkt\
+  \ te blijven tot wat noodzakelijk is voor de doeleinden waarvoor zij worden verwerkt.\n\
+  Dit vereist dat ervoor wordt gezorgd dat de opslagperiode van de persoonsgegevens\
+  \ tot een strikt minimum wordt beperkt.\n\nHet beginsel van opslagbeperking betekent\
+  \ dat persoonsgegevens moeten worden bewaard in een vorm die het mogelijk maakt\
+  \ om de betrokkenen niet langer te identificeren dan voor de realisering van de\
+  \ doeleinden waarvoor de persoonsgegevens worden verwerkt.\n\nIn de context van\
+  \ algoritmes is het belangrijk dat, wanneer persoonsgegevens worden verwerkt, er\
+  \ onderzocht wordt op welke manieren identificatie van betrokkenen tegen kan worden\
+  \ gegaan.\nHierbij kan worden gedacht aan maatregelen als het pseudonomiseren, anonimiseren\
+  \ en aggregeren van de persoonsgegevens. \n\n\nHet onnodig lang bewaren van persoonsgegevens\
+  \ levert een onrechtmatige situatie op. De privacyrechten van betrokken worden hierdoor\
+  \ aangetast. Er ontstaan aanvullende risico's bij bijvoorbeeld een datalek.\n\n"
 urn: urn:nl:ak:ver:avg-02
 language: nl
 owners:
@@ -36,7 +35,6 @@ subject:
 lifecycle:
 - ontwerp
 - dataverkenning-en-datapreparatie
-- ontwikkelen
 - uitfaseren
 links:
 - urn:nl:ak:mtr:owp-12

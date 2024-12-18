@@ -1,7 +1,11 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Logs van hoog-risico-AI-systemen worden zes maanden bewaard door de aanbieder.
-description: Logs van hoog-risico-AI-systemen worden zes maanden bewaard door de aanbieder.
+description: '
+
+  Logs van hoog-risico-AI-systemen worden zes maanden bewaard door de aanbieder.
+
+  '
 explanation: 'Aanbieders van AI-systemen met een hoog risico moeten de automatisch
   gegenereerde logs bewaren volgens de voorschriften van artikel 12, lid 1, zolang
   deze logs onder hun controle vallen.
@@ -9,7 +13,15 @@ explanation: 'Aanbieders van AI-systemen met een hoog risico moeten de automatis
 
   Deze logs moeten ten minste zes maanden worden bewaard, tenzij anders bepaald door
   Unie- of nationale wetgeving met betrekking tot gegevensbescherming, om te voldoen
-  aan de relevante voorschriften en verantwoordingsplicht.'
+  aan de relevante voorschriften en verantwoordingsplicht.
+
+
+
+  Het niet of onvoldoende bewaren van logs kan het vermogen belemmeren om incidenten
+  te analyseren, naleving te controleren en verantwoordelijkheid vast te stellen bij
+  mogelijke problemen met het AI-systeem.
+
+  '
 urn: urn:nl:ak:ver:aia-13
 language: nl
 owners:

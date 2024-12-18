@@ -1,10 +1,13 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Bepaal welke documenten voor hoe lang gearchiveerd moeten worden
-description: 'Stel vast welke documenten, (samengesteld geheel van) data/informatie
-  van/in het algoritme gelden als "archiefbescheiden" in de zin van [artikel 1 c Archiefwet](https://wetten.overheid.nl/jci1.3:c:BWBR0007376&hoofdstuk=I&artikel=1&z=2024-06-19&g=2024-06-19)
+description: '
+
+  Stel vast welke documenten, (samengesteld geheel van) data/informatie van/in het
+  algoritme gelden als "archiefbescheiden" in de zin van [artikel 1 c Archiefwet](https://wetten.overheid.nl/jci1.3:c:BWBR0007376&hoofdstuk=I&artikel=1&z=2024-06-19&g=2024-06-19)
   en documenteer daarvan een overzicht, bij voorkeur vastgesteld door een daartoe
   bevoegde. Bepaal de bijbehorende bewaartermijnen vast voor de archiefbescheiden.
+
 
   '
 explanation: "- Bij archiefbescheiden kan worden gedacht aan de broncode, trainings-\
@@ -25,7 +28,7 @@ explanation: "- Bij archiefbescheiden kan worden gedacht aan de broncode, traini
   \ welke voorziening hiervoor beschikbaar is binnen de organisatie.\n\n!!! tip \"\
   Tip\" \n\n    Formeer hierbij een multi-discipinaire groep (bestaande uit bijvoorbeeld\
   \ een inkoper, ontwikkelaar, data scientist, proceseigenaar en archiefdeskundige)\
-  \ om deze maatregel toe te passen."
+  \ om deze maatregel toe te passen.\n"
 urn: urn:nl:ak:mtr:owp-08
 language: nl
 owners:

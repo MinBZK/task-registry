@@ -1,20 +1,24 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Algoritmes schenden geen grondrechten of mensenrechten
-description: Fundamentele vrijheden, mensenrechten en grondrechten worden beschermd
+name: Algoritmes schenden geen grondrechten of mensenrechten.
+description: 'Fundamentele vrijheden, mensenrechten en grondrechten worden beschermd
   bij de inzet van algoritmes.
-explanation: "Mensenrechten gelden voor alle mensen op de wereld.\nDe mensenrechten\
-  \ in Nederland zijn beschermd door nationale wetten en internationale verdragen.\n\
-  In Nederland staan veel mensenrechten in hoofdstuk 1 van de Grondwet.\nDeze rechten\
-  \ heten ook wel \u2019grondrechten\u2019.\nEen bekend voorbeeld is artikel 1 van\
-  \ de Grondwet.\nOm mensenrechten te beschermen zijn ze op Europees en internationaal\
-  \ niveau in verschillende verklaringen en verdragen vastgelegd.\n\n\nMensenrechten\
-  \ kunnen soms onder druk komen te staan.\nDe inzet van algoritmes kan bijvoorbeeld\
-  \ een bedreiging vormen voor de privacy van burgers, voor het  recht op gelijke\
-  \ behandeling en voor het recht op behoorlijk bestuur.\nHet is daarom belangrijk\
-  \ om tijdig te onderzoeken of er sprake is of kan zijn van een eventuele inbreuk\
-  \ op fundamentele rechten en vrijheden van burgers. Het is van belang dat maatregelen\
-  \ worden getroffen om een eventuele inbreuk te voorkomen."
+
+  '
+explanation: "De mensenrechten in Nederland zijn beschermd door nationale wetten en\
+  \ internationale verdragen.\nIn Nederland staan veel mensenrechten in hoofdstuk\
+  \ 1 van de Grondwet.\nDeze rechten worden ook wel \u2019grondrechten\u2019 genoemd.\n\
+  Een bekend voorbeeld is artikel 1 van de Grondwet.\nOm mensenrechten te beschermen\
+  \ zijn ze op Europees en internationaal niveau in verschillende verklaringen en\
+  \ verdragen vastgelegd.\n\nMensenrechten kunnen bij overheidshandelen en de inzet\
+  \ van algoritmes soms onder druk komen te staan.\nDe inzet van algoritmes kan bijvoorbeeld\
+  \ een bedreiging vormen voor de privacy van burgers, voor het recht op gelijke behandeling\
+  \ en voor het recht op behoorlijk bestuur.\nHet is daarom belangrijk om [tijdig\
+  \ te onderzoeken of er sprake is of kan zijn van een eventuele inbreuk op fundamentele\
+  \ rechten](../hulpmiddelen/IAMA.md) en vrijheden van burgers. Het is van belang\
+  \ dat maatregelen worden getroffen om een eventuele inbreuk te voorkomen.\n\nGrondrechten\
+  \ kunnen worden geraakt door de inzet van algoritmes met eventuele schadelijke gevolgen\
+  \ voor betrokkenen. \n"
 urn: urn:nl:ak:ver:grw-01
 language: nl
 owners:

@@ -1,18 +1,26 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Databanken worden alleen gebruikt met toestemming van de databank-producent
-description: Het is verboden om zonder goedkeuring van de producent een databank op
-  te vragen en/of te hergebruiken.
+name: Databanken worden alleen gebruikt met toestemming van de databank-producent.
+description: 'Het is verboden om zonder goedkeuring van de producent een databank
+  op te vragen en/of te hergebruiken.
+
+  '
 explanation: "De Databankrichtlijn en Databankenwet beschermt de producten/fabrikanten\
   \ van databanken tegen onrechtmatige toe-eigening van een databank.\nDegene die\
   \ een substanti\xEBle financi\xEBle en professionele investering heeft verricht\
   \ om de inhoud van de databank te verkijgen en te verzamelen, krijgt een verbodsrecht\
-  \ en kan zo anderen verbieden de databank te gebruiken.\nBij verkrijgen gaat het\
+  \ en kan zo anderen verbieden de databank te gebruiken.\n\nBij verkrijgen gaat het\
   \ om \"het verzamelen van de werken, gegevens of andere zelfstandige elementen die\
   \ tezamen de inhoud van de databank vormen\".\nDit recht bestaat naast het recht\
   \ op bescherming van de originele keuze of rangschikking van de inhoud van databanken\
-  \ (auteurswet).\n \n\nVoor het ontwikkelen van algoritme is data nodig.\nDe data\
-  \ die hiervoor wordt gebruikt mag niet ongeoorloofd zijn verkregen uit een databank.\n"
+  \ (auteurswet).\n \nVoor het ontwikkelen van algoritme is data nodig. De data die\
+  \ hiervoor wordt gebruikt mag niet ongeoorloofd zijn verkregen uit een databank.\n\
+  \nAls een ontwikkelaar onbevoegd gebruik heeft gemaakt van data uit een databank\
+  \ bij de ontwikkeling van algoritmes, wordt het databankenrecht geschonden van de\
+  \ eigenaar.\nDe eigenaar van de databank kan bijvoorbeeld ontrekking van de data\
+  \ uit het handelsverkeer, vernietiging en onbruikbaarmaking  eisen, wat vergaande\
+  \ gevolgen kan hebben voor het gebruik kunnen maken van de algoritmische toepassing\
+  \ of AI-systeem.\n "
 urn: urn:nl:ak:ver:dat-01
 language: nl
 owners:

@@ -1,8 +1,34 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Kies energiezuinige programmeermethoden
-description: ''
-explanation: ''
+description: 'Gebruik energie-efficiënte programmeertechnieken en methoden die de
+  benodigde rekenkracht minimaliseren.
+
+  '
+explanation: "Energiezuinig programmeren maakt het mogelijk om de voetafdruk van algoritmes\
+  \ te verkleinen door minder energie en middelen te verbruiken. Door specifieke technieken\
+  \ toe te passen, zoals optimalisatie van processen en efficiënte geheugenbeheerstrategieën,\
+  \ kun je als ontwikkelaar bijdragen aan het verduurzamen van algoritmes.\n\n###\
+  \ Technieken voor energiezuinige softwareontwikkeling\n1. **Lean coding en minimalisatie\
+  \ van code bloat**  \n   Lean coding richt zich op het gebruik van alleen de benodigde\
+  \ code zonder overbodige complexiteit of libraries, wat resulteert in lagere energieconsumptie.\
+  \ Door “code bloat” te vermijden, zorg je ervoor dat het algoritme minder verwerkingskracht\
+  \ en geheugen verbruikt.\n\n2. **Gebruik van energiezuinige programmeertalen en\
+  \ frameworks**  \n   Programmeren in talen zoals Rust, Go en Elixir draagt bij aan\
+  \ energie-efficiëntie doordat deze ontworpen zijn voor lage resource-omvang en hoge\
+  \ efficiëntie. Ook frameworks die lichtgewicht en modulair zijn, ondersteunen energiezuinige\
+  \ processen.\n\n3. **Parallel processing en multi-core optimalisaties**  \n   Door\
+  \ parallelle verwerking en multi-core optimalisaties toe te passen, wordt rekenwerk\
+  \ verdeeld over meerdere cores. Dit reduceert de totale verwerkingstijd, bespaart\
+  \ energie en verhoogt de prestaties van je code op het vlak van duurzaamheid.\n\n\
+  4. **Microservices en modulaire architecturen**  \n   Een modulaire architectuur,\
+  \ zoals microservices, zorgt ervoor dat je onderdelen van de applicatie alleen activeert\
+  \ wanneer dat nodig is. Dit voorkomt onnodige belasting en beperkt energieverbruik\
+  \ behoorlijk.\n\n5. **Geoptimaliseerd geheugenbeheer**  \n   Door efficiënt geheugenbeheer,\
+  \ zoals caching en lazy loading, voorkom je onnodige data-opslag en bewerkingen.\
+  \ Dit verlaagt de energievraag en verbetert de snelheid van het algoritme aanzienlijk.\n\
+  \nZonder energie-efficiënte methoden kan het algoritme onnodig veel energie verbruiken,\
+  \ wat leidt tot hogere operationele kosten en een grotere milieu-impact.\n"
 urn: urn:nl:ak:mtr:owk-05
 language: nl
 owners:

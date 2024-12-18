@@ -1,6 +1,6 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Data zoals persoonsgegevens zijn voldoende beveiligd tegen ongelukken en cyberaanvallen
+name: Data zoals persoonsgegevens zijn voldoende beveiligd tegen ongelukken en cyberaanvallen.
 description: 'Rekening houdend met de stand van de techniek, de uitvoeringskosten,
   alsook met de aard, de omvang, de context en de verwerkingsdoeleinden en de qua
   waarschijnlijkheid en ernst uiteenlopende risico''s voor de rechten en vrijheden
@@ -9,7 +9,19 @@ description: 'Rekening houdend met de stand van de techniek, de uitvoeringskoste
   te waarborgen.
 
   '
-explanation: ''
+explanation: 'Voor de ontwikkeling en gebruik van algoritmes is data nodig.
+
+  Deze data kan persoonsgegevens bevatten die moeten worden beschermd.
+
+  De organisatie zal technische en organisatorische maatregelen moeten treffen om
+  de data en het algoritme voldoende te beschermen.
+
+  Hierbij kan worden gedacht aan dataminimalisatie, het pseudonimiseren of aggregeren
+  van persoonsgegevens.
+
+  Per toepassing moet worden onderzocht welke maatregelen hiervoor geschikt zijn.
+
+  '
 urn: urn:nl:ak:ver:avg-12
 language: nl
 owners:

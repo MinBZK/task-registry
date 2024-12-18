@@ -1,7 +1,11 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Hoog-risico-AI-systemen zijn voldoende nauwkeurig, robuust en cyberveilig.
-description: Hoog-risico-AI-systemen zijn voldoende nauwkeurig, robuust en cyberveilig.
+description: '
+
+  Hoog-risico-AI-systemen zijn voldoende nauwkeurig, robuust en cyberveilig.
+
+  '
 explanation: "AI-systemen met een hoog risico worden zorgvuldig ontworpen en ontwikkeld\
   \ om een hoog niveau van nauwkeurigheid, robuustheid en cyberbeveiliging te bieden.\n\
   \nDit garandeert consistente prestaties gedurende hun levensduur en minimaliseert\
@@ -25,7 +29,10 @@ explanation: "AI-systemen met een hoog risico worden zorgvuldig ontworpen en ont
   \ het AI-systeem of de onderliggende ICT-infrastructuur worden benut.\n\nOm te zorgen\
   \ voor een niveau van cyberbeveiliging dat aansluit op de risico\u2019s, moeten\
   \ aanbieders van AI-systemen met een hoog risico passende maatregelen zoals veiligheidscontroles\
-  \ nemen, waarbij ook rekening wordt gehouden met de onderliggende ICT infrastructuur."
+  \ nemen, waarbij ook rekening wordt gehouden met de onderliggende ICT infrastructuur.\n\
+  \n\nGebrek aan nauwkeurigheid, robuustheid of cyberbeveiliging kan leiden tot onbetrouwbare\
+  \ prestaties, kwetsbaarheid voor storingen en blootstelling aan beveiligingsrisico's,\
+  \ wat de effectiviteit en veiligheid van het AI-systeem in gevaar kan brengen.\n"
 urn: urn:nl:ak:ver:aia-10
 language: nl
 owners:

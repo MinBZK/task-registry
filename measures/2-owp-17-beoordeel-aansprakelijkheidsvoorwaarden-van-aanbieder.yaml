@@ -1,8 +1,12 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Aansprakelijkheidsvoorwaarden van een aanbieder worden beoordeeld in de aanbesteding
-description: Maak de aansprakelijkheidsvoorwaarden die een aanbieder stelt ten aanzien
-  van auteursrechten een vast onderdeel om te beoordelen in de aanbesteding.
+description: '
+
+  Maak de aansprakelijkheidsvoorwaarden die een aanbieder stelt ten aanzien van auteursrechten
+  een vast onderdeel om te beoordelen in de aanbesteding.
+
+  '
 explanation: '- Eindgebruikers van algoritmes kunnen er niet altijd op vertrouwen,
   of (eenvoudig) nagaan, of datgene wat zij door middel van een algoritme laten genereren,
   inbreuk maakt op rechten van anderen. Het is onwenselijk dat een eindgebruiker aansprakelijk
@@ -27,6 +31,7 @@ explanation: '- Eindgebruikers van algoritmes kunnen er niet altijd op vertrouwe
 
   - Het is daarom van belang om een beoordeling te maken in hoeverre de aansprakelijkheidsvoorwaarden
   van de aanbieder passend zijn. Maak een jurist onderdeel van de beoordeling.
+
 
   '
 urn: urn:nl:ak:mtr:owp-17

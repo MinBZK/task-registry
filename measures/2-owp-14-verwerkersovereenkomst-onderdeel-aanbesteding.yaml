@@ -2,9 +2,13 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak het opstellen van een verwerkersovereenkomst onderdeel van de aanbesteding
   als persoonsgegevens worden verwerkt.
-description: Het opstellen van een verwerkersovereenkomst met aanbieder is onderdeel
-  van de aanbesteding als persoonsgegevens worden verwerkt of noodzakelijk zijn voor
-  het trainen of genereren van output door algoritmes van aanbieder.
+description: '
+
+  Het opstellen van een verwerkersovereenkomst met aanbieder is onderdeel van de aanbesteding
+  als persoonsgegevens worden verwerkt of noodzakelijk zijn voor het trainen of genereren
+  van output door algoritmes van aanbieder.
+
+  '
 explanation: 'Een verwerkersovereenkomst moet worden opgesteld als persoonsgegevens
   worden verwerkt voor het trainen of het genereren van output door algoritmes van
   aanbieder. Met een verwerkersovereenkomst worden een aantal afspraken schriftelijk
@@ -56,7 +60,9 @@ explanation: 'Een verwerkersovereenkomst moet worden opgesteld als persoonsgegev
 
   - Audits. De verwerker werkt mee aan uw audits of die van een derde partij. En stelt
   alle relevante informatie beschikbaar om te kunnen controleren of de verwerker zich
-  houdt aan de hierboven genoemde verplichtingen (artikel 28 AVG).'
+  houdt aan de hierboven genoemde verplichtingen (artikel 28 AVG).
+
+  '
 urn: urn:nl:ak:mtr:owp-14
 language: nl
 owners:

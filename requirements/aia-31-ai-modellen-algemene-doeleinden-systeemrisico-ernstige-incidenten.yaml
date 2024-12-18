@@ -1,21 +1,24 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: "Als AI-modellen voor algemene doeleinden met systeemrisico\u2019s ernstige\
-  \ incidenten veroorzaken, wordt dit gedocumenteerd en gerapporteerd"
-description: Aanbieders van AI-modellen voor algemene doeleinden met een systeemrisico
-  moeten relevante informatie over ernstige incidenten en mogelijke corrigerende maatregelen
-  bijhouden, documenteren en onverwijld rapporteren aan het AI bureau en, in voorkomend
-  geval, aan de nationale bevoegde autoriteiten.
+  \ incidenten veroorzaken, wordt dit gedocumenteerd en gerapporteerd."
+description: "\nAls AI-modellen voor algemene doeleinden met systeemrisico\u2019s\
+  \ ernstige incidenten veroorzaken, wordt dit gedocumenteerd en gerapporteerd.\n"
 explanation: 'Aanbieders van AI-modellen voor algemene doeleinden met een systeemrisico
   moeten ernstige incidenten documenteren en rapporteren.
 
   Deze informatie moet onmiddellijk worden gemeld aan het AI-bureau en eventueel aan
   nationale autoriteiten.
 
+
   Dit proces is cruciaal voor het waarborgen van de veiligheid en het nemen van passende
   corrigerende maatregelen.
 
   Dit vereiste is een aanvulling op de in artikel 53 AI-verordening genoemde verplichtingen.
+
+
+  Niet voldoen aan deze verplichtingen kan leiden tot risico''s op veiligheidsincidenten,
+  datalekken en schade aan de betrokken partijen en het publiek.
 
   '
 urn: urn:nl:ak:ver:aia-31

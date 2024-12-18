@@ -1,8 +1,25 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Bepaal of er genoeg experts beschikbaar zijn
-description: ''
-explanation: ''
+description: "\nBepaal welke expertise en capaciteit noodzakelijk is voor het ontwikkelen,\
+  \ inkopen en gebruiken van algoritmes en stel vast of er voldoende expertise en\
+  \ capaciteit beschikbaar is.\n  "
+explanation: "- Bepaal welke expertise en capaciteit binnen de organisatie noodzakelijk\
+  \ is voor het ontwikkelen, inkopen en gebruiken van algoritmes.\n- Dit is sterk\
+  \ afhankelijk van de specifieke toepassing en de inzichten die voortkomen uit risicoanalyses.\
+  \ Hoe complexer en risicovoller de toepassing, des te meer expertise en capaciteit\
+  \ noodzakelijk is. \n- Interne en externe actoren die betrokken zijn bij het ontwikkelen,\
+  \ inkopen en gebruik moeten over voldoende expertise en capaciteit beschikken om\
+  \ hun taken naar behoren uit te voeren.\n- Stel vast of er afhankelijkheden van\
+  \ externe aanbieders ontstaan.  \n- Bepaal voorafgaand aan het (laten) ontwikkelen\
+  \ of inkopen van algoritmes of voldoende expertise en capaciteit beschikbaar is\
+  \ om tot een verantwoorde inzet ervan te komen.\n- Leg vast of er voldoende expertise\
+  \ en capaciteit beschikbaar is en onderbouw dit in projectdocumentatie.\n- Om menselijke\
+  \ controle te kunnen uitoefenen in verschillende fases van de ontwikkeling (of inkoop)\
+  \ van algortimes moet de mens bepaalde kennis, tijd en vaardigheden hebben. Alleen\
+  \ met de juiste kennis, tijd en vaardigheden kunnen risico’s op tijd geïdentificeerd\
+  \ en afgedekt worden. Deze kennis en expertise kan ook buiten de organisatie liggen,\
+  \ maar dan is het belangrijk om verantwoordelijkheden goed vast te leggen.     \n"
 urn: urn:nl:ak:mtr:org-01
 language: nl
 owners:

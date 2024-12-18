@@ -2,9 +2,20 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Pas vastgestelde interne beleidskaders toe en maak aantoonbaar dat deze zijn
   nageleefd bij het ontwikkelen, inkopen en gebruiken van algoritmes.
-description: ' Pas vastgestelde interne beleidskaders toe en maak aantoonbaar dat
-  deze zijn nageleefd bij het ontwikkelen, inkopen en gebruiken van algoritmes.'
-explanation: ''
+description: "\n Pas vastgestelde interne beleidskaders toe en maak aantoonbaar dat\
+  \ deze zijn nageleefd bij het ontwikkelen, inkopen en gebruiken van algoritmes.\n"
+explanation: "- Interne vastgestelde beleidskaders moeten worden toegepast bij het\
+  \ ontwikkelen, inkopen of gebruiken van algoritmes.\n- Het is van belang dat tijdig,\
+  \ bijvoorbeeld in de [probleemanalyse fase](../../levenscyclus/probleemanalyse.md),\
+  \ inzichtelijk wordt gemaakt welke interne beleidskaders moeten worden toegepast.\n\
+  - Hierbij kan worden gedacht aan definities die moeten worden gehanteerd, het naleven\
+  \ van inkoopbeleid, strategisch beleid volgen met betrekking tot het mogen inzetten\
+  \ van algoritmes binnen de organisaties of het doorlopen van processen en protocollen\
+  \ die moeten worden toegepast.\n- Vraag de [betrokken experts](1-pba-04-betrek-belanghebbenden.md)\
+  \ welke beleidskaders van toepassing zijn vanuit diens specifieke expertise. \n\
+  - Ten behoeve van controles en audits is het van belang dat aantoonbaar wordt gemaakt\
+  \ dat de vastgestelde beleidskaders zijn nageleefd. \n  \nDe in te zetten algoritmes\
+  \ voldoen niet aan vastgestelde beleidskaders. \n"
 urn: urn:nl:ak:mtr:owp-28
 language: nl
 owners:

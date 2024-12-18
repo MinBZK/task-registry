@@ -2,12 +2,16 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Als een hoog-risico-AI-systeem niet voldoet aan de AI-verordening, grijpt de
   aanbieder in.
-description: Aanbieders van AI-systemen met een hoog risico die van mening zijn of
-  redenen hebben om aan te nemen dat een door hen in de handel gebracht of in gebruik
-  gesteld AI systeem met een hoog risico niet in overeenstemming is met de AI-verordening,
-  nemen onmiddellijk de nodige corrigerende maatregelen om dat systeem naargelang
-  het geval in overeenstemming te brengen, uit de handel te nemen, te deactiveren
-  of terug te roepen.
+description: '
+
+  Aanbieders van AI-systemen met een hoog risico die van mening zijn of redenen hebben
+  om aan te nemen dat een door hen in de handel gebracht of in gebruik gesteld AI
+  systeem met een hoog risico niet in overeenstemming is met de AI-verordening, nemen
+  onmiddellijk de nodige corrigerende maatregelen om dat systeem naargelang het geval
+  in overeenstemming te brengen, uit de handel te nemen, te deactiveren of terug te
+  roepen.
+
+  '
 explanation: "Aanbieders van AI-systemen met een hoog risico die constateren dat hun\
   \ systeem niet aan de verordening voldoet, moeten onmiddellijk corrigerende acties\
   \ ondernemen, zoals het terugroepen of uit de handel nemen van het systeem.\n\n\
@@ -16,7 +20,9 @@ explanation: "Aanbieders van AI-systemen met een hoog risico die constateren dat
   \ voor algemene doeleinden met een systeemrisico wordt relevante informatie over\
   \ ernstige incidenten en mogelijke corrigerende maatregelen bijgehouden, gedocumenteerd\
   \ en onverwijld gerapporteerd aan het AI-bureau en, in voorkomende gevallen, aan\
-  \ de nationale bevoegde autoriteiten. \n"
+  \ de nationale bevoegde autoriteiten. \n\n\n\nNiet reageren op non-conformiteit\
+  \ kan leiden tot risico's voor gebruikers en derden.\nHet kan leiden tot juridische\
+  \ procedures en reputatieschade voor organisaties.\n\n"
 urn: urn:nl:ak:ver:aia-18
 language: nl
 owners:

@@ -1,8 +1,25 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Richt algoritmegovernance op basis van de risicoclassificatie van algoritmes.
-description: ''
-explanation: ''
+description: 'Richt algoritmegovernance in op basis van de risicoclassificatie van
+  algoritmes.
+
+  '
+explanation: "- Er is een verschil in de vereisten die van toepassing zijn op type\
+  \ algoritmes. Dit is mede afhankelijk van de risioclassificatie en de impact van\
+  \ het algoritme op betrokkenen.\n- Zo zullen op basis van de AI-verordening meer\
+  \ vereisten moeten worden nageleefd bij hoog-risico AI-systemen, dan voor een AI-systeem\
+  \ met een beperkt risico. \n- Dit betekent dat algoritmegovernance uitgebreider\
+  \ moet zijn voor de risicovollere, complexere toepassingen dan voor de eenvoudige,\
+  \ niet-risicovolle toepassingen.\n\n- Stel daarom tijdig vast om welk type algoritme\
+  \ het gaat en welke vereisten hiervoor gelden. Dat draagt eraan bij dan alleen wordt\
+  \ gefocust op het realiseren van de vereisten waar daadwerkelijk aan moet worden\
+  \ voldaan. Dit zorgt ervoor dat projecten sneller kunnen worden gerealiseerd.\n\
+  - Let op dat niet enkel naar de AI-verordening wordt gekeken. Ook op impactvolle\
+  \ algoritmes die niet vallen onder het bereik van de AI-Verordening zijn ook vereisten\
+  \ van toepassing, en moet algoritmegovernance op worden toegepast.\n- Is algoritmegovernance\
+  \ nieuw bij jouw organisatie, dan kan het helpen om een use-case met beperkt risico\
+  \ grondig te doorlopen om hiervan te leren.\n"
 urn: urn:nl:ak:mtr:org-09
 language: nl
 owners:

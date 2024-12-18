@@ -1,20 +1,28 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
-name: Persoonsgegevens worden op een rechtmatige manier verwerkt
-description: De verwerking van persoonsgegevens moet rechtmatig plaatsvinden.
+name: Persoonsgegevens worden op een rechtmatige manier verwerkt.
+description: '
+
+  Persoonsgegevens worden op een rechtmatige manier verwerkt.
+
+  '
 explanation: "De verwerking van persoonsgegevens moet rechtmatig plaatsvinden, wat\
   \ betekent dat de verwerking gebaseerd moet zijn op \xE9\xE9n van de wettelijke\
   \ grondslagen die zijn geformuleerd in artikel 6 Algemene Verordening Gegevensbescherming.\n\
-  Persoonsgegevens mogen alleen worden verzameld voor specifieke, duidelijk omschreven\
-  \ en gerechtvaardigde doeleinden.\nHet is niet toegestaan om deze gegevens verder\
-  \ te verwerken op een manier die niet verenigbaar is met deze oorspronkelijke doeleinden.\n\
-  \nBij het verwerken van persoonsgegevens ten behoeve van de ontwikkeling en gebruik\
-  \ van algoritmes moet worden onderzocht of dit kan worden gebaseerd op \xE9\xE9\
-  n van de verwerkingsgrondslagen.\nHet is van belang dat wordt uitgewerkt welke persoonsgegevens\
-  \ waarvoor worden verwerkt en op basis van welke grondslag.\nHierbij kan worden\
-  \ gedacht aan persoonsgegevens ten behoeve van trainingsdata, voor het genereren\
-  \ van output of, indien (juridisch) mogelijk, voor het uitvoeren van een onderzoek\
-  \ naar onbewuste vooringenomenheid."
+  \nPersoonsgegevens mogen alleen worden verzameld en verwerkt voor specifieke, duidelijk\
+  \ omschreven en gerechtvaardigde doeleinden.\nHet is niet toegestaan om deze gegevens\
+  \ verder te verwerken op een manier die niet verenigbaar is met deze oorspronkelijke\
+  \ doeleinden.\n\nBij het verwerken van persoonsgegevens ten behoeve van de ontwikkeling\
+  \ en gebruik van algoritmes moet worden onderzocht of dit kan worden gebaseerd op\
+  \ \xE9\xE9n van de verwerkingsgrondslagen. Het is van belang dat wordt uitgewerkt\
+  \ welke persoonsgegevens waarvoor worden verwerkt en op basis van welke grondslag.\n\
+  \nHierbij kan worden gedacht aan persoonsgegevens ten behoeve van trainingsdata,\
+  \ voor het genereren van output of, indien (juridisch) mogelijk, voor het uitvoeren\
+  \ van een onderzoek naar onbewuste vooringenomenheid.\n\n\nHet risico wanneer persoonsgegevens\
+  \ niet op een rechtmatige manier worden verwerkt (verzamelen van gegevens valt hier\
+  \ ook onder), is dat er niet aan de AVG wordt voldaan. Er worden dan onrechtmatig\
+  \ persoonsgegevens verwerkt, waarmee privacy van personen in het geding komt. Ook\
+  \ kan het leiden tot hoge boetes voor organisaties, en kan een datalek plaatsvinden.\n"
 urn: urn:nl:ak:ver:avg-01
 language: nl
 owners:
@@ -27,7 +35,6 @@ url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereis
 subject:
 - privacy-en-gegevensbescherming
 lifecycle:
-- probleemanalyse
 - ontwerp
 - dataverkenning-en-datapreparatie
 links:

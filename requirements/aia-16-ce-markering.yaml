@@ -1,7 +1,11 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Hoog-risico-AI-systemen zijn voorzien van een CE-markering.
-description: Hoog-risico-AI-systemen zijn voorzien van een CE-markering.
+description: '
+
+  Hoog-risico-AI-systemen zijn voorzien van een CE-markering.
+
+  '
 explanation: "Aanbieders van AI-systemen met een hoog risico moeten een CE-markering\
   \ toevoegen aan het AI-systeem met een hoog risico of, wanneer dit niet mogelijk\
   \ is, op de verpakking of in de bij het product gevoegde documentatie, om aan te\
@@ -12,7 +16,9 @@ explanation: "Aanbieders van AI-systemen met een hoog risico moeten een CE-marke
   \ worden gebruikt. \n\nDe lidstaten mogen het in de handel brengen en het in gebruik\
   \ stellen van AI-systemen met een hoog risico die aan de in de AI-verordening vastgelegde\
   \ eisen voldoen en waarop de CE-markering is aangebracht, niet op ongerechtvaardigde\
-  \ wijze belemmeren."
+  \ wijze belemmeren.\n\nNiet naleven van deze verplichtingen kan leiden tot juridische\
+  \ en operationele problemen, en kan de veiligheid en betrouwbaarheid van het AI-systeem\
+  \ in gevaar brengen.\n"
 urn: urn:nl:ak:ver:aia-16
 language: nl
 owners:

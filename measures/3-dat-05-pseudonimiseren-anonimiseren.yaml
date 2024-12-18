@@ -1,9 +1,16 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Bescherm persoonsgegevens door data te anonimiseren, pseudonimiseren of te aggregeren
-description: 'Pas maatregelen toe als pseudonimiseren, anonimisering of aggregeren
-  van persoonsgegevens toe bij het verwerken van de data. '
-explanation: ''
+description: "\nPas maatregelen toe als pseudonimiseren, anonimisering of aggregeren\
+  \ van persoonsgegevens toe bij het verwerken van de data. \n"
+explanation: "- Als is vastgesteld welke persoonsgegevens mogen worden verwerkt voor\
+  \ het ontwikkelen en gebruiken van algoritmes, moet worden nagegaan of er maatregelen\
+  \ kunnen worden getroffen om deze te beschermen.\n- Het algoritme verwerkt niet\
+  \ meer persoonsgegevens dan noodzakelijk; de verwerkte gegevens zijn proportioneel\
+  \ en substantieel.\n- Hierbij kan worden gedacht aan het pseudonomiseren, anonimiseren\
+  \ of aggregeren van persoonsgegevens.\n- Het bepalen of persoonsgegevens mogen worden\
+  \ verwerkt voor algoritmes moet worden bekeken in samenhang met maatregelen die\
+  \ kunnen worden getroffen om deze gegevens te beschermen. \n\n"
 urn: urn:nl:ak:mtr:dat-05
 language: nl
 owners:

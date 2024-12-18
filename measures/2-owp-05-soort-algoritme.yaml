@@ -1,8 +1,19 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Bepaal het soort algoritme en de risicogroep en vereisten die hierbij horen
-description: ''
-explanation: ''
+description: '
+
+  Stel vast om wat voor type algoritme het gaat en wat de bijbehorende risicoclassificatie
+  is om te bepalen welke vereisten hierop van toepassing zijn.
+
+  '
+explanation: "Het verschilt per type algoritme welke vereisten hierop van toepassing\
+  \ is en waar een aanbieder of gebruiksverantwoordelijke aan moet voldoen. \nDit\
+  \ is mede afhankelijk van de bijbehorende risicoclassificatie. \nHiervoor kan in\
+  \ de nabije toekomst de 'beslisboom' in het Algoritmekader voor worden gebruikt'.\
+  \ \nDeze stap is van groot belang, omdat dit ook bepalend is welke contractuele\
+  \ verplichtingen moeten worden gecreëerd tussen opdrachtgever en opdrachtnemer/aanbieder.\
+  \ \n"
 urn: urn:nl:ak:mtr:owp-05
 language: nl
 owners:

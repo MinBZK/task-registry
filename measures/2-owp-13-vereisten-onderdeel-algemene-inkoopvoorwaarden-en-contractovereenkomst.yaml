@@ -2,8 +2,20 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak vereisten voor algoritmes onderdeel van algemene inkoopvoorwaarden en de
   contractovereenkomst.
-description: ''
-explanation: ''
+description: '
+
+  Maak vereisten voor algoritmes onderdeel van contractvoorwaarden en de contractovereeenkomst.
+
+  '
+explanation: '- Door vereisten die gelden voor algoritmes onderdeel te maken van contractvoorwaarden,
+  is voor een aanbieder vooraf duidelijk aan welke voorwaarden zij moeten voldoen
+  als zijn algoritmes willen aanbieden aan overheidsorganisaties.
+
+  - Het is van belang om een afweging te maken welke vereisten voor algoritmes als
+  [''algemene contractvoorwaarden''](../hulpmiddelen/inkoopvoorwaarden.md) kunnen
+  gelden en welke aanvullend in een contractovereenkomst moeten worden opgenomen.
+
+  '
 urn: urn:nl:ak:mtr:owp-13
 language: nl
 owners:

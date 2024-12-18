@@ -1,8 +1,41 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Beperk de omvang van datasets voor energie-efficiëntie
-description: ''
-explanation: ''
+description: 'Houd datasets beperkt tot het noodzakelijke en voldoende specifiek om
+  onnodige energieconsumptie te voorkomen tijdens de verwerking en opslag van data
+  voor algoritmes. We noemen dit ook wel dataminimalisatie.
+
+  '
+explanation: 'Hoe meer je bewaart, hoe meer ruimte dat kost om op te slaan. Bovendien
+  verbruikt elk apparaat dat nodig is om data op te slaan stroom. Dat heeft grote
+  invloed op de CO₂-uitstoot van een datacentrum.
+
+  Grote datasets brengen daarom hoge energie- en opslagkosten met zich mee. Door de
+  dataset bewust te beperken tot relevante gegevens, kun je ook de energie-efficiëntie
+  van algoritmes aanzienlijk verbeteren. Vooral bij de ontwikkeling van AI-systemen
+  kan het verminderen van data bijdragen aan lagere energiebehoeften en CO₂-uitstoot.
+
+
+  ### Technieken voor dataminimalisatie
+
+  - **Slimme selectie van trainingsdata**: Gebruik methoden die irrelevante data uit
+  de dataset filteren, zoals dataselectie-algoritmes en sampling-technieken. Door
+  te focussen op relevante data, beperk je de omvang zonder de prestaties van het
+  model te beïnvloeden.
+
+  - **Verwijderen van redundante en dubbele data**: Deduplicatie van data minimaliseert
+  onnodige verwerkingskracht. Door alleen unieke en relevante gegevens op te slaan,
+  wordt de opslagbehoefte verder beperkt.
+
+  - **Opschonen en archiveren van verouderde data**: [Regelmatige archivering](2-owp-08-archiveren-documenten.md)
+  of verwijdering van verouderde data in je dataset zorgt voor een verminderde voetafdruk
+  en verhoogt ook de efficiëntie.
+
+
+  Zonder dataminimalisatie loopt je organisatie het risico op onnodig hoge energie-
+  en opslagkosten, en een grotere ecologische impact.
+
+  '
 urn: urn:nl:ak:mtr:dat-09
 language: nl
 owners:

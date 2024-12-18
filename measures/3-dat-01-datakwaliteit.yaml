@@ -1,7 +1,10 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Controleer de datakwaliteit
-description: ''
+description: 'Stel vast of de gebruikte data van voldoende kwaliteit is voor de beoogde
+  toepassing.
+
+  '
 explanation: "- Stel functionele eisen voor de datakwaliteit vast en [analyseer structureel\
   \ of er aan deze eisen wordt voldaan](7-mon-04-evalueer-bij-veranderingen-in-data.md).\
   \ \n\n- De kwaliteit van de data die als input voor het algoritme wordt gebruikt\
@@ -23,7 +26,11 @@ explanation: "- Stel functionele eisen voor de datakwaliteit vast en [analyseer 
   \ is.\n\n\n!!! note \"Let op!\"\n\n    Wanneer je een algoritme inkoopt en de ontwikkeling\
   \ van het algoritme uitbesteedt aan een derde partij, houdt er dan dan rekening\
   \ mee dat data traceerbaar en reproduceerbaar moet zijn. Maak hier heldere afspraken\
-  \ over met de aanbieder. "
+  \ over met de aanbieder. \n\n- Door onjuiste beslissingen van gegevens kunnen verkeerde\
+  \ beslissingen genomen worden. \n- Het model creëert onwenselijke systematische\
+  \ afwijking voor specifieke personen, groepen of andere eenheden. Dit kan leiden\
+  \ tot ongelijke behandeling en discriminerende effecten met eventuele schade voor\
+  \ betrokkenen. \n"
 urn: urn:nl:ak:mtr:dat-01
 language: nl
 owners:

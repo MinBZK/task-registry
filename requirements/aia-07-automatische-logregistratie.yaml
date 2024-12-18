@@ -1,7 +1,10 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Hoog-risico-AI-systemen loggen automatisch bepaalde gegevens.
-description: 'Hoog-risico-AI-systemen loggen automatisch bepaalde gegevens.
+description: '
+
+  Hoog-risico-AI-systemen loggen automatisch bepaalde gegevens.
+
 
   '
 explanation: "AI-systemen met een hoog risico zijn ontworpen met functionaliteiten\
@@ -21,7 +24,9 @@ explanation: "AI-systemen met een hoog risico zijn ontworpen met functionaliteit
   \ verwerken leveren de BIO en AVG vergelijkbare verplichingen op die ook van toepassing\
   \ zijn op AI-systemen die niet gezien worden als een AI-systeem met hoog risico.\
   \ Daarbij komen nog verplichtingen om de logs doorlopend of periodiek te monitoren\
-  \ op incidenten."
+  \ op incidenten.\n\n\nOntbreken van automatische logregistratie kan leiden tot een\
+  \ gebrek aan transparantie en traceerbaarheid van het AI-systeem, wat het vermogen\
+  \ om verantwoordelijkheid te nemen en eventuele problemen aan te pakken belemmert.\n"
 urn: urn:nl:ak:ver:aia-07
 language: nl
 owners:

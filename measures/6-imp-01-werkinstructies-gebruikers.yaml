@@ -1,8 +1,22 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Stel een werkinstructie op voor gebruikers.
-description: ''
-explanation: ''
+description: "Stel een werkinstructie op voor gebruikers. \n"
+explanation: "Het is belangrijk dat gebruikers een werkinstructie ontvangen met informatie\
+  \ over hoe zij met het algoritme kunnen en moeten werken. Hierin worden zaken beschreven\
+  \ als:\n\n-\tOp wat voor manier het algoritme ondersteunt bij het uitvoeren van\
+  \ (wettelijke) taken.\n-\tWat de mogelijkheden en beperkingen zijn bij het gebruik\
+  \ van het algoritme.\n-\tWat de impact is van het gebruik van het algoritme op de\
+  \ samenleving en individuen (denk aan [energieverbruik](7-mon-05-meten-milieu-impact)\
+  \ of dat een besluit met rechtsgevolgen wordt genomen).\n-\tWat de risico's zijn\
+  \ die aan het gebruik verbonden zijn (bijv. (automation) bias, false positives/negatives).\n\
+  -\tWelke maatregelen zijn getroffen om deze risico's te beperken (bijv. [bias analyse](5-ver-02-biasanalyse),\
+  \ ['stopknop' ingebouwd](4-owk-02-stopzetten-gebruik), transparantie over de output).\n\
+  -\tHoe de output van het algoritme moet worden geïnterpreteerd.\n-\tHoe het werkproces\
+  \ kan worden uitgevoerd, zonder ondersteuning van het algoritme.\n-\tWelke protocollen\
+  \ er zijn als incidenten zich voordoen.\n\t\nDenk hierbij na over het eventueel\
+  \ bijscholen van medewerkers als het kennisniveau nog onvoldoende is om de werkinstructies\
+  \ goed te begrijpen. \n"
 urn: urn:nl:ak:mtr:imp-01
 language: nl
 owners:

@@ -1,7 +1,7 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Hoog-risico-AI-systemen staan onder menselijk toezicht.
-description: 'Hoog-risico-AI-systemen staan onder menselijk toezicht. '
+description: "\nHoog-risico-AI-systemen staan onder menselijk toezicht. \n"
 explanation: "AI-systemen met een hoog risico worden zodanig ontworpen en ontwikkeld,\
   \ met inbegrip van passende mens-machine-interface-hulpmiddelen, dat hierop tijdens\
   \ de periode dat zij worden gebruikt, op doeltreffende wijze toezicht kan worden\
@@ -40,7 +40,10 @@ explanation: "AI-systemen met een hoog risico worden zodanig ontworpen en ontwik
   \ personen met de nodige bekwaamheid, opleiding en bevoegdheid apart de indentificatie\
   \ van het systeem verifici\xEBren en bevestigen, tenzij het wordt gebruikt voor\
   \ rechtshandhaving, migratie, grenstoezicht of asiel, in gevallen waarin het Unierecht\
-  \ of het nationale recht de toepassing van dit vereiste onevenredig acht."
+  \ of het nationale recht de toepassing van dit vereiste onevenredig acht.\n\n\n\
+  Ontbreken van betekenisvol menselijk toezicht kan leiden tot gebrek aan controle\
+  \ en begrip over het functioneren van het AI-systeem, wat kan resulteren in ongewenste\
+  \ of onvoorspelbare uitkomsten.\n\n"
 urn: urn:nl:ak:ver:aia-09
 language: nl
 owners:

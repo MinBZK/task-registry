@@ -1,9 +1,13 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Hoog-risico-AI-systemen voldoen aan de toegankelijkheidseisen.
-description: Aanbieders van AI-systemen met een hoog risico zorgen ervoor dat het
-  AI-systeem met een hoog risico voldoet aan de toegankelijkheidseisen overeenkomstig
-  de Richtlijnen (EU) 2016/2102 en (EU) 2019/882.
+description: '
+
+  Aanbieders van AI-systemen met een hoog risico zorgen ervoor dat het AI-systeem
+  met een hoog risico voldoet aan de toegankelijkheidseisen overeenkomstig de Richtlijnen
+  (EU) 2016/2102 en (EU) 2019/882.
+
+  '
 explanation: "Gezien het toenemende belang en gebruik van AI-systemen moet de toepassing\
   \ van universele ontwerpbeginselen op alle nieuwe technologie\xEBn en diensten zorgen\
   \ voor volledige en gelijke toegang voor iedereen die mogelijk gevolgen ondervindt\
@@ -24,7 +28,10 @@ explanation: "Gezien het toenemende belang en gebruik van AI-systemen moet de to
   \ bepalingen van de lidstaten inzake de toegankelijkheidsvoorschriften voor bepaalde\
   \ producten en diensten, in het bijzonder door het wegwerken en voorkomen van belemmeringen\
   \ voor het vrije verkeer van onder deze richtlijn vallende producten en diensten\
-  \ ten gevolge van uiteenlopende toegankelijkheidsvoorschriften in de lidstaten."
+  \ ten gevolge van uiteenlopende toegankelijkheidsvoorschriften in de lidstaten.\n\
+  \n\nNiet naleven van deze verplichtingen kan leiden tot juridische en operationele\
+  \ problemen, en kan de veiligheid en betrouwbaarheid van het AI-systeem in gevaar\
+  \ brengen.\n"
 urn: urn:nl:ak:ver:aia-19
 language: nl
 owners:
