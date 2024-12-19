@@ -77,6 +77,9 @@ class CachedRegistry:
     def get_task(self, urn: str, tasks: TaskType) -> dict[str, Any]:
         return self.tasks_cache[(urn, tasks)]
 
+    def has_urn(self, urn: str, tasks: TaskType) -> bool:
+        return (urn, tasks) in self.tasks_cache
+
 
 def generate_index(
     tasks: TaskType,
