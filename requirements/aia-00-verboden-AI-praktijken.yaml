@@ -1,0 +1,97 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Verboden AI-systemen mogen niet worden gebruikt.
+description: '
+
+  Verboden AI-systemen mogen niet worden gebruikt.
+
+  '
+explanation: "Afgezien van de vele nuttige toepassingen van AI kan zij ook worden\
+  \ misbruikt en nieuwe en krachtige instrumenten voor manipulatie, uitbuiting en\
+  \ sociale controle opleveren. \nDergelijke praktijken zijn bijzonder schadelijk\
+  \ en abusief en moeten worden verboden omdat zij in strijd zijn met de waarden van\
+  \ de Unie, namelijk eerbied voor de menselijke waardigheid, vrijheid, gelijkheid,\
+  \ democratie en de rechtsstaat, en met de grondrechten van de Unie die zijn vastgelegd\
+  \ in het Handvest, waaronder het recht op non-discriminatie, gegevensbescherming\
+  \ en privacy, en de rechten van het kind.\n\nIn de volgende gevallen gaat het om\
+  \ een verboden toepassing op grond van de AI-Verordening:\n\n- gebruik kan gaan\
+  \ maken van subliminale technieken om mensen onbewust of bewust kunnen manipuleren,\
+  \ waardoor ze beslissingen nemen die ze anders niet zouden hebben genomen?\n- gebruik\
+  \ kan gaan maken van kwetsbaarheden van individuen of specifieke groepen, zoals\
+  \ leeftijd, handicaps of sociale/economische omstandigheden, om het gedrag van die\
+  \ personen aanzienlijk te verstoren, wat kan leiden tot aanzienlijke schade bij\
+  \ henzelf of anderen?\n- gebruikt kan worden om natuurlijke personen of groepen\
+  \ gedurende een periode te evalueren of te classificeren op basis van hun sociale\
+  \ gedrag of afgeleide persoonlijke kenmerken?\n- gebruikt kan worden voor risicobeoordelingen\
+  \ van natuurlijke personen om het risico op crimineel gedrag te voorspellen, gebaseerd\
+  \ op profilering of persoonlijkheidskenmerken? (Dit geldt niet voor AI-systemen\
+  \ die worden gebruikt om menselijke beoordelingen te ondersteunen, gebaseerd op\
+  \ objectieve en verifieerbare feiten die rechtstreeks verband houden met criminele\
+  \ activiteiten)\n- gebruikt kan worden om databanken voor gezichtsherkenning aan\
+  \ te leggen of aan te vullen door willekeurige gezichtsafbeeldingen van internet\
+  \ of CCTV-beelden te scrapen?\n- gebruikt kan worden om emoties van een persoon\
+  \ op de werkplek of in het onderwijs af te leiden? (Dit is niet van toepassing als\
+  \ het gebruik van het AI-systeem is bedoeld voor medische- of veiligheidsdoeleinden)\n\
+  - gebruikt kan worden om natuurlijke personen individueel in categorie\xEBn in te\
+  \ delen op basis van biometrische gegevens om ras, politieke opvattingen, lidmaatschap\
+  \ van een vakbond, religieuze of levensbeschouwelijke overtuigingen, seksleven of\
+  \ seksuele geaardheid af te leiden? (Dit verbod geldt niet voor het labelen of filteren\
+  \ van rechtmatig verkregen biometrische datasets, zoals afbeeldingen, op basis van\
+  \ biometrische gegevens, of voor categorisering van biometrische gegevens op het\
+  \ gebied van rechtshandhaving)\n- gebruikt kan worden als een biometrisch systeem\
+  \ in de publieke ruimte voor identificatie op afstand in real-time, met het oog\
+  \ op de rechtshandhaving?\n\nEr zijn een tweetal uitzonderingen voor het inzetten\
+  \ van verbonden AI-systemen. Deze zijn:\n\n- Er is sprake van een rechtshandhavingsactiviteit\
+  \ i.v.m. een specifiek misdrijf (terrorisme, mensenhandel, seksuele uitbuiting van\
+  \ kinderen en materiaal over seksueel misbruik van kinderen, illegale handel in\
+  \ verdovende middelen en psychotrope stoffen, illegale handel in wapens, munitie\
+  \ en explosieven, moord, zware mishandeling, illegale handel in menselijke organen\
+  \ en weefsels, illegale handel in nucleaire en radioactieve stoffen, ontvoering,\
+  \ wederrechtelijke vrijheidsberoving en gijzeling, misdrijven die onder de rechtsmacht\
+  \ van het Internationaal Strafhof vallen, kaping van vliegtuigen/schepen, verkrachting,\
+  \ milieucriminaliteit, georganiseerde of gewapende diefstal, sabotage, deelneming\
+  \ aan een criminele organisatie die betrokken is bij een of meer van de bovengenoemde\
+  \ misdrijven).\n- Er is sprake van gerichte opsporing van specifieke slachtoffers,\
+  \ ontvoering, mensenhandel en seksuele uitbuiting van mensen, vermiste personen;\
+  \ of het voorkomen van bedreigingen voor het leven of de fysieke veiligheid van\
+  \ personen of het reageren op de huidige of voorzienbare dreiging van een terreuraanslag.\n\
+  \nBepaal in een vroege fase en bij het [onderbouwen van het gebruik van een AI-systeem](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-03-onderbouwen-gebruik-algoritme/index.html)\
+  \ of de beoogde toepassing is toegestaan. \n"
+urn: urn:nl:ak:ver:aia-00
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-00-verboden-AI-praktijken/index.html
+subject:
+- governance
+lifecycle:
+- organisatieverantwoordelijkheden
+- probleemanalyse
+links:
+- urn:nl:ak:mtr:pba-03
+ai_act_profile:
+- type:
+  - AI-systeem
+  open_source: []
+  risk_group:
+  - verboden AI
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+  - gebruiksverantwoordelijke
+  conformity_assessment_body: []
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

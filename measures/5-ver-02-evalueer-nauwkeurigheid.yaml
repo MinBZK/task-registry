@@ -1,0 +1,70 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Evalueer de nauwkeurigheid van het algoritme
+description: "Test en evalueer de nauwkeurigheid van het algoritme om te zorgen dat\
+  \ deze accurate uitkomsten geeft. \n"
+explanation: "De nauwkeurigheid van het algoritme wil zeggen: geeft het algoritme\
+  \ de juiste uitkomst voor [het gewenste doel](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-02-formuleren-doelstelling/index.html);\
+  \ maakt het correcte berekeningen, voorspellingen, aanbevelingen, beslissingen of\
+  \ classificeringen. \n\nVoor het evalueren van de nauwkeurigheid zijn de volgende\
+  \ stappen essentieel:\n\n- Bepaal met welke methoden en [metriek(en)](#metrieken)\
+  \ je de nauwkeurigheid wilt gaan meten. Pas dit aan op de [ontwerpkeuzes](https://minbzk.github.io/Algoritmekader/levenscyclus/ontwerp/),\
+  \ [het beoogde doel](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-02-formuleren-doelstelling/index.html)\
+  \ en [de bepaalde risico’s](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-06-impactanalyse/index.html).\
+  \ \n- [Controleer of de data volledig en actueel is](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-01-datakwaliteit/index.html)\
+  \ om de metrieken te kunnen meten.\n- Bepaal welke foutmarge acceptabel is:\n\n\
+  \    - Bepaal hoe vaak het algoritme een bepaalde fout maken. Houd rekening met\
+  \ verschillende fouten die gemaakt kunnen worden, zoals *false positives* en *false\
+  \ negatives*. Welke fouten zijn erger om te maken? \n    - De foutmarge is afhankelijk\
+  \ van [welke schade wordt veroorzaakt](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-06-impactanalyse/index.html)\
+  \ bij onnauwkeurige of foutieve voorspellingen.\n    - Heb hierbij aandacht voor\
+  \ de afweging tussen nauwkeurigheid en [betrouwbaarheid](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-06-evalueer-betrouwbaarheid/index.html).\
+  \ Een model met hoge nauwkeurigheid op de testset kan vaak slechter generaliseren\
+  \ naar situaties net buiten de test set (overfitting).\n    - Bepaal interventies\
+  \ voor als het restrisico hoger is dan acceptabel.\n\n    - Wanneer de nauwkeurigheid\
+  \ niet voldoende is tijdens de ontwikkelfase kan er besloten worden door te ontwikkelen,\
+  \ andere maatregelen te treffen (bijvoorbeeld in [menselijke interventies](../../onderwerpen/menselijke-controle.md))\
+  \ om het restrisico acceptabel te maken of door [te stoppen met de ontwikkeling\
+  \ van het systeem](https://minbzk.github.io/Algoritmekader/levenscyclus/uitfaseren/).\
+  \ \n    - Wanneer monitoring aangeeft dat de nauwkeurigheid onvoldoende is, moet\
+  \ er een passende afweging worden gemaakt om het systeem te verbeteren, dan wel\
+  \ over te gaan op het [stoppen van het systeem](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-02-stopzetten-gebruik/index.html).\n\
+  \n### Metrieken\nAfhankelijk van het type algoritme zijn er verschillende metrieken\
+  \ waarmee je de nauwkeurigheid kan meten. Veelgebruikte metrieken zijn:\n\n- accuraatheid\
+  \ *(accuracy)*\n- precisie *(precision)*\n- *recall*\n- *F1-score*\n- *mean-squared-error*\n\
+  - *mean-absolute-error*\n\nIn verschillende omgevingen en onder verschillende datasets\
+  \ moeten de relevante metrieken voor jouw toepassing worden geëvalueerd.\n\nEen\
+  \ onnauwkeurig algoritme geeft de verkeerde uitkomsten waardoor situaties of mogelijk\
+  \ personen verkeerd beoordeeld kunnen worden. \n"
+urn: urn:nl:ak:mtr:ver-02
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-02-evalueer-nauwkeurigheid/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+- bias-en-non-discriminatie
+suggested_roles:
+- ontwikkelaar
+- projectleider
+lifecycle:
+- ontwikkelen
+- verificatie-en-validatie
+- monitoring-en-beheer
+links:
+- urn:nl:ak:ver:aia-06
+- urn:nl:ak:ver:aia-10
+- urn:nl:ak:ver:awb-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

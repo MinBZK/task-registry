@@ -49,13 +49,13 @@ lifecycle:
 - dataverkenning-en-datapreparatie
 - verificatie-en-validatie
 links:
-- urn:nl:ak:mtr:owp-09
-- urn:nl:ak:mtr:owp-12
-- urn:nl:ak:mtr:owp-13
 - urn:nl:ak:mtr:owp-14
-- urn:nl:ak:mtr:owp-19
-- urn:nl:ak:mtr:owp-21
-- urn:nl:ak:mtr:owp-25
+- urn:nl:ak:mtr:owp-15
+- urn:nl:ak:mtr:owp-16
+- urn:nl:ak:mtr:owp-17
+- urn:nl:ak:mtr:owp-22
+- urn:nl:ak:mtr:owp-24
+- urn:nl:ak:mtr:owp-28
 - urn:nl:ak:mtr:owk-03
 ai_act_profile:
 - type: []

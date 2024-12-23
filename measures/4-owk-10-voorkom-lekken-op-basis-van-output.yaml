@@ -1,0 +1,78 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Zorg dat er (gevoelige) informatie niet kan lekken op basis van de output van
+  het algoritme.
+description: 'Zorg dat er (gevoelige) informatie niet kan lekken op basis van de output
+  van het algoritme.
+
+  '
+explanation: "Een aanvaller kan aan de hand van de uitkomsten van een model proberen\
+  \ om bepaalde eigenschappen over het model of de dataset te achterhalen. In de [brochure\
+  \ van de AIVD](https://www.aivd.nl/documenten/publicaties/2023/02/15/ai-systemen-ontwikkel-ze-veilig)\
+  \ wordt specifiek gewaarschuwd voor “*model engineering*”, “*model inversion*” en\
+  \ “*inference*” aanvallen.\n\n- **Model engineering** refereert aan aanvallen die\
+  \ als bedoeling hebben om te achterhalen hoe het model werkt. Dit kan bijvoorbeeld\
+  \ als doel hebben om intellectueel eigendom te stelen of om effectiever zwakheden\
+  \ in het model te kunnen onderzoeken.\n\n- **Model inversion** beschrijft aanvallen\
+  \ waarbij het doel is om de trainingsdata te reconstrueren. Dit kan wederom interessant\
+  \ zijn voor het stelen van intellectueel eigendom, maar ook het achterhalen van\
+  \ privé gegevens als het bijvoorbeeld om een medische dataset gaat.\n\n- **Inference**\
+  \ aanvallen zijn ook gericht op het achterhalen van informatie over de trainingsdata.\
+  \ In tegenstelling tot model inversion, is het doel niet om de gehele trainingsdata\
+  \ terug te krijgen, maar specifieke informatie. Zo kan het doel bijvoorbeeld zijn\
+  \ om te achterhalen of een bepaald persoon onderdeel was van de trainingsdata of\
+  \ kan met een deel van de informatie over een persoon geprobeerd worden om missende\
+  \ informatie te achterhalen. Dit type aanvallen is vaak makkelijker uit te voeren\
+  \ van een volledige model inversion.\n\n### Technieken voor voorkomen van lekken\n\
+  \n### Statistical Disclosure Control\nStatistical Disclosure Control (SDC) is een\
+  \ veelgebruikte techniek om ervoor te zorgen dat er geen gevoelige informatie lekt\
+  \ uit de uitkomst van een datagedreven onderzoek.\nAlhoewel SDC vooral gericht is\
+  \ om traditionele data-analyses kan het ook gebruikt worden in de context van algoritmes.\
+  \ \nEr zijn verschillende voorbeelden hoe SDC kan worden toegevoegd aan een AI-systeem,\
+  \ zoals [The SACRO-ML package](https://arxiv.org/abs/2212.01233).\n\n### k-anonimity\n\
+  Daarnaast bestaan er ook nieuwere technieken die kunnen helpen bij het onherkenbaar\
+  \ maken van mogelijk gevoelige informatie in de outputs van algoritmes. Zo zijn\
+  \ er technieken gebaseerd op het generaliseren van data om individuen onherkenbaar\
+  \ te maken, zoals [k-anonimity](https://dl.acm.org/doi/10.1142/s0218488502001648).\
+  \ \n\n### Differential privacy\nOok bestaan er technieken die ruis toevoegen aan\
+  \ de uitkomst, met wiskundige garanties van de veiligheid. De meest populaire techniek\
+  \ voor het toevoegen van ruis is [differential privacy](https://dl.acm.org/doi/10.1007/11787006_1).\n\
+  \n### Rate limiting\nDe hierboven benoemde oplossingen focussen op het beveiligen\
+  \ van één output van het algoritme. Veel aanvallen berusten echter ook op het veelvuldig\
+  \ aanroepen van een algoritme. Een andere oplossing die dit tegen kan gaan is het\
+  \ limiteren van het aantal interacties dat een gebruiker mag hebben met een algoritme,\
+  \ ook wel bekend als *rate limiting*. \n\nAls een gebruiker teveel informatie te\
+  \ zien krijgt kan dit bijvoorbeeld leiden tot het lekken van trainingsdata of eigenschappen\
+  \ van het algoritme.\n"
+urn: urn:nl:ak:mtr:owk-09
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-10-voorkom-lekken-op-basis-van-output/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+suggested_roles:
+- ontwikkelaar
+lifecycle:
+- ontwikkelen
+- implementatie
+- monitoring-en-beheer
+links:
+- urn:nl:ak:ver:aia-10
+- urn:nl:ak:ver:aia-22
+- urn:nl:ak:ver:aia-32
+- urn:nl:ak:ver:bio-01
+- urn:nl:ak:ver:avg-12
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

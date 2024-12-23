@@ -14,9 +14,9 @@ explanation: "De inzet van algoritme kan onbedoeld leiden tot discriminerende ef
   Het vaststellen van een dergelijk protocol geeft ontwikkelaar en gebruikers (vooraf)\
   \ duidelijkheid wat van hen wordt verwacht en wat zij kunnen doen om discriminatie\
   \ door algoritmes te voorkomen.  \nEen voorbeeld hiervan is het analyseren van de\
-  \ data op [datakwaliteit en bias in de data](3-dat-01-datakwaliteit.md) en [toets\
-  \ regelmatig je algoritmisch systeem op bias](5-ver-02-biasanalyse.md). \n\nHet\
-  \ Ministerie van Binnenlandse Zaken en Koninkrijksrelaties heeft een [discriminatieprotocol](https://minbzk.github.io/discriminatieprotocol)\
+  \ data op [datakwaliteit en bias in de data](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-01-datakwaliteit/index.html)\
+  \ en [toets regelmatig je algoritmisch systeem op bias](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-03-biasanalyse/index.html).\
+  \ \n\nHet Ministerie van Binnenlandse Zaken en Koninkrijksrelaties heeft een [discriminatieprotocol](https://minbzk.github.io/discriminatieprotocol)\
   \ opgesteld wat organisaties handvatten biedt.\n\nEen discriminatieprotocol kan\
   \ de volgende stappen bevatten:\n\n### Stap 1: Vermoeden van onrechtmatigheid\n\n\
   Een vermoeden van bevooroordeeldheid of discriminatie kan vanuit verschillende partijen\
@@ -27,7 +27,7 @@ explanation: "De inzet van algoritme kan onbedoeld leiden tot discriminerende ef
   \ er sprake is van zo'n vermoeden, zorg je dat bijvoorbeeld de uitvoerend directeur,\
   \ de interne toezichthouder en/of de CIO en CDO hierover worden geïnformeerd. \n\
   \  - Maak met de verantwoordelijken een afweging of het betreffende systeem in werking\
-  \ kan blijven of dat bijvoorbeeld [het noodplan voor het stopzetten van het algoritme](4-owk-02-stopzetten-gebruik.md)\
+  \ kan blijven of dat bijvoorbeeld [het noodplan voor het stopzetten van het algoritme](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-02-stopzetten-gebruik/index.html)\
   \ (tijdelijk) in gang moet worden gezet. \n\n### Stap 2: Inzicht en overzicht\n\n\
   Het is van belang om inzicht en overzicht te krijgen over de oorzaak en de gevolgen\
   \ van eventuele discriminerende effecten van het algoritme. \nDaarvoor kan worden\
@@ -41,7 +41,7 @@ explanation: "De inzet van algoritme kan onbedoeld leiden tot discriminerende ef
   Bepaal welke mitigerende maatregelen er genomen moeten worden. Als er in het onderzoek\
   \ is vastgesteld dat er sprake is van discriminatie, dan moet het betreffende systeem\
   \ worden stopgezet. Hierbij kan je denken aan:\n\n   - Het in werking stellen van\
-  \ het [het noodplan voor het stopzetten van het algoritme](4-owk-02-stopzetten-gebruik.md),\
+  \ het [het noodplan voor het stopzetten van het algoritme](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-02-stopzetten-gebruik/index.html),\
   \ indien dat in stap 1 nog niet gebeurd is. \n   - Aanpassingen in het algoritme,\
   \ de werkinstructies of de bijbehorende processen.\n   - Indien het algoritme essentieel\
   \ is in de uitvoer kan er sprake zijn van een een proportionaliteitsvraagstuk. In\
@@ -64,7 +64,7 @@ explanation: "De inzet van algoritme kan onbedoeld leiden tot discriminerende ef
   \n  - Registreer het algoritme in het [algoritmeregister](https://algoritmes.overheid.nl/nl),\
   \ indien dat nog niet gebeurd is.\n  - Zorg voor goede klachtenafhandeling en herstelprocedures.\
   \ \n"
-urn: urn:nl:ak:mtr:imp-10
+urn: urn:nl:ak:mtr:org-15
 language: nl
 owners:
 - organization: Algoritmekader

@@ -32,7 +32,14 @@ subject:
 - transparantie
 lifecycle:
 - implementatie
-links: []
+links:
+- urn:nl:ak:mtr:owp-15
+- urn:nl:ak:mtr:owp-16
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-22
+- urn:nl:ak:mtr:owp-24
+- urn:nl:ak:mtr:owp-26
+- urn:nl:ak:mtr:owp-28
 ai_act_profile:
 - type:
   - AI-systeem

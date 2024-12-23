@@ -1,0 +1,58 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Stel beleid op voor een verantwoorde inzet van algoritmes binnen de organisatie.
+description: "\nStel beleid op voor een verantwoorde inzet van algoritmes binnen de\
+  \ organisatie. \n"
+explanation: "Een duidelijk beleid over de inzet van algoritmes helpt organisaties\
+  \ te voldoen aan de vereisten voor het verantwoord gebruik ervan. Hierin worden\
+  \ zaken beschreven als:\n\n- Hoe de inzet van algoritmes gaat bijdragen aan het\
+  \ realiseren van de organisatiedoelstellingen. \n\n- Het beschrijven van de stappen\
+  \ die moeten worden gezet om algoritmes op een verantwoorde wijze in te gaan zetten.\
+  \ Dit is afhankelijk en verschilt per type algoritme en de bijbehorende risicoclassificatie.\n\
+  \n- Het beschrijven van welke hulpmiddelen in welke gevallen moeten worden ingezet\
+  \ om te voldoen aan de vereisten die gelden voor algoritmes. Hierbij kan worden\
+  \ gedacht aan:\n    - Een [Impact Assessment Mensenrechten en Algoritmes](../hulpmiddelen/IAMA.md).\n\
+  \    - Een [Data Protection Impact Assessment](../hulpmiddelen/DPIA.md).\n    -\
+  \ Het hanteren van [inkoopvoorwaarden](../hulpmiddelen/inkoopvoorwaarden.md).\n\
+  \  \n- Hoe burgers worden geïnformeerd over de inzet van algoritmes door de organisatie\
+  \ (communicatiestrategie) en welke kanalen hiervoor kunnen worden gebruikt. Hierbij\
+  \ kan worden gedacht aan:\n    - Het [Algoritmeregister](../hulpmiddelen/algoritmeregister.md)\
+  \ voor het publiceren van hoog risico AI-systemen of impactvolle algoritmes. \n\
+  \    - Een algemene pagina op de website met informatie over de inzet van algoritmes.\n\
+  \    - Het [verwerkingsregister](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/6-imp-08-vermelding-in-verwerkingsregister/index.html).\n\
+  \    - Een intern registratiesysteem, bijvoorbeeld voor het registreren van laag\
+  \ risico of niet-impactvolle algoritmes zodat deze informatie voor medewerkers beschikbaar\
+  \ is.\n    - In welke gevallen een [(openbaar) besluit](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/6-imp-09-politiek-bestuurlijk-besluit/index.html)\
+  \ wordt genomen door het bestuur over de inzet van een algoritme. \n\n- Er is beschreven\
+  \ welke informatie over welke typen algoritmes wordt gecommuniceerd met betrokkenen\
+  \ bij de ontwikkeling of gebruik ervan door de organisatie. \n\n- Er is beschreven\
+  \ welke stappen worden gezetten in het geval dat er incidenten ontstaan rondom de\
+  \ inzet van algoritmes, denk hierbij aan een [discriminatieprotocol](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/0-org-15-discriminatieprotocol/index.html).\n\
+  \n- Dit beleidsdocument is beschikbaar en toegankelijk voor geïnteresseerden. \n"
+urn: urn:nl:ak:mtr:org-02
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/0-org-02-beleid-opstellen-inzet-algoritmes/index.html
+subject:
+- governance
+- transparantie
+suggested_roles:
+- beleid-en-advies
+lifecycle:
+- organisatieverantwoordelijkheden
+links:
+- urn:nl:ak:ver:awb-01
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

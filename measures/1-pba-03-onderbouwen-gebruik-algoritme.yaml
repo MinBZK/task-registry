@@ -7,9 +7,9 @@ explanation: "- Bepaal waarom het gewenst of nodig is om een algoritme in te zet
   \ en of er ook alternatieven zijn om het probleem op te lossen. \nDocumenteer de\
   \ onderbouwing waarom een algoritme een betere oplossing zou bieden dan een niet-geautomatiseerd\
   \ of niet-digitaal proces. \n\n- Maak een bewuste afweging of een algoritme het\
-  \ juiste middel is om [het probleem](1-pba-01-formuleren-probleemdefinitie.md) op\
-  \ doelmatige en doeltreffende wijze op te lossen, en documenteer deze afweging.\n\
-  \n- Beoordeel of de gewenste oplossing is [toegestaan op grond van de AI-Verordening](aia-01-verboden-AI-praktijken.md).\
+  \ juiste middel is om [het probleem](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-01-formuleren-probleemdefinitie/index.html)\
+  \ op doelmatige en doeltreffende wijze op te lossen, en documenteer deze afweging.\n\
+  \n- Beoordeel of de gewenste oplossing is [toegestaan op grond van de AI-Verordening](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-00-verboden-AI-praktijken/index.html).\
   \ \n\nHet algoritme is niet het juiste middel om het probleem op te lossen. Het\
   \ risico daarbij bestaat dat het probleem niet wordt opgelost. \n"
 urn: urn:nl:ak:mtr:pba-03
@@ -29,7 +29,7 @@ suggested_roles:
 lifecycle:
 - probleemanalyse
 links:
-- urn:nl:ak:ver:aia-01
+- urn:nl:ak:ver:aia-00
 - urn:nl:ak:ver:awb-01
 template:
   requirement: $REQUIREMENT

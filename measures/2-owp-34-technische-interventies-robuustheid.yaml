@@ -1,0 +1,61 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Identificeer en implementeer technische interventies die robuustheid vergroten
+description: "Bepaal in het ontwerp welke technische interventies bijdragen aan de\
+  \ [robuustheid](../../onderwerpen/technische-robuustheid-en-veiligheid.md#wat-is-technisch-robuust-en-veilig)\
+  \ van het algoritme. Deze keuzes moeten in lijn zijn met het [beoogde doel](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-02-formuleren-doelstelling/index.html)\
+  \ en de context. \n"
+explanation: "Maak in de ontwerpfase de volgende afwegingen:\n\n- **Identificeer en\
+  \ implementeer technische interventies die de robuustheid vergroten**\n\n    In\
+  \ het ontwerp en in de training kunnen extra interventies worden genomen die de\
+  \ robuustheid vergroten. Dit kan op verschillende niveaus. Denk bijvoorbeeld aan:\
+  \ \n    \n    - *Data Augmentation*: op data niveau kan de dataset uitgebreid worden\
+  \ met variaties op de oorspronkelijke data, bijvoorbeeld door het toevoegen van\
+  \ extra ruis aan de dataset; \n    - *Regularisatie*: tijdens training kunnen interventies\
+  \ worden gebruikt die overfitting voorkomen zoals *dropout* of *weight decay*. \n\
+  \    - *[Cross-validation](3-dat-07-training-validatie-en-testdata.md#k-fold-cross-validation)*:\
+  \ tijdens training kunnen meerdere combinaties van train- en testsets gebruikt worden\
+  \ om generalisatie te waarborgen.\n    - *Model ensembles*: er kunnen meerdere modellen\
+  \ gecombineerd worden om samen een beslissing te maken, dit minimaliseert de impact\
+  \ van een fout van één model. \n    - *[Adversarial training](#)*: het trainen met\
+  \ speciale voorbeelden die bedoeld zijn om het model te misleiden.  \n    - Ook\
+  \ zijn er andere methoden die generalisatie kunnen verbeteren, zoals *invariant\
+  \ risk minimization*, *robust optimization*, *transfer learning* en *causal learning*.\
+  \ \n\n- **Bepaal de factoren waarop je interventies voor robuustheid beoordeelt**\n\
+  \    Afhankelijk van de context, verschillen de factoren waarop je deze afwegingen\
+  \ maakt. \n    Denk aan complexiteit van de data, invoerdata en resultaten, [risico\
+  \ en impact als het fout gaat](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-06-impactanalyse/index.html),\
+  \ belang van [betrouwbaarheid versus nauwkeurigheid](../../onderwerpen/technische-robuustheid-en-veiligheid.md#wat-is-technisch-robuust-en-veilig),\
+  \ of belang van robuustheid versus transparantie. \n\n- **Leg de beargumenteerde\
+  \ keuze vast**\n    Leg vast welke keuzes er gemaakt zijn en waarom deze keuzes\
+  \ zijn gemaakt. \n\nWanneer robuustheid niet in het ontwerp wordt meegenomen, kan\
+  \ er voor een model worden gekozen waar het niet mogelijk is robuustheid voldoende\
+  \ te waarborgen.\nHet model wordt dan ofwel ingezet met de risico’s van dien of\
+  \ de innovatie moet later stop gezet worden. \n"
+urn: urn:nl:ak:mtr:owp-34
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-34-technische-interventies-robuustheid/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+suggested_roles:
+- ontwikkelaar
+lifecycle:
+- ontwerp
+- ontwikkelen
+links:
+- urn:nl:ak:ver:aia-06
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

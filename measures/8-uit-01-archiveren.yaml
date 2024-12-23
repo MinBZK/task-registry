@@ -1,0 +1,56 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Bij uitfaseren en doorontwikkeling wordt correct omgegaan met data en modelinformatie.
+description: 'Verwijder bij [uitfasering](https://minbzk.github.io/Algoritmekader/levenscyclus/uitfaseren/)
+  van je algoritme gevoelige gegevens in het kader van [privacy en gegevensbescherming](../../onderwerpen/privacy-en-gegevensbescherming.md),
+  maar behoud essentiële modelinformatie.
+
+  '
+explanation: "Als het doel van het algoritme niet langer bestaat, kan een algoritme\
+  \ (zowel data als model) uitgeschakeld of verwijderd worden. \nTegelijkertijd kan\
+  \ dit voor door het algoritme gemaakte beslissingen betekenen dat niet meer te achterhalen\
+  \ is welke data is gebruikt, en waarom het model deze zo beoordeeld heeft. \nIn\
+  \ de ontwerpfase van het algoritme wordt daarom [vastgelegd welke elementen bewaard\
+  \ dienen te worden en waarom](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-09-archiveren-documenten/index.html).\n\
+  \nDoor op een juiste manier om te gaan met uitfaseren, kan worden voorkomen dat\
+  \ de potentiële latere effecten van algoritme worden geadresseerd.\nDe werking van\
+  \ een algoritme, en de manier waarop beslissingen in het verleden zijn genomen,\
+  \ blijven behouden. Dit zorgt voor transparantie en controleerbaarheid of auditeerbaarheid.\
+  \ \nZo kan worden vastgesteld of de uitkomsten zijn aangepast, waardoor bijvoorbeeld\
+  \ fraude onzichtbaar zou worden in geval van verwijdering. \nOok in geval een organisatie\
+  \ later juridisch aansprakelijk wordt gesteld, is inzicht in hoe beslissingen tot\
+  \ stand zijn gekomen belangrijk. \nTegelijkertijd kan data die niet essentieel is\
+  \ worden verwijderd, om zo de kans op misbruik en lekken van data te voorkomen.\n\
+  \nHet niet correct uitfaseren van een algoritme, heeft mogelijk negatieve effecten\
+  \ op het gebied van uitlegbaarheid, transparantie en verantwoording. \n"
+urn: urn:nl:ak:mtr:uit-01
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/8-uit-01-archiveren/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+- privacy-en-gegevensbescherming
+- transparantie
+suggested_roles:
+- ontwikkelaar
+lifecycle:
+- uitfaseren
+- ontwerp
+links:
+- urn:nl:ak:ver:arc-01
+- urn:nl:ak:ver:aia-12
+- urn:nl:ak:ver:avg-02
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

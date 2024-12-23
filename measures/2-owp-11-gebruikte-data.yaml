@@ -4,13 +4,14 @@ name: Beschrijf welke data gebruikt wordt voor de beoogde toepassing
 description: "Beschrijf welke data gebruikt wordt voor de beoogde toepassing. \n"
 explanation: "- Maak in een vroege fase van de ontwikkeling een inschatting van welke\
   \ data er gebruikt gaat worden voor het algoritme.\n- Leg na het uitvoeren van een\
-  \ [beschikbaarheids-](2-owp-02-data-beschikbaarheid.md), [kwaliteit](3-dat-01-datakwaliteit.md)\
+  \ [beschikbaarheids-](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-02-data-beschikbaarheid/index.html),\
+  \ [kwaliteit](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-01-datakwaliteit/index.html)\
   \ en toegankelijkheidsanalyse vast, welke data wordt verwerkt voor het ontwikkelen\
   \ en gebruiken van het algoritme\n- Beschrijf daarbij om wat voor gegevens het gaat\
-  \ en uit welke bron deze komen.\n- Bepaal of het is [toegestaan om deze data](2-owp-03-doel-verwerken-persoonsgegevens.md)\
+  \ en uit welke bron deze komen.\n- Bepaal of het is [toegestaan om deze data](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-03-doel-verwerken-persoonsgegevens/index.html)\
   \ te verwerken.\n- Het is denkbaar dat het onderzoek van de kwaliteit van de data\
   \ in een latere fase in de levenscyclus pas grondig kan worden uitgevoerd. \n\n\n"
-urn: urn:nl:ak:mtr:owp-02
+urn: urn:nl:ak:mtr:owp-11
 language: nl
 owners:
 - organization: Algoritmekader

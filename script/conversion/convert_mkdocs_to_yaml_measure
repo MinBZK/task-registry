@@ -6,6 +6,7 @@ from pathlib import Path
 
 import click
 import yaml
+from script.conversion.url_conversion import update_markdown_urls
 
 
 def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
@@ -14,6 +15,7 @@ def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
 
     # Remove comments enclosed in <!-- -->
     content = re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL)
+    content = update_markdown_urls(content)
 
     # Extract front-matter (YAML-like header)
     front_matter = re.search(r"---\n(.*?)\n---", content, re.DOTALL)
@@ -53,9 +55,7 @@ def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
         "name": title,
         "description": description_text,
         "explanation": explanation_text,
-        "urn": urn
-        if urn
-        else f"urn:nl:ak:mtr:{url_title}",  # temporary solution until AK has implemented the URN themselves
+        "urn": urn,
         "language": "nl",
         "owners": [{"organization": "Algoritmekader", "name": "", "email": "", "role": ""}],
         "date": "",
