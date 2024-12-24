@@ -1,0 +1,59 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Pas vastgestelde interne beleidskaders toe en maak aantoonbaar dat deze zijn
+  nageleefd bij het ontwikkelen, inkopen en gebruiken van algoritmes.
+description: "\n Pas vastgestelde interne beleidskaders toe en maak aantoonbaar dat\
+  \ deze zijn nageleefd bij het ontwikkelen, inkopen en gebruiken van algoritmes.\n"
+explanation: "- Interne vastgestelde beleidskaders moeten worden toegepast bij het\
+  \ ontwikkelen, inkopen of gebruiken van algoritmes.\n- Het is van belang dat tijdig,\
+  \ bijvoorbeeld in de [probleemanalyse fase](https://minbzk.github.io/Algoritmekader/levenscyclus/probleemanalyse/),\
+  \ inzichtelijk wordt gemaakt welke interne beleidskaders moeten worden toegepast.\n\
+  - Hierbij kan worden gedacht aan definities die moeten worden gehanteerd, het naleven\
+  \ van inkoopbeleid, strategisch beleid volgen met betrekking tot het mogen inzetten\
+  \ van algoritmes binnen de organisaties of het doorlopen van processen en protocollen\
+  \ die moeten worden toegepast.\n- Vraag de [betrokken experts](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-04-betrek-belanghebbenden/index.html)\
+  \ welke beleidskaders van toepassing zijn vanuit diens specifieke expertise. \n\
+  - Ten behoeve van controles en audits is het van belang dat aantoonbaar wordt gemaakt\
+  \ dat de vastgestelde beleidskaders zijn nageleefd. \n  \nDe in te zetten algoritmes\
+  \ voldoen niet aan vastgestelde beleidskaders. \n"
+urn: urn:nl:ak:mtr:owp-32
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-32-pas-vastgestelde-beleidskaders-zijn-nageleefd/index.html
+subject:
+- governance
+suggested_roles:
+- projectleider
+- beleid-en-advies
+lifecycle:
+- organisatieverantwoordelijkheden
+links:
+- urn:nl:ak:ver:awb-01
+- urn:nl:ak:ver:aia-11
+- urn:nl:ak:ver:aia-05
+- urn:nl:ak:ver:aia-37
+- urn:nl:ak:ver:aia-10
+- urn:nl:ak:ver:avg-11
+- urn:nl:ak:ver:aia-03
+- urn:nl:ak:ver:grw-01
+- urn:nl:ak:ver:bio-01
+- urn:nl:ak:ver:avg-09
+- urn:nl:ak:ver:grw-02
+- urn:nl:ak:ver:aia-19
+- urn:nl:ak:ver:aia-09
+- urn:nl:ak:ver:aia-08
+- urn:nl:ak:ver:aia-20
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

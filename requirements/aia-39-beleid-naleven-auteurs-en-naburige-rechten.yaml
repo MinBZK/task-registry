@@ -1,0 +1,73 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Er is beleid opgesteld ter naleving van auteursrechten en naburige rechten door
+  aanbieders van AI-modellen voor algemene doeleinden.
+description: '
+
+  Er is beleid opgesteld ter naleving van auteursrechten en naburige rechten door
+  aanbieders van AI-modellen voor algemene doeleinden.
+
+  '
+explanation: "Aanbieders van AI-modellen voor algemene doeleinden stellen beleid op\
+  \ ter naleving van het Unierecht inzake auteursrechten en naburige rechten en dan\
+  \ met name ter vaststelling en naleving, onder meer door middel van geavanceerde\
+  \ technologie\xEBn, van een op grond van artikel 4, lid 3, van Richtlijn (EU) 2019/790\
+  \ tot uitdrukking gebracht voorbehoud van rechten.\n\nHiervoor dient de rechthebbende\
+  \ van materialen die auteursrechtelijk zijn beschermd een uitdrukkelijk voorbehoud\
+  \ te hebben gemaakt voor het verder gebruik van deze materialen. \n\nDeze eis geldt\
+  \ ongeacht de jurisdictie waarin de auteursrechtelijke relevante handelingen plaatsvinden\
+  \ die helpen bij het trainen van die AI-modellen voor algemene doeleienden.\n\n\
+  Alleen op deze manier kan gezorgd worden voor een gelijk speelveld voor aanbieders\
+  \ van AI-modellen voor algemene doeleinden, waar geen enkele aanbieder zich een\
+  \ concurrentievoordeel op de Uniemarkt mag kunnen verschaffen met lagere auteursrechtelijke\
+  \ normen dan de in de Unie toepasselijke normen.\n\nVoor een grotere transparantie\
+  \ ten aanzien van de bij de pre-training en training van AI-modellen voor algemene\
+  \ doeleinden gebruikte data, met inbegrip van door het auteursrecht beschermde tekst\
+  \ en data, is het passend dat aanbieders van dergelijke modellen een voldoende gedetailleerde\
+  \ samenvatting maken en publiceren van de voor de training van het AI-model voor\
+  \ algemene doeleinden gebruikte content.\n\nZo kan er bijvoorbeeld een opsomming\
+  \ worden gegeven van de belangrijkste gegevensverzamelingen of -reeksen waarmee\
+  \ het model is getraind, zoals grote particuliere of openbare databanken of gegevensarchieven,\
+  \ en kan een uitleg in de vorm van een relaas worden gegeven over andere gebruikte\
+  \ gegevensbronnen. \n\nHet AI-bureau moet kunnen controleren of de aanbieder aan\
+  \ deze eisen voldoet, zonder evenwel geval voor geval de trainingsdata te controleren\
+  \ of te beoordelen qua naleving van het auteursrecht.\n\n\nDoor het niet voeren\
+  \ van een beleid voor het naleven van auteursrechten en naburige rechten, ontstaat\
+  \ het risico dat met het ontwikkeling, trainen en testen van AI-modellen een inbreuk\
+  \ wordt gemaakt op deze rechten. \n"
+urn: urn:nl:ak:ver:aia-39
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/vereisten/aia-39-beleid-naleven-auteurs-en-naburige-rechten/index.html
+subject:
+- transparantie
+lifecycle:
+- ontwerp
+- ontwikkelen
+- monitoring-en-beheer
+links: []
+ai_act_profile:
+- type:
+  - AI-model voor algemene doeleinden
+  open_source: []
+  risk_group: []
+  systemic_risk: []
+  transparency_obligations: []
+  role:
+  - aanbieder
+  conformity_assessment_body: []
+always_applicable: 0
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

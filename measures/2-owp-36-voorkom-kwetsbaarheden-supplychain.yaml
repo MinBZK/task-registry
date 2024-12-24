@@ -1,0 +1,61 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Voorkom kwetsbaarheden die geïntroduceerd worden in de supply-chain van het
+  algoritme.
+description: "Het in gebruik nemen van algoritmes die door anderen zijn ontwikkeld\
+  \ brengt risico’s met zich mee waar je je tegen moet beschermen. \nDeze risico’s\
+  \ moeten adequaat afgedekt worden door afhankelijkheden te analyseren en afspraken\
+  \ te maken met leveranciers en controles uit te voeren.\n"
+explanation: "Veel algoritmes zullen niet zelf ontwikkeld worden, maar bijvoorbeeld\
+  \ compleet [ingekocht](../../onderwerpen/publieke-inkoop.md) worden of op een externe\
+  \ server getraind worden. \nRedenen om dit te doen zijn het reeds beschikbaar zijn\
+  \ van een voorgetraind algoritme of bijvoorbeeld een gebrek aan technische kennis,\
+  \ een gebrek aan voldoende trainingsdata en een gebrek aan rekenkracht binnen de\
+  \ eigen organisatie. \n\nEchter is het een stuk lastiger om deze modellen te beschermen\
+  \ tegen aanvallen zoals [backdoors] omdat er geen (directe) controle is op het correct\
+  \ uitvoeren van een trainingsproces. \n\nEen eerste stap is om in kaart te brengen\
+  \ welke afhankelijkheden er zijn en te onderzoeken of deze beheersbaar zijn. \n\
+  Er moeten er duidelijke afspraken gemaakt worden met leveranciers, bijvoorbeeld\
+  \ in de vorm van een [Service Level Agreement (SLA)](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-29-maak-vereisten-onderdeel-van-service-level-agreement/index.html).\
+  \ \nOp deze manier kan bijvoorbeeld afgesproken wie er verantwoordelijk is voor\
+  \ bijvoorbeeld het correct trainen en functioneren van het algoritme en hoe incidenten\
+  \ afgehandeld moeten worden.\n\nTot slot kunnen extra maatregelen genomen worden\
+  \ om te verifiëren dat het model inderdaad functioneert zoals afgesproken. Zo kunnen\
+  \ er formele methodes gebruikt worden om het algoritme te verifiëren, en kan het\
+  \ gedrag van het algoritme getest worden tegen bekende, foutieve invoerwaarden.\
+  \ \n\n\nAls onvoldoende duidelijk is hoe een algoritme werkt en tot stand is gekomen\
+  \ kan deze onverwachts gedrag vertonen tijdens het gebruik.\n"
+urn: urn:nl:ak:mtr:owp-36
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-36-voorkom-kwetsbaarheden-supplychain/index.html
+subject:
+- publieke-inkoop
+- data
+- technische-robuustheid-en-veiligheid
+suggested_roles:
+- ontwikkelaar
+- beleid-en-advies
+- jurist
+lifecycle:
+- ontwerp
+links:
+- urn:nl:ak:ver:aia-10
+- urn:nl:ak:ver:aia-22
+- urn:nl:ak:ver:aia-32
+- urn:nl:ak:ver:bio-01
+- urn:nl:ak:ver:avg-12
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

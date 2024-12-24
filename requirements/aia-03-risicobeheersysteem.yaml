@@ -8,12 +8,12 @@ description: '
 
   '
 explanation: "Het systeem voor risicobeheer moet bestaan uit een gepland iteratief\
-  \ proces, dat tijdens de [gehele levensduur](levenscyclus/index.md) van een hoog-risico\
-  \ AI-systeem wordt doorlopen. Een organisatie moet ervoor zorgen dat een risicobeheersysteem\
-  \ wordt ingericht in de organisatie. \n\nHet risicobeheersysteem moet gericht zijn\
-  \ op het vaststellen en beperken van de relevante risico\u2019s van AI-systemen\
-  \ voor de gezondheid, veiligheid en grondrechten met passende maatregelen. \n\n\
-  Het systeem voor risicobeheer moet periodiek worden ge\xEBvalueerd en geactualiseerd\
+  \ proces, dat tijdens de [gehele levensduur](https://minbzk.github.io/Algoritmekader/levenscyclus/over-de-levenscyclus/)\
+  \ van een hoog-risico AI-systeem wordt doorlopen. Een organisatie moet ervoor zorgen\
+  \ dat een risicobeheersysteem wordt ingericht in de organisatie. \n\nHet risicobeheersysteem\
+  \ moet gericht zijn op het vaststellen en beperken van de relevante risico\u2019\
+  s van AI-systemen voor de gezondheid, veiligheid en grondrechten met passende maatregelen.\
+  \ \n\nHet systeem voor risicobeheer moet periodiek worden ge\xEBvalueerd en geactualiseerd\
   \ om de blijvende doeltreffendheid ervan te waarborgen, alsook de motivering en\
   \ de documentatie van eventuele significante besluiten en maatregelen die op grond\
   \ van de AI-verordening zijn genomen.\n\nDit proces moet ervoor zorgen dat de aanbieder\
@@ -46,15 +46,18 @@ lifecycle:
 - organisatieverantwoordelijkheden
 links:
 - urn:nl:ak:mtr:org-03
-- urn:nl:ak:mtr:owp-12
-- urn:nl:ak:mtr:owp-13
-- urn:nl:ak:mtr:owp-18
-- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-15
+- urn:nl:ak:mtr:owp-16
 - urn:nl:ak:mtr:owp-21
-- urn:nl:ak:mtr:owp-25
-- urn:nl:ak:mtr:owp-26
+- urn:nl:ak:mtr:owp-22
+- urn:nl:ak:mtr:owp-24
 - urn:nl:ak:mtr:owp-28
-- urn:nl:ak:mtr:org-02
+- urn:nl:ak:mtr:owp-29
+- urn:nl:ak:mtr:owp-32
+- urn:nl:ak:mtr:owp-35
+- urn:nl:ak:mtr:ver-04
+- urn:nl:ak:mtr:mon-05
+- urn:nl:ak:mtr:mon-07
 ai_act_profile:
 - type:
   - AI-systeem

@@ -16,9 +16,10 @@ explanation: "Gegevensverwerking moet in verhouding staan tot het beoogde doel e
   \ als dit de minst inbreukmakende manier is om het doel te bereiken.\n\nDeze principes\
   \ waarborgen dat de privacy van individuen wordt gerespecteerd en dat gegevensverwerking\
   \ niet verder gaat dan noodzakelijk is voor legitieme doeleinden.\n\nHet is van\
-  \ belang om deze principes te hanteren om te bepalen of en in [welke vorm een algoritmes](../maatregelen/1-pba-03-onderbouwen-gebruik-algoritme)\
+  \ belang om deze principes te hanteren om te bepalen of en in [welke vorm een algoritmes](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-03-onderbouwen-gebruik-algoritme/index.html)\
   \ moet worden toegepast en om tot een passende mate van gegevensverwerking te komen\
-  \ om het [doel](../maatregelen/1-pba-02-formuleren-doelstelling.md) te bereiken.\n"
+  \ om het [doel](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-02-formuleren-doelstelling/index.html)\
+  \ te bereiken.\n"
 urn: urn:nl:ak:ver:avg-04
 language: nl
 owners:
@@ -36,11 +37,12 @@ lifecycle:
 - dataverkenning-en-datapreparatie
 links:
 - urn:nl:ak:mtr:owp-05
-- urn:nl:ak:mtr:owp-12
-- urn:nl:ak:mtr:owp-13
-- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-15
+- urn:nl:ak:mtr:owp-16
 - urn:nl:ak:mtr:owp-21
-- urn:nl:ak:mtr:owp-25
+- urn:nl:ak:mtr:owp-22
+- urn:nl:ak:mtr:owp-24
+- urn:nl:ak:mtr:owp-28
 - urn:nl:ak:mtr:owk-02
 ai_act_profile:
 - type: []

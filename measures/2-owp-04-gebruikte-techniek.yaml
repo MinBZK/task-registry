@@ -9,7 +9,7 @@ explanation: "- Beschrijf wat voor soort algoritme er gebruikt gaat worden voor 
   \    - niet-zelflerend algoritme zoals een algoritme gebaseerd op [rekenregels](../../overhetalgoritmekader/soorten-algoritmes.md#rekenregels)\n\
   \n- Beschrijf vervolgens ook:\n    \n    - waarom er voor dit type algoritme wordt\
   \ gekozen\n    - wat de alternatieven zijn en waarom die minder passend zijn?\n\
-  \    - waarom dit algoritme het meest geschikt is om het [beoogde doel](1-pba-02-formuleren-doelstelling.md)\
+  \    - waarom dit algoritme het meest geschikt is om het [beoogde doel](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-02-formuleren-doelstelling/index.html)\
   \ van het algoritme te bereiken. \n\n- De precieze details kunnen in dit stadium\
   \ van de levenscyclus waarschijnlijk nog niet ingevuld worden. Maak een goede eerste\
   \ inschatting van de gebruikte techniek. Eventueel kan je er ook voor kiezen om\
@@ -17,7 +17,7 @@ explanation: "- Beschrijf wat voor soort algoritme er gebruikt gaat worden voor 
   \ ontwikkeld worden (op basis van verschillende technieken), en je later een definitieve\
   \ keuze maakt. \n\n- Het is belangrijk om uiteindelijk een passend uitlegbaar algoritme\
   \ te selecteren voor de context waarin het wordt toegepast. Daarin moet de afweging\
-  \ gemaakt worden of de technische [uitlegbaarheid](2-owp-30-toepassen_uitlegbaarheidstechnieken.md)\
+  \ gemaakt worden of de technische [uitlegbaarheid](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-33-toepassen-uitlegbaarheidstechnieken/index.html)\
   \ voldoende is in de context die de inzet van het algoritme vereist. Hierbij kan\
   \ ook de conclusie worden getrokken dat een simpeler, inzichtelijker algoritme de\
   \ voorkeur krijgt. \n\n"

@@ -33,14 +33,16 @@ lifecycle:
 - ontwikkelen
 - implementatie
 links:
-- urn:nl:ak:mtr:owp-12
-- urn:nl:ak:mtr:owp-13
-- urn:nl:ak:mtr:owp-18
-- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-15
+- urn:nl:ak:mtr:owp-16
 - urn:nl:ak:mtr:owp-21
-- urn:nl:ak:mtr:owp-25
-- urn:nl:ak:mtr:pba-04
-- urn:nl:ak:mtr:imp-10
+- urn:nl:ak:mtr:owp-22
+- urn:nl:ak:mtr:owp-23
+- urn:nl:ak:mtr:owp-24
+- urn:nl:ak:mtr:owp-28
+- urn:nl:ak:mtr:owp-29
+- urn:nl:ak:mtr:owp-31
+- urn:nl:ak:mtr:owp-37
 - urn:nl:ak:mtr:imp-01
 ai_act_profile:
 - type:

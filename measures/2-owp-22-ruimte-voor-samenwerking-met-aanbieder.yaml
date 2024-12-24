@@ -1,0 +1,111 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Creëer ruimte om met een aanbieder samen te gaan werken om specifieke vereisten
+  te realiseren
+description: '
+
+  Creëer ruimte om met een aanbieder samen te gaan werken om specifieke vereisten
+  te gaan realiseren.
+
+  '
+explanation: "- Om op een betekenisvolle manier invulling te geven aan bepaalde vereisten,\
+  \ kan het noodzakelijk zijn dat opdrachtgever en aanbieder (innovatief) moeten gaan\
+  \ samenwerken. Op basis van nieuwe wet- en regelgeving (bv. AI-Verordening) of geharmoniseerde\
+  \ standaarden kunnen aanbieders mogelijk nog niet voldoen aan nieuwe vereisten.\
+  \ Het kan ook onduidelijk zijn hoe moet worden voldaan aan vereisten nu de technologie\
+  \ zich snel ontwikkelt of dat de specifieke omstandigheden van het beoogde gebruik\
+  \ vragen om een samenspel tussen opdrachtgever en aanbieder.\n\n- Bij een verantwoorde\
+  \ inzet van algoritmes kan het bij vereisten zoals [non-discriminatie](../../onderwerpen/bias-en-non-discriminatie.md),\
+  \ [transparantie](../../onderwerpen/transparantie.md), [menselijke controle](../../onderwerpen/menselijke-controle.md)\
+  \ en [grondrechten](../../onderwerpen/fundamentele-rechten.md) van belang zijn om\
+  \ samen te onderzoeken hoe hier invulling aan moet worden gegeven. Het is belangrijk\
+  \ om bij de behoeftestelling al te verkennen om welke onderwerpen dit mogelijk van\
+  \ toepassing is. Bij een marktverkenning of informatiesessie kan worden verkend\
+  \ hoe aanbieders ervoor staan. Op basis hiervan kan worden beoordeeld in hoeverre\
+  \ bijvoorbeeld in een aanbesteding contractuele ruimte moet worden gecreëerd voor\
+  \ opdrachtgever en aanbieder om hieraan te werken. \n\n"
+urn: urn:nl:ak:mtr:owp-22
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-22-ruimte-voor-samenwerking-met-aanbieder/index.html
+subject:
+- publieke-inkoop
+suggested_roles:
+- projectleider
+lifecycle:
+- ontwerp
+- ontwikkelen
+links:
+- urn:nl:ak:ver:aia-01
+- urn:nl:ak:ver:aia-02
+- urn:nl:ak:ver:aia-03
+- urn:nl:ak:ver:aia-04
+- urn:nl:ak:ver:aia-05
+- urn:nl:ak:ver:aia-06
+- urn:nl:ak:ver:aia-07
+- urn:nl:ak:ver:aia-08
+- urn:nl:ak:ver:aia-09
+- urn:nl:ak:ver:aia-10
+- urn:nl:ak:ver:aia-11
+- urn:nl:ak:ver:aia-12
+- urn:nl:ak:ver:aia-13
+- urn:nl:ak:ver:aia-14
+- urn:nl:ak:ver:aia-15
+- urn:nl:ak:ver:aia-16
+- urn:nl:ak:ver:aia-17
+- urn:nl:ak:ver:aia-18
+- urn:nl:ak:ver:aia-19
+- urn:nl:ak:ver:aia-20
+- urn:nl:ak:ver:aia-21
+- urn:nl:ak:ver:aia-22
+- urn:nl:ak:ver:aia-23
+- urn:nl:ak:ver:aia-24
+- urn:nl:ak:ver:aia-25
+- urn:nl:ak:ver:aia-26
+- urn:nl:ak:ver:aia-27
+- urn:nl:ak:ver:aia-28
+- urn:nl:ak:ver:aia-29
+- urn:nl:ak:ver:aia-30
+- urn:nl:ak:ver:aia-31
+- urn:nl:ak:ver:aia-32
+- urn:nl:ak:ver:aia-33
+- urn:nl:ak:ver:aia-34
+- urn:nl:ak:ver:aia-35
+- urn:nl:ak:ver:aia-36
+- urn:nl:ak:ver:aia-37
+- urn:nl:ak:ver:arc-01
+- urn:nl:ak:ver:aut-01
+- urn:nl:ak:ver:avg-01
+- urn:nl:ak:ver:avg-02
+- urn:nl:ak:ver:avg-03
+- urn:nl:ak:ver:avg-04
+- urn:nl:ak:ver:avg-05
+- urn:nl:ak:ver:avg-06
+- urn:nl:ak:ver:avg-07
+- urn:nl:ak:ver:avg-08
+- urn:nl:ak:ver:avg-09
+- urn:nl:ak:ver:avg-10
+- urn:nl:ak:ver:avg-11
+- urn:nl:ak:ver:avg-12
+- urn:nl:ak:ver:avg-13
+- urn:nl:ak:ver:awb-01
+- urn:nl:ak:ver:awb-02
+- urn:nl:ak:ver:bio-01
+- urn:nl:ak:ver:bzk-01
+- urn:nl:ak:ver:dat-01
+- urn:nl:ak:ver:grw-01
+- urn:nl:ak:ver:grw-02
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

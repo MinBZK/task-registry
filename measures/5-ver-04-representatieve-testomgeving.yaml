@@ -1,0 +1,57 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Zorg voor een representatieve testomgeving
+description: "Test het algoritme in verschillende scenario’s en omstandigheden die\
+  \ zoveel mogelijk overeenkomen met de operationele context. \n"
+explanation: "Representatieve testomstandigheden zijn essentieel om een goed onderbouwd\
+  \ vertrouwen te krijgen in de prestaties en de toegevoegde waarde van het algoritme.\
+  \ \nHoud daarbij bijvoorbeeld rekening met voldoende variatie en ruis die voorkomt\
+  \ tijdens het operationeel gebruik of de verschillende type gebruikers die interacteren\
+  \ met het algoritme. \nNeem bij het inrichten van een testomgeving de volgende aspecten\
+  \ mee:\n\n- de factoren uit [de impactanalyse](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-06-impactanalyse/index.html).\n\
+  - zorg voor testomgeving waarin je betrouwbaarheid, nauwkeurigheid en reproduceerbaarheid\
+  \ kan evalueren.\n- analyseer de verschillen tussen de dataset en operationeel gebruik.\n\
+  - wanneer een gebruikerstest wordt gedaan, zorg voor een representatieve groep gebruikers.\
+  \ Denk bijvoorbeeld aan verschillend enthousiasme en verschillend niveau van digitale/AI-vaardigheden.\
+  \ \n- neem verschillende typen (cyber)aanvallen mee\n- valideer dat de testomgeving\
+  \ de risicoanalyse en het beslissingsproces ondersteunt. \n\nVoorbeelden om bij\
+  \ te dragen aan een representatieve testomgeving:\n\n- Voeg extra ruis toe aan de\
+  \ testdata\n- Test op gevallen die niet passen in de verdeling van variabelen waarop\
+  \ een classificatiemodel is getraind (de *out-of-distribution* scenario’s). \n-\
+  \ [Test op uitzonderlijke gevallen (*outliers*) en minderheidsgroepen](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-03-biasanalyse/index.html)\n\
+  - Stel specifieke testscenario’s op. Dit kan bijvoorbeeld met de [‘What if tool’\
+  \ van Google](https://ieeexplore.ieee.org/abstract/document/8807255), om specifieke\
+  \ data scenario’s voor een machinelearning model te onderzoeken.\n\nAls het algoritme\
+  \ niet getest wordt, of getest wordt in niet-representatieve omstandigheden, kan\
+  \ er een onterecht vertrouwen in het algoritme ontstaan. \nDe evaluatie geeft dan\
+  \ goede resultaten, maar het model zal minder presteren in de operationele context\
+  \ waar meer variatie aanwezig is. \n"
+urn: urn:nl:ak:mtr:ver-04
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-04-representatieve-testomgeving/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+suggested_roles:
+- ontwikkelaar
+- projectleider
+lifecycle:
+- verificatie-en-validatie
+links:
+- urn:nl:ak:ver:aia-03
+- urn:nl:ak:ver:aia-11
+- urn:nl:ak:ver:aia-33
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

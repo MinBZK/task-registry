@@ -13,7 +13,7 @@ explanation: "- Een goede datahuishouding van de binnengekomen bezwaren, klachte
   \ Eventuele patronen in klacht, bezwaar en beroep kunnen duiden op problemen in\
   \ het functioneren van het algoritme. Dit kan bijvoorbeeld duiden op discriminerende\
   \ effecten van het algoritme, waardoor nader onderzoek wenselijk is. \n\n"
-urn: urn:nl:ak:mtr:imp-09
+urn: urn:nl:ak:mtr:imp-07
 language: nl
 owners:
 - organization: Algoritmekader

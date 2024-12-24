@@ -27,7 +27,7 @@ explanation: 'Het trainen van AI, vooral generatieve AI-modellen, vergt aanzienl
   ### Slimme data- en trainingsoptimalisatie
 
   Niet alle beschikbare data dragen bij aan de modelprestaties. Door een dataselectiestrategie
-  toe te passen, [gebruik je enkel relevante datasets (dataminimalisatie)](3-dat-09-dataminimalisatie.md),
+  toe te passen, [gebruik je enkel relevante datasets (dataminimalisatie)](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-09-dataminimalisatie/index.html),
   wat zorgt voor minder intensieve rekenbelasting tijdens het trainingsproces. Daarnaast
   kan slimme caching helpen om repetitieve data-opvragingen te beperken, wat bijdraagt
   aan een lagere energievraag. Bovendien kun je hertrainingscycli van AI beperken

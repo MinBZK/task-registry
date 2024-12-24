@@ -57,17 +57,17 @@ lifecycle:
 - organisatieverantwoordelijkheden
 links:
 - urn:nl:ak:mtr:org-12
-- urn:nl:ak:mtr:owp-12
-- urn:nl:ak:mtr:owp-13
-- urn:nl:ak:mtr:owp-18
-- urn:nl:ak:mtr:owp-19
-- urn:nl:ak:mtr:owp-21
-- urn:nl:ak:mtr:owp-25
-- urn:nl:ak:mtr:owp-26
+- urn:nl:ak:mtr:owp-15
+- urn:nl:ak:mtr:owp-16
+- urn:nl:ak:mtr:owp-22
+- urn:nl:ak:mtr:owp-24
 - urn:nl:ak:mtr:owp-28
-- urn:nl:ak:mtr:org-02
+- urn:nl:ak:mtr:owp-29
+- urn:nl:ak:mtr:owp-32
+- urn:nl:ak:mtr:owp-35
 - urn:nl:ak:mtr:owk-02
-- urn:nl:ak:mtr:mon-04
+- urn:nl:ak:mtr:ver-04
+- urn:nl:ak:mtr:mon-05
 ai_act_profile:
 - type:
   - AI-systeem

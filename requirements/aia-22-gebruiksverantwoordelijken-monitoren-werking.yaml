@@ -45,9 +45,22 @@ subject:
 lifecycle:
 - monitoring-en-beheer
 links:
+- urn:nl:ak:mtr:owp-15
+- urn:nl:ak:mtr:owp-16
+- urn:nl:ak:mtr:owp-21
+- urn:nl:ak:mtr:owp-22
+- urn:nl:ak:mtr:owp-24
+- urn:nl:ak:mtr:owp-28
+- urn:nl:ak:mtr:owp-36
+- urn:nl:ak:mtr:dat-11
+- urn:nl:ak:mtr:dat-12
 - urn:nl:ak:mtr:owk-02
+- urn:nl:ak:mtr:owk-09
 - urn:nl:ak:mtr:imp-03
-- urn:nl:ak:mtr:imp-01
+- urn:nl:ak:mtr:imp-09
+- urn:nl:ak:mtr:mon-05
+- urn:nl:ak:mtr:mon-07
+- urn:nl:ak:mtr:mon-08
 ai_act_profile:
 - type:
   - AI-systeem

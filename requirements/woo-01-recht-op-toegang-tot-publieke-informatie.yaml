@@ -60,13 +60,7 @@ subject:
 lifecycle:
 - organisatieverantwoordelijkheden
 links:
-- urn:nl:ak:mtr:owp-12
-- urn:nl:ak:mtr:owp-13
-- urn:nl:ak:mtr:owp-18
-- urn:nl:ak:mtr:owp-19
-- urn:nl:ak:mtr:owp-21
-- urn:nl:ak:mtr:owp-25
-- urn:nl:ak:mtr:owp-26
+- urn:nl:ak:mtr:owp-29
 ai_act_profile:
 - type: []
   open_source: []

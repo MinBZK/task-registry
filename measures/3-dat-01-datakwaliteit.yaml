@@ -6,7 +6,7 @@ description: 'Stel vast of de gebruikte data van voldoende kwaliteit is voor de 
 
   '
 explanation: "- Stel functionele eisen voor de datakwaliteit vast en [analyseer structureel\
-  \ of er aan deze eisen wordt voldaan](7-mon-04-evalueer-bij-veranderingen-in-data.md).\
+  \ of er aan deze eisen wordt voldaan](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/7-mon-05-evalueer-bij-veranderingen-in-data/index.html).\
   \ \n\n- De kwaliteit van de data die als input voor het algoritme wordt gebruikt\
   \ is bepalend voor de uitkomsten van het algoritme. Hier wordt soms ook naar gerefereerd\
   \ als *garbage in = garbage out*. \n- Een vraag die gesteld dient te worden: beschrijft\
@@ -19,10 +19,10 @@ explanation: "- Stel functionele eisen voor de datakwaliteit vast en [analyseer 
   \ \n\n- De vraag of de data kwaliteit voldoende is, hangt sterk samen met de vraag\
   \ of er bias in de onderliggende data zit. Analyseer daarom ook welke bias en aannames\
   \ er besloten zijn in de onderliggende data. Denk hierbij onder andere aan de volgende\
-  \ vormen van bias:\n\n    - [historische bias](../../onderwerpen/bias-en-non-discriminatie.md#verschillende-vormen-van-bias)\n\
-  \    - [meetbias](../../onderwerpen/bias-en-non-discriminatie.md#verschillende-vormen-van-bias)\n\
-  \    - [representatie bias](../../onderwerpen/bias-en-non-discriminatie.md#verschillende-vormen-van-bias)\n\
-  \n- Zorg dat je data [vindbaar, toegankelijk, interoperabel en herbruikbaar (FAIR)](3-dat-02-fair-data.md)\
+  \ vormen van bias:\n\n    - [historische bias](../../onderwerpen/bias-en-non-discriminatie.md#herken-bias)\n\
+  \    - [meetbias](../../onderwerpen/bias-en-non-discriminatie.md#herken-bias)\n\
+  \    - [representatie bias](../../onderwerpen/bias-en-non-discriminatie.md#herken-bias)\n\
+  \n- Zorg dat je data [vindbaar, toegankelijk, interoperabel en herbruikbaar (FAIR)](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-02-fair-data/index.html)\
   \ is.\n\n\n!!! note \"Let op!\"\n\n    Wanneer je een algoritme inkoopt en de ontwikkeling\
   \ van het algoritme uitbesteedt aan een derde partij, houdt er dan dan rekening\
   \ mee dat data traceerbaar en reproduceerbaar moet zijn. Maak hier heldere afspraken\

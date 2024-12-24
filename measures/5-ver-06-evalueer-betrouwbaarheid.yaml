@@ -1,0 +1,114 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Evalueer de betrouwbaarheid van het algoritme
+description: "Evalueer de betrouwbaarheid van het algoritme door het algoritme te\
+  \ testen op verschillende input en in verschillende situaties. \n"
+explanation: "De betrouwbaarheid van een algoritme omschrijft of het algoritme in\
+  \ staat is om onder verschillende omstandigheden en met alle mogelijke input tot\
+  \ een correcte uitkomst te komen. \nIn sommige gevallen is het wenselijk om duidelijk\
+  \ aan te geven wat de onzekerheid is van een uitkomst, of dat het juiste antwoord\
+  \ niet bepaald kan worden of er kans is op fouten.  \n\nOm de betrouwbaarheid te\
+  \ evalueren kan je de volgende stappen doorlopen:\n\n1. [Bepaal methodes en metrieken](#bepaal-methodes-en-metrieken)\n\
+  2. [Zorg voor een representatieve testset](#zorg-voor-een-representatieve-testset)\n\
+  3. [Bepaal welke mate van betrouwbaarheid noodzakelijk is](#bepaal-welke-mate-van-betrouwbaarheid-noodzakelijk-is)\n\
+  4. [Bepaal interventies voor als het restrisico hoger is dan acceptabel](#bepaal-interventies-voor-als-het-restrisico-hoger-is-dan-acceptabel)\n\
+  5. [Zorg en controleer of de betrouwbaarheid van een uitkomst wordt meegegeven in\
+  \ de output](#zorg-en-controleer-of-de-betrouwbaarheid-van-een-uitkomst-wordt-meegegeven-in-de-output)\n\
+  \n### Bepaal methodes en metrieken\nBepaal met welke methodes je betrouwbaarheid\
+  \ wil evalueren en welke metrieken je daarvoor wilt gebruiken.\nDe metrieken voor\
+  \ prestatie kunnen gelijk zijn aan die van [nauwkeurigheid](5-ver-02-evalueer-nauwkeurigheid.md#metrieken),\
+  \ alleen gaat het om de score hierop in een onbekende situatie. \nHet testen van\
+  \ betrouwbaarheid kan bijvoorbeeld door precisie of recall te meten onder extreme\
+  \ omstandigheden of met ruis in de data. \n\n!!! info \"Methodes om te testen op\
+  \ betrouwbaarheid\"\n\n    Afhankelijk van het type algoritme zijn er verschillende\
+  \ methodes om betrouwbaarheid te testen. \n    In de literatuur gaat het ook wel\
+  \ over generalisatie wanneer we spreken over het correct presteren op nieuwe of\
+  \ minder voorkomende inputs en omstandigheden. \n    Hieronder enkele voorbeelden\
+  \ van methoden die gebruikt kunnen worden:\n\n    - De *monkey test* is een manier\
+  \ om voor willekeurige, invalide of onverwachte inputs de werking van het algoritme\
+  \ te testen. Het idee is om een onvoorspelbare gebruiker (of een script) willekeurige\
+  \ acties te laten uitvoeren om te kijken hoe het systeem erop reageert. \n    -\
+  \ Door een *out-of-sample test* kan worden getest hoe een machinelearning algoritme\
+  \ presteert bij een dataset verdeling die niet in de training is meegegeven. \n\
+  \    - Door *stresstesten* test je de prestatie van het algoritme onder extreme\
+  \ omstandigheden of ruis in de data. \n    - Met synthetische data kunnen goed uitlegbare\
+  \ en controleerbare distributieshifts worden gesimuleerd, om te testen of het algoritme\
+  \ in een onbekende situatie, waar geen data van bruikbaar of beschikbaar is, presteert.\
+  \ \n    - De [AI Blindspots kaartenset](https://data-en-maatschappij.ai/tools/ai-blindspots-2.0)\
+  \ kan helpen om risico’s voor betrouwbaarheid (en specifiek [bias](../../onderwerpen/bias-en-non-discriminatie.md))\
+  \ te identificeren. \n\nPas de methodes en metrieken aan op de ontwerpkeuzes, zoals\
+  \ de context waarin het algoritme gebruikt wordt en het [soort algoritme](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-05-soort-algoritme/index.html).\
+  \ \nOnderzoek of er specifieke situaties of omstandigheden zijn waarvan bekend is\
+  \ dat deze kunnen variëren. \n\n??? example \"Voorbeeld\"\n\n    Analyseer welke\
+  \ veranderingen of wisselingen in de [inputdata](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-11-gebruikte-data/index.html)\
+  \ er kunnen plaatsvinden. Bijvoorbeeld door economische schommelingen of door veranderingen\
+  \ in gebruikersgedrag. Test of het algoritme goed blijft presteren onder deze omstandigheden.\
+  \ \n\n??? example \"Voorbeeld\"\n\n    De verdeling van de inputdata kan invloed\
+  \ hebben op de prestaties van een machinelearning algoritme (distributieshift).\
+  \ Test hoe het algoritme presteert onder andere verdelingen van de inputdata. \n\
+  \n### Zorg voor een representatieve testset\nZorg dat er een [representatieve testset](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-04-representatieve-testomgeving/index.html)\
+  \ beschikbaar is waarin het algoritme kan worden getest in verschillende scenario's.\
+  \ Test het algoritme in verschillende omstandigheden:\n\n- gebruikers\n- omgeving\n\
+  - interface\n- verschillende datasets\n\nTest je algoritme op generaliseerbaarheid\
+  \ van de uitkomsten buiten de standaard omgeving. \n\n### Bepaal welke mate van\
+  \ betrouwbaarheid noodzakelijk is\n- Bedenk onder welke variaties het systeem betrouwbaar\
+  \ moet werken en hoe goed het moet kunnen werken onder rand- of uitzonderlijke gevallen.\
+  \ \n- Afhankelijk van de toepassing moeten resultaten altijd dezelfde uitkomst geven\
+  \ of niet ([reproduceerbaarheid](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-07-reproduceerbaarheid/index.html)).\
+  \ In het geval van generatieve AI hoeft het antwoord bijvoorbeeld niet altijd exact\
+  \ hetzelfde te zijn. \n- Heb hierbij aandacht voor de afweging tussen [nauwkeurigheid](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-02-evalueer-nauwkeurigheid/index.html)\
+  \ en betrouwbaarheid. Een model met hoge nauwkeurigheid op de testset kan vaak slechter\
+  \ generaliseren naar situaties net buiten de test set (overfitting). \n\n### Bepaal\
+  \ interventies voor als het restrisico hoger is dan acceptabel\nBepaal wat er moet\
+  \ gebeuren wanneer de betrouwbaarheid niet voldoende is. Hiervoor zijn verschillende\
+  \ mogelijkheden:\n\n- Verder ontwikkelen aan het algoritme en andere maatregelen\
+  \ treffen om het restrisico acceptabel te maken. Bijvoorbeeld door:\n\n    - meer\
+  \ [menselijke controle](../../onderwerpen/menselijke-controle.md) toe te voegen\
+  \ \n    - een ander [soort algoritme](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-05-soort-algoritme/index.html)\
+  \ of [techniek](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-04-gebruikte-techniek/index.html)\
+  \ te gebruiken. \n    - bij machinelearning algoritmes kan je overfitting voorkomen\
+  \ door [verschillende trainingsdatasets en testdatasets te gebruiken](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-07-training-validatie-en-testdata/index.html),\
+  \ zoals bij [k-fold-cross-validation](3-dat-07-training-validatie-en-testdata.md#k-fold-cross-validation).\
+  \ \n    - door (hyper)parameters aan te passen kan het algoritme worden aangepast\
+  \ zodat het beter presteert in verschillende testsituaties. \n\n- [Te stoppen met\
+  \ de ontwikkeling en/of het gebruik van het systeem](https://minbzk.github.io/Algoritmekader/levenscyclus/uitfaseren/).\
+  \ \n\n### Zorg en controleer of de betrouwbaarheid van een uitkomst wordt meegegeven\
+  \ in de output\nVoorspellingen of uitkomsten van een algoritme kunnen onzeker zijn.\
+  \ Zorg dat de (on)zekerheid van een uitkomst wordt meegegeven in de output van een\
+  \ algoritme. \nDat kan bijvoorbeeld door een foutmarge mee te geven. \nIn veel gevallen\
+  \ kan het wenselijk zijn dat het systeem aangeeft wanneer een uitkomst te onzeker\
+  \ is, of soms zelfs geen antwoord geeft vanwege de onzekerheid. \nDit kan bijdragen\
+  \ aan het vertrouwen in het algoritme. \n\n### Zorg voor continue monitoring op\
+  \ betrouwbaarheid\nZorg dat het algoritme continu wordt [gemonitord](https://minbzk.github.io/Algoritmekader/levenscyclus/monitoring-en-beheer/)\
+  \ op de betrouwbaarheid en de prestaties van het systeem. Maak gebruik van periodieke\
+  \ updates en [valideer regelmatig de kwaliteit van de gebruikte data](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-01-datakwaliteit/index.html).\
+  \ \n\nEen onbetrouwbaar algoritme kan in een nieuwe of onverwachte situatie de verkeerde\
+  \ uitkomsten geven. \n"
+urn: urn:nl:ak:mtr:ver-06
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-06-evalueer-betrouwbaarheid/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+suggested_roles:
+- ontwikkelaar
+lifecycle:
+- ontwikkelen
+- verificatie-en-validatie
+- monitoring-en-beheer
+links:
+- urn:nl:ak:ver:aia-10
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

@@ -8,6 +8,7 @@ from typing import Any
 
 import click
 import yaml
+from script.conversion.url_conversion import update_markdown_urls
 
 ai_act_fields: list[str] = ["soort-toepassing", "rol-ai-act", "risicogroep", "systeemrisico"]
 ai_act_values: dict[str, Any] = {key: set() for key in ai_act_fields}
@@ -19,6 +20,7 @@ def parse_markdown_to_yaml(input_file: str, destination: Path) -> None:
 
     # Remove comments enclosed in <!-- -->
     content = re.sub(r"<!--.*?-->", "", content, flags=re.DOTALL)
+    content = update_markdown_urls(content)
 
     # Extract front-matter (YAML-like header)
     front_matter = re.search(r"---\n(.*?)\n---", content, re.DOTALL)

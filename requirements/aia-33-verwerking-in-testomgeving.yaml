@@ -37,11 +37,13 @@ lifecycle:
 - ontwikkelen
 - dataverkenning-en-datapreparatie
 links:
-- urn:nl:ak:mtr:owp-12
-- urn:nl:ak:mtr:owp-13
-- urn:nl:ak:mtr:owp-19
+- urn:nl:ak:mtr:owp-15
+- urn:nl:ak:mtr:owp-16
 - urn:nl:ak:mtr:owp-21
-- urn:nl:ak:mtr:owp-25
+- urn:nl:ak:mtr:owp-22
+- urn:nl:ak:mtr:owp-24
+- urn:nl:ak:mtr:owp-28
+- urn:nl:ak:mtr:ver-04
 ai_act_profile:
 - type:
   - AI-model voor algemene doeleinden
