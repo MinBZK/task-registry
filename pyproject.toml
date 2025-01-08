@@ -15,9 +15,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "Typing :: Typed"
 ]
-packages = [
-    { include = "task_registry" }
-]
+package-mode = false
 
 [tool.poetry.scripts]
 deploy = "task_registry.data:main"
