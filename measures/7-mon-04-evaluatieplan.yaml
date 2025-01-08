@@ -1,0 +1,73 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Maak een evaluatieplan voor tijdens het gebruik van het algoritme
+description: "Maak een evaluatieplan voor wanneer het algoritme in gebruik is. \n\
+  Dit plan bevat wanneer, wat en hoe er geëvalueerd dient te worden om te valideren\
+  \ of het model nog in lijn is met de [vastgestelde doelstelling](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-02-formuleren-doelstelling/index.html).\
+  \ \n"
+explanation: "Het evaluatieplan moet aangeven op welke momenten er wordt geëvalueerd,\
+  \ wat er opnieuw wordt geëvalueerd en hoe dat wordt gedaan. \n\nVoor het opstellen\
+  \ van het evaluatieplan zijn de volgende stappen nodig:\n\n1. [Bepaal of periodieke\
+  \ controle noodzakelijk is](#bepaal-of-periodieke-controle-noodzakelijk-is)\n2.\
+  \ [Bepaal bij welke gebeurtenissen het algoritme geëvalueerd moet worden](#bepaal-bij-welke-gebeurtenissen-het-algoritme-geevalueerd-moet-worden)\n\
+  3. [Bepaal wat er geëvalueerd moet worden](#bepaal-wat-er-geevalueerd-moet-worden)\n\
+  \n### Bepaal of periodieke controle noodzakelijk is\nStel vast of er periodieke\
+  \ momenten zijn vanuit bijvoorbeeld wetgeving, organisatiebeleid of risicomanagement\
+  \ waarop het wenselijk is dat het algoritme geëvalueerd wordt. \n\n### Bepaal bij\
+  \ welke gebeurtenissen het algoritme geëvalueerd moet worden\nWat zijn gebeurtenissen\
+  \ die om een nieuwe evaluatie vragen? Denk bijvoorbeeld aan momenten waarop het\
+  \ bijtrainen van het model noodzakelijk is, zoals:\n\n- een wijziging in de data\
+  \ of het algoritm\n- aangepaste wetgeving\n- andere context of tijd waarin het algoritme\
+  \ gebruikt wordt\n- een nieuwe werkwijze\n- het optreden van een incident-\n- gebruikersfeedback\
+  \ \n- een verandering in de gebruikscontext (bijv. een situatie als COVID-19)  \n\
+  \n### Bepaal wat er geëvalueerd moet worden\nBepaal welke onderdelen van het algoritme\
+  \ geëvalueerd dienen te worden bij een periodieke controle of wanneer er een gebeurtenis\
+  \ plaatsvindt waardoor evaluatie wenselijk is.\n\nWat minimaal periodiek geëvalueerd\
+  \ moet worden is:\n\n- [nauwkeurigheid](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-02-evalueer-nauwkeurigheid/index.html)\n\
+  - [betrouwbaarheid](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-06-evalueer-betrouwbaarheid/index.html)\n\
+  - [reproduceerbaarheid](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-07-reproduceerbaarheid/index.html)\n\
+  - [bias](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-03-biasanalyse/index.html)\n\
+  - [veiligheid](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/7-mon-08-test-weerbaarheid-tegen-aanvallen/index.html)\n\
+  - [grondrechten](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-07-afwegen-grondrechten/index.html)\n\
+  - [privacy](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-03-privacyrisico/index.html)\n\
+  \nBij een evaluatie hoeft niet altijd alles weer geëvalueerd te worden. Dit hangt\
+  \ af van het type wijzigingen die er zijn geweest en van de aspecten die continu\
+  \ worden gemonitord. Leg vast wat er wanneer geëvalueerd dient te worden. \n\n###\
+  \ Documenteer voor en tijdens iedere evaluatie\nZorg dat de benodigde informatie\
+  \ voor de evaluatie wordt opgeslagen en beschikbaar is voor de evaluatiemomenten.\
+  \ Denk aan invoerwaarden, resultaten en gebruikersstatistieken. \n\nBetrek bij het\
+  \ opstellen van dit plan een [diverse groep van belanghebbenden](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-04-betrek-belanghebbenden/index.html)\
+  \ met o.a. ontwikkelaars, gebruikers en ethisch adviseurs. Zorg dat het evaluatieplan\
+  \ periodiek wordt herzien of deze nog voldoet.  \n\nEr zullen veranderingen plaatsvinden\
+  \ in de gebruikscontext, de data en in het algoritme zelf (bijv. door bijtrainen).\
+  \ Wanneer niet wordt geëvalueerd tijdens het gebruik is het onbekend of het algoritme\
+  \ nog steeds werkt zoals beoogd en voldoet aan de acceptatiecriteria. \n"
+urn: urn:nl:ak:mtr:mon-05
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/7-mon-04-evaluatieplan/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+suggested_roles:
+- projectleider
+lifecycle:
+- monitoring-en-beheer
+links:
+- urn:nl:ak:ver:aia-03
+- urn:nl:ak:ver:aia-18
+- urn:nl:ak:ver:aia-22
+- urn:nl:ak:ver:aia-34
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

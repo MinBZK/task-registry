@@ -8,12 +8,16 @@ description: '
 
   '
 explanation: "Het verschilt per type algoritme welke vereisten hierop van toepassing\
-  \ is en waar een aanbieder of gebruiksverantwoordelijke aan moet voldoen. \nDit\
-  \ is mede afhankelijk van de bijbehorende risicoclassificatie. \nHiervoor kan in\
-  \ de nabije toekomst de 'beslisboom' in het Algoritmekader voor worden gebruikt'.\
-  \ \nDeze stap is van groot belang, omdat dit ook bepalend is welke contractuele\
-  \ verplichtingen moeten worden gecreëerd tussen opdrachtgever en opdrachtnemer/aanbieder.\
-  \ \n"
+  \ is en waar een aanbieder of gebruiksverantwoordelijke aan moet voldoen. \n\nDit\
+  \ is mede afhankelijk van de bijbehorende risicoclassificatie. \n\nHiervoor kan\
+  \ de [beslishulp](https://ai-verordening-beslishulp.apps.digilab.network/) in het\
+  \ Algoritmekader voor worden gebruikt'. \n\nLet op dat niet enkel naar de AI-verordening\
+  \ wordt gekeken. Ook op impactvolle algoritmes die niet vallen onder het bereik\
+  \ van de AI-Verordening zijn vereisten van toepassing. Zie hiervoor de Handreiking\
+  \ Algoritmeregister. \n\nDeze stap is van groot belang, omdat dit bijvoorbeeld voor\
+  \ ontwikkelteams mede bepalend is waar het te ontwikkelen systeem aan moet voldoen\
+  \ of welke contractuele verplichtingen moeten worden gecreëerd tussen opdrachtgever\
+  \ en aanbieder van algoritmes.\n"
 urn: urn:nl:ak:mtr:owp-05
 language: nl
 owners:

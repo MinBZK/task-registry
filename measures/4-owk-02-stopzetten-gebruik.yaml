@@ -1,24 +1,54 @@
 systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Maak een noodplan voor het stoppen van het algoritme
-description: "\n Tref (technische) maatregelen waarmee het gebruik van het algoritme\
-  \ kan worden stopgezet.\n  "
-explanation: "- Er moet in een proces zijn beschreven wanneer en hoe het gebruik van\
-  \ algoritmes moet worden stopgezet.\n- Het is van belang dat bij het ontwerp van\
-  \ algoritmes er rekening wordt gehouden met dat het werkproces ook zonder het algoritme\
-  \ kan worden uitgevoerd.\n- In het geval van risicoselectie kan er bijvoorbeeld\
-  \ worden teruggevallen op het enkel uitvoeren van een [aselecte steekproef](6-imp-02-aselecte-steekproeven.md)\
+description: "\nStel een duidelijk proces op voor situaties waarin het algoritme niet\
+  \ meer werkt zoals beoogd. Dit moet bevatten welke personen welke acties moeten\
+  \ doen en hoe er gewerkt wordt zonder het algoritme.\n  "
+explanation: "Er moet gezorgd worden dat er een alternatief plan is voor als het algoritme\
+  \ niet meer werkt zoals beoogd. Dit kan betekenen dat het hele systeem (tijdelijk)\
+  \ wordt stopgezet, dat delen van het systeem (tijdelijk) worden uitgeschakeld of\
+  \ dat er een alternatief systeem gebruikt wordt. \n\nDit proces bevat in ieder geval\
+  \ de volgende stappen:\n\n### Leg vast wanneer het algoritme niet meer werkt zoals\
+  \ beoogd\n- Leg vast wat de [beoogde werking van het algoritme] is(1-pba-02-formuleren-doelstelling.md).\n\
+  - Bepaal of [de geïmplementeerde werking overeenkomt met de vastgelegde beoogde\
+  \ werking](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-01-functioneren-in-lijn-met-doeleinden/index.html)\
+  \ en wanneer het algoritme gestopt moet worden. Dit gebeurt tijdens een [evaluatie](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/7-mon-04-evaluatieplan/index.html)\
+  \ of door de [continue monitoring](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/7-mon-07-plan-continue-monitoring/index.html).\
+  \ \n\n### Zorg dat beslissingen kunnen worden herzien\n- Leg vast hoe het mogelijk\
+  \ is na te gaan op welk moment het algoritme stopte met werken zoals beoogd. \n\
+  Wanneer de melding vanuit continue monitoring komt is het vaak duidelijk wanneer\
+  \ deze waarde wordt overschreden. \nBij vaste evaluatiemomenten moet dit worden\
+  \ herleid. \nZorg dat door middel van het [loggen](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-04-logging/index.html)\
+  \ van de juiste informatie het mogelijk is te herleiden wanneer het algoritme stopte\
+  \ met werken zoals beoogd. \n- Zorg dat beslissingen die zijn genomen vanaf het\
+  \ moment dat het algoritme stopte met werken zoals beoogd kunnen worden herzien.\
+  \ Indien het algoritme niet direct is gestopt zodra het niet meer werkte zoals beoogd,\
+  \ moet er opnieuw gekeken worden naar de beslissingen die daarna zijn genomen. Leg\
+  \ vast op welke manier deze beslissingen herzien worden. \n\n### Leg vast wat de\
+  \ vervolgacties zijn\n- Leg in een proces vast hoe het gebruik van het algoritme\
+  \ moet worden stopgezet. \n- Leg vast hoe er gewerkt worden zonder het algoritme\
+  \ en wat de impact daarvan is op het werkproces.  \n- Leg vast wie er binnen en\
+  \ buiten de organisatie geïnformeerd moeten worden. \n- Het is van belang dat bij\
+  \ het ontwerp van algoritmes er rekening wordt gehouden met dat het werkproces ook\
+  \ zonder het algoritme kan worden uitgevoerd.\n- In het geval van risicoselectie\
+  \ kan er bijvoorbeeld worden teruggevallen op het enkel uitvoeren van een [aselecte\
+  \ steekproef](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/6-imp-02-aselecte-steekproeven/index.html)\
   \ als selectieinstrument. \n- Als blijkt dat het algoritme ongewenst functioneert,\
   \ dan moeten (technische) maatregelen zijn getroffen waarmee het gebruik daadwerkelijk\
-  \ kan worden stopgezet. Denk hierbij aan een stopknop en werkinstructies hoe het\
-  \ gebruik kan worden beëindigd.\n- Maak aantoonbaar dat deze maatregelen zijn getroffen.\n\
-  - De proceseigenaar of een menselijk toezichthouder moet in staat zijn om het algoritme\
-  \ op elk moment te kunnen beëindigen.\n- Het stopzetten van het gebruik van een\
-  \ algoritme mag niet tot gevolg hebben dat betrokkenen niet meer kunnen achterhalen\
-  \ hoe besluiten tot stand zijn gekomen of dat gevolgen niet meer kunnen worden gecorrigeerd\
-  \ als dat noodzakelijk is. \n   \nBetrokkenen of belanghebbenden kunnen nadelige\
-  \ gevolgen ondervinden van een algoritme dat onjuist functioneert en niet tijdig\
-  \ kan worden stopgezet.  \n"
+  \ kan worden stopgezet. Denk hierbij aan een stopknop en [werkinstructies](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/6-imp-01-werkinstructies-gebruikers/index.html)\
+  \ hoe het gebruik kan worden beëindigd.\n- Maak aantoonbaar dat deze maatregelen\
+  \ zijn getroffen.\n- De proceseigenaar of een menselijk toezichthouder moet in staat\
+  \ zijn om het algoritme op elk moment te kunnen beëindigen.\n- Het stopzetten van\
+  \ het gebruik van een algoritme mag niet tot gevolg hebben dat betrokkenen niet\
+  \ meer kunnen achterhalen hoe besluiten tot stand zijn gekomen of dat gevolgen niet\
+  \ meer kunnen worden gecorrigeerd als dat noodzakelijk is. \n\nIndien er sprake\
+  \ is van discriminerende effecten van een algoritme, kan je gebruik maken van het\
+  \ [discriminatieprotocol](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/0-org-15-discriminatieprotocol/index.html).\
+  \ \n   \nAls er geen duidelijke acties zijn gedefinieerd, kan dat bijvoorbeeld leiden\
+  \ tot de volgende risico’s: het werkproces komt stil te liggen door een niet-werkend\
+  \ algoritme; er worden verkeerde beslissingen genomen doordat het algoritme nog\
+  \ wordt gebruikt terwijl het niet goed meer werkt, kwaadwillenden hebben langer\
+  \ toegang tot het algoritme en/of organisatiedata. \n"
 urn: urn:nl:ak:mtr:owk-02
 language: nl
 owners:
@@ -31,6 +61,7 @@ url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatre
 subject:
 - governance
 - menselijke-controle
+- technische-robuustheid-en-veiligheid
 suggested_roles:
 - projectleider
 - ontwikkelaar

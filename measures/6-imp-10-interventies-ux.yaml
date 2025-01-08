@@ -1,0 +1,51 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Neem technische interventies op in de gebruikersinterface om verkeerd gebruik
+  te voorkomen
+description: 'Neem technische interventies op in de gebruikersinterface om verkeerd
+  gebruik te voorkomen.
+
+  '
+explanation: "Een algoritme wat volledig correcte uitkomsten geeft maar vervolgens\
+  \ verkeerd wordt gebruikt kan leiden tot problemen. \nNeem bijvoorbeeld een algoritme\
+  \ wat een tekstdocument controleert en voorstelt aan de gebruiker of het compleet\
+  \ is, of nog onderdelen mist.\nWanneer je dan een ‘goedgekeurd’ knop rood maakt,\
+  \ en een ‘afgekeurd’ knop groen, is er een kans dat de gebruiker uit gewoonte op\
+  \ de verkeerde klikt en daarmee alsnog een onjuiste beslissing neemt. \nAls deze\
+  \ keuze vervolgens als feedback ook weer wordt doorgevoerd in het systeem kan het\
+  \ algoritme ook nog verkeerd gedrag aanleren. \n\nWerk bijvoorbeeld aan de hand\
+  \ van [User Centered Design principes](https://www.interaction-design.org/literature/topics/user-centered-design)\
+  \ om de gebruiker centraal te stellen. \n\nEen gebruikersinterface die verkeerd\
+  \ gebruik door gebruikers mogelijk maakt, kan ervoor zorgen dat gebruikers verkeerde\
+  \ invoerwaarden geven, zich niet aan de beoogde werkwijze houden of per ongeluk\
+  \ toegang geven aan kwaadwillenden.\n"
+urn: urn:nl:ak:mtr:imp-10
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/6-imp-10-interventies-ux/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+- menselijke-controle
+suggested_roles:
+- ontwikkelaar
+- projectleider
+- beleid-en-advies
+lifecycle:
+- implementatie
+- ontwikkelen
+links:
+- urn:nl:ak:ver:aia-10
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

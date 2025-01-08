@@ -1,0 +1,52 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Controleer regelmatig of een algoritme voldoende weerbaar is tegen bekende aanvallen.
+description: "Controleer regelmatig of je algoritme bestand is tegen aanvallen. \n"
+explanation: "Veel algoritmes veranderen in de loop van tijd. \nDaarom is het belangrijk\
+  \ om periodiek te blijven testen of de ingebouwde defensiemechanismen goed werken.\n\
+  In traditionele cyber security wordt hiervoor de term [*red teaming*](https://www.nightfall.ai/ai-security-101/ai-model-red-teaming)\
+  \ of *pentesting* gebruikt. \n\n### Pentesting\nMet pentesting wordt in feite een\
+  \ interactie tussen een aanvaller en het algoritme nagebootst.  \nVerschillende\
+  \ bedrijven die gespecialiseerd zijn in traditionele pentesting van IT systemen\
+  \ bieden nu ook specifiek pentesting van AI aan. \nIndien er voldoende kennis aanwezig\
+  \ is, is het mogelijk  dit zelf te implementeren. \nDit kan bijvoorbeeld met behulp\
+  \ van de open-source ontwikkelde [Adversarial Robustness Toolbox (ART)](https://research.ibm.com/projects/adversarial-robustness-toolbox)\
+  \ ontwikkeld door IBM (en nu in beheer door de Linux Foundation).\n\n### Top-10\
+  \ security risico’s van LLM’s\nHet is lastig in te schatten met wat voor aanvallen\
+  \ er rekening gehouden moet worden voor een AI-systeem. \nHiervoor heeft OWASP een\
+  \ [top 10 opgesteld van security risico’s van LLM’s](https://owasp.org/www-project-top-10-for-large-language-model-applications/).\
+  \ Veel risico's zijn waarschijnlijk ook van toepassing op andere soorten AI-systemen.\n\
+  \nAls niet periodiek getest wordt of een algoritme nog bestand is tegen aanvallen,\
+  \ wordt de kans groter dat een aanvaller succesvol is.\n"
+urn: urn:nl:ak:mtr:mon-08
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/7-mon-08-test-weerbaarheid-tegen-aanvallen/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+suggested_roles:
+- ontwikkelaar
+lifecycle:
+- ontwikkelen
+- verificatie-en-validatie
+- monitoring-en-beheer
+links:
+- urn:nl:ak:ver:aia-10
+- urn:nl:ak:ver:aia-22
+- urn:nl:ak:ver:aia-32
+- urn:nl:ak:ver:bio-01
+- urn:nl:ak:ver:avg-12
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE

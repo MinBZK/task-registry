@@ -11,7 +11,7 @@ explanation: "- Verifieer of een [DPIA](../hulpmiddelen/DPIA.md) is uitgevoerd o
   \ en technische maatregelen moeten worden getroffen om persoonsgegevens bij de ontwikkeling\
   \ en het gebruik van het algoritme te beschermen.\n- Beleg de mitigerende maatregelen\
   \ bij betrokken actoren. Denk bijvoorbeeld aan het toekennen van de maatregelen\
-  \ als [anonimiseren en pseudonimiseren van persoonsgegevens](3-dat-05-pseudonimiseren-anonimiseren.md)\
+  \ als [anonimiseren en pseudonimiseren van persoonsgegevens](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-04-pseudonimiseren-anonimiseren/index.html)\
   \ aan een data engineer, voordat deze kunnen worden gebruikt ten behoeve van het\
   \ ontwikkelen of controleren van het algoritme.\n- Bepaal welke maatregelen moeten\
   \ zijn gerealiseerd voordat mag worden gestart met de verwerking van de persoonsgegevens\

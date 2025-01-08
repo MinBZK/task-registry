@@ -19,12 +19,12 @@ explanation: "Security by design is gehanteerd en terug te zien als uitgangspunt
   \ stadium integreren van securitymaatregelen. Op die manier kan worden voldaan aan\
   \ regelgeving, maar wordt de weerbaarheid tegen bijvoorbeeld cyberaanvallen verhoogd.\
   \ In een vroeg stadium nadenken over security betekent dat vroeg al de [benodigde\
-  \ expertise wordt betrokken](1-pba-04-betrek-belanghebbenden.md), zoals een security-officer.\n\
-  \nWanneer tijdens het ontwerp en de inrichting van het algoritmisch systeem niet\
-  \ voldoende rekening wordt gehouden met vastgestelde security-by-design principes\
-  \ kan dit leiden tot een onvoldoende veilige (software-)omgeving. Dit kan tot gevolg\
-  \ hebben: oneigenlijke toegang, wijzigingen of vernietigingen van het algoritme,\
-  \ de data of uitkomsten van het algoritme.\n\n"
+  \ expertise wordt betrokken](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-04-betrek-belanghebbenden/index.html),\
+  \ zoals een security-officer.\n\nWanneer tijdens het ontwerp en de inrichting van\
+  \ het algoritmisch systeem niet voldoende rekening wordt gehouden met vastgestelde\
+  \ security-by-design principes kan dit leiden tot een onvoldoende veilige (software-)omgeving.\
+  \ Dit kan tot gevolg hebben: oneigenlijke toegang, wijzigingen of vernietigingen\
+  \ van het algoritme, de data of uitkomsten van het algoritme.\n\n"
 urn: urn:nl:ak:mtr:owk-01
 language: nl
 owners:

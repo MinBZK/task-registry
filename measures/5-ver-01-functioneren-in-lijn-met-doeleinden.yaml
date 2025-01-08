@@ -2,15 +2,16 @@ systemcard_path: .systemcard.requirements[]
 schema_version: 1.1.0
 name: Controleer regelmatig of het algoritme werkt zoals het bedoeld is
 description: "Stel vast dat het algoritme voortdurend functioneert in lijn met de\
-  \ [vastgestelde doelstelling](1-pba-02-formuleren-doelstelling.md). \n"
-explanation: "- Vertaal de [vastgestelde doelstelling](1-pba-02-formuleren-doelstelling.md)\
+  \ [vastgestelde doelstelling](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-02-formuleren-doelstelling/index.html).\
+  \ \n"
+explanation: "- Vertaal de [vastgestelde doelstelling](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/1-pba-02-formuleren-doelstelling/index.html)\
   \ naar functionele eisen voor het algoritme. Werk het vastgestelde doel uit in een\
   \ beschrijving in logische taal/pseudo code of documentatie die handvatten biedt\
   \ aan de ontwikkelaar. \n- Monitor de mate waarin aan deze eisen wordt voldaan door\
   \ het algoritme. \n- Bepaal en leg vast hoe eventuele parameters, business rules\
   \ en indicatoren bepaald worden. Zorg dat dit breed wordt afgestemd in de organisatie\
   \ (ontwikkelteam, opdrachtgevers en beheer).\n- Houd hier rekening met eventuele\
-  \ [(statistische) bias](../../onderwerpen/bias-en-non-discriminatie.md#statistische-bias):\
+  \ [(statistische) bias](../../onderwerpen/bias-en-non-discriminatie.md#bias-in-statistiek-en-berekeningen):\
   \ meten we daadwerkelijk wat we denken te meten? \n- Wanneer het algoritme meerdere\
   \ doelen dient, is het belangrijk ook te evalueren op meerdere functionele eisen.\
   \ \n- Wanneer er sprake is van een (handmatige) behandeling, bepaal dan wanneer\

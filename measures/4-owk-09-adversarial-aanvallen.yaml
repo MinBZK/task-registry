@@ -1,0 +1,73 @@
+systemcard_path: .systemcard.requirements[]
+schema_version: 1.1.0
+name: Ontwerp en train het algoritme om bestand te zijn tegen (cyber)aanvallen
+description: 'Ontwerp en train het algoritme om bestand te zijn tegen adversarial
+  aanvallen.
+
+  '
+explanation: "De impact van een adversarial AI-aanval hangt af van de [mate van autonomie](../ai-verordening.md#ai-systeem)\
+  \ waarmee een algoritme wordt ingezet. \nEen algemene impact-beperkende maatregel\
+  \ is daarom om menselijke gebruikers duidelijke instructies mee te geven om de uitkomsten\
+  \ van de algoritmes te controleren.\n\nVoor de verschillende typen adversarial AI-aanvallen\
+  \ zijn specifieke maatregelen mogelijk: \n\n### Poisoning aanval\nBij een poisoning\
+  \ aanval wordt het AI-systeem vergiftigd doordat een aanvaller aanpassingen aan\
+  \ de trainingsdata doet, waardoor het AI-systeem fouten gaat maken. \nBijvoorbeeld\
+  \ een spamfilter die getraind is op gemanipuleerde data, en zo toch nog bepaalde\
+  \ spam e-mails doorlaat. \nMaatregelen gericht op het [behoud van de integriteit\
+  \ van de trainingsdata](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/3-dat-11-datamanipulatie/index.html)\
+  \ kunnen hiertegen worden ingezet.\n\n### Input- of evasion aanval\nBij een input-\
+  \ of evasion aanval voegt een aanvaller hele kleine bewerkingen toe aan een input\
+  \ zodat een AI-systeem wordt misleid: het trekt een foute conclusie. \nEen voorbeeld\
+  \ hiervan is het plakken van een gele post-it op een stopbord, waardoor een auto\
+  \ met AI gebaseerde omgevingsherkenning het bord niet meer goed kan herkennen en\
+  \ zijn snelheid aanpast. \nOp evasion aanvallen kan geanticipeerd worden bij het\
+  \ testen van de [robuustheid](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/2-owp-34-technische-interventies-robuustheid/index.html)\
+  \ van algoritmes. Bijvoorbeeld door als onderdeel van een [representatieve testomgeving](https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/5-ver-04-representatieve-testomgeving/index.html)\
+  \ ook rekening te houden met moedwillig, subtiel aangepaste input.\n\n### Backdoor\n\
+  Een backdoor in een algoritme geeft een aanvaller er toegang toe en/of de mogelijkheid\
+  \ om deze te manipuleren. \nEen voorbeeld hiervan is een nummerbord herkenningsalgoritme\
+  \ dat tijdens de ontwikkelfase van een backdoor voorzien is door een aanvaller,\
+  \ waardoor via een speciale toevoeging aan een nummerbord deze niet meer herkend\
+  \ wordt. \nMaatregelen gericht op controle van verwerking van trainingsdata, gebruik\
+  \ van ontwikkeltools en halffabricaten en het trainingsproces beperken de mogelijkheid\
+  \ om aanvallers backdoors te laten injecteren.\n\n### Model stealing\nBij *model\
+  \ stealing* of *model reverse engineering* brengt een aanvaller in kaart hoe een\
+  \ algoritme in elkaar zit. \nHierdoor kan een aanvaller het algoritme voor andere\
+  \ doeleinden misbruiken, zoals het vinden van kwetsbaarheden of van *evasion tactieken*\
+  \ voor het algoritme.\n\n### Inversion of inference aanval\nMet *inversion of inference*\
+  \ aanvallen kan een aanvaller achterhalen wat voor (mogelijk vertrouwelijke) trainingsdata\
+  \ is gebruikt. \nZo kunnen gevoelige informatie worden blootgelegd, waaronder privacygevoelige\
+  \ gegevens en intellectueel eigendom.\n\nAdversarial AI-aanvallen kunnen leiden\
+  \ tot ongewenste misleiding, manipulatie of uitschakeling van de werking van een\
+  \ algoritme of tot verlies van gevoelige gegevens.\n"
+urn: urn:nl:ak:mtr:owk-09
+language: nl
+owners:
+- organization: Algoritmekader
+  name: ''
+  email: ''
+  role: ''
+date: ''
+url: https://minbzk.github.io/Algoritmekader/voldoen-aan-wetten-en-regels/maatregelen/4-owk-09-adversarial-aanvallen/index.html
+subject:
+- technische-robuustheid-en-veiligheid
+suggested_roles:
+- beleid-en-advies
+- ontwikkelaar
+lifecycle:
+- ontwikkelen
+links:
+- urn:nl:ak:ver:aia-10
+- urn:nl:ak:ver:aia-22
+- urn:nl:ak:ver:aia-32
+- urn:nl:ak:ver:bio-01
+- urn:nl:ak:ver:avg-12
+template:
+  requirement: $REQUIREMENT
+  remarks: $REMARKS
+  status: $STATUS
+  timestamp: $TIMESTAMP
+  authors:
+  - name: $AUTHOR.NAME
+    email: $AUTHOR.EMAIL
+    role: $AUTHOR.ROLE
