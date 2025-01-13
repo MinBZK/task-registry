@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 @router.get(
     "/{urn}",
     summary="Get the contents of the specific URN.",
-    description="This endpoint returns a JSON with the contents of a specific URN" " and version.",
+    description="This endpoint returns a JSON with the contents of a specific URN and version.",
     responses={
         200: {"description": "JSON with the specific contents of the URN."},
         400: {"description": "The URN does not exist or is not valid."},

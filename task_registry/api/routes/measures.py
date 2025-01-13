@@ -25,8 +25,7 @@ async def get_measures() -> Index:
 @router.get(
     "/urn/{urn}",
     summary="Get the contents of the specific measure by URN",
-    description="This endpoint returns a JSON with the contents of a specific measure identified by URN"
-    " and version.",
+    description="This endpoint returns a JSON with the contents of a specific measure identified by URN and version.",
     responses={
         200: {"description": "JSON with the specific contents of the measure."},
         400: {"description": "The URN does not exist or is not valid."},
