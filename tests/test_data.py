@@ -38,8 +38,8 @@ def test_generate_index() -> None:
                     name=filename,
                     path=f"{dir}/{filename}",
                     urn=MOCK_TASK["urn"],
-                    download_url=f'{base_url}/instruments/urn/{MOCK_TASK["urn"]}',
-                    links=data.Link(self=f'{base_url}/instruments/urn/{MOCK_TASK["urn"]}'),
+                    download_url=f"{base_url}/instruments/urn/{MOCK_TASK['urn']}",
+                    links=data.Link(self=f"{base_url}/instruments/urn/{MOCK_TASK['urn']}"),
                 )
             ],
         )
