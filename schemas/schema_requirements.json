@@ -157,9 +157,9 @@
             "items": {
               "type": "string",
               "enum": [
-                "hoog-risico AI",
-                "geen hoog-risico AI",
-                "verboden AI",
+                "hoog-risico",
+                "geen hoog-risico",
+                "verboden",
                 "uitzondering van toepassing"
               ]
             }

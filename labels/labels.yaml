@@ -3,12 +3,17 @@ ai-act:
   - ai-model-voor-algemene-doeleinden
   - ai-systeem
   - ai-systeem-voor-algemene-doeleinden
+  - impactvol-algoritme
   rol-ai-act:
   - aanbieder
   - gebruiksverantwoordelijke
+  - importeur
+  - distributeur
   risicogroep:
-  - geen-hoog-risico-ai-systeem
-  - hoog-risico-ai-systeem
-  - verboden-ai
+  - geen-hoog-risico
+  - hoog-risico
+  - verboden
   systeemrisico:
   - systeemrisico
+  transparantieverplichting:
+  - transparantieverplichting

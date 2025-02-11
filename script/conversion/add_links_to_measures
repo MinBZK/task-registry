@@ -13,10 +13,11 @@ rename_ai_act_labels_dict = {
     "ai-systeem": "AI-systeem",
     "ai-systeem-voor-algemene-doeleinden": "AI-systeem voor algemene doeleinden",
     "ai-model-voor-algemene-doeleinden": "AI-model voor algemene doeleinden",
-    "verboden-ai": "verboden AI",
-    "hoog-risico-ai-systeem": "hoog-risico AI",
-    "geen-hoog-risico-ai-systeem": "geen hoog-risico AI",
+    "verboden": "verboden",
+    "hoog-risico": "hoog-risico",
+    "geen-hoog-risico": "geen hoog-risico",
     "systeemrisico": "systeemrisico",
+    "transparantieverpliching": "transparantieverplichting"
 }
 
 
