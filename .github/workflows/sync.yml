@@ -20,7 +20,7 @@ jobs:
       file_contents: ${{ steps.sync.outputs.file_contents }}
       sync_exit_code: ${{ steps.sync.outputs.sync_exit_code }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install poetry
         run: pipx install poetry

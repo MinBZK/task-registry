@@ -25,7 +25,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install poetry
         run: pipx install poetry
@@ -51,7 +51,7 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install poetry
         run: pipx install poetry
@@ -78,7 +78,7 @@ jobs:
   test-compose:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - run: docker compose build
       - run: docker compose down -v --remove-orphans
       - run: docker compose up -d
@@ -86,7 +86,7 @@ jobs:
   test-local-backend:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -139,7 +139,7 @@ jobs:
       security-events: write
       actions: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -273,7 +273,7 @@ jobs:
         run: |
           echo "tags: ${{ steps.meta.outputs.tags }}"
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Trigger deployment
         run: |
