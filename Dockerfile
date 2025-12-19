@@ -47,8 +47,8 @@ RUN pyright
 
 FROM project-base AS production
 
-RUN groupadd tr && \
-    adduser --uid 100 --system --ingroup tr tr
+RUN groupadd -g 1000 tr && \
+    adduser --uid 1000 --system --ingroup tr tr
 
 RUN chown -R tr:tr /app/
 
