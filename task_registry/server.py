@@ -1,15 +1,11 @@
 from fastapi import FastAPI
 from prometheus_client import CONTENT_TYPE_LATEST, REGISTRY, generate_latest
-from prometheus_client.process_collector import ProcessCollector
 from prometheus_fastapi_instrumentator import Instrumentator
 from starlette.requests import Request
 from starlette.responses import Response
 from task_registry.api.main import api_router
 from task_registry.core.config import LICENSE_NAME, LICENSE_URL, PROJECT_NAME, PROJECT_SUMMARY, VERSION
 from task_registry.lifespan import lifespan
-
-# Register process metrics collector (provides CPU, memory stats on Linux)
-ProcessCollector(registry=REGISTRY)
 
 
 def create_app() -> FastAPI:
