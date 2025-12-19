@@ -8,7 +8,7 @@ from task_registry.core.types import LoggingLevelType
 LOGGING_SIZE = 10 * 1024 * 1024
 LOGGING_BACKUP_COUNT = 5
 
-LOGGING_CONFIG = {
+LOGGING_CONFIG: dict[str, Any] = {
     "version": 1,
     "disable_existing_loggers": False,
     "formatters": {
@@ -36,7 +36,7 @@ LOGGING_CONFIG = {
     },
 }
 
-FILE_HANDLER_CONFIG = {
+FILE_HANDLER_CONFIG: dict[str, Any] = {
     "formatter": "generic",
     "()": "logging.handlers.RotatingFileHandler",
     "filename": "task-registry.log",
@@ -48,7 +48,7 @@ FILE_HANDLER_CONFIG = {
 def configure_logging(
     level: LoggingLevelType = "INFO", config: dict[str, Any] | None = None, log_to_file: bool = False
 ) -> None:
-    log_config = copy.deepcopy(LOGGING_CONFIG)
+    log_config: dict[str, Any] = copy.deepcopy(LOGGING_CONFIG)
 
     if log_to_file:
         log_config["handlers"]["file"] = FILE_HANDLER_CONFIG.copy()
