@@ -47,19 +47,18 @@ RUN pyright
 
 FROM project-base AS production
 
-
 RUN groupadd tr && \
     adduser --uid 100 --system --ingroup tr tr
 
-RUN chown tr:tr /app/
+RUN chown -R tr:tr /app/
 
 USER tr
 
-COPY --chown=root:root --chmod=755 task_registry /app/task_registry
-COPY --chown=root:root --chmod=755 instruments /app/instruments
-COPY --chown=root:root --chmod=755 requirements /app/requirements
-COPY --chown=root:root --chmod=755 measures /app/measures
-COPY --chown=root:root --chmod=755 LICENSE /app/LICENSE
+COPY --chown=tr:tr --chmod=755 task_registry /app/task_registry
+COPY --chown=tr:tr --chmod=755 instruments /app/instruments
+COPY --chown=tr:tr --chmod=755 requirements /app/requirements
+COPY --chown=tr:tr --chmod=755 measures /app/measures
+COPY --chown=tr:tr --chmod=755 LICENSE /app/LICENSE
 
 ENV PYTHONPATH=/app/
 WORKDIR /app/

@@ -25,27 +25,35 @@ LOGGING_CONFIG = {
             "class": "logging.StreamHandler",
             "stream": "ext://sys.stdout",
         },
-        "file": {
-            "formatter": "generic",
-            "()": "logging.handlers.RotatingFileHandler",
-            "filename": "task-registry.log",
-            "maxBytes": LOGGING_SIZE,
-            "backupCount": LOGGING_BACKUP_COUNT,
-        },
     },
     "loggers": {
-        "": {"handlers": ["console", "file"], "level": "DEBUG", "propagate": False},
+        "": {"handlers": ["console"], "level": "DEBUG", "propagate": False},
         "httpcore": {
-            "handlers": ["console", "file"],
+            "handlers": ["console"],
             "level": "ERROR",
             "propagate": False,
         },
     },
 }
 
+FILE_HANDLER_CONFIG = {
+    "formatter": "generic",
+    "()": "logging.handlers.RotatingFileHandler",
+    "filename": "task-registry.log",
+    "maxBytes": LOGGING_SIZE,
+    "backupCount": LOGGING_BACKUP_COUNT,
+}
 
-def configure_logging(level: LoggingLevelType = "INFO", config: dict[str, Any] | None = None) -> None:
+
+def configure_logging(
+    level: LoggingLevelType = "INFO", config: dict[str, Any] | None = None, log_to_file: bool = False
+) -> None:
     log_config = copy.deepcopy(LOGGING_CONFIG)
+
+    if log_to_file:
+        log_config["handlers"]["file"] = FILE_HANDLER_CONFIG.copy()
+        for logger_config in log_config["loggers"].values():
+            logger_config["handlers"].append("file")
 
     if config:
         log_config.update(config)
