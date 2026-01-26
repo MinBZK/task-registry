@@ -24,12 +24,13 @@ deploy = "task_registry.data:main"
 python = "^3.12"
 jsonschema = "^4.22.0"
 pyyaml = "^6.0.1"
-fastapi = "^0.115.6"
+fastapi = "^0.125.0"
 uvicorn = "^0.30.6"
 pydantic-settings = "^2.4.0"
 
-setuptools = "^74.1.1"
+setuptools = "^78.1.1"
 click = "^8.1.7"
+prometheus-fastapi-instrumentator = "^7.1.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
@@ -121,15 +122,22 @@ level = "PARANOID"
 dependencies = true
 authorized_licenses = [
     "Apache Software",
+    "Apache-2.0 AND BSD-2-Clause",
     "Artistic",
     "BSD",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
     "GNU General Public License v2 or later (GPLv2+)",
     "GNU General Public License v3 or later (GPLv3+)",
     "GNU General Public License (GPL)",
     "GNU Library or Lesser General Public License (LGPL)",
-    "MIT",
-    "The Unlicense (Unlicense)",
+    "ISC",
     "ISC License (ISCL)",
+    "MIT",
     "Mozilla Public License 2.0 (MPL 2.0)",
-    "Python Software Foundation"
+    "Python Software Foundation",
+    "The Unlicense (Unlicense)"
 ]
+# setuptools is MIT licensed but doesn't include license metadata in v78+
+[tool.liccheck.authorized_packages]
+setuptools = "78.1.1"

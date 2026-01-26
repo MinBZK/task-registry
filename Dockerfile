@@ -15,6 +15,7 @@ ENV PYTHONUNBUFFERED=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100 \
     POETRY_VIRTUALENVS_IN_PROJECT=true \
+
     POETRY_NO_INTERACTION=1 \
     POETRY_HOME='/usr/local'
 
@@ -47,19 +48,18 @@ RUN pyright
 
 FROM project-base AS production
 
+RUN groupadd -g 1000 tr && \
+    adduser --uid 1000 --system --ingroup tr tr
 
-RUN groupadd tr && \
-    adduser --uid 100 --system --ingroup tr tr
-
-RUN chown tr:tr /app/
+RUN chown -R tr:tr /app/
 
 USER tr
 
-COPY --chown=root:root --chmod=755 task_registry /app/task_registry
-COPY --chown=root:root --chmod=755 instruments /app/instruments
-COPY --chown=root:root --chmod=755 requirements /app/requirements
-COPY --chown=root:root --chmod=755 measures /app/measures
-COPY --chown=root:root --chmod=755 LICENSE /app/LICENSE
+COPY --chown=tr:tr --chmod=755 task_registry /app/task_registry
+COPY --chown=tr:tr --chmod=755 instruments /app/instruments
+COPY --chown=tr:tr --chmod=755 requirements /app/requirements
+COPY --chown=tr:tr --chmod=755 measures /app/measures
+COPY --chown=tr:tr --chmod=755 LICENSE /app/LICENSE
 
 ENV PYTHONPATH=/app/
 WORKDIR /app/
