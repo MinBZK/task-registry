@@ -25,6 +25,7 @@ class Settings(BaseSettings):
 
     LOGGING_LEVEL: LoggingLevelType = "INFO"
     LOGGING_CONFIG: dict[str, Any] | None = None
+    LOG_TO_FILE: bool = False
 
 
 def get_settings() -> Settings:

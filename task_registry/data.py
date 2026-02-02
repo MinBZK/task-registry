@@ -34,8 +34,8 @@ class Index(BaseModel):
     size: int = Field(examples=[0])
     name: str = Field(examples=["task_collection_name"])
     path: str = Field(examples=["task_collection_path"])
-    download_url: str = Field(examples=["https://task-registry.apps.digilab.network/task_collection"])
-    links: Link = Field(examples=[{"self": "https://task-registry.apps.digilab.network"}])
+    download_url: str = Field(examples=["https://task-registry.rijksapp.nl/task_collection"])
+    links: Link = Field(examples=[{"self": "https://task-registry.rijksapp.nl"}])
     entries: list[FileInfo] = Field(
         examples=[
             {
@@ -44,10 +44,8 @@ class Index(BaseModel):
                 "name": "task_name.yaml",
                 "path": "task_collection_path/task_name.yaml",
                 "urn": "urn:nl:aivt:tr:xx:xx",
-                "download_url": "https://task-registry.apps.digilab.network/task_collection/urn/urn:nl:aivt:tr:aiia:1.0",
-                "links": {
-                    "self": "https://task-registry.apps.digilab.network/task_collection/urn/urn:nl:aivt:tr:aiia:1.0"
-                },
+                "download_url": "https://task-registry.rijksapp.nl/task_collection/urn/urn:nl:aivt:tr:aiia:1.0",
+                "links": {"self": "https://task-registry.rijksapp.nl/task_collection/urn/urn:nl:aivt:tr:aiia:1.0"},
             }
         ]
     )
@@ -83,7 +81,7 @@ class CachedRegistry:
 
 def generate_index(
     tasks: TaskType,
-    base_url: str = "https://task-registry.apps.digilab.network",
+    base_url: str = "https://task-registry.rijksapp.nl",
 ) -> Index:
     tasks_url = f"{base_url}/{tasks}"
     entries: list[FileInfo] = []

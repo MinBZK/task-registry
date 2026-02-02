@@ -9,7 +9,7 @@ from task_registry.data import CachedRegistry, TaskType
 
 CACHED_REGISTRY = CachedRegistry()
 
-configure_logging(get_settings().LOGGING_LEVEL, get_settings().LOGGING_CONFIG)
+configure_logging(get_settings().LOGGING_LEVEL, get_settings().LOGGING_CONFIG, get_settings().LOG_TO_FILE)
 
 logger = logging.getLogger(__name__)
 

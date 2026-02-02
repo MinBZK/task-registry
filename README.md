@@ -3,7 +3,7 @@
 This registry is an overarching architecture to group all Tasks that can be performed in the context of algorithm and AI-system management, compliance and governance. The purpose of the register is to bridge policy and running code.
 A task could be part of an instrument and correspond to a maatregel/measure and/or vereisten/requirement (see 2. Definitions).
 
-The registry is deployed here: [https://task-registry.apps.digilab.network/](https://task-registry.apps.digilab.network/).
+The registry is deployed here: [https://task-registry.rijksapp.nl/](https://task-registry.rijksapp.nl/).
 
 A graphical overview of the task registry and its components is shown below:
 
