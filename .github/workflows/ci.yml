@@ -69,7 +69,7 @@ jobs:
         run: poetry run liccheck -s pyproject.toml
 
       - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@57a97c7e7821a5776cebc9bb87c984fa69cba8f1
         with:
           trivy-config: trivy.yaml
           scan-type: fs
@@ -193,7 +193,7 @@ jobs:
           platforms: linux/amd64,linux/arm64,darwin/amd64
 
       - name: Run Trivy vulnerability scanner sarif
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@57a97c7e7821a5776cebc9bb87c984fa69cba8f1
         with:
           image-ref: ${{ steps.meta.outputs.tags }}
           scan-type: image
@@ -220,7 +220,7 @@ jobs:
           DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index
 
       - name: Run Trivy SBOM
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@57a97c7e7821a5776cebc9bb87c984fa69cba8f1
         with:
           image-ref: ${{ steps.meta2.outputs.tags }}
           scan-type: image
@@ -233,7 +233,7 @@ jobs:
           TRIVY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run Trivy license scanner
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@57a97c7e7821a5776cebc9bb87c984fa69cba8f1
         with:
           image-ref: ${{ steps.meta2.outputs.tags }}
           scan-type: image
