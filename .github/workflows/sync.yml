@@ -55,7 +55,7 @@ jobs:
     if: ${{ needs.sync.outputs.file_size != '0' && needs.sync.outputs.sync_exit_code != '0' }}
     steps:
       - name: Send notify
-        uses: mattermost/action-mattermost-notify@master
+        uses: mattermost/action-mattermost-notify@d317daebed2a792679f68fd0248557a8d21d82b6
         with:
           MATTERMOST_WEBHOOK_URL: ${{ secrets.MM_WEBHOOK_DEV }}
           TEXT: |
