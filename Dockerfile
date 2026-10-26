@@ -2,7 +2,7 @@ ARG PYTHON_VERSION=3.12-slim
 
 FROM  --platform=$BUILDPLATFORM python:${PYTHON_VERSION} AS project-base
 
-LABEL maintainer=ai-validatie@minbzk.nl \
+LABEL maintainer=digigilde@rijksoverheid.nl \
     organization=MinBZK \
     license=EUPL-1.2 \
     org.opencontainers.image.description="Task Registry" \
