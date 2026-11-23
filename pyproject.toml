@@ -24,7 +24,7 @@ deploy = "task_registry.data:main"
 python = "^3.12"
 jsonschema = "^4.22.0"
 pyyaml = "^6.0.1"
-fastapi = ">=0.125,<0.163"
+fastapi = ">=0.125,<0.166"
 uvicorn = ">=0.30.6,<0.55.0"
 pydantic-settings = "^2.4.0"
 
